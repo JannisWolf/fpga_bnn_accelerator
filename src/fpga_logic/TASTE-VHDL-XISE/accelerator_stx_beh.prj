@@ -1,0 +1,6 @@
+vhdl isim_temp "upsample3_64.vhd"
+vhdl isim_temp "upsample.vhd"
+vhdl isim_temp "output_layer.vhd"
+vhdl isim_temp "fully_connected.vhd"
+vhdl isim_temp "accelerator.vhd"
+verilog isim_temp "/home/taste/Xilinx/14.7/ISE_DS/ISE//verilog/src/glbl.v"

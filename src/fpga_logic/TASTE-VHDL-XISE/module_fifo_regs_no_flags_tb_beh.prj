@@ -1,0 +1,2 @@
+vhdl work "fifo_regs.vhd"
+vhdl work "tb_fifo.vhd"

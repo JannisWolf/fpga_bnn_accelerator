@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -o "/home/taste/iris_fc/src/fpga_logic/TASTE-VHDL-XISE/module_fifo_regs_no_flags_tb_isim_beh.exe" -prj "/home/taste/iris_fc/src/fpga_logic/TASTE-VHDL-XISE/module_fifo_regs_no_flags_tb_beh.prj" "work.module_fifo_regs_no_flags_tb" 

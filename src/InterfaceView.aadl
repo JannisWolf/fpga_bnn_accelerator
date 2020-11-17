@@ -1,0 +1,145 @@
+---------------------------------------------------
+-- AADL2.2
+-- TASTE type interfaceview
+-- 
+-- generated code: do not edit
+---------------------------------------------------
+
+PACKAGE interfaceview::IV::speak_to_hw
+PUBLIC
+
+WITH interfaceview::IV::fpga_logic;
+WITH Taste;
+WITH DataView;
+WITH TASTE_IV_Properties;
+SUBPROGRAM PI_pulse
+END PI_pulse;
+
+SUBPROGRAM IMPLEMENTATION PI_pulse.others
+PROPERTIES
+  Compute_Execution_Time => 0 ms .. 0 ms;
+END PI_pulse.others;
+
+SUBPROGRAM RI_accelerator
+FEATURES
+  data_in : IN PARAMETER DataView::My_Integer3bit {
+    Taste::encoding => NATIVE;
+  };
+  data_out : OUT PARAMETER DataView::My_Integer3bit {
+    Taste::encoding => NATIVE;
+  };
+  buf_ful : OUT PARAMETER DataView::My_Integer1bit {
+    Taste::encoding => NATIVE;
+  };
+  res_ready : OUT PARAMETER DataView::My_Integer1bit {
+    Taste::encoding => NATIVE;
+  };
+END RI_accelerator;
+
+SUBPROGRAM IMPLEMENTATION RI_accelerator.others
+END RI_accelerator.others;
+
+SYSTEM speak_to_hw
+FEATURES
+  PI_pulse : PROVIDES SUBPROGRAM ACCESS interfaceview::IV::speak_to_hw::PI_pulse.others {
+    Taste::coordinates => "115275 62203";
+    Taste::RCMoperationKind => cyclic;
+    Taste::RCMperiod => 1000 ms;
+    Taste::Deadline => 0 ms;
+    Taste::InterfaceName => "pulse";
+  };
+  RI_accelerator : REQUIRES SUBPROGRAM ACCESS interfaceview::IV::fpga_logic::PI_accelerator.others {
+    Taste::coordinates => "128815 70078";
+    Taste::RCMoperationKind => any;
+    Taste::InterfaceName => "accelerator";
+    Taste::labelInheritance => "true";
+  };
+PROPERTIES
+  Source_Language => (C);
+  Taste::Active_Interfaces => any;
+END speak_to_hw;
+
+SYSTEM IMPLEMENTATION speak_to_hw.others
+END speak_to_hw.others;
+
+END interfaceview::IV::speak_to_hw;
+
+PACKAGE interfaceview::IV::fpga_logic
+PUBLIC
+
+WITH Taste;
+WITH DataView;
+WITH TASTE_IV_Properties;
+SUBPROGRAM PI_accelerator
+FEATURES
+  data_in : IN PARAMETER DataView::My_Integer3bit {
+    Taste::encoding => NATIVE;
+  };
+  data_out : OUT PARAMETER DataView::My_Integer3bit {
+    Taste::encoding => NATIVE;
+  };
+  buf_ful : OUT PARAMETER DataView::My_Integer1bit {
+    Taste::encoding => NATIVE;
+  };
+  res_ready : OUT PARAMETER DataView::My_Integer1bit {
+    Taste::encoding => NATIVE;
+  };
+END PI_accelerator;
+
+SUBPROGRAM IMPLEMENTATION PI_accelerator.others
+PROPERTIES
+  Compute_Execution_Time => 0 ms .. 0 ms;
+END PI_accelerator.others;
+
+SYSTEM fpga_logic
+FEATURES
+  PI_accelerator : PROVIDES SUBPROGRAM ACCESS interfaceview::IV::fpga_logic::PI_accelerator.others {
+    Taste::coordinates => "157949 68818";
+    Taste::RCMoperationKind => protected;
+    Taste::InterfaceName => "accelerator";
+  };
+PROPERTIES
+  Source_Language => (VHDL);
+  Taste::Active_Interfaces => any;
+END fpga_logic;
+
+SYSTEM IMPLEMENTATION fpga_logic.others
+END fpga_logic.others;
+
+END interfaceview::IV::fpga_logic;
+
+PACKAGE interfaceview::IV
+PUBLIC
+
+WITH interfaceview::IV::speak_to_hw;
+WITH interfaceview::IV::fpga_logic;
+WITH Taste;
+WITH DataView;
+WITH TASTE_IV_Properties;
+SYSTEM interfaceview
+PROPERTIES
+  Taste::dataView => ("DataView");
+  Taste::dataViewPath => ("DataView.aadl");
+END interfaceview;
+
+SYSTEM IMPLEMENTATION interfaceview.others
+SUBCOMPONENTS
+  speak_to_hw : SYSTEM interfaceview::IV::speak_to_hw::speak_to_hw.others {
+    Taste::coordinates => "97950 62203 128815 90706";
+  };
+  fpga_logic : SYSTEM interfaceview::IV::fpga_logic::fpga_logic.others {
+    Taste::coordinates => "157949 60943 191648 90706";
+  };
+CONNECTIONS
+  speak_to_hw_RI_accelerator_fpga_logic_PI_accelerator : SUBPROGRAM ACCESS fpga_logic.PI_accelerator -> speak_to_hw.RI_accelerator {
+    Taste::coordinates => "128815 70078 143382 70078 143382 68818 157949 68818";
+  };
+END interfaceview.others;
+
+PROPERTIES
+  Taste::dataView => ("DataView");
+  Taste::dataViewPath => ("DataView.aadl");
+  Taste::coordinates => "0 0 297000 210000";
+  Taste::version => "2.4";
+END interfaceview::IV;
+

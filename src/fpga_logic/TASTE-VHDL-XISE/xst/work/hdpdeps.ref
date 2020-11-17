@@ -1,0 +1,85 @@
+V3 52
+FL /home/taste/iris_fc/src/fpga_logic/TASTE-VHDL-XISE/accelerator.vhd 2020/11/12.11:38:12 P.20131013
+EN work/accelerator 1605548236 \
+      FL /home/taste/iris_fc/src/fpga_logic/TASTE-VHDL-XISE/accelerator.vhd \
+      PB ieee/std_logic_1164 1381692176 PB ieee/std_logic_arith 1381692177 \
+      PB ieee/STD_LOGIC_UNSIGNED 1381692179
+AR work/accelerator/arch 1605548237 \
+      FL /home/taste/iris_fc/src/fpga_logic/TASTE-VHDL-XISE/accelerator.vhd \
+      EN work/accelerator 1605548236 CP subsample64to1 CP upsample1to64 \
+      CP upsample3_64 CP fifo_regs CP fully_connected CP output_layer CP memory
+FL /home/taste/iris_fc/src/fpga_logic/TASTE-VHDL-XISE/Example1.vhd 2020/11/12.08:16:32 P.20131013
+EN work/TASTE 1605548238 \
+      FL /home/taste/iris_fc/src/fpga_logic/TASTE-VHDL-XISE/Example1.vhd \
+      PB ieee/std_logic_1164 1381692176 PB ieee/std_logic_arith 1381692177 \
+      PB ieee/STD_LOGIC_UNSIGNED 1381692179
+AR work/TASTE/arch 1605548239 \
+      FL /home/taste/iris_fc/src/fpga_logic/TASTE-VHDL-XISE/Example1.vhd \
+      EN work/TASTE 1605548238 CP ZestSC1_Interfaces CP accelerator
+FL /home/taste/iris_fc/src/fpga_logic/TASTE-VHDL-XISE/fifo_regs.vhd 2020/11/16.18:36:52 P.20131013
+EN work/fifo_regs 1605548224 \
+      FL /home/taste/iris_fc/src/fpga_logic/TASTE-VHDL-XISE/fifo_regs.vhd \
+      PB ieee/std_logic_1164 1381692176 LB STD PB std/TEXTIO 1381692176 \
+      PB ieee/STD_LOGIC_TEXTIO 1381692180
+AR work/fifo_regs/rtl 1605548225 \
+      FL /home/taste/iris_fc/src/fpga_logic/TASTE-VHDL-XISE/fifo_regs.vhd \
+      EN work/fifo_regs 1605548224
+FL /home/taste/iris_fc/src/fpga_logic/TASTE-VHDL-XISE/fully_connected.vhd 2020/11/12.11:10:30 P.20131013
+EN work/fully_connected 1605548226 \
+      FL /home/taste/iris_fc/src/fpga_logic/TASTE-VHDL-XISE/fully_connected.vhd \
+      PB ieee/std_logic_1164 1381692176
+AR work/fully_connected/Behavioral 1605548227 \
+      FL /home/taste/iris_fc/src/fpga_logic/TASTE-VHDL-XISE/fully_connected.vhd \
+      EN work/fully_connected 1605548226 CP xnor_popcount CP accumulate
+FL /home/taste/iris_fc/src/fpga_logic/TASTE-VHDL-XISE/output_layer.vhd 2020/11/12.11:21:43 P.20131013
+EN work/output_layer 1605548228 \
+      FL /home/taste/iris_fc/src/fpga_logic/TASTE-VHDL-XISE/output_layer.vhd \
+      PB ieee/std_logic_1164 1381692176
+AR work/output_layer/Behavioral 1605548229 \
+      FL /home/taste/iris_fc/src/fpga_logic/TASTE-VHDL-XISE/output_layer.vhd \
+      EN work/output_layer 1605548228 CP xnor_popcount CP accumulate
+FL /home/taste/iris_fc/src/fpga_logic/TASTE-VHDL-XISE/subsample.vhd 2020/11/12.09:30:29 P.20131013
+EN work/subsample 1605170587 \
+      FL /home/taste/iris_fc/src/fpga_logic/TASTE-VHDL-XISE/subsample.vhd \
+      PB ieee/std_logic_1164 1381692176
+AR work/subsample/Behavioral 1605170588 \
+      FL /home/taste/iris_fc/src/fpga_logic/TASTE-VHDL-XISE/subsample.vhd \
+      EN work/subsample 1605170587
+FL /home/taste/iris_fc/src/fpga_logic/TASTE-VHDL-XISE/upsample.vhd 2020/11/12.10:22:42 P.20131013
+EN work/upsample1to64 1605548220 \
+      FL /home/taste/iris_fc/src/fpga_logic/TASTE-VHDL-XISE/upsample.vhd \
+      PB ieee/std_logic_1164 1381692176
+AR work/upsample1to64/Behavioral 1605548221 \
+      FL /home/taste/iris_fc/src/fpga_logic/TASTE-VHDL-XISE/upsample.vhd \
+      EN work/upsample1to64 1605548220
+FL /home/taste/iris_fc/src/fpga_logic/TASTE-VHDL-XISE/upsample3_64.vhd 2020/11/12.11:36:04 P.20131013
+EN work/upsample3_64 1605548222 \
+      FL /home/taste/iris_fc/src/fpga_logic/TASTE-VHDL-XISE/upsample3_64.vhd \
+      PB ieee/std_logic_1164 1381692176
+AR work/upsample3_64/Behavioral 1605548223 \
+      FL /home/taste/iris_fc/src/fpga_logic/TASTE-VHDL-XISE/upsample3_64.vhd \
+      EN work/upsample3_64 1605548222
+FL /home/taste/iris_fc/src/fpga_logic/TASTE-VHDL-XISE/ZestSC1_Host.vhd 2016/10/13.16:42:13 P.20131013
+EN work/ZestSC1_Host 1605548230 \
+      FL /home/taste/iris_fc/src/fpga_logic/TASTE-VHDL-XISE/ZestSC1_Host.vhd \
+      PB ieee/std_logic_1164 1381692176 PB ieee/std_logic_arith 1381692177 \
+      PB ieee/STD_LOGIC_UNSIGNED 1381692179 LB UNISIM PH unisim/VCOMPONENTS 1381692182
+AR work/ZestSC1_Host/arch 1605548231 \
+      FL /home/taste/iris_fc/src/fpga_logic/TASTE-VHDL-XISE/ZestSC1_Host.vhd \
+      EN work/ZestSC1_Host 1605548230 CP ROC CP DCM CP BUFG
+FL /home/taste/iris_fc/src/fpga_logic/TASTE-VHDL-XISE/ZestSC1_Interfaces.vhd 2016/10/13.16:42:13 P.20131013
+EN work/ZestSC1_Interfaces 1605548234 \
+      FL /home/taste/iris_fc/src/fpga_logic/TASTE-VHDL-XISE/ZestSC1_Interfaces.vhd \
+      PB ieee/std_logic_1164 1381692176 PB ieee/std_logic_arith 1381692177 \
+      PB ieee/STD_LOGIC_UNSIGNED 1381692179
+AR work/ZestSC1_Interfaces/arch 1605548235 \
+      FL /home/taste/iris_fc/src/fpga_logic/TASTE-VHDL-XISE/ZestSC1_Interfaces.vhd \
+      EN work/ZestSC1_Interfaces 1605548234 CP ZestSC1_Host CP ZestSC1_SRAM
+FL /home/taste/iris_fc/src/fpga_logic/TASTE-VHDL-XISE/ZestSC1_SRAM.vhd 2016/10/13.16:42:13 P.20131013
+EN work/ZestSC1_SRAM 1605548232 \
+      FL /home/taste/iris_fc/src/fpga_logic/TASTE-VHDL-XISE/ZestSC1_SRAM.vhd \
+      PB ieee/std_logic_1164 1381692176 PB ieee/std_logic_arith 1381692177 \
+      PB ieee/STD_LOGIC_UNSIGNED 1381692179 LB UNISIM PH unisim/VCOMPONENTS 1381692182
+AR work/ZestSC1_SRAM/arch 1605548233 \
+      FL /home/taste/iris_fc/src/fpga_logic/TASTE-VHDL-XISE/ZestSC1_SRAM.vhd \
+      EN work/ZestSC1_SRAM 1605548232 CP DCM CP BUFG CP OFDDRCPE

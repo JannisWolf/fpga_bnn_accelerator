@@ -1,0 +1,24 @@
+Running: /home/taste/Xilinx/14.7/ISE_DS/ISE/bin/lin64/unwrapped/fuse -relaunch -intstyle "ise" -incremental -o "/home/taste/iris_fc/src/fpga_logic/TASTE-VHDL-XISE/module_fifo_regs_no_flags_tb_isim_beh.exe" -prj "/home/taste/iris_fc/src/fpga_logic/TASTE-VHDL-XISE/module_fifo_regs_no_flags_tb_beh.prj" "work.module_fifo_regs_no_flags_tb" 
+ISim P.20131013 (signature 0xfbc00daa)
+Number of CPUs detected in this system: 2
+Turning on mult-threading, number of parallel sub-compilation jobs: 4 
+Determining compilation order of HDL files
+Parsing VHDL file "/home/taste/iris_fc/src/fpga_logic/TASTE-VHDL-XISE/fifo_regs.vhd" into library work
+Parsing VHDL file "/home/taste/iris_fc/src/fpga_logic/TASTE-VHDL-XISE/tb_fifo.vhd" into library work
+Starting static elaboration
+Completed static elaboration
+Fuse Memory Usage: 85336 KB
+Fuse CPU Usage: 1270 ms
+Compiling package standard
+Compiling package std_logic_1164
+Compiling package numeric_std
+Compiling package textio
+Compiling package std_logic_textio
+Compiling architecture rtl of entity fifo_regs [\fifo_regs(3,4)\]
+Compiling architecture behave of entity module_fifo_regs_no_flags_tb
+Time Resolution for simulation is 1ps.
+Compiled 8 VHDL Units
+Built simulation executable /home/taste/iris_fc/src/fpga_logic/TASTE-VHDL-XISE/module_fifo_regs_no_flags_tb_isim_beh.exe
+Fuse Memory Usage: 399124 KB
+Fuse CPU Usage: 1390 ms
+GCC CPU Usage: 160 ms

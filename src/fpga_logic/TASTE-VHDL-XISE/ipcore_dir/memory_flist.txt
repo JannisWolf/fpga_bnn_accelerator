@@ -1,0 +1,15 @@
+# Output products list for <memory>
+memory/blk_mem_gen_v7_3_readme.txt
+memory/doc/blk_mem_gen_v7_3_vinfo.html
+memory/doc/pg058-blk-mem-gen.pdf
+memory.asy
+memory.gise
+memory.ngc
+memory.sym
+memory.v
+memory.veo
+memory.xco
+memory.xise
+memory_flist.txt
+memory_xmdf.tcl
+summary.log

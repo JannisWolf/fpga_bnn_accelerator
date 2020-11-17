@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- IMPORTANT: This is an internal file that has been generated
+     by the Xilinx ISE software.  Any direct editing or
+     changes made to this file may result in unpredictable
+     behavior or data corruption.  It is strongly advised that
+     users do not edit the contents of this file. -->
+<messages>
+<msg type="warning" file="Xst" num="753" delta="old" >&quot;<arg fmt="%s" index="1">/home/taste/iris_fc/src/fpga_logic/TASTE-VHDL-XISE/Example1.vhd</arg>&quot; line <arg fmt="%d" index="2">298</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">User_StreamDataIn</arg>&apos; of component &apos;<arg fmt="%s" index="4">ZestSC1_Interfaces</arg>&apos;.
+</msg>
+
+<msg type="warning" file="Xst" num="753" delta="old" >&quot;<arg fmt="%s" index="1">/home/taste/iris_fc/src/fpga_logic/TASTE-VHDL-XISE/Example1.vhd</arg>&quot; line <arg fmt="%d" index="2">298</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">User_StreamDataInWE</arg>&apos; of component &apos;<arg fmt="%s" index="4">ZestSC1_Interfaces</arg>&apos;.
+</msg>
+
+<msg type="warning" file="Xst" num="753" delta="old" >&quot;<arg fmt="%s" index="1">/home/taste/iris_fc/src/fpga_logic/TASTE-VHDL-XISE/Example1.vhd</arg>&quot; line <arg fmt="%d" index="2">298</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">User_StreamDataOutBusy</arg>&apos; of component &apos;<arg fmt="%s" index="4">ZestSC1_Interfaces</arg>&apos;.
+</msg>
+
+<msg type="warning" file="Xst" num="753" delta="old" >&quot;<arg fmt="%s" index="1">/home/taste/iris_fc/src/fpga_logic/TASTE-VHDL-XISE/Example1.vhd</arg>&quot; line <arg fmt="%d" index="2">298</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">User_SRAM_DR_VALID</arg>&apos; of component &apos;<arg fmt="%s" index="4">ZestSC1_Interfaces</arg>&apos;.
+</msg>
+
+<msg type="warning" file="Xst" num="753" delta="old" >&quot;<arg fmt="%s" index="1">/home/taste/iris_fc/src/fpga_logic/TASTE-VHDL-XISE/Example1.vhd</arg>&quot; line <arg fmt="%d" index="2">298</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">User_SRAM_DR</arg>&apos; of component &apos;<arg fmt="%s" index="4">ZestSC1_Interfaces</arg>&apos;.
+</msg>
+
+<msg type="warning" file="Xst" num="753" delta="old" >&quot;<arg fmt="%s" index="1">/home/taste/iris_fc/src/fpga_logic/TASTE-VHDL-XISE/ZestSC1_SRAM.vhd</arg>&quot; line <arg fmt="%d" index="2">226</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">CLK90</arg>&apos; of component &apos;<arg fmt="%s" index="4">DCM</arg>&apos;.
+</msg>
+
+<msg type="warning" file="Xst" num="753" delta="old" >&quot;<arg fmt="%s" index="1">/home/taste/iris_fc/src/fpga_logic/TASTE-VHDL-XISE/ZestSC1_SRAM.vhd</arg>&quot; line <arg fmt="%d" index="2">226</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">CLK180</arg>&apos; of component &apos;<arg fmt="%s" index="4">DCM</arg>&apos;.
+</msg>
+
+<msg type="warning" file="Xst" num="753" delta="old" >&quot;<arg fmt="%s" index="1">/home/taste/iris_fc/src/fpga_logic/TASTE-VHDL-XISE/ZestSC1_SRAM.vhd</arg>&quot; line <arg fmt="%d" index="2">226</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">CLK270</arg>&apos; of component &apos;<arg fmt="%s" index="4">DCM</arg>&apos;.
+</msg>
+
+<msg type="warning" file="Xst" num="753" delta="old" >&quot;<arg fmt="%s" index="1">/home/taste/iris_fc/src/fpga_logic/TASTE-VHDL-XISE/ZestSC1_SRAM.vhd</arg>&quot; line <arg fmt="%d" index="2">226</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">CLKDV</arg>&apos; of component &apos;<arg fmt="%s" index="4">DCM</arg>&apos;.
+</msg>
+
+<msg type="warning" file="Xst" num="753" delta="old" >&quot;<arg fmt="%s" index="1">/home/taste/iris_fc/src/fpga_logic/TASTE-VHDL-XISE/ZestSC1_SRAM.vhd</arg>&quot; line <arg fmt="%d" index="2">226</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">CLK2X</arg>&apos; of component &apos;<arg fmt="%s" index="4">DCM</arg>&apos;.
+</msg>
+
+<msg type="warning" file="Xst" num="753" delta="old" >&quot;<arg fmt="%s" index="1">/home/taste/iris_fc/src/fpga_logic/TASTE-VHDL-XISE/ZestSC1_SRAM.vhd</arg>&quot; line <arg fmt="%d" index="2">226</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">CLK2X180</arg>&apos; of component &apos;<arg fmt="%s" index="4">DCM</arg>&apos;.
+</msg>
+
+<msg type="warning" file="Xst" num="753" delta="old" >&quot;<arg fmt="%s" index="1">/home/taste/iris_fc/src/fpga_logic/TASTE-VHDL-XISE/ZestSC1_SRAM.vhd</arg>&quot; line <arg fmt="%d" index="2">226</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">CLKFX</arg>&apos; of component &apos;<arg fmt="%s" index="4">DCM</arg>&apos;.
+</msg>
+
+<msg type="warning" file="Xst" num="753" delta="old" >&quot;<arg fmt="%s" index="1">/home/taste/iris_fc/src/fpga_logic/TASTE-VHDL-XISE/ZestSC1_SRAM.vhd</arg>&quot; line <arg fmt="%d" index="2">226</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">CLKFX180</arg>&apos; of component &apos;<arg fmt="%s" index="4">DCM</arg>&apos;.
+</msg>
+
+<msg type="warning" file="Xst" num="753" delta="old" >&quot;<arg fmt="%s" index="1">/home/taste/iris_fc/src/fpga_logic/TASTE-VHDL-XISE/ZestSC1_SRAM.vhd</arg>&quot; line <arg fmt="%d" index="2">226</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">STATUS</arg>&apos; of component &apos;<arg fmt="%s" index="4">DCM</arg>&apos;.
+</msg>
+
+<msg type="warning" file="Xst" num="753" delta="old" >&quot;<arg fmt="%s" index="1">/home/taste/iris_fc/src/fpga_logic/TASTE-VHDL-XISE/ZestSC1_SRAM.vhd</arg>&quot; line <arg fmt="%d" index="2">226</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">PSDONE</arg>&apos; of component &apos;<arg fmt="%s" index="4">DCM</arg>&apos;.
+</msg>
+
+<msg type="warning" file="Xst" num="2211" delta="old" >&quot;<arg fmt="%s" index="1">/home/taste/iris_fc/src/fpga_logic/TASTE-VHDL-XISE/ZestSC1_SRAM.vhd</arg>&quot; line <arg fmt="%d" index="2">226</arg>: Instantiating black box module &lt;<arg fmt="%s" index="3">DCM</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2211" delta="old" >&quot;<arg fmt="%s" index="1">/home/taste/iris_fc/src/fpga_logic/TASTE-VHDL-XISE/ZestSC1_SRAM.vhd</arg>&quot; line <arg fmt="%d" index="2">253</arg>: Instantiating black box module &lt;<arg fmt="%s" index="3">BUFG</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2211" delta="old" >&quot;<arg fmt="%s" index="1">/home/taste/iris_fc/src/fpga_logic/TASTE-VHDL-XISE/ZestSC1_SRAM.vhd</arg>&quot; line <arg fmt="%d" index="2">264</arg>: Instantiating black box module &lt;<arg fmt="%s" index="3">OFDDRCPE</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2211" delta="old" >&quot;<arg fmt="%s" index="1">/home/taste/iris_fc/src/fpga_logic/TASTE-VHDL-XISE/accelerator.vhd</arg>&quot; line <arg fmt="%d" index="2">141</arg>: Instantiating black box module &lt;<arg fmt="%s" index="3">subsample64to1</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2211" delta="old" >&quot;<arg fmt="%s" index="1">/home/taste/iris_fc/src/fpga_logic/TASTE-VHDL-XISE/accelerator.vhd</arg>&quot; line <arg fmt="%d" index="2">208</arg>: Instantiating black box module &lt;<arg fmt="%s" index="3">memory</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2211" delta="old" >&quot;<arg fmt="%s" index="1">/home/taste/iris_fc/src/fpga_logic/TASTE-VHDL-XISE/accelerator.vhd</arg>&quot; line <arg fmt="%d" index="2">217</arg>: Instantiating black box module &lt;<arg fmt="%s" index="3">memory</arg>&gt;.
+</msg>
+
+<msg type="fatal" file="HDLParsers" num="200" delta="old" srcfile="../s/vhptype.c" srcline="174" srcrcs="$Id: vhptype.c,v 1.9 2005/08/22 17:03:34 mikev Exp $" >INTERNAL ERROR... while parsing &quot;<arg fmt="%s" index="1">/home/taste/iris_fc/src/fpga_logic/TASTE-VHDL-XISE/Example1.vhd</arg>&quot; line <arg fmt="%d" index="2">379</arg>. Contact your hot line.
+</msg>
+
+</messages>
+

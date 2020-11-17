@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=C:\work\Xilinx\ZestSC1\Examples\Example1\FPGA-VHDL\Example1.ncd
+OUTFILE=C:\work\Xilinx\ZestSC1\Examples\Example1\FPGA-VHDL\Example1.bit
+FAMILY=Spartan3
+PART=xc3s1000-5ft256
+WORKINGDIR=C:\work\Xilinx\ZestSC1\Examples\Example1\FPGA-VHDL
+LICENSE=WebPack
+USER_INFO=211253977_0_0_659

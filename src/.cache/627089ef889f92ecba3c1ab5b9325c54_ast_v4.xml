@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ASN1AST>
+    <Asn1File FileName="./dataview-uniq.asn">
+        <Asn1Module ID="SRC-DATAVIEW">
+        <ExportedTypes>
+            <ExportedType Name="My-Integer3bit" />
+            <ExportedType Name="My-Integer1bit" /> 
+        </ExportedTypes>
+        <ExportedVariables>
+         
+        </ExportedVariables>
+        <ImportedModules>
+            <ImportedModule ID="TASTE-BasicTypes">
+                <ImportedTypes>
+                    <ImportedType Name="T-Int32" />
+                    <ImportedType Name="T-UInt32" />
+                    <ImportedType Name="T-Int8" />
+                    <ImportedType Name="T-UInt8" />
+                    <ImportedType Name="T-Boolean" />
+                </ImportedTypes>
+                <ImportedVariables>
+                </ImportedVariables>
+            </ImportedModule>
+        </ImportedModules>
+        <TypeAssignments>
+            <TypeAssignment Name="My-Integer3bit" Line="5" CharPositionInLine="22"  AddedType = "False">
+                <Type Line="5" CharPositionInLine="22" Asn1File="./dataview-uniq.asn" HasAcnEncDecFunction = "True">
+                    <IntegerType Min="0" Max="7"/>
+                </Type>
+            </TypeAssignment>
+            <TypeAssignment Name="My-Integer1bit" Line="7" CharPositionInLine="22"  AddedType = "False">
+                <Type Line="7" CharPositionInLine="22" Asn1File="./dataview-uniq.asn" HasAcnEncDecFunction = "True">
+                    <IntegerType Min="0" Max="1"/>
+                </Type>
+            </TypeAssignment>
+        </TypeAssignments>
+        <VariablesAssignments>
+        </VariablesAssignments>
+        </Asn1Module>
+        <Asn1Module ID="TASTE-BasicTypes">
+        <ExportedTypes>
+            <ExportedType Name="T-Int32" />
+            <ExportedType Name="T-UInt32" />
+            <ExportedType Name="T-Int8" />
+            <ExportedType Name="T-UInt8" />
+            <ExportedType Name="T-Boolean" /> 
+        </ExportedTypes>
+        <ExportedVariables>
+         
+        </ExportedVariables>
+        <ImportedModules>
+        </ImportedModules>
+        <TypeAssignments>
+            <TypeAssignment Name="T-Int32" Line="52" CharPositionInLine="13"  AddedType = "False">
+                <Type Line="52" CharPositionInLine="13" Asn1File="./dataview-uniq.asn" HasAcnEncDecFunction = "True">
+                    <IntegerType Min="-2147483648" Max="2147483647"/>
+                </Type>
+            </TypeAssignment>
+            <TypeAssignment Name="T-UInt32" Line="54" CharPositionInLine="13"  AddedType = "False">
+                <Type Line="54" CharPositionInLine="13" Asn1File="./dataview-uniq.asn" HasAcnEncDecFunction = "True">
+                    <IntegerType Min="0" Max="4294967295"/>
+                </Type>
+            </TypeAssignment>
+            <TypeAssignment Name="T-Int8" Line="56" CharPositionInLine="11"  AddedType = "False">
+                <Type Line="56" CharPositionInLine="11" Asn1File="./dataview-uniq.asn" HasAcnEncDecFunction = "True">
+                    <IntegerType Min="-128" Max="127"/>
+                </Type>
+            </TypeAssignment>
+            <TypeAssignment Name="T-UInt8" Line="58" CharPositionInLine="12"  AddedType = "False">
+                <Type Line="58" CharPositionInLine="12" Asn1File="./dataview-uniq.asn" HasAcnEncDecFunction = "True">
+                    <IntegerType Min="0" Max="255"/>
+                </Type>
+            </TypeAssignment>
+            <TypeAssignment Name="T-Boolean" Line="60" CharPositionInLine="14"  AddedType = "False">
+                <Type Line="60" CharPositionInLine="14" Asn1File="./dataview-uniq.asn" HasAcnEncDecFunction = "True">
+                    <BooleanType />
+                </Type>
+            </TypeAssignment>
+        </TypeAssignments>
+        <VariablesAssignments>
+        </VariablesAssignments>
+        </Asn1Module>
+    </Asn1File>
+</ASN1AST>

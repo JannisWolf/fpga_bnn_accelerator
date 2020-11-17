@@ -1,0 +1,253 @@
+Release 14.7 - xst P.20131013 (lin64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> 
+Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.03 secs
+ 
+--> 
+Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.03 secs
+ 
+--> 
+Reading design: TASTE.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "TASTE.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "TASTE"
+Output Format                      : NGC
+Target Device                      : xc3s1000-5-ft256
+
+---- Source Options
+Top Module Name                    : TASTE
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : Yes
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : Yes
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Multiplier Style                   : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 500
+Add Generic Clock Buffer(BUFG)     : 8
+Register Duplication               : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Yes
+Use Synchronous Set                : Yes
+Use Synchronous Reset              : Yes
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+Verilog 2001                       : YES
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+---- Other Options
+Cores Search Directories           : {"ipcore_dir"  }
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling vhdl file "/home/taste/iris_fc/src/fpga_logic/TASTE-VHDL-XISE/upsample.vhd" in Library work.
+Architecture behavioral of Entity upsample1to64 is up to date.
+Compiling vhdl file "/home/taste/iris_fc/src/fpga_logic/TASTE-VHDL-XISE/upsample3_64.vhd" in Library work.
+Architecture behavioral of Entity upsample3_64 is up to date.
+Compiling vhdl file "/home/taste/iris_fc/src/fpga_logic/TASTE-VHDL-XISE/fifo_regs.vhd" in Library work.
+Entity <fifo_regs> compiled.
+Entity <fifo_regs> (Architecture <rtl>) compiled.
+Compiling vhdl file "/home/taste/iris_fc/src/fpga_logic/TASTE-VHDL-XISE/fully_connected.vhd" in Library work.
+Architecture behavioral of Entity fully_connected is up to date.
+Compiling vhdl file "/home/taste/iris_fc/src/fpga_logic/TASTE-VHDL-XISE/output_layer.vhd" in Library work.
+Architecture behavioral of Entity output_layer is up to date.
+Compiling vhdl file "/home/taste/iris_fc/src/fpga_logic/TASTE-VHDL-XISE/ZestSC1_Host.vhd" in Library work.
+Architecture arch of Entity zestsc1_host is up to date.
+Compiling vhdl file "/home/taste/iris_fc/src/fpga_logic/TASTE-VHDL-XISE/ZestSC1_SRAM.vhd" in Library work.
+Architecture arch of Entity zestsc1_sram is up to date.
+Compiling vhdl file "/home/taste/iris_fc/src/fpga_logic/TASTE-VHDL-XISE/ZestSC1_Interfaces.vhd" in Library work.
+Architecture arch of Entity zestsc1_interfaces is up to date.
+Compiling vhdl file "/home/taste/iris_fc/src/fpga_logic/TASTE-VHDL-XISE/accelerator.vhd" in Library work.
+Architecture arch of Entity accelerator is up to date.
+Compiling vhdl file "/home/taste/iris_fc/src/fpga_logic/TASTE-VHDL-XISE/Example1.vhd" in Library work.
+Architecture arch of Entity taste is up to date.
+Compiling verilog file "ipcore_dir/memory.v" in library work
+Module <memory> compiled
+No errors in compilation
+Analysis of file <"TASTE.prj"> succeeded.
+ 
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for entity <TASTE> in library <work> (architecture <arch>).
+
+Analyzing hierarchy for entity <ZestSC1_Interfaces> in library <work> (architecture <arch>).
+
+Analyzing hierarchy for entity <accelerator> in library <work> (architecture <arch>).
+
+Analyzing hierarchy for entity <ZestSC1_Host> in library <work> (architecture <arch>).
+
+Analyzing hierarchy for entity <ZestSC1_SRAM> in library <work> (architecture <arch>).
+
+Analyzing hierarchy for entity <upsample1to64> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <upsample3_64> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <fifo_regs> in library <work> (architecture <behavioral>) with generics.
+	g_DEPTH = 32
+	g_WIDTH = 4
+
+Analyzing hierarchy for entity <fully_connected> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <output_layer> in library <work> (architecture <behavioral>).
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing Entity <TASTE> in library <work> (Architecture <arch>).
+WARNING:Xst:753 - "/home/taste/iris_fc/src/fpga_logic/TASTE-VHDL-XISE/Example1.vhd" line 298: Unconnected output port 'User_StreamDataIn' of component 'ZestSC1_Interfaces'.
+WARNING:Xst:753 - "/home/taste/iris_fc/src/fpga_logic/TASTE-VHDL-XISE/Example1.vhd" line 298: Unconnected output port 'User_StreamDataInWE' of component 'ZestSC1_Interfaces'.
+WARNING:Xst:753 - "/home/taste/iris_fc/src/fpga_logic/TASTE-VHDL-XISE/Example1.vhd" line 298: Unconnected output port 'User_StreamDataOutBusy' of component 'ZestSC1_Interfaces'.
+WARNING:Xst:753 - "/home/taste/iris_fc/src/fpga_logic/TASTE-VHDL-XISE/Example1.vhd" line 298: Unconnected output port 'User_SRAM_DR_VALID' of component 'ZestSC1_Interfaces'.
+WARNING:Xst:753 - "/home/taste/iris_fc/src/fpga_logic/TASTE-VHDL-XISE/Example1.vhd" line 298: Unconnected output port 'User_SRAM_DR' of component 'ZestSC1_Interfaces'.
+Entity <TASTE> analyzed. Unit <TASTE> generated.
+
+Analyzing Entity <ZestSC1_Interfaces> in library <work> (Architecture <arch>).
+Entity <ZestSC1_Interfaces> analyzed. Unit <ZestSC1_Interfaces> generated.
+
+Analyzing Entity <ZestSC1_Host> in library <work> (Architecture <arch>).
+    Set user-defined property "CLKDV_DIVIDE =  2.0000000000000000" for instance <StreamDCM> in unit <ZestSC1_Host>.
+    Set user-defined property "CLKFX_DIVIDE =  1" for instance <StreamDCM> in unit <ZestSC1_Host>.
+    Set user-defined property "CLKFX_MULTIPLY =  2" for instance <StreamDCM> in unit <ZestSC1_Host>.
+    Set user-defined property "CLKIN_DIVIDE_BY_2 =  FALSE" for instance <StreamDCM> in unit <ZestSC1_Host>.
+    Set user-defined property "CLKOUT_PHASE_SHIFT =  NONE" for instance <StreamDCM> in unit <ZestSC1_Host>.
+    Set user-defined property "CLK_FEEDBACK =  1X" for instance <StreamDCM> in unit <ZestSC1_Host>.
+    Set user-defined property "DESKEW_ADJUST =  SYSTEM_SYNCHRONOUS" for instance <StreamDCM> in unit <ZestSC1_Host>.
+    Set user-defined property "DFS_FREQUENCY_MODE =  LOW" for instance <StreamDCM> in unit <ZestSC1_Host>.
+    Set user-defined property "DLL_FREQUENCY_MODE =  LOW" for instance <StreamDCM> in unit <ZestSC1_Host>.
+    Set user-defined property "DSS_MODE =  NONE" for instance <StreamDCM> in unit <ZestSC1_Host>.
+    Set user-defined property "DUTY_CYCLE_CORRECTION =  TRUE" for instance <StreamDCM> in unit <ZestSC1_Host>.
+    Set user-defined property "PHASE_SHIFT =  0" for instance <StreamDCM> in unit <ZestSC1_Host>.
+    Set user-defined property "STARTUP_WAIT =  FALSE" for instance <StreamDCM> in unit <ZestSC1_Host>.
+    Set user-defined property "CLKDV_DIVIDE =  2.0000000000000000" for instance <RegDCM> in unit <ZestSC1_Host>.
+    Set user-defined property "CLKFX_DIVIDE =  1" for instance <RegDCM> in unit <ZestSC1_Host>.
+    Set user-defined property "CLKFX_MULTIPLY =  2" for instance <RegDCM> in unit <ZestSC1_Host>.
+    Set user-defined property "CLKIN_DIVIDE_BY_2 =  FALSE" for instance <RegDCM> in unit <ZestSC1_Host>.
+    Set user-defined property "CLKOUT_PHASE_SHIFT =  NONE" for instance <RegDCM> in unit <ZestSC1_Host>.
+    Set user-defined property "CLK_FEEDBACK =  1X" for instance <RegDCM> in unit <ZestSC1_Host>.
+    Set user-defined property "DESKEW_ADJUST =  SYSTEM_SYNCHRONOUS" for instance <RegDCM> in unit <ZestSC1_Host>.
+    Set user-defined property "DFS_FREQUENCY_MODE =  LOW" for instance <RegDCM> in unit <ZestSC1_Host>.
+    Set user-defined property "DLL_FREQUENCY_MODE =  LOW" for instance <RegDCM> in unit <ZestSC1_Host>.
+    Set user-defined property "DSS_MODE =  NONE" for instance <RegDCM> in unit <ZestSC1_Host>.
+    Set user-defined property "DUTY_CYCLE_CORRECTION =  TRUE" for instance <RegDCM> in unit <ZestSC1_Host>.
+    Set user-defined property "PHASE_SHIFT =  0" for instance <RegDCM> in unit <ZestSC1_Host>.
+    Set user-defined property "STARTUP_WAIT =  FALSE" for instance <RegDCM> in unit <ZestSC1_Host>.
+Entity <ZestSC1_Host> analyzed. Unit <ZestSC1_Host> generated.
+
+Analyzing Entity <ZestSC1_SRAM> in library <work> (Architecture <arch>).
+WARNING:Xst:753 - "/home/taste/iris_fc/src/fpga_logic/TASTE-VHDL-XISE/ZestSC1_SRAM.vhd" line 226: Unconnected output port 'CLK90' of component 'DCM'.
+WARNING:Xst:753 - "/home/taste/iris_fc/src/fpga_logic/TASTE-VHDL-XISE/ZestSC1_SRAM.vhd" line 226: Unconnected output port 'CLK180' of component 'DCM'.
+WARNING:Xst:753 - "/home/taste/iris_fc/src/fpga_logic/TASTE-VHDL-XISE/ZestSC1_SRAM.vhd" line 226: Unconnected output port 'CLK270' of component 'DCM'.
+WARNING:Xst:753 - "/home/taste/iris_fc/src/fpga_logic/TASTE-VHDL-XISE/ZestSC1_SRAM.vhd" line 226: Unconnected output port 'CLKDV' of component 'DCM'.
+WARNING:Xst:753 - "/home/taste/iris_fc/src/fpga_logic/TASTE-VHDL-XISE/ZestSC1_SRAM.vhd" line 226: Unconnected output port 'CLK2X' of component 'DCM'.
+WARNING:Xst:753 - "/home/taste/iris_fc/src/fpga_logic/TASTE-VHDL-XISE/ZestSC1_SRAM.vhd" line 226: Unconnected output port 'CLK2X180' of component 'DCM'.
+WARNING:Xst:753 - "/home/taste/iris_fc/src/fpga_logic/TASTE-VHDL-XISE/ZestSC1_SRAM.vhd" line 226: Unconnected output port 'CLKFX' of component 'DCM'.
+WARNING:Xst:753 - "/home/taste/iris_fc/src/fpga_logic/TASTE-VHDL-XISE/ZestSC1_SRAM.vhd" line 226: Unconnected output port 'CLKFX180' of component 'DCM'.
+WARNING:Xst:753 - "/home/taste/iris_fc/src/fpga_logic/TASTE-VHDL-XISE/ZestSC1_SRAM.vhd" line 226: Unconnected output port 'STATUS' of component 'DCM'.
+WARNING:Xst:753 - "/home/taste/iris_fc/src/fpga_logic/TASTE-VHDL-XISE/ZestSC1_SRAM.vhd" line 226: Unconnected output port 'PSDONE' of component 'DCM'.
+WARNING:Xst:2211 - "/home/taste/iris_fc/src/fpga_logic/TASTE-VHDL-XISE/ZestSC1_SRAM.vhd" line 226: Instantiating black box module <DCM>.
+    Set user-defined property "CLKDV_DIVIDE =  2.0000000000000000" for instance <DCM_INST> in unit <ZestSC1_SRAM>.
+    Set user-defined property "CLKFX_DIVIDE =  1" for instance <DCM_INST> in unit <ZestSC1_SRAM>.
+    Set user-defined property "CLKFX_MULTIPLY =  4" for instance <DCM_INST> in unit <ZestSC1_SRAM>.
+    Set user-defined property "CLKIN_DIVIDE_BY_2 =  FALSE" for instance <DCM_INST> in unit <ZestSC1_SRAM>.
+    Set user-defined property "CLKOUT_PHASE_SHIFT =  FIXED" for instance <DCM_INST> in unit <ZestSC1_SRAM>.
+    Set user-defined property "CLK_FEEDBACK =  1X" for instance <DCM_INST> in unit <ZestSC1_SRAM>.
+    Set user-defined property "DESKEW_ADJUST =  SYSTEM_SYNCHRONOUS" for instance <DCM_INST> in unit <ZestSC1_SRAM>.
+    Set user-defined property "DFS_FREQUENCY_MODE =  LOW" for instance <DCM_INST> in unit <ZestSC1_SRAM>.
+    Set user-defined property "DLL_FREQUENCY_MODE =  LOW" for instance <DCM_INST> in unit <ZestSC1_SRAM>.
+    Set user-defined property "DSS_MODE =  NONE" for instance <DCM_INST> in unit <ZestSC1_SRAM>.
+    Set user-defined property "DUTY_CYCLE_CORRECTION =  TRUE" for instance <DCM_INST> in unit <ZestSC1_SRAM>.
+    Set user-defined property "PHASE_SHIFT =  -25" for instance <DCM_INST> in unit <ZestSC1_SRAM>.
+    Set user-defined property "STARTUP_WAIT =  FALSE" for instance <DCM_INST> in unit <ZestSC1_SRAM>.
+WARNING:Xst:2211 - "/home/taste/iris_fc/src/fpga_logic/TASTE-VHDL-XISE/ZestSC1_SRAM.vhd" line 253: Instantiating black box module <BUFG>.
+WARNING:Xst:2211 - "/home/taste/iris_fc/src/fpga_logic/TASTE-VHDL-XISE/ZestSC1_SRAM.vhd" line 264: Instantiating black box module <OFDDRCPE>.
+Entity <ZestSC1_SRAM> analyzed. Unit <ZestSC1_SRAM> generated.
+
+Analyzing Entity <accelerator> in library <work> (Architecture <arch>).
+WARNING:Xst:2211 - "/home/taste/iris_fc/src/fpga_logic/TASTE-VHDL-XISE/accelerator.vhd" line 141: Instantiating black box module <subsample64to1>.
+WARNING:Xst:2211 - "/home/taste/iris_fc/src/fpga_logic/TASTE-VHDL-XISE/accelerator.vhd" line 208: Instantiating black box module <memory>.
+WARNING:Xst:2211 - "/home/taste/iris_fc/src/fpga_logic/TASTE-VHDL-XISE/accelerator.vhd" line 217: Instantiating black box module <memory>.
+Entity <accelerator> analyzed. Unit <accelerator> generated.
+
+Analyzing Entity <upsample1to64> in library <work> (Architecture <behavioral>).
+Entity <upsample1to64> analyzed. Unit <upsample1to64> generated.
+
+Analyzing Entity <upsample3_64> in library <work> (Architecture <behavioral>).
+Entity <upsample3_64> analyzed. Unit <upsample3_64> generated.
+
+Analyzing generic Entity <fifo_regs> in library <work> (Architecture <behavioral>).
+FATAL_ERROR:HDLParsers:vhptype.c:174:$Id: vhptype.c,v 1.9 2005/08/22 17:03:34 mikev Exp $:200 - INTERNAL ERROR... while parsing "/home/taste/iris_fc/src/fpga_logic/TASTE-VHDL-XISE/Example1.vhd" line 379. Contact your hot line.
+
+     For technical support on this issue, please visit http://www.xilinx.com/support.
