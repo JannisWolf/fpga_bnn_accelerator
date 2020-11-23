@@ -29,6 +29,7 @@ use IEEE.STD_LOGIC_1164.ALL;
 --library UNISIM;
 --use UNISIM.VComponents.all;
 
+
 entity fully_connected is
 	 PORT (
 	   weights : IN STD_LOGIC;
