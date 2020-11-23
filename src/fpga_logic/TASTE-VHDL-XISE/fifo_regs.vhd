@@ -61,6 +61,7 @@ architecture rtl of fifo_regs is
  
   type t_FIFO_DATA is array (0 to g_DEPTH-1) of std_logic_vector(g_WIDTH-1 downto 0);
   signal r_FIFO_DATA : t_FIFO_DATA := (others => (others => '0'));
+
  
   signal r_WR_INDEX   : integer range 0 to g_DEPTH-1 := 0;
   signal r_RD_INDEX   : integer range 0 to g_DEPTH-1 := 0;
