@@ -29,6 +29,5 @@ use IEEE.STD_LOGIC_1164.ALL;
 --library UNISIM;
 --use UNISIM.VComponents.all;
 
-
 entity xnor_popcount is
 end xnor_popcount;
