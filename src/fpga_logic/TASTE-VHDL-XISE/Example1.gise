@@ -31,148 +31,50 @@
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_STX" xil_pn:name="TASTE.stx"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_REPORT" xil_pn:name="TASTE.syr"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST" xil_pn:name="TASTE.xst"/>
-    <file xil_pn:fileType="FILE_HTML" xil_pn:name="TASTE_envsettings.html"/>
     <file xil_pn:fileType="FILE_NCD" xil_pn:name="TASTE_guide.ncd" xil_pn:origination="imported"/>
     <file xil_pn:fileType="FILE_HTML" xil_pn:name="TASTE_summary.html"/>
-    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="TASTE_vhdl.prj"/>
     <file xil_pn:fileType="FILE_XRPT" xil_pn:name="TASTE_xst.xrpt"/>
     <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/xst.xmsgs"/>
-    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="accelerator_stx_beh.prj"/>
-    <file xil_pn:fileType="FILE_LOG" xil_pn:name="fuse.log"/>
-    <file xil_pn:fileType="FILE_LOG" xil_pn:name="ipcore_dir/coregen.log"/>
-    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="isim"/>
-    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_CMD" xil_pn:name="isim.cmd"/>
-    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="module_fifo_regs_no_flags_tb_beh.prj"/>
-    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="module_fifo_regs_no_flags_tb_isim_beh.exe"/>
-    <file xil_pn:fileType="FILE_ISIM_MISC" xil_pn:name="module_fifo_regs_no_flags_tb_isim_beh.wdb"/>
-    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="module_fifo_regs_no_flags_tb_stx_beh.prj"/>
-    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="subsample_isim_beh.exe"/>
-    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="subsample_stx_beh.prj"/>
-    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="tb_fifo_stx_beh.prj"/>
     <file xil_pn:fileType="FILE_FITTER_REPORT" xil_pn:name="webtalk_pn.xml"/>
-    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_INI" xil_pn:name="xilinxsim.ini"/>
     <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="xst"/>
   </files>
 
   <transforms xmlns="http://www.xilinx.com/XMLSchema">
-    <transform xil_pn:end_ts="1605461521" xil_pn:name="TRAN_copyInitialToAbstractSimulation" xil_pn:start_ts="1605461521">
+    <transform xil_pn:end_ts="1605657728" xil_pn:name="TRAN_schematicsToHdl" xil_pn:prop_ck="-1880371926197347865" xil_pn:start_ts="1605657728">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1605467599" xil_pn:in_ck="-7379874967910357801" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1605467599">
-      <status xil_pn:value="SuccessfullyRun"/>
-      <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForInputs"/>
-      <status xil_pn:value="OutOfDateForOutputs"/>
-      <status xil_pn:value="InputChanged"/>
-      <status xil_pn:value="OutputChanged"/>
-      <outfile xil_pn:name="Example1.vhd"/>
-      <outfile xil_pn:name="ZestSC1_Host.vhd"/>
-      <outfile xil_pn:name="ZestSC1_Interfaces.vhd"/>
-      <outfile xil_pn:name="ZestSC1_SRAM.vhd"/>
-      <outfile xil_pn:name="accelerator.vhd"/>
-      <outfile xil_pn:name="fifo_regs.vhd"/>
-      <outfile xil_pn:name="fully_connected.vhd"/>
-      <outfile xil_pn:name="output_layer.vhd"/>
-      <outfile xil_pn:name="subsample.vhd"/>
-      <outfile xil_pn:name="tb_fifo.vhd"/>
-      <outfile xil_pn:name="upsample.vhd"/>
-      <outfile xil_pn:name="upsample3_64.vhd"/>
-      <outfile xil_pn:name="xnor_popcount.vhd"/>
-    </transform>
-    <transform xil_pn:end_ts="1605467033" xil_pn:name="TRAN_xawsToSimhdl" xil_pn:prop_ck="5343691983030351345" xil_pn:start_ts="1605467033">
-      <status xil_pn:value="SuccessfullyRun"/>
-      <status xil_pn:value="ReadyToRun"/>
-    </transform>
-    <transform xil_pn:end_ts="1605467033" xil_pn:name="TRAN_schematicsToHdlSim" xil_pn:prop_ck="-5385724369885792343" xil_pn:start_ts="1605467033">
-      <status xil_pn:value="SuccessfullyRun"/>
-      <status xil_pn:value="ReadyToRun"/>
-    </transform>
-    <transform xil_pn:end_ts="1605461521" xil_pn:in_ck="-2674334883656940480" xil_pn:name="TRAN_regenerateCoresSim" xil_pn:prop_ck="3792745943568323983" xil_pn:start_ts="1605461521">
+    <transform xil_pn:end_ts="1605657728" xil_pn:in_ck="-2674334883656940480" xil_pn:name="TRAN_regenerateCores" xil_pn:prop_ck="3792745943568323983" xil_pn:start_ts="1605657728">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <outfile xil_pn:name="ipcore_dir/memory.ngc"/>
       <outfile xil_pn:name="ipcore_dir/memory.v"/>
     </transform>
-    <transform xil_pn:end_ts="1605467599" xil_pn:in_ck="2526748859634570435" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1605467599">
-      <status xil_pn:value="SuccessfullyRun"/>
-      <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForInputs"/>
-      <status xil_pn:value="OutOfDateForPredecessor"/>
-      <status xil_pn:value="OutOfDateForOutputs"/>
-      <status xil_pn:value="InputChanged"/>
-      <status xil_pn:value="OutputChanged"/>
-      <outfile xil_pn:name="Example1.vhd"/>
-      <outfile xil_pn:name="ZestSC1_Host.vhd"/>
-      <outfile xil_pn:name="ZestSC1_Interfaces.vhd"/>
-      <outfile xil_pn:name="ZestSC1_SRAM.vhd"/>
-      <outfile xil_pn:name="accelerator.vhd"/>
-      <outfile xil_pn:name="fifo_regs.vhd"/>
-      <outfile xil_pn:name="fully_connected.vhd"/>
-      <outfile xil_pn:name="ipcore_dir/memory.v"/>
-      <outfile xil_pn:name="output_layer.vhd"/>
-      <outfile xil_pn:name="subsample.vhd"/>
-      <outfile xil_pn:name="tb_fifo.vhd"/>
-      <outfile xil_pn:name="upsample.vhd"/>
-      <outfile xil_pn:name="upsample3_64.vhd"/>
-      <outfile xil_pn:name="xnor_popcount.vhd"/>
-    </transform>
-    <transform xil_pn:end_ts="1605467603" xil_pn:in_ck="2526748859634570435" xil_pn:name="TRAN_ISimulateBehavioralModelRunFuse" xil_pn:prop_ck="6846382861675798522" xil_pn:start_ts="1605467599">
-      <status xil_pn:value="SuccessfullyRun"/>
-      <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForInputs"/>
-      <status xil_pn:value="OutOfDateForPredecessor"/>
-      <status xil_pn:value="InputChanged"/>
-      <outfile xil_pn:name="fuse.log"/>
-      <outfile xil_pn:name="isim"/>
-      <outfile xil_pn:name="module_fifo_regs_no_flags_tb_beh.prj"/>
-      <outfile xil_pn:name="module_fifo_regs_no_flags_tb_isim_beh.exe"/>
-      <outfile xil_pn:name="xilinxsim.ini"/>
-    </transform>
-    <transform xil_pn:end_ts="1605467603" xil_pn:in_ck="3335533776505888160" xil_pn:name="TRAN_ISimulateBehavioralModel" xil_pn:prop_ck="-5075317690575625923" xil_pn:start_ts="1605467603">
-      <status xil_pn:value="SuccessfullyRun"/>
-      <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForPredecessor"/>
-      <outfile xil_pn:name="isim.cmd"/>
-      <outfile xil_pn:name="module_fifo_regs_no_flags_tb_isim_beh.wdb"/>
-    </transform>
-    <transform xil_pn:end_ts="1605167579" xil_pn:name="TRAN_copyInitialToXSTAbstractSynthesis" xil_pn:start_ts="1605167579">
+    <transform xil_pn:end_ts="1605657728" xil_pn:in_ck="3980669207868729007" xil_pn:name="TRAN_SubProjectAbstractToPreProxy" xil_pn:start_ts="1605657728">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1605460678" xil_pn:name="TRAN_schematicsToHdl" xil_pn:prop_ck="-1880371926197347865" xil_pn:start_ts="1605460678">
+    <transform xil_pn:end_ts="1605657728" xil_pn:name="TRAN_xawsTohdl" xil_pn:prop_ck="1365788287233736495" xil_pn:start_ts="1605657728">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1605460678" xil_pn:in_ck="-2674334883656940480" xil_pn:name="TRAN_regenerateCores" xil_pn:prop_ck="3792745943568323983" xil_pn:start_ts="1605460678">
-      <status xil_pn:value="SuccessfullyRun"/>
-      <status xil_pn:value="ReadyToRun"/>
-      <outfile xil_pn:name="ipcore_dir/memory.ngc"/>
-      <outfile xil_pn:name="ipcore_dir/memory.v"/>
-    </transform>
-    <transform xil_pn:name="TRAN_SubProjectAbstractToPreProxy">
+    <transform xil_pn:end_ts="1605657728" xil_pn:in_ck="3980669207868729007" xil_pn:name="TRAN_SubProjectPreToStructuralProxy" xil_pn:prop_ck="-7493580321282947067" xil_pn:start_ts="1605657728">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1605460678" xil_pn:name="TRAN_xawsTohdl" xil_pn:prop_ck="1365788287233736495" xil_pn:start_ts="1605460678">
+    <transform xil_pn:end_ts="1605657728" xil_pn:name="TRAN_platgen" xil_pn:prop_ck="-5429794886928604327" xil_pn:start_ts="1605657728">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1605167579" xil_pn:in_ck="3980669207868729007" xil_pn:name="TRAN_SubProjectPreToStructuralProxy" xil_pn:prop_ck="-7493580321282947067" xil_pn:start_ts="1605167579">
+    <transform xil_pn:end_ts="1605657738" xil_pn:in_ck="-7703407927336283914" xil_pn:name="TRANEXT_xstsynthesize_spartan3" xil_pn:prop_ck="-606073843095827709" xil_pn:start_ts="1605657728">
       <status xil_pn:value="SuccessfullyRun"/>
-      <status xil_pn:value="ReadyToRun"/>
-    </transform>
-    <transform xil_pn:end_ts="1605460678" xil_pn:name="TRAN_platgen" xil_pn:prop_ck="-5429794886928604327" xil_pn:start_ts="1605460678">
-      <status xil_pn:value="SuccessfullyRun"/>
-      <status xil_pn:value="ReadyToRun"/>
-    </transform>
-    <transform xil_pn:end_ts="1605547521" xil_pn:in_ck="-4236379164191991334" xil_pn:name="TRANEXT_xstsynthesize_spartan3" xil_pn:prop_ck="-606073843095827709" xil_pn:start_ts="1605547513">
-      <status xil_pn:value="FailedRun"/>
       <status xil_pn:value="WarningsGenerated"/>
       <status xil_pn:value="ReadyToRun"/>
       <outfile xil_pn:name="TASTE.lso"/>
       <outfile xil_pn:name="TASTE.ngc"/>
+      <outfile xil_pn:name="TASTE.ngr"/>
       <outfile xil_pn:name="TASTE.prj"/>
+      <outfile xil_pn:name="TASTE.stx"/>
       <outfile xil_pn:name="TASTE.syr"/>
       <outfile xil_pn:name="TASTE.xst"/>
       <outfile xil_pn:name="TASTE_xst.xrpt"/>

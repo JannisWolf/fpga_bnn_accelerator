@@ -5,14 +5,14 @@ Parameter TMPDIR set to xst/projnav.tmp
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.03 secs
+Total CPU time to Xst completion: 0.04 secs
  
 --> 
 Parameter xsthdpdir set to xst
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.03 secs
+Total CPU time to Xst completion: 0.04 secs
  
 --> 
 Reading design: TASTE.prj
@@ -110,27 +110,33 @@ Cores Search Directories           : {"ipcore_dir"  }
 =========================================================================
 *                          HDL Compilation                              *
 =========================================================================
-Compiling vhdl file "/home/taste/iris_fc/src/fpga_logic/TASTE-VHDL-XISE/upsample.vhd" in Library work.
-Architecture behavioral of Entity upsample1to64 is up to date.
-Compiling vhdl file "/home/taste/iris_fc/src/fpga_logic/TASTE-VHDL-XISE/upsample3_64.vhd" in Library work.
-Architecture behavioral of Entity upsample3_64 is up to date.
-Compiling vhdl file "/home/taste/iris_fc/src/fpga_logic/TASTE-VHDL-XISE/fifo_regs.vhd" in Library work.
-Entity <fifo_regs> compiled.
-Entity <fifo_regs> (Architecture <rtl>) compiled.
-Compiling vhdl file "/home/taste/iris_fc/src/fpga_logic/TASTE-VHDL-XISE/fully_connected.vhd" in Library work.
-Architecture behavioral of Entity fully_connected is up to date.
-Compiling vhdl file "/home/taste/iris_fc/src/fpga_logic/TASTE-VHDL-XISE/output_layer.vhd" in Library work.
-Architecture behavioral of Entity output_layer is up to date.
-Compiling vhdl file "/home/taste/iris_fc/src/fpga_logic/TASTE-VHDL-XISE/ZestSC1_Host.vhd" in Library work.
-Architecture arch of Entity zestsc1_host is up to date.
-Compiling vhdl file "/home/taste/iris_fc/src/fpga_logic/TASTE-VHDL-XISE/ZestSC1_SRAM.vhd" in Library work.
-Architecture arch of Entity zestsc1_sram is up to date.
-Compiling vhdl file "/home/taste/iris_fc/src/fpga_logic/TASTE-VHDL-XISE/ZestSC1_Interfaces.vhd" in Library work.
-Architecture arch of Entity zestsc1_interfaces is up to date.
-Compiling vhdl file "/home/taste/iris_fc/src/fpga_logic/TASTE-VHDL-XISE/accelerator.vhd" in Library work.
-Architecture arch of Entity accelerator is up to date.
-Compiling vhdl file "/home/taste/iris_fc/src/fpga_logic/TASTE-VHDL-XISE/Example1.vhd" in Library work.
-Architecture arch of Entity taste is up to date.
+Compiling vhdl file "/home/jannis/Code/fpga_bnn_accelerator/src/fpga_logic/TASTE-VHDL-XISE/upsample.vhd" in Library work.
+Entity <upsample1to64> compiled.
+Entity <upsample1to64> (Architecture <Behavioral>) compiled.
+Compiling vhdl file "/home/jannis/Code/fpga_bnn_accelerator/src/fpga_logic/TASTE-VHDL-XISE/upsample3_64.vhd" in Library work.
+Entity <upsample3_64> compiled.
+Entity <upsample3_64> (Architecture <Behavioral>) compiled.
+Compiling vhdl file "/home/jannis/Code/fpga_bnn_accelerator/src/fpga_logic/TASTE-VHDL-XISE/fully_connected.vhd" in Library work.
+Entity <fully_connected> compiled.
+Entity <fully_connected> (Architecture <Behavioral>) compiled.
+Compiling vhdl file "/home/jannis/Code/fpga_bnn_accelerator/src/fpga_logic/TASTE-VHDL-XISE/output_layer.vhd" in Library work.
+Entity <output_layer> compiled.
+Entity <output_layer> (Architecture <Behavioral>) compiled.
+Compiling vhdl file "/home/jannis/Code/fpga_bnn_accelerator/src/fpga_logic/TASTE-VHDL-XISE/ZestSC1_Host.vhd" in Library work.
+Entity <ZestSC1_Host> compiled.
+Entity <ZestSC1_Host> (Architecture <arch>) compiled.
+Compiling vhdl file "/home/jannis/Code/fpga_bnn_accelerator/src/fpga_logic/TASTE-VHDL-XISE/ZestSC1_SRAM.vhd" in Library work.
+Entity <ZestSC1_SRAM> compiled.
+Entity <ZestSC1_SRAM> (Architecture <arch>) compiled.
+Compiling vhdl file "/home/jannis/Code/fpga_bnn_accelerator/src/fpga_logic/TASTE-VHDL-XISE/ZestSC1_Interfaces.vhd" in Library work.
+Entity <ZestSC1_Interfaces> compiled.
+Entity <ZestSC1_Interfaces> (Architecture <arch>) compiled.
+Compiling vhdl file "/home/jannis/Code/fpga_bnn_accelerator/src/fpga_logic/TASTE-VHDL-XISE/accelerator.vhd" in Library work.
+Entity <accelerator> compiled.
+Entity <accelerator> (Architecture <arch>) compiled.
+Compiling vhdl file "/home/jannis/Code/fpga_bnn_accelerator/src/fpga_logic/TASTE-VHDL-XISE/Example1.vhd" in Library work.
+Entity <TASTE> compiled.
+Entity <TASTE> (Architecture <arch>) compiled.
 Compiling verilog file "ipcore_dir/memory.v" in library work
 Module <memory> compiled
 No errors in compilation
@@ -150,28 +156,24 @@ Analyzing hierarchy for entity <ZestSC1_Host> in library <work> (architecture <a
 
 Analyzing hierarchy for entity <ZestSC1_SRAM> in library <work> (architecture <arch>).
 
-Analyzing hierarchy for entity <upsample1to64> in library <work> (architecture <behavioral>).
+Analyzing hierarchy for entity <upsample1to64> in library <work> (architecture <Behavioral>).
 
-Analyzing hierarchy for entity <upsample3_64> in library <work> (architecture <behavioral>).
+Analyzing hierarchy for entity <upsample3_64> in library <work> (architecture <Behavioral>).
 
-Analyzing hierarchy for entity <fifo_regs> in library <work> (architecture <behavioral>) with generics.
-	g_DEPTH = 32
-	g_WIDTH = 4
+Analyzing hierarchy for entity <fully_connected> in library <work> (architecture <Behavioral>).
 
-Analyzing hierarchy for entity <fully_connected> in library <work> (architecture <behavioral>).
-
-Analyzing hierarchy for entity <output_layer> in library <work> (architecture <behavioral>).
+Analyzing hierarchy for entity <output_layer> in library <work> (architecture <Behavioral>).
 
 
 =========================================================================
 *                            HDL Analysis                               *
 =========================================================================
 Analyzing Entity <TASTE> in library <work> (Architecture <arch>).
-WARNING:Xst:753 - "/home/taste/iris_fc/src/fpga_logic/TASTE-VHDL-XISE/Example1.vhd" line 298: Unconnected output port 'User_StreamDataIn' of component 'ZestSC1_Interfaces'.
-WARNING:Xst:753 - "/home/taste/iris_fc/src/fpga_logic/TASTE-VHDL-XISE/Example1.vhd" line 298: Unconnected output port 'User_StreamDataInWE' of component 'ZestSC1_Interfaces'.
-WARNING:Xst:753 - "/home/taste/iris_fc/src/fpga_logic/TASTE-VHDL-XISE/Example1.vhd" line 298: Unconnected output port 'User_StreamDataOutBusy' of component 'ZestSC1_Interfaces'.
-WARNING:Xst:753 - "/home/taste/iris_fc/src/fpga_logic/TASTE-VHDL-XISE/Example1.vhd" line 298: Unconnected output port 'User_SRAM_DR_VALID' of component 'ZestSC1_Interfaces'.
-WARNING:Xst:753 - "/home/taste/iris_fc/src/fpga_logic/TASTE-VHDL-XISE/Example1.vhd" line 298: Unconnected output port 'User_SRAM_DR' of component 'ZestSC1_Interfaces'.
+WARNING:Xst:753 - "/home/jannis/Code/fpga_bnn_accelerator/src/fpga_logic/TASTE-VHDL-XISE/Example1.vhd" line 298: Unconnected output port 'User_StreamDataIn' of component 'ZestSC1_Interfaces'.
+WARNING:Xst:753 - "/home/jannis/Code/fpga_bnn_accelerator/src/fpga_logic/TASTE-VHDL-XISE/Example1.vhd" line 298: Unconnected output port 'User_StreamDataInWE' of component 'ZestSC1_Interfaces'.
+WARNING:Xst:753 - "/home/jannis/Code/fpga_bnn_accelerator/src/fpga_logic/TASTE-VHDL-XISE/Example1.vhd" line 298: Unconnected output port 'User_StreamDataOutBusy' of component 'ZestSC1_Interfaces'.
+WARNING:Xst:753 - "/home/jannis/Code/fpga_bnn_accelerator/src/fpga_logic/TASTE-VHDL-XISE/Example1.vhd" line 298: Unconnected output port 'User_SRAM_DR_VALID' of component 'ZestSC1_Interfaces'.
+WARNING:Xst:753 - "/home/jannis/Code/fpga_bnn_accelerator/src/fpga_logic/TASTE-VHDL-XISE/Example1.vhd" line 298: Unconnected output port 'User_SRAM_DR' of component 'ZestSC1_Interfaces'.
 Entity <TASTE> analyzed. Unit <TASTE> generated.
 
 Analyzing Entity <ZestSC1_Interfaces> in library <work> (Architecture <arch>).
@@ -207,17 +209,17 @@ Analyzing Entity <ZestSC1_Host> in library <work> (Architecture <arch>).
 Entity <ZestSC1_Host> analyzed. Unit <ZestSC1_Host> generated.
 
 Analyzing Entity <ZestSC1_SRAM> in library <work> (Architecture <arch>).
-WARNING:Xst:753 - "/home/taste/iris_fc/src/fpga_logic/TASTE-VHDL-XISE/ZestSC1_SRAM.vhd" line 226: Unconnected output port 'CLK90' of component 'DCM'.
-WARNING:Xst:753 - "/home/taste/iris_fc/src/fpga_logic/TASTE-VHDL-XISE/ZestSC1_SRAM.vhd" line 226: Unconnected output port 'CLK180' of component 'DCM'.
-WARNING:Xst:753 - "/home/taste/iris_fc/src/fpga_logic/TASTE-VHDL-XISE/ZestSC1_SRAM.vhd" line 226: Unconnected output port 'CLK270' of component 'DCM'.
-WARNING:Xst:753 - "/home/taste/iris_fc/src/fpga_logic/TASTE-VHDL-XISE/ZestSC1_SRAM.vhd" line 226: Unconnected output port 'CLKDV' of component 'DCM'.
-WARNING:Xst:753 - "/home/taste/iris_fc/src/fpga_logic/TASTE-VHDL-XISE/ZestSC1_SRAM.vhd" line 226: Unconnected output port 'CLK2X' of component 'DCM'.
-WARNING:Xst:753 - "/home/taste/iris_fc/src/fpga_logic/TASTE-VHDL-XISE/ZestSC1_SRAM.vhd" line 226: Unconnected output port 'CLK2X180' of component 'DCM'.
-WARNING:Xst:753 - "/home/taste/iris_fc/src/fpga_logic/TASTE-VHDL-XISE/ZestSC1_SRAM.vhd" line 226: Unconnected output port 'CLKFX' of component 'DCM'.
-WARNING:Xst:753 - "/home/taste/iris_fc/src/fpga_logic/TASTE-VHDL-XISE/ZestSC1_SRAM.vhd" line 226: Unconnected output port 'CLKFX180' of component 'DCM'.
-WARNING:Xst:753 - "/home/taste/iris_fc/src/fpga_logic/TASTE-VHDL-XISE/ZestSC1_SRAM.vhd" line 226: Unconnected output port 'STATUS' of component 'DCM'.
-WARNING:Xst:753 - "/home/taste/iris_fc/src/fpga_logic/TASTE-VHDL-XISE/ZestSC1_SRAM.vhd" line 226: Unconnected output port 'PSDONE' of component 'DCM'.
-WARNING:Xst:2211 - "/home/taste/iris_fc/src/fpga_logic/TASTE-VHDL-XISE/ZestSC1_SRAM.vhd" line 226: Instantiating black box module <DCM>.
+WARNING:Xst:753 - "/home/jannis/Code/fpga_bnn_accelerator/src/fpga_logic/TASTE-VHDL-XISE/ZestSC1_SRAM.vhd" line 226: Unconnected output port 'CLK90' of component 'DCM'.
+WARNING:Xst:753 - "/home/jannis/Code/fpga_bnn_accelerator/src/fpga_logic/TASTE-VHDL-XISE/ZestSC1_SRAM.vhd" line 226: Unconnected output port 'CLK180' of component 'DCM'.
+WARNING:Xst:753 - "/home/jannis/Code/fpga_bnn_accelerator/src/fpga_logic/TASTE-VHDL-XISE/ZestSC1_SRAM.vhd" line 226: Unconnected output port 'CLK270' of component 'DCM'.
+WARNING:Xst:753 - "/home/jannis/Code/fpga_bnn_accelerator/src/fpga_logic/TASTE-VHDL-XISE/ZestSC1_SRAM.vhd" line 226: Unconnected output port 'CLKDV' of component 'DCM'.
+WARNING:Xst:753 - "/home/jannis/Code/fpga_bnn_accelerator/src/fpga_logic/TASTE-VHDL-XISE/ZestSC1_SRAM.vhd" line 226: Unconnected output port 'CLK2X' of component 'DCM'.
+WARNING:Xst:753 - "/home/jannis/Code/fpga_bnn_accelerator/src/fpga_logic/TASTE-VHDL-XISE/ZestSC1_SRAM.vhd" line 226: Unconnected output port 'CLK2X180' of component 'DCM'.
+WARNING:Xst:753 - "/home/jannis/Code/fpga_bnn_accelerator/src/fpga_logic/TASTE-VHDL-XISE/ZestSC1_SRAM.vhd" line 226: Unconnected output port 'CLKFX' of component 'DCM'.
+WARNING:Xst:753 - "/home/jannis/Code/fpga_bnn_accelerator/src/fpga_logic/TASTE-VHDL-XISE/ZestSC1_SRAM.vhd" line 226: Unconnected output port 'CLKFX180' of component 'DCM'.
+WARNING:Xst:753 - "/home/jannis/Code/fpga_bnn_accelerator/src/fpga_logic/TASTE-VHDL-XISE/ZestSC1_SRAM.vhd" line 226: Unconnected output port 'STATUS' of component 'DCM'.
+WARNING:Xst:753 - "/home/jannis/Code/fpga_bnn_accelerator/src/fpga_logic/TASTE-VHDL-XISE/ZestSC1_SRAM.vhd" line 226: Unconnected output port 'PSDONE' of component 'DCM'.
+WARNING:Xst:2211 - "/home/jannis/Code/fpga_bnn_accelerator/src/fpga_logic/TASTE-VHDL-XISE/ZestSC1_SRAM.vhd" line 226: Instantiating black box module <DCM>.
     Set user-defined property "CLKDV_DIVIDE =  2.0000000000000000" for instance <DCM_INST> in unit <ZestSC1_SRAM>.
     Set user-defined property "CLKFX_DIVIDE =  1" for instance <DCM_INST> in unit <ZestSC1_SRAM>.
     Set user-defined property "CLKFX_MULTIPLY =  4" for instance <DCM_INST> in unit <ZestSC1_SRAM>.
@@ -231,23 +233,761 @@ WARNING:Xst:2211 - "/home/taste/iris_fc/src/fpga_logic/TASTE-VHDL-XISE/ZestSC1_S
     Set user-defined property "DUTY_CYCLE_CORRECTION =  TRUE" for instance <DCM_INST> in unit <ZestSC1_SRAM>.
     Set user-defined property "PHASE_SHIFT =  -25" for instance <DCM_INST> in unit <ZestSC1_SRAM>.
     Set user-defined property "STARTUP_WAIT =  FALSE" for instance <DCM_INST> in unit <ZestSC1_SRAM>.
-WARNING:Xst:2211 - "/home/taste/iris_fc/src/fpga_logic/TASTE-VHDL-XISE/ZestSC1_SRAM.vhd" line 253: Instantiating black box module <BUFG>.
-WARNING:Xst:2211 - "/home/taste/iris_fc/src/fpga_logic/TASTE-VHDL-XISE/ZestSC1_SRAM.vhd" line 264: Instantiating black box module <OFDDRCPE>.
+WARNING:Xst:2211 - "/home/jannis/Code/fpga_bnn_accelerator/src/fpga_logic/TASTE-VHDL-XISE/ZestSC1_SRAM.vhd" line 253: Instantiating black box module <BUFG>.
+WARNING:Xst:2211 - "/home/jannis/Code/fpga_bnn_accelerator/src/fpga_logic/TASTE-VHDL-XISE/ZestSC1_SRAM.vhd" line 264: Instantiating black box module <OFDDRCPE>.
 Entity <ZestSC1_SRAM> analyzed. Unit <ZestSC1_SRAM> generated.
 
 Analyzing Entity <accelerator> in library <work> (Architecture <arch>).
-WARNING:Xst:2211 - "/home/taste/iris_fc/src/fpga_logic/TASTE-VHDL-XISE/accelerator.vhd" line 141: Instantiating black box module <subsample64to1>.
-WARNING:Xst:2211 - "/home/taste/iris_fc/src/fpga_logic/TASTE-VHDL-XISE/accelerator.vhd" line 208: Instantiating black box module <memory>.
-WARNING:Xst:2211 - "/home/taste/iris_fc/src/fpga_logic/TASTE-VHDL-XISE/accelerator.vhd" line 217: Instantiating black box module <memory>.
+WARNING:Xst:2211 - "/home/jannis/Code/fpga_bnn_accelerator/src/fpga_logic/TASTE-VHDL-XISE/accelerator.vhd" line 141: Instantiating black box module <subsample64to1>.
+WARNING:Xst:2211 - "/home/jannis/Code/fpga_bnn_accelerator/src/fpga_logic/TASTE-VHDL-XISE/accelerator.vhd" line 165: Instantiating black box module <fifo_regs>.
+WARNING:Xst:2211 - "/home/jannis/Code/fpga_bnn_accelerator/src/fpga_logic/TASTE-VHDL-XISE/accelerator.vhd" line 208: Instantiating black box module <memory>.
+WARNING:Xst:2211 - "/home/jannis/Code/fpga_bnn_accelerator/src/fpga_logic/TASTE-VHDL-XISE/accelerator.vhd" line 217: Instantiating black box module <memory>.
 Entity <accelerator> analyzed. Unit <accelerator> generated.
 
-Analyzing Entity <upsample1to64> in library <work> (Architecture <behavioral>).
+Analyzing Entity <upsample1to64> in library <work> (Architecture <Behavioral>).
 Entity <upsample1to64> analyzed. Unit <upsample1to64> generated.
 
-Analyzing Entity <upsample3_64> in library <work> (Architecture <behavioral>).
+Analyzing Entity <upsample3_64> in library <work> (Architecture <Behavioral>).
 Entity <upsample3_64> analyzed. Unit <upsample3_64> generated.
 
-Analyzing generic Entity <fifo_regs> in library <work> (Architecture <behavioral>).
-FATAL_ERROR:HDLParsers:vhptype.c:174:$Id: vhptype.c,v 1.9 2005/08/22 17:03:34 mikev Exp $:200 - INTERNAL ERROR... while parsing "/home/taste/iris_fc/src/fpga_logic/TASTE-VHDL-XISE/Example1.vhd" line 379. Contact your hot line.
+Analyzing Entity <fully_connected> in library <work> (Architecture <Behavioral>).
+WARNING:Xst:2211 - "/home/jannis/Code/fpga_bnn_accelerator/src/fpga_logic/TASTE-VHDL-XISE/fully_connected.vhd" line 88: Instantiating black box module <xnor_popcount>.
+WARNING:Xst:2211 - "/home/jannis/Code/fpga_bnn_accelerator/src/fpga_logic/TASTE-VHDL-XISE/fully_connected.vhd" line 95: Instantiating black box module <xnor_popcount>.
+WARNING:Xst:2211 - "/home/jannis/Code/fpga_bnn_accelerator/src/fpga_logic/TASTE-VHDL-XISE/fully_connected.vhd" line 102: Instantiating black box module <xnor_popcount>.
+WARNING:Xst:2211 - "/home/jannis/Code/fpga_bnn_accelerator/src/fpga_logic/TASTE-VHDL-XISE/fully_connected.vhd" line 109: Instantiating black box module <xnor_popcount>.
+WARNING:Xst:2211 - "/home/jannis/Code/fpga_bnn_accelerator/src/fpga_logic/TASTE-VHDL-XISE/fully_connected.vhd" line 116: Instantiating black box module <xnor_popcount>.
+WARNING:Xst:2211 - "/home/jannis/Code/fpga_bnn_accelerator/src/fpga_logic/TASTE-VHDL-XISE/fully_connected.vhd" line 123: Instantiating black box module <xnor_popcount>.
+WARNING:Xst:2211 - "/home/jannis/Code/fpga_bnn_accelerator/src/fpga_logic/TASTE-VHDL-XISE/fully_connected.vhd" line 130: Instantiating black box module <xnor_popcount>.
+WARNING:Xst:2211 - "/home/jannis/Code/fpga_bnn_accelerator/src/fpga_logic/TASTE-VHDL-XISE/fully_connected.vhd" line 137: Instantiating black box module <xnor_popcount>.
+WARNING:Xst:2211 - "/home/jannis/Code/fpga_bnn_accelerator/src/fpga_logic/TASTE-VHDL-XISE/fully_connected.vhd" line 144: Instantiating black box module <xnor_popcount>.
+WARNING:Xst:2211 - "/home/jannis/Code/fpga_bnn_accelerator/src/fpga_logic/TASTE-VHDL-XISE/fully_connected.vhd" line 151: Instantiating black box module <xnor_popcount>.
+WARNING:Xst:2211 - "/home/jannis/Code/fpga_bnn_accelerator/src/fpga_logic/TASTE-VHDL-XISE/fully_connected.vhd" line 158: Instantiating black box module <accumulate>.
+Entity <fully_connected> analyzed. Unit <fully_connected> generated.
 
-     For technical support on this issue, please visit http://www.xilinx.com/support.
+Analyzing Entity <output_layer> in library <work> (Architecture <Behavioral>).
+WARNING:Xst:2211 - "/home/jannis/Code/fpga_bnn_accelerator/src/fpga_logic/TASTE-VHDL-XISE/output_layer.vhd" line 75: Instantiating black box module <xnor_popcount>.
+WARNING:Xst:2211 - "/home/jannis/Code/fpga_bnn_accelerator/src/fpga_logic/TASTE-VHDL-XISE/output_layer.vhd" line 82: Instantiating black box module <xnor_popcount>.
+WARNING:Xst:2211 - "/home/jannis/Code/fpga_bnn_accelerator/src/fpga_logic/TASTE-VHDL-XISE/output_layer.vhd" line 89: Instantiating black box module <xnor_popcount>.
+WARNING:Xst:2211 - "/home/jannis/Code/fpga_bnn_accelerator/src/fpga_logic/TASTE-VHDL-XISE/output_layer.vhd" line 97: Instantiating black box module <accumulate>.
+Entity <output_layer> analyzed. Unit <output_layer> generated.
+
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+INFO:Xst:2561 - Always blocking tristate driving signal <IO_CLK_N> in unit <TASTE> is removed.
+INFO:Xst:2561 - Always blocking tristate driving signal <IO_CLK_P> in unit <TASTE> is removed.
+INFO:Xst:2679 - Register <FIFOOutWriteCount> in unit <ZestSC1_Host> has a constant value of 0000 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <FIFOInReadCount> in unit <ZestSC1_Host> has a constant value of 0000 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <RegFIFOOutWriteCountG> in unit <ZestSC1_Host> has a constant value of 0000 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <RegFIFOInReadCountG> in unit <ZestSC1_Host> has a constant value of 0000 during circuit operation. The register is replaced by logic.
+
+Synthesizing Unit <upsample1to64>.
+    Related source file is "/home/jannis/Code/fpga_bnn_accelerator/src/fpga_logic/TASTE-VHDL-XISE/upsample.vhd".
+Unit <upsample1to64> synthesized.
+
+
+Synthesizing Unit <upsample3_64>.
+    Related source file is "/home/jannis/Code/fpga_bnn_accelerator/src/fpga_logic/TASTE-VHDL-XISE/upsample3_64.vhd".
+Unit <upsample3_64> synthesized.
+
+
+Synthesizing Unit <ZestSC1_Host>.
+    Related source file is "/home/jannis/Code/fpga_bnn_accelerator/src/fpga_logic/TASTE-VHDL-XISE/ZestSC1_Host.vhd".
+WARNING:Xst:647 - Input <USB_StreamFlags_n<2>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:646 - Signal <RegLastOE> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <FIFOOutDataCount<2:0>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <FIFOInDataCount<2:0>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+    Found 16x16-bit dual-port RAM <Mram_FIFOIn> for signal <FIFOIn>.
+    Found 16x16-bit dual-port RAM <Mram_FIFOOut> for signal <FIFOOut>.
+    Found 16-bit subtractor for signal <User_RegAddr>.
+    Found 8-bit tristate buffer for signal <USB_RegData>.
+    Found 16-bit tristate buffer for signal <USB_StreamData>.
+    Found 1-bit register for signal <DataOutRegFull>.
+    Found 4-bit up counter for signal <FIFOInWriteCount>.
+    Found 1-bit xor2 for signal <FIFOInWriteCountG$xor0000> created at line 515.
+    Found 1-bit xor2 for signal <FIFOInWriteCountG$xor0001> created at line 515.
+    Found 1-bit xor2 for signal <FIFOInWriteCountG$xor0002> created at line 515.
+    Found 1-bit xor2 for signal <FIFOInWriteCountInUser$xor0000> created at line 527.
+    Found 1-bit xor2 for signal <FIFOInWriteCountInUser$xor0001> created at line 527.
+    Found 1-bit xor2 for signal <FIFOInWriteCountInUser$xor0002> created at line 527.
+    Found 4-bit adder for signal <FIFOOutDataCount>.
+    Found 4-bit up counter for signal <FIFOOutReadCount>.
+    Found 1-bit xor2 for signal <FIFOOutReadCountG$xor0000> created at line 494.
+    Found 1-bit xor2 for signal <FIFOOutReadCountG$xor0001> created at line 494.
+    Found 1-bit xor2 for signal <FIFOOutReadCountG$xor0002> created at line 494.
+    Found 1-bit xor2 for signal <FIFOOutReadCountInUser$xor0000> created at line 506.
+    Found 1-bit xor2 for signal <FIFOOutReadCountInUser$xor0001> created at line 506.
+    Found 1-bit xor2 for signal <FIFOOutReadCountInUser$xor0002> created at line 506.
+    Found 1-bit register for signal <FX2FIFOEmpty>.
+    Found 1-bit register for signal <FX2FIFOFull>.
+    Found 1-bit register for signal <Granted>.
+    Found 12-bit down counter for signal <GrantPeriod>.
+    Found 3-bit up counter for signal <IntCounter>.
+    Found 1-bit register for signal <LastDir>.
+    Found 1-bit register for signal <ReadCycle>.
+    Found 4-bit register for signal <RegFIFOInWriteCountG>.
+    Found 4-bit register for signal <RegFIFOOutReadCountG>.
+    Found 1-bit register for signal <RegLastCS>.
+    Found 1-bit register for signal <RegLastRD>.
+    Found 1-bit register for signal <RegLastWR>.
+    Found 8-bit register for signal <RegOutput>.
+    Found 16-bit register for signal <StreamDataIn>.
+    Found 16-bit register for signal <StreamDataOut>.
+    Found 1-bit register for signal <StreamRead>.
+    Found 1-bit register for signal <StreamWrite>.
+    Found 1-bit register for signal <WriteCycle>.
+    Summary:
+	inferred   2 RAM(s).
+	inferred   4 Counter(s).
+	inferred  60 D-type flip-flop(s).
+	inferred   2 Adder/Subtractor(s).
+	inferred  24 Tristate(s).
+Unit <ZestSC1_Host> synthesized.
+
+
+Synthesizing Unit <ZestSC1_SRAM>.
+    Related source file is "/home/jannis/Code/fpga_bnn_accelerator/src/fpga_logic/TASTE-VHDL-XISE/ZestSC1_SRAM.vhd".
+WARNING:Xst:646 - Signal <dcm_locked> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+    Register <S_WE_N> equivalent to <OutputEnable0_n> has been removed
+    Found 9-bit tristate buffer for signal <S_DA>.
+    Found 9-bit tristate buffer for signal <S_DB>.
+    Found 18-bit register for signal <USER_DR>.
+    Found 23-bit register for signal <S_A>.
+    Found 1-bit register for signal <USER_DR_VALID>.
+    Found 18-bit register for signal <Data0>.
+    Found 18-bit register for signal <Data1>.
+    Found 1-bit register for signal <OutputEnable0_n>.
+    Found 1-bit register for signal <OutputEnable1_n>.
+    Found 1-bit register for signal <ReadDataValid0>.
+    Found 1-bit register for signal <ReadDataValid1>.
+    Found 1-bit register for signal <ReadDataValid2>.
+    Found 18-bit register for signal <S_DataOut>.
+    Found 1-bit register for signal <S_OutputEnable_n>.
+    Summary:
+	inferred 102 D-type flip-flop(s).
+	inferred  18 Tristate(s).
+Unit <ZestSC1_SRAM> synthesized.
+
+
+Synthesizing Unit <fully_connected>.
+    Related source file is "/home/jannis/Code/fpga_bnn_accelerator/src/fpga_logic/TASTE-VHDL-XISE/fully_connected.vhd".
+WARNING:Xst:647 - Input <clk_fc> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <calc_pos> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:1305 - Output <finish_calc> is never assigned. Tied to value 0.
+Unit <fully_connected> synthesized.
+
+
+Synthesizing Unit <output_layer>.
+    Related source file is "/home/jannis/Code/fpga_bnn_accelerator/src/fpga_logic/TASTE-VHDL-XISE/output_layer.vhd".
+WARNING:Xst:647 - Input <clk_fc> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <calc_pos> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:1305 - Output <finish_calc> is never assigned. Tied to value 0.
+Unit <output_layer> synthesized.
+
+
+Synthesizing Unit <ZestSC1_Interfaces>.
+    Related source file is "/home/jannis/Code/fpga_bnn_accelerator/src/fpga_logic/TASTE-VHDL-XISE/ZestSC1_Interfaces.vhd".
+Unit <ZestSC1_Interfaces> synthesized.
+
+
+Synthesizing Unit <accelerator>.
+    Related source file is "/home/jannis/Code/fpga_bnn_accelerator/src/fpga_logic/TASTE-VHDL-XISE/accelerator.vhd".
+WARNING:Xst:653 - Signal <counter2> is used but never assigned. This sourceless signal will be automatically connected to value 0000.
+WARNING:Xst:653 - Signal <counter1> is used but never assigned. This sourceless signal will be automatically connected to value 0000.
+    Found finite state machine <FSM_0> for signal <state>.
+    -----------------------------------------------------------------------
+    | States             | 3                                              |
+    | Transitions        | 4                                              |
+    | Inputs             | 1                                              |
+    | Outputs            | 3                                              |
+    | Clock              | CLK                       (rising_edge)        |
+    | Clock enable       | RST                       (negative)           |
+    | Power Up State     | wait_for_start_signal                          |
+    | Encoding           | automatic                                      |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found 1-bit register for signal <finish_accelerator>.
+    Summary:
+	inferred   1 Finite State Machine(s).
+	inferred   1 D-type flip-flop(s).
+Unit <accelerator> synthesized.
+
+
+Synthesizing Unit <TASTE>.
+    Related source file is "/home/jannis/Code/fpga_bnn_accelerator/src/fpga_logic/TASTE-VHDL-XISE/Example1.vhd".
+WARNING:Xst:2565 - Inout <User_Signals<4>> is never assigned.
+WARNING:Xst:2565 - Inout <User_Signals<5>> is never assigned.
+WARNING:Xst:2565 - Inout <User_Signals<6>> is never assigned.
+WARNING:Xst:2565 - Inout <User_Signals<7>> is never assigned.
+WARNING:Xst:2565 - Inout <IO_CLK_N> is never assigned.
+WARNING:Xst:2565 - Inout <IO_CLK_P> is never assigned.
+WARNING:Xst:2565 - Inout <User_Signals<0>> is never assigned.
+WARNING:Xst:2565 - Inout <User_Signals<1>> is never assigned.
+WARNING:Xst:2565 - Inout <User_Signals<2>> is never assigned.
+WARNING:Xst:2565 - Inout <User_Signals<3>> is never assigned.
+    Found 39-bit tristate buffer for signal <IO<40:2>>.
+    Found 64-bit register for signal <accelerator_data_in>.
+    Found 1-bit register for signal <accelerator_StartCalculationsInternal>.
+    Found 1-bit register for signal <accelerator_StartCalculationsInternalOld>.
+    Found 1-bit register for signal <accelerator_StartCalculationsPulse>.
+    Found 1-bit xor2 for signal <accelerator_StartCalculationsPulse$xor0000> created at line 228.
+    Found 22-bit up counter for signal <Count>.
+    Found 1-bit register for signal <Dir>.
+    Found 8-bit register for signal <LEDVal>.
+    Summary:
+	inferred   1 Counter(s).
+	inferred  68 D-type flip-flop(s).
+	inferred  39 Tristate(s).
+Unit <TASTE> synthesized.
+
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 2
+ 16x16-bit dual-port RAM                               : 2
+# Adders/Subtractors                                   : 2
+ 16-bit subtractor                                     : 1
+ 4-bit adder                                           : 1
+# Counters                                             : 5
+ 12-bit down counter                                   : 1
+ 22-bit up counter                                     : 1
+ 3-bit up counter                                      : 1
+ 4-bit up counter                                      : 2
+# Registers                                            : 99
+ 1-bit register                                        : 88
+ 16-bit register                                       : 2
+ 18-bit register                                       : 4
+ 23-bit register                                       : 1
+ 4-bit register                                        : 2
+ 8-bit register                                        : 2
+# Tristates                                            : 43
+ 1-bit tristate buffer                                 : 39
+ 16-bit tristate buffer                                : 1
+ 8-bit tristate buffer                                 : 1
+ 9-bit tristate buffer                                 : 2
+# Xors                                                 : 13
+ 1-bit xor2                                            : 13
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+Analyzing FSM <FSM_0> for best encoding.
+Optimizing FSM <Interface_accelerator/state/FSM> on signal <state[1:2]> with user encoding.
+-----------------------------------
+ State                 | Encoding
+-----------------------------------
+ wait_for_start_signal | 00
+ signal_received       | 01
+ work_done             | 10
+-----------------------------------
+Reading core <ipcore_dir/memory.ngc>.
+WARNING:Xst:1474 - Core <memory> was not loaded for <weights1> as one or more ports did not line up with component declaration.  Declared output port <douta> was not found in the core.  Please make sure that component declaration ports are consistent with the core ports including direction and bus-naming conventions.
+WARNING:Xst:1474 - Core <memory> was not loaded for <weights2> as one or more ports did not line up with component declaration.  Declared output port <douta> was not found in the core.  Please make sure that component declaration ports are consistent with the core ports including direction and bus-naming conventions.
+WARNING:Xst:1290 - Hierarchical block <up_res> is unconnected in block <Interface_accelerator>.
+   It will be removed from the design.
+INFO:Xst:2261 - The FF/Latch <S_A_0> in Unit <INST_SRAM> is equivalent to the following 40 FFs/Latches, which will be removed : <S_A_1> <S_A_2> <S_A_3> <S_A_4> <S_A_5> <S_A_6> <S_A_7> <S_A_8> <S_A_9> <S_A_10> <S_A_11> <S_A_12> <S_A_13> <S_A_14> <S_A_15> <S_A_16> <S_A_17> <S_A_18> <S_A_19> <S_A_20> <S_A_21> <S_A_22> <Data0_0> <Data0_1> <Data0_2> <Data0_3> <Data0_4> <Data0_5> <Data0_6> <Data0_7> <Data0_8> <Data0_9> <Data0_10> <Data0_11> <Data0_12> <Data0_13> <Data0_14> <Data0_15> <Data0_16> <Data0_17> 
+INFO:Xst:2261 - The FF/Latch <Data1_0> in Unit <INST_SRAM> is equivalent to the following 17 FFs/Latches, which will be removed : <Data1_1> <Data1_2> <Data1_3> <Data1_4> <Data1_5> <Data1_6> <Data1_7> <Data1_8> <Data1_9> <Data1_10> <Data1_11> <Data1_12> <Data1_13> <Data1_14> <Data1_15> <Data1_16> <Data1_17> 
+INFO:Xst:2261 - The FF/Latch <S_DataOut_0> in Unit <INST_SRAM> is equivalent to the following 17 FFs/Latches, which will be removed : <S_DataOut_1> <S_DataOut_2> <S_DataOut_3> <S_DataOut_4> <S_DataOut_5> <S_DataOut_6> <S_DataOut_7> <S_DataOut_8> <S_DataOut_9> <S_DataOut_10> <S_DataOut_11> <S_DataOut_12> <S_DataOut_13> <S_DataOut_14> <S_DataOut_15> <S_DataOut_16> <S_DataOut_17> 
+WARNING:Xst:1710 - FF/Latch <RegOutput_3> (without init value) has a constant value of 0 in block <INST_ZestSC1_Host>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <RegOutput_4> (without init value) has a constant value of 0 in block <INST_ZestSC1_Host>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <RegOutput_5> (without init value) has a constant value of 0 in block <INST_ZestSC1_Host>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <RegOutput_6> (without init value) has a constant value of 0 in block <INST_ZestSC1_Host>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <RegOutput_7> (without init value) has a constant value of 0 in block <INST_ZestSC1_Host>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <S_A_0> (without init value) has a constant value of 0 in block <INST_SRAM>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <OutputEnable0_n> (without init value) has a constant value of 1 in block <INST_SRAM>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Data1_0> (without init value) has a constant value of 0 in block <INST_SRAM>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <OutputEnable1_n> (without init value) has a constant value of 1 in block <INST_SRAM>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <S_DataOut_0> (without init value) has a constant value of 0 in block <INST_SRAM>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <S_OutputEnable_n> (without init value) has a constant value of 1 in block <INST_SRAM>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:2404 -  FFs/Latches <S_A<22:0>> (without init value) have a constant value of 0 in block <ZestSC1_SRAM>.
+WARNING:Xst:2404 -  FFs/Latches <Data0<17:0>> (without init value) have a constant value of 0 in block <ZestSC1_SRAM>.
+WARNING:Xst:2404 -  FFs/Latches <Data1<17:0>> (without init value) have a constant value of 0 in block <ZestSC1_SRAM>.
+WARNING:Xst:2404 -  FFs/Latches <S_DataOut<17:0>> (without init value) have a constant value of 0 in block <ZestSC1_SRAM>.
+
+Synthesizing (advanced) Unit <ZestSC1_Host>.
+INFO:Xst:3231 - The small RAM <Mram_FIFOOut> will be implemented on LUTs in order to maximize performance and save block RAM resources. If you want to force its implementation on block, use option/constraint ram_style.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 16-word x 16-bit                    |          |
+    |     clkA           | connected to signal <RegCLK>        | rise     |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <GND>           |          |
+    |     diA            | connected to signal <GND>           |          |
+    -----------------------------------------------------------------------
+    | Port B                                                              |
+    |     aspect ratio   | 16-word x 16-bit                    |          |
+    |     addrB          | connected to signal <FIFOOutReadCount> |          |
+    |     doB            | connected to internal node          |          |
+    -----------------------------------------------------------------------
+INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram_FIFOIn> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 16-word x 16-bit                    |          |
+    |     clkA           | connected to signal <StreamCLK>     | rise     |
+    |     weA            | connected to signal <ReadCycle>     | high     |
+    |     addrA          | connected to signal <FIFOInWriteCount> |          |
+    |     diA            | connected to signal <StreamDataIn>  |          |
+    -----------------------------------------------------------------------
+    | Port B                                                              |
+    |     aspect ratio   | 16-word x 16-bit                    |          |
+    |     addrB          | connected to signal <GND>           |          |
+    |     doB            | connected to signal <User_StreamDataIn> |          |
+    -----------------------------------------------------------------------
+Unit <ZestSC1_Host> synthesized (advanced).
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# FSMs                                                 : 1
+# RAMs                                                 : 2
+ 16x16-bit dual-port distributed RAM                   : 2
+# Adders/Subtractors                                   : 2
+ 16-bit subtractor                                     : 1
+ 4-bit adder                                           : 1
+# Counters                                             : 5
+ 12-bit down counter                                   : 1
+ 22-bit up counter                                     : 1
+ 3-bit up counter                                      : 1
+ 4-bit up counter                                      : 2
+# Registers                                            : 162
+ Flip-Flops                                            : 162
+# Xors                                                 : 13
+ 1-bit xor2                                            : 13
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+WARNING:Xst:1710 - FF/Latch <ReadDataValid0> (without init value) has a constant value of 0 in block <ZestSC1_SRAM>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <OutputEnable0_n> (without init value) has a constant value of 1 in block <ZestSC1_SRAM>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ReadDataValid1> (without init value) has a constant value of 0 in block <ZestSC1_SRAM>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <OutputEnable1_n> (without init value) has a constant value of 1 in block <ZestSC1_SRAM>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ReadDataValid2> (without init value) has a constant value of 0 in block <ZestSC1_SRAM>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <S_OutputEnable_n> (without init value) has a constant value of 1 in block <ZestSC1_SRAM>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <USER_DR_VALID> (without init value) has a constant value of 0 in block <ZestSC1_SRAM>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:2677 - Node <RegFIFOInWriteCountG_0> of sequential type is unconnected in block <ZestSC1_Host>.
+WARNING:Xst:2677 - Node <RegFIFOInWriteCountG_1> of sequential type is unconnected in block <ZestSC1_Host>.
+WARNING:Xst:2677 - Node <RegFIFOInWriteCountG_2> of sequential type is unconnected in block <ZestSC1_Host>.
+WARNING:Xst:2677 - Node <RegFIFOInWriteCountG_3> of sequential type is unconnected in block <ZestSC1_Host>.
+WARNING:Xst:2677 - Node <Interfaces/INST_ZestSC1_Host/Mram_FIFOIn16> of sequential type is unconnected in block <TASTE>.
+WARNING:Xst:2677 - Node <Interfaces/INST_ZestSC1_Host/Mram_FIFOIn15> of sequential type is unconnected in block <TASTE>.
+WARNING:Xst:2677 - Node <Interfaces/INST_ZestSC1_Host/Mram_FIFOIn13> of sequential type is unconnected in block <TASTE>.
+WARNING:Xst:2677 - Node <Interfaces/INST_ZestSC1_Host/Mram_FIFOIn12> of sequential type is unconnected in block <TASTE>.
+WARNING:Xst:2677 - Node <Interfaces/INST_ZestSC1_Host/Mram_FIFOIn14> of sequential type is unconnected in block <TASTE>.
+WARNING:Xst:2677 - Node <Interfaces/INST_ZestSC1_Host/Mram_FIFOIn10> of sequential type is unconnected in block <TASTE>.
+WARNING:Xst:2677 - Node <Interfaces/INST_ZestSC1_Host/Mram_FIFOIn9> of sequential type is unconnected in block <TASTE>.
+WARNING:Xst:2677 - Node <Interfaces/INST_ZestSC1_Host/Mram_FIFOIn11> of sequential type is unconnected in block <TASTE>.
+WARNING:Xst:2677 - Node <Interfaces/INST_ZestSC1_Host/Mram_FIFOIn7> of sequential type is unconnected in block <TASTE>.
+WARNING:Xst:2677 - Node <Interfaces/INST_ZestSC1_Host/Mram_FIFOIn6> of sequential type is unconnected in block <TASTE>.
+WARNING:Xst:2677 - Node <Interfaces/INST_ZestSC1_Host/Mram_FIFOIn8> of sequential type is unconnected in block <TASTE>.
+WARNING:Xst:2677 - Node <Interfaces/INST_ZestSC1_Host/Mram_FIFOIn4> of sequential type is unconnected in block <TASTE>.
+WARNING:Xst:2677 - Node <Interfaces/INST_ZestSC1_Host/Mram_FIFOIn3> of sequential type is unconnected in block <TASTE>.
+WARNING:Xst:2677 - Node <Interfaces/INST_ZestSC1_Host/Mram_FIFOIn5> of sequential type is unconnected in block <TASTE>.
+WARNING:Xst:2677 - Node <Interfaces/INST_ZestSC1_Host/Mram_FIFOIn1> of sequential type is unconnected in block <TASTE>.
+WARNING:Xst:2677 - Node <Interfaces/INST_ZestSC1_Host/Mram_FIFOIn2> of sequential type is unconnected in block <TASTE>.
+WARNING:Xst:2677 - Node <Interfaces/INST_ZestSC1_Host/StreamDataIn_15> of sequential type is unconnected in block <TASTE>.
+WARNING:Xst:2677 - Node <Interfaces/INST_ZestSC1_Host/StreamDataIn_14> of sequential type is unconnected in block <TASTE>.
+WARNING:Xst:2677 - Node <Interfaces/INST_ZestSC1_Host/StreamDataIn_13> of sequential type is unconnected in block <TASTE>.
+WARNING:Xst:2677 - Node <Interfaces/INST_ZestSC1_Host/StreamDataIn_12> of sequential type is unconnected in block <TASTE>.
+WARNING:Xst:2677 - Node <Interfaces/INST_ZestSC1_Host/StreamDataIn_11> of sequential type is unconnected in block <TASTE>.
+WARNING:Xst:2677 - Node <Interfaces/INST_ZestSC1_Host/StreamDataIn_10> of sequential type is unconnected in block <TASTE>.
+WARNING:Xst:2677 - Node <Interfaces/INST_ZestSC1_Host/StreamDataIn_9> of sequential type is unconnected in block <TASTE>.
+WARNING:Xst:2677 - Node <Interfaces/INST_ZestSC1_Host/StreamDataIn_8> of sequential type is unconnected in block <TASTE>.
+WARNING:Xst:2677 - Node <Interfaces/INST_ZestSC1_Host/StreamDataIn_7> of sequential type is unconnected in block <TASTE>.
+WARNING:Xst:2677 - Node <Interfaces/INST_ZestSC1_Host/StreamDataIn_6> of sequential type is unconnected in block <TASTE>.
+WARNING:Xst:2677 - Node <Interfaces/INST_ZestSC1_Host/StreamDataIn_5> of sequential type is unconnected in block <TASTE>.
+WARNING:Xst:2677 - Node <Interfaces/INST_ZestSC1_Host/StreamDataIn_4> of sequential type is unconnected in block <TASTE>.
+WARNING:Xst:2677 - Node <Interfaces/INST_ZestSC1_Host/StreamDataIn_3> of sequential type is unconnected in block <TASTE>.
+WARNING:Xst:2677 - Node <Interfaces/INST_ZestSC1_Host/StreamDataIn_2> of sequential type is unconnected in block <TASTE>.
+WARNING:Xst:2677 - Node <Interfaces/INST_ZestSC1_Host/StreamDataIn_1> of sequential type is unconnected in block <TASTE>.
+WARNING:Xst:2677 - Node <Interfaces/INST_ZestSC1_Host/StreamDataIn_0> of sequential type is unconnected in block <TASTE>.
+WARNING:Xst:2677 - Node <Interfaces/INST_ZestSC1_Host/RegFIFOOutReadCountG_3> of sequential type is unconnected in block <TASTE>.
+WARNING:Xst:2677 - Node <Interfaces/INST_ZestSC1_Host/RegFIFOOutReadCountG_2> of sequential type is unconnected in block <TASTE>.
+WARNING:Xst:2677 - Node <Interfaces/INST_ZestSC1_Host/RegFIFOOutReadCountG_1> of sequential type is unconnected in block <TASTE>.
+WARNING:Xst:2677 - Node <Interfaces/INST_ZestSC1_Host/RegFIFOOutReadCountG_0> of sequential type is unconnected in block <TASTE>.
+WARNING:Xst:2677 - Node <Interfaces/INST_SRAM/USER_DR_17> of sequential type is unconnected in block <TASTE>.
+WARNING:Xst:2677 - Node <Interfaces/INST_SRAM/USER_DR_16> of sequential type is unconnected in block <TASTE>.
+WARNING:Xst:2677 - Node <Interfaces/INST_SRAM/USER_DR_15> of sequential type is unconnected in block <TASTE>.
+WARNING:Xst:2677 - Node <Interfaces/INST_SRAM/USER_DR_14> of sequential type is unconnected in block <TASTE>.
+WARNING:Xst:2677 - Node <Interfaces/INST_SRAM/USER_DR_13> of sequential type is unconnected in block <TASTE>.
+WARNING:Xst:2677 - Node <Interfaces/INST_SRAM/USER_DR_12> of sequential type is unconnected in block <TASTE>.
+WARNING:Xst:2677 - Node <Interfaces/INST_SRAM/USER_DR_11> of sequential type is unconnected in block <TASTE>.
+WARNING:Xst:2677 - Node <Interfaces/INST_SRAM/USER_DR_10> of sequential type is unconnected in block <TASTE>.
+WARNING:Xst:2677 - Node <Interfaces/INST_SRAM/USER_DR_9> of sequential type is unconnected in block <TASTE>.
+WARNING:Xst:2677 - Node <Interfaces/INST_SRAM/USER_DR_8> of sequential type is unconnected in block <TASTE>.
+WARNING:Xst:2677 - Node <Interfaces/INST_SRAM/USER_DR_7> of sequential type is unconnected in block <TASTE>.
+WARNING:Xst:2677 - Node <Interfaces/INST_SRAM/USER_DR_6> of sequential type is unconnected in block <TASTE>.
+WARNING:Xst:2677 - Node <Interfaces/INST_SRAM/USER_DR_5> of sequential type is unconnected in block <TASTE>.
+WARNING:Xst:2677 - Node <Interfaces/INST_SRAM/USER_DR_4> of sequential type is unconnected in block <TASTE>.
+WARNING:Xst:2677 - Node <Interfaces/INST_SRAM/USER_DR_3> of sequential type is unconnected in block <TASTE>.
+WARNING:Xst:2677 - Node <Interfaces/INST_SRAM/USER_DR_2> of sequential type is unconnected in block <TASTE>.
+WARNING:Xst:2677 - Node <Interfaces/INST_SRAM/USER_DR_1> of sequential type is unconnected in block <TASTE>.
+WARNING:Xst:2677 - Node <Interfaces/INST_SRAM/USER_DR_0> of sequential type is unconnected in block <TASTE>.
+
+Optimizing unit <TASTE> ...
+
+Optimizing unit <fully_connected> ...
+
+Optimizing unit <accelerator> ...
+WARNING:Xst:1710 - FF/Latch <Interfaces/INST_ZestSC1_Host/RegOutput_7> (without init value) has a constant value of 0 in block <TASTE>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <Interfaces/INST_ZestSC1_Host/RegOutput_6> (without init value) has a constant value of 0 in block <TASTE>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <Interfaces/INST_ZestSC1_Host/RegOutput_5> (without init value) has a constant value of 0 in block <TASTE>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <Interfaces/INST_ZestSC1_Host/RegOutput_4> (without init value) has a constant value of 0 in block <TASTE>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <Interfaces/INST_ZestSC1_Host/RegOutput_3> (without init value) has a constant value of 0 in block <TASTE>. This FF/Latch will be trimmed during the optimization process.
+INFO:Xst:2399 - RAMs <Interfaces/INST_ZestSC1_Host/Mram_FIFOOut16>, <Interfaces/INST_ZestSC1_Host/Mram_FIFOOut14> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <Interfaces/INST_ZestSC1_Host/Mram_FIFOOut16>, <Interfaces/INST_ZestSC1_Host/Mram_FIFOOut13> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <Interfaces/INST_ZestSC1_Host/Mram_FIFOOut16>, <Interfaces/INST_ZestSC1_Host/Mram_FIFOOut15> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <Interfaces/INST_ZestSC1_Host/Mram_FIFOOut16>, <Interfaces/INST_ZestSC1_Host/Mram_FIFOOut11> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <Interfaces/INST_ZestSC1_Host/Mram_FIFOOut16>, <Interfaces/INST_ZestSC1_Host/Mram_FIFOOut10> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <Interfaces/INST_ZestSC1_Host/Mram_FIFOOut16>, <Interfaces/INST_ZestSC1_Host/Mram_FIFOOut12> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <Interfaces/INST_ZestSC1_Host/Mram_FIFOOut16>, <Interfaces/INST_ZestSC1_Host/Mram_FIFOOut9> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <Interfaces/INST_ZestSC1_Host/Mram_FIFOOut16>, <Interfaces/INST_ZestSC1_Host/Mram_FIFOOut8> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <Interfaces/INST_ZestSC1_Host/Mram_FIFOOut16>, <Interfaces/INST_ZestSC1_Host/Mram_FIFOOut6> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <Interfaces/INST_ZestSC1_Host/Mram_FIFOOut16>, <Interfaces/INST_ZestSC1_Host/Mram_FIFOOut5> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <Interfaces/INST_ZestSC1_Host/Mram_FIFOOut16>, <Interfaces/INST_ZestSC1_Host/Mram_FIFOOut7> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <Interfaces/INST_ZestSC1_Host/Mram_FIFOOut16>, <Interfaces/INST_ZestSC1_Host/Mram_FIFOOut3> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <Interfaces/INST_ZestSC1_Host/Mram_FIFOOut16>, <Interfaces/INST_ZestSC1_Host/Mram_FIFOOut2> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <Interfaces/INST_ZestSC1_Host/Mram_FIFOOut16>, <Interfaces/INST_ZestSC1_Host/Mram_FIFOOut4> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <Interfaces/INST_ZestSC1_Host/Mram_FIFOOut16>, <Interfaces/INST_ZestSC1_Host/Mram_FIFOOut1> are equivalent, second RAM is removed
+
+Mapping all equations...
+Building and optimizing final netlist ...
+INFO:Xst:2261 - The FF/Latch <Interfaces/INST_ZestSC1_Host/StreamDataOut_15> in Unit <TASTE> is equivalent to the following 15 FFs/Latches, which will be removed : <Interfaces/INST_ZestSC1_Host/StreamDataOut_14> <Interfaces/INST_ZestSC1_Host/StreamDataOut_13> <Interfaces/INST_ZestSC1_Host/StreamDataOut_12> <Interfaces/INST_ZestSC1_Host/StreamDataOut_11> <Interfaces/INST_ZestSC1_Host/StreamDataOut_10> <Interfaces/INST_ZestSC1_Host/StreamDataOut_9> <Interfaces/INST_ZestSC1_Host/StreamDataOut_8> <Interfaces/INST_ZestSC1_Host/StreamDataOut_7> <Interfaces/INST_ZestSC1_Host/StreamDataOut_6> <Interfaces/INST_ZestSC1_Host/StreamDataOut_5> <Interfaces/INST_ZestSC1_Host/StreamDataOut_4> <Interfaces/INST_ZestSC1_Host/StreamDataOut_3> <Interfaces/INST_ZestSC1_Host/StreamDataOut_2> <Interfaces/INST_ZestSC1_Host/StreamDataOut_1> <Interfaces/INST_ZestSC1_Host/StreamDataOut_0> 
+Found area constraint ratio of 100 (+ 5) on block TASTE, actual ratio is 1.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 140
+ Flip-Flops                                            : 140
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : TASTE.ngr
+Top Level Output File Name         : TASTE
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : No
+
+Design Statistics
+# IOs                              : 161
+
+Cell Usage :
+# BELS                             : 230
+#      GND                         : 1
+#      INV                         : 19
+#      LUT1                        : 21
+#      LUT2                        : 30
+#      LUT2_D                      : 1
+#      LUT3                        : 27
+#      LUT3_D                      : 1
+#      LUT3_L                      : 2
+#      LUT4                        : 47
+#      LUT4_D                      : 4
+#      LUT4_L                      : 3
+#      MUXCY                       : 38
+#      MUXF5                       : 1
+#      VCC                         : 1
+#      XORCY                       : 34
+# FlipFlops/Latches                : 141
+#      FD                          : 3
+#      FDC                         : 24
+#      FDCE                        : 37
+#      FDE                         : 69
+#      FDP                         : 1
+#      FDPE                        : 3
+#      FDR                         : 3
+#      OFDDRCPE                    : 1
+# RAMS                             : 1
+#      RAM16X1D                    : 1
+# Clock Buffers                    : 3
+#      BUFG                        : 3
+# IO Buffers                       : 149
+#      IBUF                        : 23
+#      IBUFG                       : 2
+#      IOBUF                       : 8
+#      OBUF                        : 43
+#      OBUFT                       : 73
+# DCMs                             : 3
+#      DCM                         : 3
+# Others                           : 20
+#      accumulate_1                : 1
+#      accumulate_2                : 1
+#      fifo_regs                   : 1
+#      memory                      : 2
+#      ROC                         : 1
+#      subsample64to1              : 1
+#      xnor_popcount_1             : 10
+#      xnor_popcount_2             : 3
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 3s1000ft256-5 
+
+ Number of Slices:                       94  out of   7680     1%  
+ Number of Slice Flip Flops:            141  out of  15360     0%  
+ Number of 4 input LUTs:                157  out of  15360     1%  
+    Number used as logic:               155
+    Number used as RAMs:                  2
+ Number of IOs:                         161
+ Number of bonded IOBs:                 150  out of    173    86%  
+ Number of GCLKs:                         3  out of      8    37%  
+ Number of DCMs:                          3  out of      4    75%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+----------------------------------------------------------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)                                                      | Load  |
+-----------------------------------+----------------------------------------------------------------------------+-------+
+USB_RegCLK                         | Interfaces/INST_ZestSC1_Host/RegDCM:CLK0                                   | 111   |
+USB_StreamCLK                      | Interfaces/INST_ZestSC1_Host/StreamDCM:CLK0                                | 30    |
+USB_RegCLK                         | Interfaces/INST_ZestSC1_Host/RegDCM:CLK0+Interfaces/INST_SRAM/DCM_INST:CLK0| 2     |
+-----------------------------------+----------------------------------------------------------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+----------------------------------------------------+---------------------------------------------+-------+
+Control Signal                                      | Buffer(FF name)                             | Load  |
+----------------------------------------------------+---------------------------------------------+-------+
+RST(Interfaces/INST_ZestSC1_Host/ROC_1:O)           | NONE(Count_0)                               | 65    |
+Interfaces/INST_ZestSC1_Host/RegOutput<3>(XST_GND:G)| NONE(Interfaces/INST_SRAM/OFDDRCPE_CLK_SRAM)| 4     |
+----------------------------------------------------+---------------------------------------------+-------+
+
+Timing Summary:
+---------------
+Speed Grade: -5
+
+   Minimum period: 6.114ns (Maximum Frequency: 163.548MHz)
+   Minimum input arrival time before clock: 9.311ns
+   Maximum output required time after clock: 9.172ns
+   Maximum combinational path delay: 9.386ns
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'USB_RegCLK'
+  Clock period: 5.746ns (frequency: 174.028MHz)
+  Total number of paths / destination ports: 650 / 120
+-------------------------------------------------------------------------
+Delay:               5.746ns (Levels of Logic = 8)
+  Source:            Count_4 (FF)
+  Destination:       Dir (FF)
+  Source Clock:      USB_RegCLK rising
+  Destination Clock: USB_RegCLK rising
+
+  Data Path: Count_4 to Dir
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q              2   0.626   1.040  Count_4 (Count_4)
+     LUT2:I0->O            1   0.479   0.000  LEDVal_cmp_eq0000_wg_lut<0> (LEDVal_cmp_eq0000_wg_lut<0>)
+     MUXCY:S->O            1   0.435   0.000  LEDVal_cmp_eq0000_wg_cy<0> (LEDVal_cmp_eq0000_wg_cy<0>)
+     MUXCY:CI->O           1   0.056   0.000  LEDVal_cmp_eq0000_wg_cy<1> (LEDVal_cmp_eq0000_wg_cy<1>)
+     MUXCY:CI->O           1   0.056   0.000  LEDVal_cmp_eq0000_wg_cy<2> (LEDVal_cmp_eq0000_wg_cy<2>)
+     MUXCY:CI->O           1   0.056   0.000  LEDVal_cmp_eq0000_wg_cy<3> (LEDVal_cmp_eq0000_wg_cy<3>)
+     MUXCY:CI->O           1   0.056   0.000  LEDVal_cmp_eq0000_wg_cy<4> (LEDVal_cmp_eq0000_wg_cy<4>)
+     MUXCY:CI->O           9   0.246   1.014  LEDVal_cmp_eq0000_wg_cy<5> (LEDVal_ClkEn_inv)
+     LUT4:I2->O            1   0.479   0.681  Dir_not000166 (Dir_not0001)
+     FDCE:CE                   0.524          Dir
+    ----------------------------------------
+    Total                      5.746ns (3.011ns logic, 2.736ns route)
+                                       (52.4% logic, 47.6% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'USB_StreamCLK'
+  Clock period: 6.114ns (frequency: 163.548MHz)
+  Total number of paths / destination ports: 501 / 56
+-------------------------------------------------------------------------
+Delay:               6.114ns (Levels of Logic = 3)
+  Source:            Interfaces/INST_ZestSC1_Host/FIFOOutReadCount_3 (FF)
+  Destination:       Interfaces/INST_ZestSC1_Host/StreamRead (FF)
+  Source Clock:      USB_StreamCLK rising
+  Destination Clock: USB_StreamCLK rising
+
+  Data Path: Interfaces/INST_ZestSC1_Host/FIFOOutReadCount_3 to Interfaces/INST_ZestSC1_Host/StreamRead
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDCE:C->Q             3   0.626   1.066  Interfaces/INST_ZestSC1_Host/FIFOOutReadCount_3 (Interfaces/INST_ZestSC1_Host/FIFOOutReadCount_3)
+     LUT4_D:I0->O          6   0.479   0.912  Interfaces/INST_ZestSC1_Host/StreamDataAvailable_and00001 (Interfaces/INST_ZestSC1_Host/StreamDataAvailable_and0000)
+     LUT3_D:I2->O          2   0.479   0.804  Interfaces/INST_ZestSC1_Host/LastDir_or00001 (Interfaces/INST_ZestSC1_Host/LastDir_or0000)
+     LUT4:I2->O            2   0.479   0.745  Interfaces/INST_ZestSC1_Host/StreamWrite_not0001 (Interfaces/INST_ZestSC1_Host/StreamWrite_not0001)
+     FDCE:CE                   0.524          Interfaces/INST_ZestSC1_Host/StreamWrite
+    ----------------------------------------
+    Total                      6.114ns (2.587ns logic, 3.527ns route)
+                                       (42.3% logic, 57.7% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'USB_RegCLK'
+  Total number of paths / destination ports: 1443 / 139
+-------------------------------------------------------------------------
+Offset:              9.311ns (Levels of Logic = 6)
+  Source:            USB_RegAddr<10> (PAD)
+  Destination:       accelerator_data_in_24 (FF)
+  Destination Clock: USB_RegCLK rising
+
+  Data Path: USB_RegAddr<10> to accelerator_data_in_24
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             1   0.715   0.976  USB_RegAddr_10_IBUF (USB_RegAddr_10_IBUF)
+     LUT3:I0->O            1   0.479   0.976  accelerator_StartCalculationsInternal_cmp_eq00001117 (accelerator_StartCalculationsInternal_cmp_eq00001117)
+     LUT3:I0->O            1   0.479   0.704  accelerator_StartCalculationsInternal_cmp_eq00001164_SW0 (N157)
+     LUT4:I3->O            9   0.479   1.250  accelerator_StartCalculationsInternal_cmp_eq00001164 (DataOut_and0000)
+     LUT4:I0->O            1   0.479   0.851  accelerator_data_in_1_and000021_SW1 (N137)
+     LUT4:I1->O            8   0.479   0.921  accelerator_data_in_24_and00001 (accelerator_data_in_24_and0000)
+     FDE:CE                    0.524          accelerator_data_in_24
+    ----------------------------------------
+    Total                      9.311ns (3.634ns logic, 5.677ns route)
+                                       (39.0% logic, 61.0% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'USB_StreamCLK'
+  Total number of paths / destination ports: 12 / 7
+-------------------------------------------------------------------------
+Offset:              5.432ns (Levels of Logic = 4)
+  Source:            USB_StreamFX2Rdy (PAD)
+  Destination:       Interfaces/INST_ZestSC1_Host/FX2FIFOEmpty (FF)
+  Destination Clock: USB_StreamCLK rising
+
+  Data Path: USB_StreamFX2Rdy to Interfaces/INST_ZestSC1_Host/FX2FIFOEmpty
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             6   0.715   1.148  USB_StreamFX2Rdy_IBUF (USB_StreamFX2Rdy_IBUF)
+     LUT2_D:I0->LO         1   0.479   0.123  Interfaces/INST_ZestSC1_Host/StreamReadStrobe_SW0 (N173)
+     LUT4:I3->O            2   0.479   0.804  Interfaces/INST_ZestSC1_Host/StreamReadStrobe (Interfaces/INST_ZestSC1_Host/StreamReadStrobe)
+     LUT3:I2->O            1   0.479   0.681  Interfaces/INST_ZestSC1_Host/FX2FIFOEmpty_not00011 (Interfaces/INST_ZestSC1_Host/FX2FIFOEmpty_not0001)
+     FDPE:CE                   0.524          Interfaces/INST_ZestSC1_Host/FX2FIFOEmpty
+    ----------------------------------------
+    Total                      5.432ns (2.676ns logic, 2.756ns route)
+                                       (49.3% logic, 50.7% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'USB_RegCLK'
+  Total number of paths / destination ports: 77 / 77
+-------------------------------------------------------------------------
+Offset:              7.478ns (Levels of Logic = 2)
+  Source:            LEDVal_6 (FF)
+  Destination:       IO<45> (PAD)
+  Source Clock:      USB_RegCLK rising
+
+  Data Path: LEDVal_6 to IO<45>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDCE:C->Q             5   0.626   0.783  LEDVal_6 (LEDVal_6)
+     INV:I->O              1   0.479   0.681  LEDs<6>1_INV_0 (IO_45_OBUF)
+     OBUF:I->O                 4.909          IO_45_OBUF (IO<45>)
+    ----------------------------------------
+    Total                      7.478ns (6.014ns logic, 1.464ns route)
+                                       (80.4% logic, 19.6% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'USB_StreamCLK'
+  Total number of paths / destination ports: 57 / 20
+-------------------------------------------------------------------------
+Offset:              9.172ns (Levels of Logic = 3)
+  Source:            Interfaces/INST_ZestSC1_Host/ReadCycle (FF)
+  Destination:       USB_StreamSLRD_n (PAD)
+  Source Clock:      USB_StreamCLK rising
+
+  Data Path: Interfaces/INST_ZestSC1_Host/ReadCycle to USB_StreamSLRD_n
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q              6   0.626   1.023  Interfaces/INST_ZestSC1_Host/ReadCycle (Interfaces/INST_ZestSC1_Host/ReadCycle)
+     LUT2_D:I1->O          1   0.479   0.976  Interfaces/INST_ZestSC1_Host/StreamReadStrobe_SW0 (N171)
+     LUT4:I0->O            1   0.479   0.681  Interfaces/INST_ZestSC1_Host/USB_StreamSLRD_n1 (USB_StreamSLRD_n_OBUF)
+     OBUF:I->O                 4.909          USB_StreamSLRD_n_OBUF (USB_StreamSLRD_n)
+    ----------------------------------------
+    Total                      9.172ns (6.493ns logic, 2.679ns route)
+                                       (70.8% logic, 29.2% route)
+
+=========================================================================
+Timing constraint: Default path analysis
+  Total number of paths / destination ports: 115 / 99
+-------------------------------------------------------------------------
+Delay:               9.386ns (Levels of Logic = 4)
+  Source:            USB_StreamFX2Rdy (PAD)
+  Destination:       USB_StreamSLRD_n (PAD)
+
+  Data Path: USB_StreamFX2Rdy to USB_StreamSLRD_n
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             6   0.715   1.148  USB_StreamFX2Rdy_IBUF (USB_StreamFX2Rdy_IBUF)
+     LUT2_D:I0->O          1   0.479   0.976  Interfaces/INST_ZestSC1_Host/StreamReadStrobe_SW0 (N171)
+     LUT4:I0->O            1   0.479   0.681  Interfaces/INST_ZestSC1_Host/USB_StreamSLRD_n1 (USB_StreamSLRD_n_OBUF)
+     OBUF:I->O                 4.909          USB_StreamSLRD_n_OBUF (USB_StreamSLRD_n)
+    ----------------------------------------
+    Total                      9.386ns (6.582ns logic, 2.804ns route)
+                                       (70.1% logic, 29.9% route)
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 7.00 secs
+Total CPU time to Xst completion: 6.87 secs
+ 
+--> 
+
+
+Total memory usage is 541192 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :  148 (   0 filtered)
+Number of infos    :   27 (   0 filtered)
+

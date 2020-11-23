@@ -1,2 +1,0 @@
-vhdl isim_temp "fifo_regs.vhd"
-vhdl isim_temp "tb_fifo.vhd"

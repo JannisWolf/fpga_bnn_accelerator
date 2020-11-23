@@ -11,13 +11,13 @@
          <ClosedNode>/TASTE - arch |home|taste|iris_fc|src|fpga_logic|TASTE-VHDL-XISE|Example1.vhd/Interface_accelerator - accelerator - arch/fc2 - output_layer - Behavioral</ClosedNode>
       </ClosedNodes>
       <SelectedItems>
-         <SelectedItem>Interface_accelerator - accelerator - arch (/home/taste/iris_fc/src/fpga_logic/TASTE-VHDL-XISE/accelerator.vhd)</SelectedItem>
+         <SelectedItem>TASTE - arch (/home/jannis/Code/fpga_bnn_accelerator/src/fpga_logic/TASTE-VHDL-XISE/Example1.vhd)</SelectedItem>
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
-      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000020200000001000000010000006400000202000000020000000000000000000000000200000064ffffffff000000810000000300000002000002020000000100000003000000000000000100000003</ViewHeaderState>
+      <ViewHeaderState orientation="horizontal" >000000ff0000000000000001000000010000000000000000000000000000000002020000000100000001000000640000022c000000020000000000000000000000000200000064ffffffff0000008100000003000000020000022c0000000100000003000000000000000100000003</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >true</UserChangedColumnWidths>
-      <CurrentItem>Interface_accelerator - accelerator - arch (/home/taste/iris_fc/src/fpga_logic/TASTE-VHDL-XISE/accelerator.vhd)</CurrentItem>
+      <CurrentItem>TASTE - arch (/home/jannis/Code/fpga_bnn_accelerator/src/fpga_logic/TASTE-VHDL-XISE/Example1.vhd)</CurrentItem>
    </ItemView>
    <ItemView engineview="SynthesisOnly" sourcetype="DESUT_VHDL_ARCHITECTURE" guiview="Process" >
       <ClosedNodes>
@@ -33,7 +33,7 @@
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
-      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000000000000000000f1000000010000000100000000000000000000000064ffffffff000000810000000000000001000000f10000000100000000</ViewHeaderState>
+      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000000000000000000f6000000010000000100000000000000000000000064ffffffff000000810000000000000001000000f60000000100000000</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
       <CurrentItem></CurrentItem>
    </ItemView>
@@ -46,7 +46,7 @@
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
-      <ViewHeaderState orientation="horizontal" >000000ff0000000000000001000000000000000001000000000000000000000000000000000000039c000000040101000100000000000000000000000064ffffffff000000810000000000000004000000b60000000100000000000000d10000000100000000000000840000000100000000000001910000000100000000</ViewHeaderState>
+      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000000000000000100000000000000000000000000000000000003a1000000040101000100000000000000000000000064ffffffff000000810000000000000004000000b60000000100000000000000d10000000100000000000000840000000100000000000001960000000100000000</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
       <CurrentItem>accelerator.vhd</CurrentItem>
    </ItemView>
@@ -58,7 +58,7 @@
       <SelectedItems/>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
-      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000000000000010000000000000000000000000000000000000125000000010001000100000000000000000000000064ffffffff000000810000000000000001000001250000000100000000</ViewHeaderState>
+      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000000000000010000000000000000000000000000000000000148000000010001000100000000000000000000000064ffffffff000000810000000000000001000001480000000100000000</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
       <CurrentItem>work</CurrentItem>
    </ItemView>
@@ -77,5 +77,51 @@
       <CurrentItem>Design Utilities</CurrentItem>
    </ItemView>
    <SourceProcessView>000000ff00000000000000020000014b0000012001000000060100000002</SourceProcessView>
-   <CurrentView>Implementation</CurrentView>
+   <CurrentView>Behavioral Simulation</CurrentView>
+   <ItemView engineview="BehavioralSim" guiview="Source" compilemode="AutoCompile" >
+      <ClosedNodes>
+         <ClosedNodesVersion>2</ClosedNodesVersion>
+         <ClosedNode>/TASTE - arch |home|jannis|Code|fpga_bnn_accelerator|src|fpga_logic|TASTE-VHDL-XISE|Example1.vhd/Interface_accelerator - accelerator - arch/fc1 - fully_connected - Behavioral</ClosedNode>
+         <ClosedNode>/TASTE - arch |home|jannis|Code|fpga_bnn_accelerator|src|fpga_logic|TASTE-VHDL-XISE|Example1.vhd/Interface_accelerator - accelerator - arch/fc2 - output_layer - Behavioral</ClosedNode>
+         <ClosedNode>/TASTE - arch |home|jannis|Code|fpga_bnn_accelerator|src|fpga_logic|TASTE-VHDL-XISE|Example1.vhd/Interfaces - ZestSC1_Interfaces - arch</ClosedNode>
+         <ClosedNode>/fully_connected - Behavioral |home|jannis|Code|fpga_bnn_accelerator|src|fpga_logic|TASTE-VHDL-XISE|fully_connected.vhd</ClosedNode>
+         <ClosedNode>/module_fifo_regs_no_flags_tb - behave |home|jannis|Code|fpga_bnn_accelerator|src|fpga_logic|TASTE-VHDL-XISE|tb_fifo.vhd</ClosedNode>
+         <ClosedNode>/output_layer - Behavioral |home|jannis|Code|fpga_bnn_accelerator|src|fpga_logic|TASTE-VHDL-XISE|output_layer.vhd</ClosedNode>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem>Unassigned User Library Modules</SelectedItem>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >3</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000020200000001000000010000006400000222000000020000000000000000000000000200000064ffffffff000000810000000300000002000002220000000100000003000000000000000100000003</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem>Unassigned User Library Modules</CurrentItem>
+   </ItemView>
+   <ItemView engineview="BehavioralSim" sourcetype="" guiview="Process" >
+      <ClosedNodes>
+         <ClosedNodesVersion>1</ClosedNodesVersion>
+         <ClosedNode>Design Utilities</ClosedNode>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem></SelectedItem>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000000000000000000f6000000010000000100000000000000000000000064ffffffff000000810000000000000001000000f60000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem></CurrentItem>
+   </ItemView>
+   <ItemView engineview="BehavioralSim" sourcetype="DESUT_VHDL_ARCHITECTURE" guiview="Process" >
+      <ClosedNodes>
+         <ClosedNodesVersion>1</ClosedNodesVersion>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem></SelectedItem>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000000000000000000f6000000010000000100000000000000000000000064ffffffff000000810000000000000001000000f60000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem></CurrentItem>
+   </ItemView>
 </Project>

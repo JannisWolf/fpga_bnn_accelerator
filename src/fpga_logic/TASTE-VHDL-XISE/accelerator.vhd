@@ -59,10 +59,10 @@ architecture arch of accelerator is
 	 END COMPONENT;
 	 
 	 COMPONENT fifo_regs  
-	 GENERIC (
-    g_WIDTH : natural := 4;
-    g_DEPTH : integer := 32
-    );
+	 --GENERIC (
+    --g_WIDTH : integer := 3;
+    --g_DEPTH : integer := 32
+    --);
 	 PORT (
 	     i_rst_sync : in std_logic;
         i_clk      : in std_logic;
@@ -162,7 +162,7 @@ begin
 		  full => data_out
 	   );
     -- buffer in fifo style where from cpu stored values are stored 
-	 input: fifo_regs
+input: fifo_regs
 	   PORT MAP (
 	     i_rst_sync => RST,
         i_clk => CLK,
@@ -221,6 +221,7 @@ begin
 	     --douta => outp(63 downto 56)
 		  douta => w2
 	   );
+
 
     -- Possible clock divider
     process(CLK, RST)

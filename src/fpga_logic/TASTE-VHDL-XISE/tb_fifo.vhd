@@ -5,8 +5,8 @@ library STD;
 library ieee;
 use ieee.std_logic_1164.all;
 use ieee.numeric_std.all;
-use STD.textio.all;                     -- basic I/O
-use IEEE.std_logic_textio.all; 
+--use STD.textio.all;                     -- basic I/O
+--use IEEE.std_logic_textio.all; 
 
 library work;
 use work.fifo_regs;
@@ -74,12 +74,12 @@ begin
              
  
   p_TEST : process is
-       variable my_line : line;  -- type 'line' comes from textio
+       --variable my_line : line;  -- type 'line' comes from textio
 
   begin
    
-               write(my_line, string'("Hello World1"));   -- formatting
-               writeline(output, my_line);      
+               --write(my_line, string'("Hello World1"));   -- formatting
+               --writeline(output, my_line);      
 
     wait until r_CLOCK = '1';
     r_WR_EN <= '1';
