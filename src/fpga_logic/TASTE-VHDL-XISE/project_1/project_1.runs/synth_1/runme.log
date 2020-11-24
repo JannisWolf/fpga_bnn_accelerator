@@ -1,0 +1,778 @@
+
+*** Running vivado
+    with args -log TASTE.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source TASTE.tcl
+
+
+****** Vivado v2018.2 (64-bit)
+  **** SW Build 2258646 on Thu Jun 14 20:02:38 MDT 2018
+  **** IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source TASTE.tcl -notrace
+Command: synth_design -top TASTE -part xc7s6ftgb196-1
+Starting synth_design
+WARNING: [Vivado_Tcl 4-393] The 'Synthesis' target of the following IPs are stale, please generate the output products using the generate_target or synth_ip command before running synth_design.
+/home/jannis/Code/fpga_bnn_accelerator/src/fpga_logic/TASTE-VHDL-XISE/project_1/project_1.srcs/sources_1/ip/memory/memory.xco
+
+INFO: [IP_Flow 19-2162] IP 'memory' is locked:
+* IP definition 'Block Memory Generator (7.3)' for IP 'memory' has a newer major version in the IP Catalog.
+* Current project part 'xc7s6ftgb196-1' and the part 'xc3s1000ft256-5' used to customize the IP 'memory' do not match.
+Please select 'Report IP Status' from the 'Tools/Report' menu or run Tcl command 'report_ip_status' for more information.
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7s6'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7s6'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 31912 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 1262.660 ; gain = 80.801 ; free physical = 113 ; free virtual = 2580
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'TASTE' [/home/jannis/Code/fpga_bnn_accelerator/src/fpga_logic/TASTE-VHDL-XISE/Example1.vhd:51]
+INFO: [Synth 8-3491] module 'ZestSC1_Interfaces' declared at '/home/jannis/Code/fpga_bnn_accelerator/src/fpga_logic/TASTE-VHDL-XISE/ZestSC1_Interfaces.vhd:53' bound to instance 'Interfaces' of component 'ZestSC1_Interfaces' [/home/jannis/Code/fpga_bnn_accelerator/src/fpga_logic/TASTE-VHDL-XISE/Example1.vhd:298]
+INFO: [Synth 8-638] synthesizing module 'ZestSC1_Interfaces' [/home/jannis/Code/fpga_bnn_accelerator/src/fpga_logic/TASTE-VHDL-XISE/ZestSC1_Interfaces.vhd:127]
+INFO: [Synth 8-3491] module 'ZestSC1_Host' declared at '/home/jannis/Code/fpga_bnn_accelerator/src/fpga_logic/TASTE-VHDL-XISE/ZestSC1_Host.vhd:51' bound to instance 'INST_ZestSC1_Host' of component 'ZestSC1_Host' [/home/jannis/Code/fpga_bnn_accelerator/src/fpga_logic/TASTE-VHDL-XISE/ZestSC1_Interfaces.vhd:217]
+INFO: [Synth 8-638] synthesizing module 'ZestSC1_Host' [/home/jannis/Code/fpga_bnn_accelerator/src/fpga_logic/TASTE-VHDL-XISE/ZestSC1_Host.vhd:102]
+INFO: [Synth 8-637] synthesizing blackbox instance 'ROC_1' of component 'ROC' [/home/jannis/Code/fpga_bnn_accelerator/src/fpga_logic/TASTE-VHDL-XISE/ZestSC1_Host.vhd:281]
+INFO: [Synth 8-3491] module 'DCM' declared at '/home/jannis/Programs/Vivado/Vivado/2018.2/scripts/rt/data/unisim_comp.v:2766' bound to instance 'StreamDCM' of component 'DCM' [/home/jannis/Code/fpga_bnn_accelerator/src/fpga_logic/TASTE-VHDL-XISE/ZestSC1_Host.vhd:629]
+INFO: [Synth 8-6157] synthesizing module 'DCM' [/home/jannis/Programs/Vivado/Vivado/2018.2/scripts/rt/data/unisim_comp.v:2766]
+	Parameter CLKDV_DIVIDE bound to: 2.000000 - type: float 
+	Parameter CLKFX_DIVIDE bound to: 1 - type: integer 
+	Parameter CLKFX_MULTIPLY bound to: 4 - type: integer 
+	Parameter CLKIN_DIVIDE_BY_2 bound to: FALSE - type: string 
+	Parameter CLKIN_PERIOD bound to: 10.000000 - type: float 
+	Parameter CLKOUT_PHASE_SHIFT bound to: NONE - type: string 
+	Parameter CLK_FEEDBACK bound to: 1X - type: string 
+	Parameter DESKEW_ADJUST bound to: SYSTEM_SYNCHRONOUS - type: string 
+	Parameter DFS_FREQUENCY_MODE bound to: LOW - type: string 
+	Parameter DLL_FREQUENCY_MODE bound to: LOW - type: string 
+	Parameter DSS_MODE bound to: NONE - type: string 
+	Parameter DUTY_CYCLE_CORRECTION bound to: TRUE - type: string 
+	Parameter FACTORY_JF bound to: 16'b1100000010000000 
+	Parameter PHASE_SHIFT bound to: 0 - type: integer 
+	Parameter SIM_MODE bound to: SAFE - type: string 
+	Parameter STARTUP_WAIT bound to: FALSE - type: string 
+INFO: [Synth 8-6155] done synthesizing module 'DCM' (1#1) [/home/jannis/Programs/Vivado/Vivado/2018.2/scripts/rt/data/unisim_comp.v:2766]
+INFO: [Synth 8-3491] module 'BUFG' declared at '/home/jannis/Programs/Vivado/Vivado/2018.2/scripts/rt/data/unisim_comp.v:609' bound to instance 'StreamCLK_BUFG' of component 'BUFG' [/home/jannis/Code/fpga_bnn_accelerator/src/fpga_logic/TASTE-VHDL-XISE/ZestSC1_Host.vhd:653]
+INFO: [Synth 8-6157] synthesizing module 'BUFG' [/home/jannis/Programs/Vivado/Vivado/2018.2/scripts/rt/data/unisim_comp.v:609]
+INFO: [Synth 8-6155] done synthesizing module 'BUFG' (2#1) [/home/jannis/Programs/Vivado/Vivado/2018.2/scripts/rt/data/unisim_comp.v:609]
+INFO: [Synth 8-3491] module 'DCM' declared at '/home/jannis/Programs/Vivado/Vivado/2018.2/scripts/rt/data/unisim_comp.v:2766' bound to instance 'RegDCM' of component 'DCM' [/home/jannis/Code/fpga_bnn_accelerator/src/fpga_logic/TASTE-VHDL-XISE/ZestSC1_Host.vhd:659]
+INFO: [Synth 8-3491] module 'BUFG' declared at '/home/jannis/Programs/Vivado/Vivado/2018.2/scripts/rt/data/unisim_comp.v:609' bound to instance 'RegCLK_BUFG' of component 'BUFG' [/home/jannis/Code/fpga_bnn_accelerator/src/fpga_logic/TASTE-VHDL-XISE/ZestSC1_Host.vhd:684]
+WARNING: [Synth 8-6014] Unused sequential element RegLastOE_reg was removed.  [/home/jannis/Code/fpga_bnn_accelerator/src/fpga_logic/TASTE-VHDL-XISE/ZestSC1_Host.vhd:591]
+INFO: [Synth 8-256] done synthesizing module 'ZestSC1_Host' (3#1) [/home/jannis/Code/fpga_bnn_accelerator/src/fpga_logic/TASTE-VHDL-XISE/ZestSC1_Host.vhd:102]
+INFO: [Synth 8-3491] module 'ZestSC1_SRAM' declared at '/home/jannis/Code/fpga_bnn_accelerator/src/fpga_logic/TASTE-VHDL-XISE/ZestSC1_SRAM.vhd:80' bound to instance 'INST_SRAM' of component 'ZestSC1_SRAM' [/home/jannis/Code/fpga_bnn_accelerator/src/fpga_logic/TASTE-VHDL-XISE/ZestSC1_Interfaces.vhd:268]
+INFO: [Synth 8-638] synthesizing module 'ZestSC1_SRAM' [/home/jannis/Code/fpga_bnn_accelerator/src/fpga_logic/TASTE-VHDL-XISE/ZestSC1_SRAM.vhd:104]
+INFO: [Synth 8-3491] module 'DCM' declared at '/home/jannis/Programs/Vivado/Vivado/2018.2/scripts/rt/data/unisim_comp.v:2766' bound to instance 'DCM_INST' of component 'DCM' [/home/jannis/Code/fpga_bnn_accelerator/src/fpga_logic/TASTE-VHDL-XISE/ZestSC1_SRAM.vhd:226]
+INFO: [Synth 8-3491] module 'BUFG' declared at '/home/jannis/Programs/Vivado/Vivado/2018.2/scripts/rt/data/unisim_comp.v:609' bound to instance 'CLK0_BUFG_INST' of component 'BUFG' [/home/jannis/Code/fpga_bnn_accelerator/src/fpga_logic/TASTE-VHDL-XISE/ZestSC1_SRAM.vhd:253]
+INFO: [Synth 8-3491] module 'OFDDRCPE' declared at '/home/jannis/Programs/Vivado/Vivado/2018.2/scripts/rt/data/unisim_comp.v:57655' bound to instance 'OFDDRCPE_CLK_SRAM' of component 'OFDDRCPE' [/home/jannis/Code/fpga_bnn_accelerator/src/fpga_logic/TASTE-VHDL-XISE/ZestSC1_SRAM.vhd:264]
+INFO: [Synth 8-6157] synthesizing module 'OFDDRCPE' [/home/jannis/Programs/Vivado/Vivado/2018.2/scripts/rt/data/unisim_comp.v:57655]
+INFO: [Synth 8-6155] done synthesizing module 'OFDDRCPE' (4#1) [/home/jannis/Programs/Vivado/Vivado/2018.2/scripts/rt/data/unisim_comp.v:57655]
+INFO: [Synth 8-4471] merging register 'OutputEnable0_n_reg' into 'S_WE_N_reg' [/home/jannis/Code/fpga_bnn_accelerator/src/fpga_logic/TASTE-VHDL-XISE/ZestSC1_SRAM.vhd:310]
+WARNING: [Synth 8-6014] Unused sequential element OutputEnable0_n_reg was removed.  [/home/jannis/Code/fpga_bnn_accelerator/src/fpga_logic/TASTE-VHDL-XISE/ZestSC1_SRAM.vhd:310]
+INFO: [Synth 8-256] done synthesizing module 'ZestSC1_SRAM' (5#1) [/home/jannis/Code/fpga_bnn_accelerator/src/fpga_logic/TASTE-VHDL-XISE/ZestSC1_SRAM.vhd:104]
+INFO: [Synth 8-256] done synthesizing module 'ZestSC1_Interfaces' (6#1) [/home/jannis/Code/fpga_bnn_accelerator/src/fpga_logic/TASTE-VHDL-XISE/ZestSC1_Interfaces.vhd:127]
+INFO: [Synth 8-3491] module 'accelerator' declared at '/home/jannis/Code/fpga_bnn_accelerator/src/fpga_logic/TASTE-VHDL-XISE/accelerator.vhd:12' bound to instance 'Interface_accelerator' of component 'accelerator' [/home/jannis/Code/fpga_bnn_accelerator/src/fpga_logic/TASTE-VHDL-XISE/Example1.vhd:366]
+INFO: [Synth 8-638] synthesizing module 'accelerator' [/home/jannis/Code/fpga_bnn_accelerator/src/fpga_logic/TASTE-VHDL-XISE/accelerator.vhd:27]
+INFO: [Synth 8-637] synthesizing blackbox instance 'sub' of component 'subsample64to1' [/home/jannis/Code/fpga_bnn_accelerator/src/fpga_logic/TASTE-VHDL-XISE/accelerator.vhd:141]
+INFO: [Synth 8-3491] module 'upsample1to64' declared at '/home/jannis/Code/fpga_bnn_accelerator/src/fpga_logic/TASTE-VHDL-XISE/upsample.vhd:32' bound to instance 'up_buf' of component 'upsample1to64' [/home/jannis/Code/fpga_bnn_accelerator/src/fpga_logic/TASTE-VHDL-XISE/accelerator.vhd:147]
+INFO: [Synth 8-638] synthesizing module 'upsample1to64' [/home/jannis/Code/fpga_bnn_accelerator/src/fpga_logic/TASTE-VHDL-XISE/upsample.vhd:39]
+INFO: [Synth 8-256] done synthesizing module 'upsample1to64' (7#1) [/home/jannis/Code/fpga_bnn_accelerator/src/fpga_logic/TASTE-VHDL-XISE/upsample.vhd:39]
+INFO: [Synth 8-3491] module 'upsample1to64' declared at '/home/jannis/Code/fpga_bnn_accelerator/src/fpga_logic/TASTE-VHDL-XISE/upsample.vhd:32' bound to instance 'up_res' of component 'upsample1to64' [/home/jannis/Code/fpga_bnn_accelerator/src/fpga_logic/TASTE-VHDL-XISE/accelerator.vhd:153]
+INFO: [Synth 8-3491] module 'upsample3_64' declared at '/home/jannis/Code/fpga_bnn_accelerator/src/fpga_logic/TASTE-VHDL-XISE/upsample3_64.vhd:32' bound to instance 'up_output' of component 'upsample3_64' [/home/jannis/Code/fpga_bnn_accelerator/src/fpga_logic/TASTE-VHDL-XISE/accelerator.vhd:159]
+INFO: [Synth 8-638] synthesizing module 'upsample3_64' [/home/jannis/Code/fpga_bnn_accelerator/src/fpga_logic/TASTE-VHDL-XISE/upsample3_64.vhd:39]
+INFO: [Synth 8-256] done synthesizing module 'upsample3_64' (8#1) [/home/jannis/Code/fpga_bnn_accelerator/src/fpga_logic/TASTE-VHDL-XISE/upsample3_64.vhd:39]
+INFO: [Synth 8-3491] module 'fifo_regs' declared at '/home/jannis/Code/fpga_bnn_accelerator/src/fpga_logic/TASTE-VHDL-XISE/project_1/project_1.srcs/sources_1/new/fifo_regs.vhd:34' bound to instance 'input' of component 'fifo_regs' [/home/jannis/Code/fpga_bnn_accelerator/src/fpga_logic/TASTE-VHDL-XISE/accelerator.vhd:165]
+INFO: [Synth 8-638] synthesizing module 'fifo_regs' [/home/jannis/Code/fpga_bnn_accelerator/src/fpga_logic/TASTE-VHDL-XISE/project_1/project_1.srcs/sources_1/new/fifo_regs.vhd:56]
+	Parameter g_WIDTH bound to: 3 - type: integer 
+	Parameter g_DEPTH bound to: 32 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'fifo_regs' (9#1) [/home/jannis/Code/fpga_bnn_accelerator/src/fpga_logic/TASTE-VHDL-XISE/project_1/project_1.srcs/sources_1/new/fifo_regs.vhd:56]
+INFO: [Synth 8-3491] module 'fully_connected' declared at '/home/jannis/Code/fpga_bnn_accelerator/src/fpga_logic/TASTE-VHDL-XISE/fully_connected.vhd:32' bound to instance 'fc1' of component 'fully_connected' [/home/jannis/Code/fpga_bnn_accelerator/src/fpga_logic/TASTE-VHDL-XISE/accelerator.vhd:182]
+INFO: [Synth 8-638] synthesizing module 'fully_connected' [/home/jannis/Code/fpga_bnn_accelerator/src/fpga_logic/TASTE-VHDL-XISE/fully_connected.vhd:46]
+INFO: [Synth 8-3491] module 'xnor_popcount' declared at '/home/jannis/Code/fpga_bnn_accelerator/src/fpga_logic/TASTE-VHDL-XISE/xnor_popcount.vhd:33' bound to instance 'xnor_pop1' of component 'xnor_popcount' [/home/jannis/Code/fpga_bnn_accelerator/src/fpga_logic/TASTE-VHDL-XISE/fully_connected.vhd:88]
+INFO: [Synth 8-638] synthesizing module 'xnor_popcount' [/home/jannis/Code/fpga_bnn_accelerator/src/fpga_logic/TASTE-VHDL-XISE/xnor_popcount.vhd:33]
+INFO: [Synth 8-256] done synthesizing module 'xnor_popcount' (10#1) [/home/jannis/Code/fpga_bnn_accelerator/src/fpga_logic/TASTE-VHDL-XISE/xnor_popcount.vhd:33]
+INFO: [Synth 8-3491] module 'xnor_popcount' declared at '/home/jannis/Code/fpga_bnn_accelerator/src/fpga_logic/TASTE-VHDL-XISE/xnor_popcount.vhd:33' bound to instance 'xnor_pop2' of component 'xnor_popcount' [/home/jannis/Code/fpga_bnn_accelerator/src/fpga_logic/TASTE-VHDL-XISE/fully_connected.vhd:95]
+INFO: [Synth 8-3491] module 'xnor_popcount' declared at '/home/jannis/Code/fpga_bnn_accelerator/src/fpga_logic/TASTE-VHDL-XISE/xnor_popcount.vhd:33' bound to instance 'xnor_pop3' of component 'xnor_popcount' [/home/jannis/Code/fpga_bnn_accelerator/src/fpga_logic/TASTE-VHDL-XISE/fully_connected.vhd:102]
+INFO: [Synth 8-3491] module 'xnor_popcount' declared at '/home/jannis/Code/fpga_bnn_accelerator/src/fpga_logic/TASTE-VHDL-XISE/xnor_popcount.vhd:33' bound to instance 'xnor_pop4' of component 'xnor_popcount' [/home/jannis/Code/fpga_bnn_accelerator/src/fpga_logic/TASTE-VHDL-XISE/fully_connected.vhd:109]
+INFO: [Synth 8-3491] module 'xnor_popcount' declared at '/home/jannis/Code/fpga_bnn_accelerator/src/fpga_logic/TASTE-VHDL-XISE/xnor_popcount.vhd:33' bound to instance 'xnor_pop5' of component 'xnor_popcount' [/home/jannis/Code/fpga_bnn_accelerator/src/fpga_logic/TASTE-VHDL-XISE/fully_connected.vhd:116]
+INFO: [Synth 8-3491] module 'xnor_popcount' declared at '/home/jannis/Code/fpga_bnn_accelerator/src/fpga_logic/TASTE-VHDL-XISE/xnor_popcount.vhd:33' bound to instance 'xnor_pop6' of component 'xnor_popcount' [/home/jannis/Code/fpga_bnn_accelerator/src/fpga_logic/TASTE-VHDL-XISE/fully_connected.vhd:123]
+INFO: [Synth 8-3491] module 'xnor_popcount' declared at '/home/jannis/Code/fpga_bnn_accelerator/src/fpga_logic/TASTE-VHDL-XISE/xnor_popcount.vhd:33' bound to instance 'xnor_pop7' of component 'xnor_popcount' [/home/jannis/Code/fpga_bnn_accelerator/src/fpga_logic/TASTE-VHDL-XISE/fully_connected.vhd:130]
+INFO: [Synth 8-3491] module 'xnor_popcount' declared at '/home/jannis/Code/fpga_bnn_accelerator/src/fpga_logic/TASTE-VHDL-XISE/xnor_popcount.vhd:33' bound to instance 'xnor_pop8' of component 'xnor_popcount' [/home/jannis/Code/fpga_bnn_accelerator/src/fpga_logic/TASTE-VHDL-XISE/fully_connected.vhd:137]
+INFO: [Synth 8-3491] module 'xnor_popcount' declared at '/home/jannis/Code/fpga_bnn_accelerator/src/fpga_logic/TASTE-VHDL-XISE/xnor_popcount.vhd:33' bound to instance 'xnor_pop9' of component 'xnor_popcount' [/home/jannis/Code/fpga_bnn_accelerator/src/fpga_logic/TASTE-VHDL-XISE/fully_connected.vhd:144]
+INFO: [Synth 8-3491] module 'xnor_popcount' declared at '/home/jannis/Code/fpga_bnn_accelerator/src/fpga_logic/TASTE-VHDL-XISE/xnor_popcount.vhd:33' bound to instance 'xnor_pop10' of component 'xnor_popcount' [/home/jannis/Code/fpga_bnn_accelerator/src/fpga_logic/TASTE-VHDL-XISE/fully_connected.vhd:151]
+INFO: [Synth 8-637] synthesizing blackbox instance 'fc1_activation' of component 'accumulate' [/home/jannis/Code/fpga_bnn_accelerator/src/fpga_logic/TASTE-VHDL-XISE/fully_connected.vhd:158]
+WARNING: [Synth 8-115] binding instance 'xnor_pop1' in module 'fully_connected' to reference 'xnor_popcount' which has no pins
+WARNING: [Synth 8-115] binding instance 'xnor_pop2' in module 'fully_connected' to reference 'xnor_popcount' which has no pins
+WARNING: [Synth 8-115] binding instance 'xnor_pop3' in module 'fully_connected' to reference 'xnor_popcount' which has no pins
+WARNING: [Synth 8-115] binding instance 'xnor_pop4' in module 'fully_connected' to reference 'xnor_popcount' which has no pins
+WARNING: [Synth 8-115] binding instance 'xnor_pop5' in module 'fully_connected' to reference 'xnor_popcount' which has no pins
+WARNING: [Synth 8-115] binding instance 'xnor_pop6' in module 'fully_connected' to reference 'xnor_popcount' which has no pins
+WARNING: [Synth 8-115] binding instance 'xnor_pop7' in module 'fully_connected' to reference 'xnor_popcount' which has no pins
+WARNING: [Synth 8-115] binding instance 'xnor_pop8' in module 'fully_connected' to reference 'xnor_popcount' which has no pins
+WARNING: [Synth 8-115] binding instance 'xnor_pop9' in module 'fully_connected' to reference 'xnor_popcount' which has no pins
+WARNING: [Synth 8-115] binding instance 'xnor_pop10' in module 'fully_connected' to reference 'xnor_popcount' which has no pins
+WARNING: [Synth 8-3848] Net finish_calc in module/entity fully_connected does not have driver. [/home/jannis/Code/fpga_bnn_accelerator/src/fpga_logic/TASTE-VHDL-XISE/fully_connected.vhd:42]
+WARNING: [Synth 8-3848] Net res in module/entity fully_connected does not have driver. [/home/jannis/Code/fpga_bnn_accelerator/src/fpga_logic/TASTE-VHDL-XISE/fully_connected.vhd:63]
+WARNING: [Synth 8-3848] Net res in module/entity fully_connected does not have driver. [/home/jannis/Code/fpga_bnn_accelerator/src/fpga_logic/TASTE-VHDL-XISE/fully_connected.vhd:63]
+WARNING: [Synth 8-3848] Net res in module/entity fully_connected does not have driver. [/home/jannis/Code/fpga_bnn_accelerator/src/fpga_logic/TASTE-VHDL-XISE/fully_connected.vhd:63]
+WARNING: [Synth 8-3848] Net res in module/entity fully_connected does not have driver. [/home/jannis/Code/fpga_bnn_accelerator/src/fpga_logic/TASTE-VHDL-XISE/fully_connected.vhd:63]
+WARNING: [Synth 8-3848] Net res in module/entity fully_connected does not have driver. [/home/jannis/Code/fpga_bnn_accelerator/src/fpga_logic/TASTE-VHDL-XISE/fully_connected.vhd:63]
+WARNING: [Synth 8-3848] Net res in module/entity fully_connected does not have driver. [/home/jannis/Code/fpga_bnn_accelerator/src/fpga_logic/TASTE-VHDL-XISE/fully_connected.vhd:63]
+WARNING: [Synth 8-3848] Net res in module/entity fully_connected does not have driver. [/home/jannis/Code/fpga_bnn_accelerator/src/fpga_logic/TASTE-VHDL-XISE/fully_connected.vhd:63]
+WARNING: [Synth 8-3848] Net res in module/entity fully_connected does not have driver. [/home/jannis/Code/fpga_bnn_accelerator/src/fpga_logic/TASTE-VHDL-XISE/fully_connected.vhd:63]
+WARNING: [Synth 8-3848] Net res in module/entity fully_connected does not have driver. [/home/jannis/Code/fpga_bnn_accelerator/src/fpga_logic/TASTE-VHDL-XISE/fully_connected.vhd:63]
+WARNING: [Synth 8-3848] Net res in module/entity fully_connected does not have driver. [/home/jannis/Code/fpga_bnn_accelerator/src/fpga_logic/TASTE-VHDL-XISE/fully_connected.vhd:63]
+INFO: [Synth 8-256] done synthesizing module 'fully_connected' (11#1) [/home/jannis/Code/fpga_bnn_accelerator/src/fpga_logic/TASTE-VHDL-XISE/fully_connected.vhd:46]
+INFO: [Synth 8-3491] module 'output_layer' declared at '/home/jannis/Code/fpga_bnn_accelerator/src/fpga_logic/TASTE-VHDL-XISE/output_layer.vhd:32' bound to instance 'fc2' of component 'output_layer' [/home/jannis/Code/fpga_bnn_accelerator/src/fpga_logic/TASTE-VHDL-XISE/accelerator.vhd:194]
+INFO: [Synth 8-638] synthesizing module 'output_layer' [/home/jannis/Code/fpga_bnn_accelerator/src/fpga_logic/TASTE-VHDL-XISE/output_layer.vhd:46]
+INFO: [Synth 8-3491] module 'xnor_popcount' declared at '/home/jannis/Code/fpga_bnn_accelerator/src/fpga_logic/TASTE-VHDL-XISE/xnor_popcount.vhd:33' bound to instance 'xnor_pop1' of component 'xnor_popcount' [/home/jannis/Code/fpga_bnn_accelerator/src/fpga_logic/TASTE-VHDL-XISE/output_layer.vhd:75]
+INFO: [Synth 8-3491] module 'xnor_popcount' declared at '/home/jannis/Code/fpga_bnn_accelerator/src/fpga_logic/TASTE-VHDL-XISE/xnor_popcount.vhd:33' bound to instance 'xnor_pop2' of component 'xnor_popcount' [/home/jannis/Code/fpga_bnn_accelerator/src/fpga_logic/TASTE-VHDL-XISE/output_layer.vhd:82]
+INFO: [Synth 8-3491] module 'xnor_popcount' declared at '/home/jannis/Code/fpga_bnn_accelerator/src/fpga_logic/TASTE-VHDL-XISE/xnor_popcount.vhd:33' bound to instance 'xnor_pop3' of component 'xnor_popcount' [/home/jannis/Code/fpga_bnn_accelerator/src/fpga_logic/TASTE-VHDL-XISE/output_layer.vhd:89]
+INFO: [Synth 8-637] synthesizing blackbox instance 'fc1_activation' of component 'accumulate' [/home/jannis/Code/fpga_bnn_accelerator/src/fpga_logic/TASTE-VHDL-XISE/output_layer.vhd:97]
+WARNING: [Synth 8-115] binding instance 'xnor_pop1' in module 'output_layer' to reference 'xnor_popcount' which has no pins
+WARNING: [Synth 8-115] binding instance 'xnor_pop2' in module 'output_layer' to reference 'xnor_popcount' which has no pins
+WARNING: [Synth 8-115] binding instance 'xnor_pop3' in module 'output_layer' to reference 'xnor_popcount' which has no pins
+WARNING: [Synth 8-3848] Net finish_calc in module/entity output_layer does not have driver. [/home/jannis/Code/fpga_bnn_accelerator/src/fpga_logic/TASTE-VHDL-XISE/output_layer.vhd:42]
+WARNING: [Synth 8-3848] Net res in module/entity output_layer does not have driver. [/home/jannis/Code/fpga_bnn_accelerator/src/fpga_logic/TASTE-VHDL-XISE/output_layer.vhd:57]
+WARNING: [Synth 8-3848] Net res in module/entity output_layer does not have driver. [/home/jannis/Code/fpga_bnn_accelerator/src/fpga_logic/TASTE-VHDL-XISE/output_layer.vhd:57]
+WARNING: [Synth 8-3848] Net res in module/entity output_layer does not have driver. [/home/jannis/Code/fpga_bnn_accelerator/src/fpga_logic/TASTE-VHDL-XISE/output_layer.vhd:57]
+INFO: [Synth 8-256] done synthesizing module 'output_layer' (12#1) [/home/jannis/Code/fpga_bnn_accelerator/src/fpga_logic/TASTE-VHDL-XISE/output_layer.vhd:46]
+INFO: [Synth 8-3491] module 'memory' declared at '/home/jannis/Code/fpga_bnn_accelerator/src/fpga_logic/TASTE-VHDL-XISE/project_1/project_1.srcs/sources_1/ip/memory/memory.v:39' bound to instance 'weights1' of component 'memory' [/home/jannis/Code/fpga_bnn_accelerator/src/fpga_logic/TASTE-VHDL-XISE/accelerator.vhd:208]
+INFO: [Synth 8-6157] synthesizing module 'memory' [/home/jannis/Code/fpga_bnn_accelerator/src/fpga_logic/TASTE-VHDL-XISE/project_1/project_1.srcs/sources_1/ip/memory/memory.v:39]
+INFO: [Synth 8-6155] done synthesizing module 'memory' (13#1) [/home/jannis/Code/fpga_bnn_accelerator/src/fpga_logic/TASTE-VHDL-XISE/project_1/project_1.srcs/sources_1/ip/memory/memory.v:39]
+INFO: [Synth 8-3491] module 'memory' declared at '/home/jannis/Code/fpga_bnn_accelerator/src/fpga_logic/TASTE-VHDL-XISE/project_1/project_1.srcs/sources_1/ip/memory/memory.v:39' bound to instance 'weights2' of component 'memory' [/home/jannis/Code/fpga_bnn_accelerator/src/fpga_logic/TASTE-VHDL-XISE/accelerator.vhd:217]
+INFO: [Synth 8-256] done synthesizing module 'accelerator' (14#1) [/home/jannis/Code/fpga_bnn_accelerator/src/fpga_logic/TASTE-VHDL-XISE/accelerator.vhd:27]
+INFO: [Synth 8-256] done synthesizing module 'TASTE' (15#1) [/home/jannis/Code/fpga_bnn_accelerator/src/fpga_logic/TASTE-VHDL-XISE/Example1.vhd:51]
+WARNING: [Synth 8-3331] design output_layer has unconnected port finish_calc
+WARNING: [Synth 8-3331] design output_layer has unconnected port weights
+WARNING: [Synth 8-3331] design output_layer has unconnected port data_in[9]
+WARNING: [Synth 8-3331] design output_layer has unconnected port data_in[8]
+WARNING: [Synth 8-3331] design output_layer has unconnected port data_in[7]
+WARNING: [Synth 8-3331] design output_layer has unconnected port data_in[6]
+WARNING: [Synth 8-3331] design output_layer has unconnected port data_in[5]
+WARNING: [Synth 8-3331] design output_layer has unconnected port data_in[4]
+WARNING: [Synth 8-3331] design output_layer has unconnected port data_in[3]
+WARNING: [Synth 8-3331] design output_layer has unconnected port data_in[2]
+WARNING: [Synth 8-3331] design output_layer has unconnected port data_in[1]
+WARNING: [Synth 8-3331] design output_layer has unconnected port data_in[0]
+WARNING: [Synth 8-3331] design output_layer has unconnected port calc_pos
+WARNING: [Synth 8-3331] design output_layer has unconnected port clk_fc
+WARNING: [Synth 8-3331] design fully_connected has unconnected port finish_calc
+WARNING: [Synth 8-3331] design fully_connected has unconnected port weights
+WARNING: [Synth 8-3331] design fully_connected has unconnected port data_in[2]
+WARNING: [Synth 8-3331] design fully_connected has unconnected port data_in[1]
+WARNING: [Synth 8-3331] design fully_connected has unconnected port data_in[0]
+WARNING: [Synth 8-3331] design fully_connected has unconnected port calc_pos
+WARNING: [Synth 8-3331] design fully_connected has unconnected port clk_fc
+WARNING: [Synth 8-3331] design ZestSC1_Host has unconnected port USB_StreamFlags_n[2]
+WARNING: [Synth 8-3331] design TASTE has unconnected port User_Signals[7]
+WARNING: [Synth 8-3331] design TASTE has unconnected port User_Signals[6]
+WARNING: [Synth 8-3331] design TASTE has unconnected port User_Signals[5]
+WARNING: [Synth 8-3331] design TASTE has unconnected port User_Signals[4]
+WARNING: [Synth 8-3331] design TASTE has unconnected port User_Signals[3]
+WARNING: [Synth 8-3331] design TASTE has unconnected port User_Signals[2]
+WARNING: [Synth 8-3331] design TASTE has unconnected port User_Signals[1]
+WARNING: [Synth 8-3331] design TASTE has unconnected port User_Signals[0]
+WARNING: [Synth 8-3331] design TASTE has unconnected port IO_CLK_N
+WARNING: [Synth 8-3331] design TASTE has unconnected port IO_CLK_P
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 1306.285 ; gain = 124.426 ; free physical = 162 ; free virtual = 2590
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 1306.285 ; gain = 124.426 ; free physical = 162 ; free virtual = 2590
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 1306.285 ; gain = 124.426 ; free physical = 162 ; free virtual = 2590
+---------------------------------------------------------------------------------
+INFO: [Netlist 29-17] Analyzing 3 Unisim elements for replacement
+WARNING: [Netlist 29-365] DCM_ADV instance 'Interfaces/INST_ZestSC1_Host/StreamDCM' has been transformed into an MMCM. Please check the output clock waveforms for correctness. If the output clocks are incorrect, modify your design to use the MMCME<#>_ADV native to the target architecture.
+WARNING: [Netlist 29-365] DCM_ADV instance 'Interfaces/INST_ZestSC1_Host/StreamDCM' has been transformed into an MMCM. Please check the output clock waveforms for correctness. If the output clocks are incorrect, modify your design to use the MMCME<#>_ADV native to the target architecture.
+WARNING: [Netlist 29-365] DCM_ADV instance 'Interfaces/INST_ZestSC1_Host/RegDCM' has been transformed into an MMCM. Please check the output clock waveforms for correctness. If the output clocks are incorrect, modify your design to use the MMCME<#>_ADV native to the target architecture.
+WARNING: [Netlist 29-365] DCM_ADV instance 'Interfaces/INST_ZestSC1_Host/RegDCM' has been transformed into an MMCM. Please check the output clock waveforms for correctness. If the output clocks are incorrect, modify your design to use the MMCME<#>_ADV native to the target architecture.
+WARNING: [Netlist 29-365] DCM_ADV instance 'Interfaces/INST_SRAM/DCM_INST' has been transformed into an MMCM. Please check the output clock waveforms for correctness. If the output clocks are incorrect, modify your design to use the MMCME<#>_ADV native to the target architecture.
+WARNING: [Netlist 29-365] DCM_ADV instance 'Interfaces/INST_SRAM/DCM_INST' has been transformed into an MMCM. Please check the output clock waveforms for correctness. If the output clocks are incorrect, modify your design to use the MMCME<#>_ADV native to the target architecture.
+INFO: [Netlist 29-35] All phase shift calculations for instance 'Interfaces/INST_SRAM/DCM_INST' will be rounded to the nearest phase fraction.
+INFO: [Netlist 29-35] All phase shift calculations for instance 'Interfaces/INST_SRAM/DCM_INST' will be rounded to the nearest phase fraction.
+WARNING: [Netlist 29-151] Pin 'CLKFB' on instance 'Interfaces/INST_SRAM/DCM_INST' of cell type 'DCM_ADV' does not have an equivalent function on the new cell type 'MMCM_ADV'. Net 'CLKFB' that is connected to this pin will not be connected to the replacement instance.
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Device 21-403] Loading part xc7s6ftgb196-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [/home/jannis/Code/fpga_bnn_accelerator/src/fpga_logic/TASTE-VHDL-XISE/project_1/project_1.runs/synth_1/dont_touch.xdc]
+Finished Parsing XDC File [/home/jannis/Code/fpga_bnn_accelerator/src/fpga_logic/TASTE-VHDL-XISE/project_1/project_1.runs/synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 3 instances were transformed.
+  DCM => MMCME2_ADV (inverted pins: PSINCDEC): 3 instances
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1599.324 ; gain = 0.000 ; free physical = 109 ; free virtual = 2377
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:17 ; elapsed = 00:00:29 . Memory (MB): peak = 1599.324 ; gain = 417.465 ; free physical = 166 ; free virtual = 2443
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7s6ftgb196-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:17 ; elapsed = 00:00:29 . Memory (MB): peak = 1599.324 ; gain = 417.465 ; free physical = 165 ; free virtual = 2443
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property DONT_TOUCH = true for Interface_accelerator/weights1. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for Interface_accelerator/weights2. (constraint file  auto generated constraint, line ).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:17 ; elapsed = 00:00:30 . Memory (MB): peak = 1599.324 ; gain = 417.465 ; free physical = 167 ; free virtual = 2445
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'accelerator'
+INFO: [Synth 8-5546] ROM "accelerator_StartCalculationsInternal" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "accelerator_data_in" won't be mapped to RAM because it is too sparse
+WARNING: [Synth 8-115] binding instance 'xnor_pop1' in module 'fully_connected' to reference 'xnor_popcount' which has no pins
+WARNING: [Synth 8-115] binding instance 'xnor_pop2' in module 'fully_connected' to reference 'xnor_popcount' which has no pins
+WARNING: [Synth 8-115] binding instance 'xnor_pop3' in module 'fully_connected' to reference 'xnor_popcount' which has no pins
+WARNING: [Synth 8-115] binding instance 'xnor_pop4' in module 'fully_connected' to reference 'xnor_popcount' which has no pins
+WARNING: [Synth 8-115] binding instance 'xnor_pop5' in module 'fully_connected' to reference 'xnor_popcount' which has no pins
+WARNING: [Synth 8-115] binding instance 'xnor_pop6' in module 'fully_connected' to reference 'xnor_popcount' which has no pins
+WARNING: [Synth 8-115] binding instance 'xnor_pop7' in module 'fully_connected' to reference 'xnor_popcount' which has no pins
+WARNING: [Synth 8-115] binding instance 'xnor_pop8' in module 'fully_connected' to reference 'xnor_popcount' which has no pins
+WARNING: [Synth 8-115] binding instance 'xnor_pop9' in module 'fully_connected' to reference 'xnor_popcount' which has no pins
+WARNING: [Synth 8-115] binding instance 'xnor_pop10' in module 'fully_connected' to reference 'xnor_popcount' which has no pins
+WARNING: [Synth 8-115] binding instance 'xnor_pop1' in module 'output_layer' to reference 'xnor_popcount' which has no pins
+WARNING: [Synth 8-115] binding instance 'xnor_pop2' in module 'output_layer' to reference 'xnor_popcount' which has no pins
+WARNING: [Synth 8-115] binding instance 'xnor_pop3' in module 'output_layer' to reference 'xnor_popcount' which has no pins
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+   wait_for_start_signal |                              001 |                               00
+         signal_received |                              010 |                               01
+               work_done |                              100 |                               10
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'one-hot' in module 'accelerator'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:18 ; elapsed = 00:00:30 . Memory (MB): peak = 1599.324 ; gain = 417.465 ; free physical = 158 ; free virtual = 2438
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     16 Bit       Adders := 1     
+	   2 Input      4 Bit       Adders := 6     
+	   3 Input      4 Bit       Adders := 2     
+	   2 Input      3 Bit       Adders := 1     
++---XORs : 
+	   2 Input      1 Bit         XORs := 26    
++---Registers : 
+	               64 Bit    Registers := 1     
+	               23 Bit    Registers := 1     
+	               18 Bit    Registers := 4     
+	               16 Bit    Registers := 1     
+	                8 Bit    Registers := 2     
+	                4 Bit    Registers := 8     
+	                3 Bit    Registers := 1     
+	                1 Bit    Registers := 24    
++---RAMs : 
+	              256 Bit         RAMs := 1     
++---Muxes : 
+	  12 Input     64 Bit        Muxes := 1     
+	  26 Input      8 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 3     
+	   2 Input      3 Bit        Muxes := 2     
+	   3 Input      3 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 11    
+	   3 Input      1 Bit        Muxes := 1     
+	  10 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module TASTE 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      1 Bit         XORs := 2     
++---Registers : 
+	               64 Bit    Registers := 1     
+	                8 Bit    Registers := 1     
+	                1 Bit    Registers := 4     
++---Muxes : 
+	  12 Input     64 Bit        Muxes := 1     
+	  26 Input      8 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 3     
+	   2 Input      1 Bit        Muxes := 2     
+	  10 Input      1 Bit        Muxes := 1     
+Module ZestSC1_Host 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     16 Bit       Adders := 1     
+	   2 Input      4 Bit       Adders := 6     
+	   3 Input      4 Bit       Adders := 2     
+	   2 Input      3 Bit       Adders := 1     
++---XORs : 
+	   2 Input      1 Bit         XORs := 24    
++---Registers : 
+	               16 Bit    Registers := 1     
+	                8 Bit    Registers := 1     
+	                4 Bit    Registers := 8     
+	                3 Bit    Registers := 1     
+	                1 Bit    Registers := 12    
++---RAMs : 
+	              256 Bit         RAMs := 1     
++---Muxes : 
+	   2 Input      3 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 9     
+Module ZestSC1_SRAM 
+Detailed RTL Component Info : 
++---Registers : 
+	               23 Bit    Registers := 1     
+	               18 Bit    Registers := 4     
+	                1 Bit    Registers := 7     
+Module accelerator 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   3 Input      3 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 1     
+	   3 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 10 (col length:20)
+BRAMs: 10 (col length: RAMB18 20 RAMB36 10)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+WARNING: [Synth 8-6014] Unused sequential element Interfaces/INST_ZestSC1_Host/FIFOIn_reg was removed. 
+WARNING: [Synth 8-6014] Unused sequential element Interfaces/INST_SRAM/ReadDataValid0_reg was removed.  [/home/jannis/Code/fpga_bnn_accelerator/src/fpga_logic/TASTE-VHDL-XISE/ZestSC1_SRAM.vhd:331]
+WARNING: [Synth 8-6014] Unused sequential element Interfaces/INST_SRAM/ReadDataValid1_reg was removed.  [/home/jannis/Code/fpga_bnn_accelerator/src/fpga_logic/TASTE-VHDL-XISE/ZestSC1_SRAM.vhd:332]
+WARNING: [Synth 8-6014] Unused sequential element Interfaces/INST_SRAM/ReadDataValid2_reg was removed.  [/home/jannis/Code/fpga_bnn_accelerator/src/fpga_logic/TASTE-VHDL-XISE/ZestSC1_SRAM.vhd:333]
+WARNING: [Synth 8-6014] Unused sequential element Interfaces/INST_SRAM/USER_DR_VALID_reg was removed.  [/home/jannis/Code/fpga_bnn_accelerator/src/fpga_logic/TASTE-VHDL-XISE/ZestSC1_SRAM.vhd:334]
+WARNING: [Synth 8-6014] Unused sequential element Interfaces/INST_SRAM/USER_DR_reg was removed.  [/home/jannis/Code/fpga_bnn_accelerator/src/fpga_logic/TASTE-VHDL-XISE/ZestSC1_SRAM.vhd:322]
+WARNING: [Synth 8-3917] design TASTE has port USB_StreamFIFOADDR[0] driven by constant 0
+WARNING: [Synth 8-3917] design TASTE has port USB_StreamPKTEND_n driven by constant 1
+WARNING: [Synth 8-3917] design TASTE has port S_ADV_LD_N driven by constant 0
+WARNING: [Synth 8-3917] design TASTE has port S_BWA_N driven by constant 0
+WARNING: [Synth 8-3917] design TASTE has port S_BWB_N driven by constant 0
+WARNING: [Synth 8-3917] design TASTE has port S_OE_N driven by constant 0
+WARNING: [Synth 8-3331] design TASTE has unconnected port User_Signals[7]
+WARNING: [Synth 8-3331] design TASTE has unconnected port User_Signals[6]
+WARNING: [Synth 8-3331] design TASTE has unconnected port User_Signals[5]
+WARNING: [Synth 8-3331] design TASTE has unconnected port User_Signals[4]
+WARNING: [Synth 8-3331] design TASTE has unconnected port User_Signals[3]
+WARNING: [Synth 8-3331] design TASTE has unconnected port User_Signals[2]
+WARNING: [Synth 8-3331] design TASTE has unconnected port User_Signals[1]
+WARNING: [Synth 8-3331] design TASTE has unconnected port User_Signals[0]
+WARNING: [Synth 8-3331] design TASTE has unconnected port IO_CLK_N
+WARNING: [Synth 8-3331] design TASTE has unconnected port IO_CLK_P
+WARNING: [Synth 8-3331] design TASTE has unconnected port USB_StreamFlags_n[2]
+warning: Removed RAM Interfaces/INST_ZestSC1_Host/FIFOOut_reg due to inactive write enable
+WARNING: [Synth 8-6014] Unused sequential element Interfaces/INST_ZestSC1_Host/FIFOOut_reg was removed. 
+INFO: [Synth 8-3886] merging instance 'Interfaces/INST_SRAM/Data0_reg[9]' (FD) to 'Interfaces/INST_SRAM/Data0_reg[17]'
+INFO: [Synth 8-3886] merging instance 'Interfaces/INST_SRAM/Data0_reg[10]' (FD) to 'Interfaces/INST_SRAM/Data0_reg[17]'
+INFO: [Synth 8-3886] merging instance 'Interfaces/INST_SRAM/Data0_reg[11]' (FD) to 'Interfaces/INST_SRAM/Data0_reg[17]'
+INFO: [Synth 8-3886] merging instance 'Interfaces/INST_SRAM/Data0_reg[12]' (FD) to 'Interfaces/INST_SRAM/Data0_reg[17]'
+INFO: [Synth 8-3886] merging instance 'Interfaces/INST_SRAM/Data0_reg[13]' (FD) to 'Interfaces/INST_SRAM/Data0_reg[17]'
+INFO: [Synth 8-3886] merging instance 'Interfaces/INST_SRAM/Data0_reg[14]' (FD) to 'Interfaces/INST_SRAM/Data0_reg[17]'
+INFO: [Synth 8-3886] merging instance 'Interfaces/INST_SRAM/Data0_reg[15]' (FD) to 'Interfaces/INST_SRAM/Data0_reg[17]'
+INFO: [Synth 8-3886] merging instance 'Interfaces/INST_SRAM/Data0_reg[16]' (FD) to 'Interfaces/INST_SRAM/Data0_reg[17]'
+INFO: [Synth 8-3886] merging instance 'Interfaces/INST_SRAM/Data0_reg[17]' (FD) to 'Interfaces/INST_SRAM/Data0_reg[8]'
+INFO: [Synth 8-3886] merging instance 'Interfaces/INST_SRAM/Data0_reg[0]' (FD) to 'Interfaces/INST_SRAM/Data0_reg[8]'
+INFO: [Synth 8-3886] merging instance 'Interfaces/INST_SRAM/Data0_reg[1]' (FD) to 'Interfaces/INST_SRAM/Data0_reg[8]'
+INFO: [Synth 8-3886] merging instance 'Interfaces/INST_SRAM/Data0_reg[2]' (FD) to 'Interfaces/INST_SRAM/Data0_reg[8]'
+INFO: [Synth 8-3886] merging instance 'Interfaces/INST_SRAM/Data0_reg[3]' (FD) to 'Interfaces/INST_SRAM/Data0_reg[8]'
+INFO: [Synth 8-3886] merging instance 'Interfaces/INST_SRAM/Data0_reg[4]' (FD) to 'Interfaces/INST_SRAM/Data0_reg[8]'
+INFO: [Synth 8-3886] merging instance 'Interfaces/INST_SRAM/Data0_reg[5]' (FD) to 'Interfaces/INST_SRAM/Data0_reg[8]'
+INFO: [Synth 8-3886] merging instance 'Interfaces/INST_SRAM/Data0_reg[6]' (FD) to 'Interfaces/INST_SRAM/Data0_reg[8]'
+INFO: [Synth 8-3886] merging instance 'Interfaces/INST_SRAM/Data0_reg[7]' (FD) to 'Interfaces/INST_SRAM/Data0_reg[8]'
+INFO: [Synth 8-3886] merging instance 'Interfaces/INST_SRAM/Data0_reg[8]' (FD) to 'Interfaces/INST_SRAM/S_A_reg[22]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\Interfaces/INST_ZestSC1_Host/plusOp_inferred__0 /\Interfaces/INST_ZestSC1_Host/FIFOOutWriteCount_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\Interfaces/INST_ZestSC1_Host/plusOp_inferred__0 /\Interfaces/INST_ZestSC1_Host/FIFOOutWriteCount_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\Interfaces/INST_ZestSC1_Host/plusOp_inferred__0 /\Interfaces/INST_ZestSC1_Host/FIFOOutWriteCount_reg[2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\Interfaces/INST_ZestSC1_Host/plusOp_inferred__0 /\Interfaces/INST_ZestSC1_Host/FIFOOutWriteCount_reg[3] )
+INFO: [Synth 8-3886] merging instance 'Interfaces/INST_SRAM/Data1_reg[9]' (FD) to 'Interfaces/INST_SRAM/Data1_reg[8]'
+INFO: [Synth 8-3886] merging instance 'Interfaces/INST_SRAM/Data1_reg[10]' (FD) to 'Interfaces/INST_SRAM/Data1_reg[8]'
+INFO: [Synth 8-3886] merging instance 'Interfaces/INST_SRAM/Data1_reg[11]' (FD) to 'Interfaces/INST_SRAM/Data1_reg[8]'
+INFO: [Synth 8-3886] merging instance 'Interfaces/INST_SRAM/Data1_reg[12]' (FD) to 'Interfaces/INST_SRAM/Data1_reg[8]'
+INFO: [Synth 8-3886] merging instance 'Interfaces/INST_SRAM/Data1_reg[13]' (FD) to 'Interfaces/INST_SRAM/Data1_reg[8]'
+INFO: [Synth 8-3886] merging instance 'Interfaces/INST_SRAM/Data1_reg[14]' (FD) to 'Interfaces/INST_SRAM/Data1_reg[8]'
+INFO: [Synth 8-3886] merging instance 'Interfaces/INST_SRAM/Data1_reg[15]' (FD) to 'Interfaces/INST_SRAM/Data1_reg[8]'
+INFO: [Synth 8-3886] merging instance 'Interfaces/INST_SRAM/Data1_reg[16]' (FD) to 'Interfaces/INST_SRAM/Data1_reg[8]'
+INFO: [Synth 8-3886] merging instance 'Interfaces/INST_SRAM/Data1_reg[17]' (FD) to 'Interfaces/INST_SRAM/Data1_reg[8]'
+INFO: [Synth 8-3886] merging instance 'Interfaces/INST_SRAM/Data1_reg[0]' (FD) to 'Interfaces/INST_SRAM/Data1_reg[8]'
+INFO: [Synth 8-3886] merging instance 'Interfaces/INST_SRAM/Data1_reg[1]' (FD) to 'Interfaces/INST_SRAM/Data1_reg[8]'
+INFO: [Synth 8-3886] merging instance 'Interfaces/INST_SRAM/Data1_reg[2]' (FD) to 'Interfaces/INST_SRAM/Data1_reg[8]'
+INFO: [Synth 8-3886] merging instance 'Interfaces/INST_SRAM/Data1_reg[3]' (FD) to 'Interfaces/INST_SRAM/Data1_reg[8]'
+INFO: [Synth 8-3886] merging instance 'Interfaces/INST_SRAM/Data1_reg[4]' (FD) to 'Interfaces/INST_SRAM/Data1_reg[8]'
+INFO: [Synth 8-3886] merging instance 'Interfaces/INST_SRAM/Data1_reg[5]' (FD) to 'Interfaces/INST_SRAM/Data1_reg[8]'
+INFO: [Synth 8-3886] merging instance 'Interfaces/INST_SRAM/Data1_reg[6]' (FD) to 'Interfaces/INST_SRAM/Data1_reg[8]'
+INFO: [Synth 8-3886] merging instance 'Interfaces/INST_SRAM/Data1_reg[7]' (FD) to 'Interfaces/INST_SRAM/Data1_reg[8]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\Interfaces/INST_ZestSC1_Host/plusOp_inferred__2 /\Interfaces/INST_ZestSC1_Host/FIFOInReadCount_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\Interfaces/INST_ZestSC1_Host/plusOp_inferred__2 /\Interfaces/INST_ZestSC1_Host/FIFOInReadCount_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\Interfaces/INST_ZestSC1_Host/plusOp_inferred__2 /\Interfaces/INST_ZestSC1_Host/FIFOInReadCount_reg[2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\Interfaces/INST_ZestSC1_Host/plusOp_inferred__2 /\Interfaces/INST_ZestSC1_Host/FIFOInReadCount_reg[3] )
+INFO: [Synth 8-3886] merging instance 'Interfaces/INST_SRAM/S_DataOut_reg[9]' (FD) to 'Interfaces/INST_SRAM/S_DataOut_reg[7]'
+INFO: [Synth 8-3886] merging instance 'Interfaces/INST_SRAM/S_DataOut_reg[10]' (FD) to 'Interfaces/INST_SRAM/S_DataOut_reg[7]'
+INFO: [Synth 8-3886] merging instance 'Interfaces/INST_SRAM/S_DataOut_reg[11]' (FD) to 'Interfaces/INST_SRAM/S_DataOut_reg[7]'
+INFO: [Synth 8-3886] merging instance 'Interfaces/INST_SRAM/S_DataOut_reg[12]' (FD) to 'Interfaces/INST_SRAM/S_DataOut_reg[7]'
+INFO: [Synth 8-3886] merging instance 'Interfaces/INST_SRAM/S_DataOut_reg[13]' (FD) to 'Interfaces/INST_SRAM/S_DataOut_reg[7]'
+INFO: [Synth 8-3886] merging instance 'Interfaces/INST_SRAM/S_DataOut_reg[14]' (FD) to 'Interfaces/INST_SRAM/S_DataOut_reg[7]'
+INFO: [Synth 8-3886] merging instance 'Interfaces/INST_SRAM/S_DataOut_reg[15]' (FD) to 'Interfaces/INST_SRAM/S_DataOut_reg[7]'
+INFO: [Synth 8-3886] merging instance 'Interfaces/INST_SRAM/S_DataOut_reg[16]' (FD) to 'Interfaces/INST_SRAM/S_DataOut_reg[7]'
+INFO: [Synth 8-3886] merging instance 'Interfaces/INST_SRAM/S_DataOut_reg[17]' (FD) to 'Interfaces/INST_SRAM/S_DataOut_reg[7]'
+INFO: [Synth 8-3886] merging instance 'Interfaces/INST_SRAM/S_DataOut_reg[0]' (FD) to 'Interfaces/INST_SRAM/S_DataOut_reg[7]'
+INFO: [Synth 8-3886] merging instance 'Interfaces/INST_SRAM/S_DataOut_reg[1]' (FD) to 'Interfaces/INST_SRAM/S_DataOut_reg[7]'
+INFO: [Synth 8-3886] merging instance 'Interfaces/INST_SRAM/S_DataOut_reg[2]' (FD) to 'Interfaces/INST_SRAM/S_DataOut_reg[7]'
+INFO: [Synth 8-3886] merging instance 'Interfaces/INST_SRAM/S_DataOut_reg[3]' (FD) to 'Interfaces/INST_SRAM/S_DataOut_reg[7]'
+INFO: [Synth 8-3886] merging instance 'Interfaces/INST_SRAM/S_DataOut_reg[4]' (FD) to 'Interfaces/INST_SRAM/S_DataOut_reg[7]'
+INFO: [Synth 8-3886] merging instance 'Interfaces/INST_SRAM/S_DataOut_reg[5]' (FD) to 'Interfaces/INST_SRAM/S_DataOut_reg[7]'
+INFO: [Synth 8-3886] merging instance 'Interfaces/INST_SRAM/S_DataOut_reg[6]' (FD) to 'Interfaces/INST_SRAM/S_DataOut_reg[7]'
+INFO: [Synth 8-3886] merging instance 'Interfaces/INST_SRAM/S_DataOut_reg[7]' (FD) to 'Interfaces/INST_SRAM/S_DataOut_reg[8]'
+INFO: [Synth 8-3886] merging instance 'i_106/Interfaces/INST_ZestSC1_Host/StreamDataOut_reg[0]' (FDE) to 'i_106/Interfaces/INST_ZestSC1_Host/StreamDataOut_reg[15]'
+INFO: [Synth 8-3886] merging instance 'i_106/Interfaces/INST_ZestSC1_Host/StreamDataOut_reg[1]' (FDE) to 'i_106/Interfaces/INST_ZestSC1_Host/StreamDataOut_reg[15]'
+INFO: [Synth 8-3886] merging instance 'i_106/Interfaces/INST_ZestSC1_Host/StreamDataOut_reg[2]' (FDE) to 'i_106/Interfaces/INST_ZestSC1_Host/StreamDataOut_reg[15]'
+INFO: [Synth 8-3886] merging instance 'i_106/Interfaces/INST_ZestSC1_Host/StreamDataOut_reg[3]' (FDE) to 'i_106/Interfaces/INST_ZestSC1_Host/StreamDataOut_reg[15]'
+INFO: [Synth 8-3886] merging instance 'i_106/Interfaces/INST_ZestSC1_Host/StreamDataOut_reg[4]' (FDE) to 'i_106/Interfaces/INST_ZestSC1_Host/StreamDataOut_reg[15]'
+INFO: [Synth 8-3886] merging instance 'i_106/Interfaces/INST_ZestSC1_Host/StreamDataOut_reg[5]' (FDE) to 'i_106/Interfaces/INST_ZestSC1_Host/StreamDataOut_reg[15]'
+INFO: [Synth 8-3886] merging instance 'i_106/Interfaces/INST_ZestSC1_Host/StreamDataOut_reg[6]' (FDE) to 'i_106/Interfaces/INST_ZestSC1_Host/StreamDataOut_reg[15]'
+INFO: [Synth 8-3886] merging instance 'i_106/Interfaces/INST_ZestSC1_Host/StreamDataOut_reg[7]' (FDE) to 'i_106/Interfaces/INST_ZestSC1_Host/StreamDataOut_reg[15]'
+INFO: [Synth 8-3886] merging instance 'i_106/Interfaces/INST_ZestSC1_Host/StreamDataOut_reg[8]' (FDE) to 'i_106/Interfaces/INST_ZestSC1_Host/StreamDataOut_reg[15]'
+INFO: [Synth 8-3886] merging instance 'i_106/Interfaces/INST_ZestSC1_Host/StreamDataOut_reg[9]' (FDE) to 'i_106/Interfaces/INST_ZestSC1_Host/StreamDataOut_reg[15]'
+INFO: [Synth 8-3886] merging instance 'i_106/Interfaces/INST_ZestSC1_Host/StreamDataOut_reg[10]' (FDE) to 'i_106/Interfaces/INST_ZestSC1_Host/StreamDataOut_reg[15]'
+INFO: [Synth 8-3886] merging instance 'i_106/Interfaces/INST_ZestSC1_Host/StreamDataOut_reg[11]' (FDE) to 'i_106/Interfaces/INST_ZestSC1_Host/StreamDataOut_reg[15]'
+INFO: [Synth 8-3886] merging instance 'i_106/Interfaces/INST_ZestSC1_Host/StreamDataOut_reg[12]' (FDE) to 'i_106/Interfaces/INST_ZestSC1_Host/StreamDataOut_reg[15]'
+INFO: [Synth 8-3886] merging instance 'i_106/Interfaces/INST_ZestSC1_Host/StreamDataOut_reg[13]' (FDE) to 'i_106/Interfaces/INST_ZestSC1_Host/StreamDataOut_reg[15]'
+INFO: [Synth 8-3886] merging instance 'i_106/Interfaces/INST_ZestSC1_Host/StreamDataOut_reg[14]' (FDE) to 'i_106/Interfaces/INST_ZestSC1_Host/StreamDataOut_reg[15]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_106/\Interfaces/INST_ZestSC1_Host/StreamDataOut_reg[15] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\Interfaces/INST_SRAM/S_WE_N_reg )
+INFO: [Synth 8-3886] merging instance 'Interfaces/INST_SRAM/S_A_reg[0]' (FD) to 'Interfaces/INST_SRAM/S_A_reg[22]'
+INFO: [Synth 8-3886] merging instance 'Interfaces/INST_SRAM/S_A_reg[1]' (FD) to 'Interfaces/INST_SRAM/S_A_reg[22]'
+INFO: [Synth 8-3886] merging instance 'Interfaces/INST_SRAM/S_A_reg[2]' (FD) to 'Interfaces/INST_SRAM/S_A_reg[22]'
+INFO: [Synth 8-3886] merging instance 'Interfaces/INST_SRAM/S_A_reg[3]' (FD) to 'Interfaces/INST_SRAM/S_A_reg[22]'
+INFO: [Synth 8-3886] merging instance 'Interfaces/INST_SRAM/S_A_reg[4]' (FD) to 'Interfaces/INST_SRAM/S_A_reg[22]'
+INFO: [Synth 8-3886] merging instance 'Interfaces/INST_SRAM/S_A_reg[5]' (FD) to 'Interfaces/INST_SRAM/S_A_reg[22]'
+INFO: [Synth 8-3886] merging instance 'Interfaces/INST_SRAM/S_A_reg[6]' (FD) to 'Interfaces/INST_SRAM/S_A_reg[22]'
+INFO: [Synth 8-3886] merging instance 'Interfaces/INST_SRAM/S_A_reg[7]' (FD) to 'Interfaces/INST_SRAM/S_A_reg[22]'
+INFO: [Synth 8-3886] merging instance 'Interfaces/INST_SRAM/S_A_reg[8]' (FD) to 'Interfaces/INST_SRAM/S_A_reg[22]'
+INFO: [Synth 8-3886] merging instance 'Interfaces/INST_SRAM/S_A_reg[9]' (FD) to 'Interfaces/INST_SRAM/S_A_reg[22]'
+INFO: [Synth 8-3886] merging instance 'Interfaces/INST_SRAM/S_A_reg[10]' (FD) to 'Interfaces/INST_SRAM/S_A_reg[22]'
+INFO: [Synth 8-3886] merging instance 'Interfaces/INST_SRAM/S_A_reg[11]' (FD) to 'Interfaces/INST_SRAM/S_A_reg[22]'
+INFO: [Synth 8-3886] merging instance 'Interfaces/INST_SRAM/S_A_reg[12]' (FD) to 'Interfaces/INST_SRAM/S_A_reg[22]'
+INFO: [Synth 8-3886] merging instance 'Interfaces/INST_SRAM/S_A_reg[13]' (FD) to 'Interfaces/INST_SRAM/S_A_reg[22]'
+INFO: [Synth 8-3886] merging instance 'Interfaces/INST_SRAM/S_A_reg[14]' (FD) to 'Interfaces/INST_SRAM/S_A_reg[22]'
+INFO: [Synth 8-3886] merging instance 'Interfaces/INST_SRAM/S_A_reg[15]' (FD) to 'Interfaces/INST_SRAM/S_A_reg[22]'
+INFO: [Synth 8-3886] merging instance 'Interfaces/INST_SRAM/S_A_reg[16]' (FD) to 'Interfaces/INST_SRAM/S_A_reg[22]'
+INFO: [Synth 8-3886] merging instance 'Interfaces/INST_SRAM/S_A_reg[17]' (FD) to 'Interfaces/INST_SRAM/S_A_reg[22]'
+INFO: [Synth 8-3886] merging instance 'Interfaces/INST_SRAM/S_A_reg[18]' (FD) to 'Interfaces/INST_SRAM/S_A_reg[22]'
+INFO: [Synth 8-3886] merging instance 'Interfaces/INST_SRAM/S_A_reg[19]' (FD) to 'Interfaces/INST_SRAM/S_A_reg[22]'
+INFO: [Synth 8-3886] merging instance 'Interfaces/INST_SRAM/S_A_reg[20]' (FD) to 'Interfaces/INST_SRAM/S_A_reg[22]'
+INFO: [Synth 8-3886] merging instance 'Interfaces/INST_SRAM/S_A_reg[21]' (FD) to 'Interfaces/INST_SRAM/S_A_reg[22]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\Interfaces/INST_SRAM/S_A_reg[22] )
+INFO: [Synth 8-3886] merging instance 'Interfaces/INST_SRAM/S_WE_N_reg' (FD) to 'Interfaces/INST_SRAM/OutputEnable1_n_reg'
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\Interfaces/INST_SRAM/OutputEnable1_n_reg )
+INFO: [Synth 8-3886] merging instance 'Interfaces/INST_SRAM/S_A_reg[22]' (FD) to 'Interfaces/INST_SRAM/Data1_reg[8]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\Interfaces/INST_SRAM/Data1_reg[8] )
+INFO: [Synth 8-3886] merging instance 'Interfaces/INST_SRAM/S_OutputEnable_n_reg' (FD) to 'Interfaces/INST_SRAM/OutputEnable1_n_reg'
+INFO: [Synth 8-3886] merging instance 'Interfaces/INST_SRAM/S_DataOut_reg[8]' (FD) to 'Interfaces/INST_SRAM/Data1_reg[8]'
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\Interfaces/INST_SRAM/OutputEnable1_n_reg )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\Interfaces/INST_SRAM/Data1_reg[8] )
+WARNING: [Synth 8-3332] Sequential element (Interfaces/INST_ZestSC1_Host/FIFOInReadCount_reg_rep[3]) is unused and will be removed from module TASTE.
+WARNING: [Synth 8-3332] Sequential element (Interfaces/INST_ZestSC1_Host/FIFOInReadCount_reg_rep[2]) is unused and will be removed from module TASTE.
+WARNING: [Synth 8-3332] Sequential element (Interfaces/INST_ZestSC1_Host/FIFOInReadCount_reg_rep[1]) is unused and will be removed from module TASTE.
+WARNING: [Synth 8-3332] Sequential element (Interfaces/INST_ZestSC1_Host/FIFOInReadCount_reg_rep[0]) is unused and will be removed from module TASTE.
+WARNING: [Synth 8-3332] Sequential element (Interfaces/INST_ZestSC1_Host/StreamDataIn_reg[15]) is unused and will be removed from module TASTE.
+WARNING: [Synth 8-3332] Sequential element (Interfaces/INST_ZestSC1_Host/StreamDataIn_reg[14]) is unused and will be removed from module TASTE.
+WARNING: [Synth 8-3332] Sequential element (Interfaces/INST_ZestSC1_Host/StreamDataIn_reg[13]) is unused and will be removed from module TASTE.
+WARNING: [Synth 8-3332] Sequential element (Interfaces/INST_ZestSC1_Host/StreamDataIn_reg[12]) is unused and will be removed from module TASTE.
+WARNING: [Synth 8-3332] Sequential element (Interfaces/INST_ZestSC1_Host/StreamDataIn_reg[11]) is unused and will be removed from module TASTE.
+WARNING: [Synth 8-3332] Sequential element (Interfaces/INST_ZestSC1_Host/StreamDataIn_reg[10]) is unused and will be removed from module TASTE.
+WARNING: [Synth 8-3332] Sequential element (Interfaces/INST_ZestSC1_Host/StreamDataIn_reg[9]) is unused and will be removed from module TASTE.
+WARNING: [Synth 8-3332] Sequential element (Interfaces/INST_ZestSC1_Host/StreamDataIn_reg[8]) is unused and will be removed from module TASTE.
+WARNING: [Synth 8-3332] Sequential element (Interfaces/INST_ZestSC1_Host/StreamDataIn_reg[7]) is unused and will be removed from module TASTE.
+WARNING: [Synth 8-3332] Sequential element (Interfaces/INST_ZestSC1_Host/StreamDataIn_reg[6]) is unused and will be removed from module TASTE.
+WARNING: [Synth 8-3332] Sequential element (Interfaces/INST_ZestSC1_Host/StreamDataIn_reg[5]) is unused and will be removed from module TASTE.
+WARNING: [Synth 8-3332] Sequential element (Interfaces/INST_ZestSC1_Host/StreamDataIn_reg[4]) is unused and will be removed from module TASTE.
+WARNING: [Synth 8-3332] Sequential element (Interfaces/INST_ZestSC1_Host/StreamDataIn_reg[3]) is unused and will be removed from module TASTE.
+WARNING: [Synth 8-3332] Sequential element (Interfaces/INST_ZestSC1_Host/StreamDataIn_reg[2]) is unused and will be removed from module TASTE.
+WARNING: [Synth 8-3332] Sequential element (Interfaces/INST_ZestSC1_Host/StreamDataIn_reg[1]) is unused and will be removed from module TASTE.
+WARNING: [Synth 8-3332] Sequential element (Interfaces/INST_ZestSC1_Host/StreamDataIn_reg[0]) is unused and will be removed from module TASTE.
+WARNING: [Synth 8-3332] Sequential element (Interfaces/INST_ZestSC1_Host/FIFOOutReadCount_reg_rep[3]) is unused and will be removed from module TASTE.
+WARNING: [Synth 8-3332] Sequential element (Interfaces/INST_ZestSC1_Host/FIFOOutReadCount_reg_rep[2]) is unused and will be removed from module TASTE.
+WARNING: [Synth 8-3332] Sequential element (Interfaces/INST_ZestSC1_Host/FIFOOutReadCount_reg_rep[1]) is unused and will be removed from module TASTE.
+WARNING: [Synth 8-3332] Sequential element (Interfaces/INST_ZestSC1_Host/FIFOOutReadCount_reg_rep[0]) is unused and will be removed from module TASTE.
+WARNING: [Synth 8-3332] Sequential element (Interfaces/INST_ZestSC1_Host/RegFIFOOutWriteCountG_reg[3]) is unused and will be removed from module TASTE.
+WARNING: [Synth 8-3332] Sequential element (Interfaces/INST_ZestSC1_Host/RegFIFOOutWriteCountG_reg[2]) is unused and will be removed from module TASTE.
+WARNING: [Synth 8-3332] Sequential element (Interfaces/INST_ZestSC1_Host/RegFIFOOutWriteCountG_reg[1]) is unused and will be removed from module TASTE.
+WARNING: [Synth 8-3332] Sequential element (Interfaces/INST_ZestSC1_Host/RegFIFOOutWriteCountG_reg[0]) is unused and will be removed from module TASTE.
+WARNING: [Synth 8-3332] Sequential element (Interfaces/INST_ZestSC1_Host/RegFIFOInWriteCountG_reg[3]) is unused and will be removed from module TASTE.
+WARNING: [Synth 8-3332] Sequential element (Interfaces/INST_ZestSC1_Host/RegFIFOInWriteCountG_reg[2]) is unused and will be removed from module TASTE.
+WARNING: [Synth 8-3332] Sequential element (Interfaces/INST_ZestSC1_Host/RegFIFOInWriteCountG_reg[1]) is unused and will be removed from module TASTE.
+WARNING: [Synth 8-3332] Sequential element (Interfaces/INST_ZestSC1_Host/RegFIFOInWriteCountG_reg[0]) is unused and will be removed from module TASTE.
+WARNING: [Synth 8-3332] Sequential element (Interfaces/INST_ZestSC1_Host/RegFIFOInReadCountG_reg[3]) is unused and will be removed from module TASTE.
+WARNING: [Synth 8-3332] Sequential element (Interfaces/INST_ZestSC1_Host/RegFIFOInReadCountG_reg[2]) is unused and will be removed from module TASTE.
+WARNING: [Synth 8-3332] Sequential element (Interfaces/INST_ZestSC1_Host/RegFIFOInReadCountG_reg[1]) is unused and will be removed from module TASTE.
+WARNING: [Synth 8-3332] Sequential element (Interfaces/INST_ZestSC1_Host/RegFIFOInReadCountG_reg[0]) is unused and will be removed from module TASTE.
+WARNING: [Synth 8-3332] Sequential element (Interfaces/INST_ZestSC1_Host/RegFIFOOutReadCountG_reg[3]) is unused and will be removed from module TASTE.
+WARNING: [Synth 8-3332] Sequential element (Interfaces/INST_ZestSC1_Host/RegFIFOOutReadCountG_reg[2]) is unused and will be removed from module TASTE.
+WARNING: [Synth 8-3332] Sequential element (Interfaces/INST_ZestSC1_Host/RegFIFOOutReadCountG_reg[1]) is unused and will be removed from module TASTE.
+WARNING: [Synth 8-3332] Sequential element (Interfaces/INST_ZestSC1_Host/RegFIFOOutReadCountG_reg[0]) is unused and will be removed from module TASTE.
+WARNING: [Synth 8-3332] Sequential element (Interfaces/INST_ZestSC1_Host/StreamDataOut_reg[15]) is unused and will be removed from module TASTE.
+WARNING: [Synth 8-3332] Sequential element (Interfaces/INST_SRAM/OutputEnable1_n_reg) is unused and will be removed from module TASTE.
+WARNING: [Synth 8-3332] Sequential element (Interfaces/INST_SRAM/Data1_reg[8]) is unused and will be removed from module TASTE.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:19 ; elapsed = 00:00:31 . Memory (MB): peak = 1599.324 ; gain = 417.465 ; free physical = 143 ; free virtual = 2428
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:31 ; elapsed = 00:00:49 . Memory (MB): peak = 1599.324 ; gain = 417.465 ; free physical = 122 ; free virtual = 2206
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:31 ; elapsed = 00:00:49 . Memory (MB): peak = 1599.324 ; gain = 417.465 ; free physical = 121 ; free virtual = 2206
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:31 ; elapsed = 00:00:49 . Memory (MB): peak = 1599.324 ; gain = 417.465 ; free physical = 119 ; free virtual = 2204
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+INFO: [Synth 8-4649] Removing BlackBox instance \Interface_accelerator/fc1/xnor_pop1  of module xnor_popcount__1 having unconnected or no output ports
+INFO: [Synth 8-4649] Removing BlackBox instance \Interface_accelerator/fc1/xnor_pop2  of module xnor_popcount__2 having unconnected or no output ports
+INFO: [Synth 8-4649] Removing BlackBox instance \Interface_accelerator/fc1/xnor_pop3  of module xnor_popcount__3 having unconnected or no output ports
+INFO: [Synth 8-4649] Removing BlackBox instance \Interface_accelerator/fc1/xnor_pop4  of module xnor_popcount__4 having unconnected or no output ports
+INFO: [Synth 8-4649] Removing BlackBox instance \Interface_accelerator/fc1/xnor_pop5  of module xnor_popcount__5 having unconnected or no output ports
+INFO: [Synth 8-4649] Removing BlackBox instance \Interface_accelerator/fc1/xnor_pop6  of module xnor_popcount__6 having unconnected or no output ports
+INFO: [Synth 8-4649] Removing BlackBox instance \Interface_accelerator/fc1/xnor_pop7  of module xnor_popcount__7 having unconnected or no output ports
+INFO: [Synth 8-4649] Removing BlackBox instance \Interface_accelerator/fc1/xnor_pop8  of module xnor_popcount__8 having unconnected or no output ports
+INFO: [Synth 8-4649] Removing BlackBox instance \Interface_accelerator/fc1/xnor_pop9  of module xnor_popcount__9 having unconnected or no output ports
+INFO: [Synth 8-4649] Removing BlackBox instance \Interface_accelerator/fc1/xnor_pop10  of module xnor_popcount__10 having unconnected or no output ports
+INFO: [Synth 8-4649] Removing BlackBox instance \Interface_accelerator/fc1/fc1_activation  of module accumulate_bbox_3 having unconnected or no output ports
+INFO: [Synth 8-4649] Removing BlackBox instance \Interface_accelerator/fc2/xnor_pop1  of module xnor_popcount__11 having unconnected or no output ports
+INFO: [Synth 8-4649] Removing BlackBox instance \Interface_accelerator/fc2/xnor_pop2  of module xnor_popcount__12 having unconnected or no output ports
+INFO: [Synth 8-4649] Removing BlackBox instance \Interface_accelerator/fc2/xnor_pop3  of module xnor_popcount having unconnected or no output ports
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \Interface_accelerator/fc2/fc1_activation  has unconnected pin w1
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \Interface_accelerator/fc2/fc1_activation  has unconnected pin w2
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \Interface_accelerator/fc2/fc1_activation  has unconnected pin w3
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \Interface_accelerator/weights1  has unconnected pin wea[0]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \Interface_accelerator/weights1  has unconnected pin dina[0]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \Interface_accelerator/weights2  has unconnected pin wea[0]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \Interface_accelerator/weights2  has unconnected pin dina[0]
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:33 ; elapsed = 00:00:51 . Memory (MB): peak = 1599.324 ; gain = 417.465 ; free physical = 102 ; free virtual = 2187
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:33 ; elapsed = 00:00:51 . Memory (MB): peak = 1599.324 ; gain = 417.465 ; free physical = 102 ; free virtual = 2187
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:33 ; elapsed = 00:00:51 . Memory (MB): peak = 1599.324 ; gain = 417.465 ; free physical = 102 ; free virtual = 2187
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:33 ; elapsed = 00:00:51 . Memory (MB): peak = 1599.324 ; gain = 417.465 ; free physical = 102 ; free virtual = 2187
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:33 ; elapsed = 00:00:51 . Memory (MB): peak = 1599.324 ; gain = 417.465 ; free physical = 102 ; free virtual = 2187
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:33 ; elapsed = 00:00:51 . Memory (MB): peak = 1599.324 ; gain = 417.465 ; free physical = 101 ; free virtual = 2186
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+---------------+----------+
+|      |BlackBox name  |Instances |
++------+---------------+----------+
+|1     |subsample64to1 |         1|
+|2     |fifo_regs      |         1|
+|3     |memory         |         2|
+|4     |accumulate     |         1|
+|5     |ROC            |         1|
++------+---------------+----------+
+
+Report Cell Usage: 
++------+----------------------+------+
+|      |Cell                  |Count |
++------+----------------------+------+
+|1     |ROC_bbox_1            |     1|
+|2     |accumulate_bbox_4     |     1|
+|3     |fifo_regs             |     1|
+|4     |memory                |     1|
+|5     |memory__1             |     1|
+|6     |subsample64to1_bbox_2 |     1|
+|7     |BUFG                  |     3|
+|8     |CARRY4                |    10|
+|9     |DCM                   |     3|
+|10    |LUT1                  |    23|
+|11    |LUT2                  |    31|
+|12    |LUT3                  |    12|
+|13    |LUT4                  |    22|
+|14    |LUT5                  |     6|
+|15    |LUT6                  |    27|
+|16    |FDCE                  |    61|
+|17    |FDPE                  |     4|
+|18    |FDRE                  |    75|
+|19    |IBUF                  |    25|
+|20    |IOBUF                 |     8|
+|21    |OBUF                  |    43|
+|22    |OBUFT                 |    16|
+|23    |OFDDRCPE              |     1|
++------+----------------------+------+
+
+Report Instance Areas: 
++------+------------------------+-------------------+------+
+|      |Instance                |Module             |Cells |
++------+------------------------+-------------------+------+
+|1     |top                     |                   |   384|
+|2     |  Interface_accelerator |accelerator        |    21|
+|3     |    fc2                 |output_layer       |     4|
+|4     |  Interfaces            |ZestSC1_Interfaces |   135|
+|5     |    INST_SRAM           |ZestSC1_SRAM       |     4|
+|6     |    INST_ZestSC1_Host   |ZestSC1_Host       |   131|
++------+------------------------+-------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:33 ; elapsed = 00:00:51 . Memory (MB): peak = 1599.324 ; gain = 417.465 ; free physical = 101 ; free virtual = 2186
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 7 critical warnings and 80 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:23 ; elapsed = 00:00:31 . Memory (MB): peak = 1599.324 ; gain = 124.426 ; free physical = 152 ; free virtual = 2237
+Synthesis Optimization Complete : Time (s): cpu = 00:00:33 ; elapsed = 00:00:51 . Memory (MB): peak = 1599.332 ; gain = 417.465 ; free physical = 152 ; free virtual = 2238
+INFO: [Project 1-571] Translating synthesized netlist
+Release 14.7 - ngc2edif P_INT.20180321 (lin64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+Release 14.7 - ngc2edif P_INT.20180321 (lin64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+Reading design memory.ngc ...
+WARNING:NetListWriters:298 - No output is written to memory.xncf, ignored.
+Processing design ...
+   Preping design's networks ...
+   Preping design's macros ...
+  finished :Prep
+Writing EDIF netlist file memory.edif ...
+ngc2edif: Total memory usage is 104508 kilobytes
+
+Reading core file '/home/jannis/Code/fpga_bnn_accelerator/src/fpga_logic/TASTE-VHDL-XISE/project_1/project_1.srcs/sources_1/ip/memory/memory.ngc' for (cell view 'memory', library 'work')
+Parsing EDIF File [./.ngc2edfcache/memory_ngc_88171073.edif]
+Finished Parsing EDIF File [./.ngc2edfcache/memory_ngc_88171073.edif]
+INFO: [Netlist 29-17] Analyzing 48 Unisim elements for replacement
+WARNING: [Netlist 29-365] DCM_ADV instance 'Interfaces/INST_SRAM/DCM_INST' has been transformed into an MMCM. Please check the output clock waveforms for correctness. If the output clocks are incorrect, modify your design to use the MMCME<#>_ADV native to the target architecture.
+WARNING: [Netlist 29-365] DCM_ADV instance 'Interfaces/INST_SRAM/DCM_INST' has been transformed into an MMCM. Please check the output clock waveforms for correctness. If the output clocks are incorrect, modify your design to use the MMCME<#>_ADV native to the target architecture.
+INFO: [Netlist 29-35] All phase shift calculations for instance 'Interfaces/INST_SRAM/DCM_INST' will be rounded to the nearest phase fraction.
+INFO: [Netlist 29-35] All phase shift calculations for instance 'Interfaces/INST_SRAM/DCM_INST' will be rounded to the nearest phase fraction.
+WARNING: [Netlist 29-151] Pin 'CLKFB' on instance 'Interfaces/INST_SRAM/DCM_INST' of cell type 'DCM_ADV' does not have an equivalent function on the new cell type 'MMCM_ADV'. Net 'CLKFB' that is connected to this pin will not be connected to the replacement instance.
+WARNING: [Netlist 29-365] DCM_ADV instance 'Interfaces/INST_ZestSC1_Host/StreamDCM' has been transformed into an MMCM. Please check the output clock waveforms for correctness. If the output clocks are incorrect, modify your design to use the MMCME<#>_ADV native to the target architecture.
+WARNING: [Netlist 29-365] DCM_ADV instance 'Interfaces/INST_ZestSC1_Host/StreamDCM' has been transformed into an MMCM. Please check the output clock waveforms for correctness. If the output clocks are incorrect, modify your design to use the MMCME<#>_ADV native to the target architecture.
+WARNING: [Netlist 29-365] DCM_ADV instance 'Interfaces/INST_ZestSC1_Host/RegDCM' has been transformed into an MMCM. Please check the output clock waveforms for correctness. If the output clocks are incorrect, modify your design to use the MMCME<#>_ADV native to the target architecture.
+WARNING: [Netlist 29-365] DCM_ADV instance 'Interfaces/INST_ZestSC1_Host/RegDCM' has been transformed into an MMCM. Please check the output clock waveforms for correctness. If the output clocks are incorrect, modify your design to use the MMCME<#>_ADV native to the target architecture.
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Xilinx ngc2edif P_INT.20180321
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 13 instances were transformed.
+  DCM => MMCME2_ADV (inverted pins: PSINCDEC): 3 instances
+  IOBUF => IOBUF (IBUF, OBUFT): 8 instances
+  RAMB16_S36_S36 => RAMB36E1: 2 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+212 Infos, 157 Warnings, 7 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:38 ; elapsed = 00:00:55 . Memory (MB): peak = 1599.332 ; gain = 417.672 ; free physical = 166 ; free virtual = 2214
+WARNING: [Constraints 18-5210] No constraint will be written out.
+INFO: [Common 17-1381] The checkpoint '/home/jannis/Code/fpga_bnn_accelerator/src/fpga_logic/TASTE-VHDL-XISE/project_1/project_1.runs/synth_1/TASTE.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file TASTE_utilization_synth.rpt -pb TASTE_utilization_synth.pb
+report_utilization: Time (s): cpu = 00:00:00.21 ; elapsed = 00:00:00.35 . Memory (MB): peak = 1623.336 ; gain = 0.000 ; free physical = 161 ; free virtual = 2217
+INFO: [Common 17-206] Exiting Vivado at Tue Nov 24 13:16:04 2020...

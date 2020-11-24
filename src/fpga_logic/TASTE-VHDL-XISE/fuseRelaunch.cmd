@@ -1,1 +1,1 @@
--intstyle "ise" -incremental -o "/home/jannis/Code/fpga_bnn_accelerator/src/fpga_logic/TASTE-VHDL-XISE/module_fifo_regs_no_flags_tb_isim_beh.exe" -prj "/home/jannis/Code/fpga_bnn_accelerator/src/fpga_logic/TASTE-VHDL-XISE/module_fifo_regs_no_flags_tb_beh.prj" "work.module_fifo_regs_no_flags_tb" 
+-intstyle "ise" -incremental -o "/home/jannis/Code/fpga_bnn_accelerator/src/fpga_logic/TASTE-VHDL-XISE/accelerator_isim_beh.exe" -prj "/home/jannis/Code/fpga_bnn_accelerator/src/fpga_logic/TASTE-VHDL-XISE/accelerator_beh.prj" "work.accelerator" 

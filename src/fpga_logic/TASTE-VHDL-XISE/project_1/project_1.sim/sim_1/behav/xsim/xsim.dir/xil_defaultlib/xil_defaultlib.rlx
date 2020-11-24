@@ -1,0 +1,23 @@
+0.6
+2018.2
+Jun 14 2018
+20:07:38
+/home/jannis/Code/fpga_bnn_accelerator/src/fpga_logic/TASTE-VHDL-XISE/Example1.vhd,1605612630,vhdl,,,,taste,,,,,,,,
+/home/jannis/Code/fpga_bnn_accelerator/src/fpga_logic/TASTE-VHDL-XISE/ZestSC1_Host.vhd,1605612630,vhdl,,,,zestsc1_host,,,,,,,,
+/home/jannis/Code/fpga_bnn_accelerator/src/fpga_logic/TASTE-VHDL-XISE/ZestSC1_Interfaces.vhd,1605612630,vhdl,,,,zestsc1_interfaces,,,,,,,,
+/home/jannis/Code/fpga_bnn_accelerator/src/fpga_logic/TASTE-VHDL-XISE/ZestSC1_SRAM.vhd,1605612630,vhdl,,,,zestsc1_sram,,,,,,,,
+/home/jannis/Code/fpga_bnn_accelerator/src/fpga_logic/TASTE-VHDL-XISE/accelerator.vhd,1606221924,vhdl,,,,accelerator,,,,,,,,
+/home/jannis/Code/fpga_bnn_accelerator/src/fpga_logic/TASTE-VHDL-XISE/fully_connected.vhd,1606151671,vhdl,,,,fully_connected,,,,,,,,
+/home/jannis/Code/fpga_bnn_accelerator/src/fpga_logic/TASTE-VHDL-XISE/output_layer.vhd,1605612630,vhdl,,,,output_layer,,,,,,,,
+/home/jannis/Code/fpga_bnn_accelerator/src/fpga_logic/TASTE-VHDL-XISE/project_1/project_1.ip_user_files/bd/design_2/sim/design_2.vhd,1606219548,vhdl,,,,,,,,,,,,
+/home/jannis/Code/fpga_bnn_accelerator/src/fpga_logic/TASTE-VHDL-XISE/project_1/project_1.sim/sim_1/behav/xsim/glbl.v,1529022455,verilog,,,,glbl,,,,,,,,
+/home/jannis/Code/fpga_bnn_accelerator/src/fpga_logic/TASTE-VHDL-XISE/project_1/project_1.srcs/sim_1/new/tb_acc.vhd,1606219431,vhdl,,,,,,,,,,,,
+/home/jannis/Code/fpga_bnn_accelerator/src/fpga_logic/TASTE-VHDL-XISE/project_1/project_1.srcs/sources_1/bd/design_1/sim/design_1.v,1606213660,verilog,,,,design_1,,,,,,,,
+/home/jannis/Code/fpga_bnn_accelerator/src/fpga_logic/TASTE-VHDL-XISE/project_1/project_1.srcs/sources_1/ip/memory/memory.v,1605612630,verilog,,/home/jannis/Code/fpga_bnn_accelerator/src/fpga_logic/TASTE-VHDL-XISE/project_1/project_1.srcs/sources_1/bd/design_1/sim/design_1.v,,memory,,,,,,,,
+/home/jannis/Code/fpga_bnn_accelerator/src/fpga_logic/TASTE-VHDL-XISE/project_1/project_1.srcs/sources_1/new/fifo_regs.vhd,1606219774,vhdl,,,,fifo_regs,,,,,,,,
+/home/jannis/Code/fpga_bnn_accelerator/src/fpga_logic/TASTE-VHDL-XISE/subsample.vhd,1605612630,vhdl,,,,subsample,,,,,,,,
+/home/jannis/Code/fpga_bnn_accelerator/src/fpga_logic/TASTE-VHDL-XISE/tb_acc.vhd,1606220454,vhdl,,,,tb_acc,,,,,,,,
+/home/jannis/Code/fpga_bnn_accelerator/src/fpga_logic/TASTE-VHDL-XISE/tb_fifo.vhd,1605653039,vhdl,,,,module_fifo_regs_no_flags_tb,,,,,,,,
+/home/jannis/Code/fpga_bnn_accelerator/src/fpga_logic/TASTE-VHDL-XISE/upsample.vhd,1605612630,vhdl,,,,upsample1to64,,,,,,,,
+/home/jannis/Code/fpga_bnn_accelerator/src/fpga_logic/TASTE-VHDL-XISE/upsample3_64.vhd,1605612630,vhdl,,,,upsample3_64,,,,,,,,
+/home/jannis/Code/fpga_bnn_accelerator/src/fpga_logic/TASTE-VHDL-XISE/xnor_popcount.vhd,1606151671,vhdl,,,,xnor_popcount,,,,,,,,

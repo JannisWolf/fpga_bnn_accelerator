@@ -1,0 +1,20 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../../subsample.vhd" \
+"../../../../../xnor_popcount.vhd" \
+"../../../../../ZestSC1_SRAM.vhd" \
+"../../../../../ZestSC1_Host.vhd" \
+"../../../../../upsample3_64.vhd" \
+"../../../../../upsample.vhd" \
+"../../../../../output_layer.vhd" \
+"../../../../../fully_connected.vhd" \
+"../../../../../ZestSC1_Interfaces.vhd" \
+"../../../../../accelerator.vhd" \
+"../../../../../Example1.vhd" \
+"../../../../project_1.ip_user_files/bd/design_2/sim/design_2.vhd" \
+"../../../../project_1.srcs/sources_1/new/fifo_regs.vhd" \
+"../../../../../tb_fifo.vhd" \
+"../../../../../tb_acc.vhd" \
+
+# Do not sort compile order
+nosort

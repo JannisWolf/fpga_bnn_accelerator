@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<BillOfMaterials Version="1" Minor="2">
+	<IPInstance name="memory">
+		<FileSets>
+			<FileSet generator="xmdf_to_bom">
+				<File name="memory/blk_mem_gen_v7_3_readme.txt" type="ignore" timestamp="Tue Nov 17 11:30:30 2020" checksum="0">
+				</File>
+				<File name="memory/doc/blk_mem_gen_v7_3_vinfo.html" type="ignore" timestamp="Tue Nov 17 11:30:30 2020" checksum="0">
+				</File>
+				<File name="memory/doc/pg058-blk-mem-gen.pdf" type="ignore" timestamp="Tue Nov 17 11:30:30 2020" checksum="0">
+				</File>
+				<File name="memory.asy" type="asy" timestamp="Tue Nov 17 11:30:30 2020" checksum="0">
+				</File>
+				<File name="memory.ngc" type="ngc" timestamp="Tue Nov 17 11:30:30 2020" checksum="0">
+				</File>
+				<File name="memory.sym" type="asy" timestamp="Tue Nov 17 11:30:30 2020" checksum="0">
+				</File>
+				<File name="memory.v" type="verilog" timestamp="Tue Nov 17 11:30:30 2020" checksum="0">
+				</File>
+				<File name="memory.veo" type="veo" timestamp="Tue Nov 17 11:30:30 2020" checksum="0">
+				</File>
+				<File name="memory.xco" type="xco" timestamp="Tue Nov 17 11:30:30 2020" checksum="0">
+				</File>
+				<File name="memory_xmdf.tcl" type="ignore" timestamp="Tue Nov 17 11:30:30 2020" checksum="0">
+				</File>
+				<File name="summary.log" type="ignore" timestamp="Tue Nov 17 11:30:30 2020" checksum="0">
+				</File>
+			</FileSet>
+		</FileSets>
+	</IPInstance>
+</BillOfMaterials>
+

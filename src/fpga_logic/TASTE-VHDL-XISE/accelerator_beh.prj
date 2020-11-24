@@ -1,0 +1,5 @@
+vhdl work "upsample3_64.vhd"
+vhdl work "upsample.vhd"
+vhdl work "output_layer.vhd"
+vhdl work "fully_connected.vhd"
+vhdl work "accelerator.vhd"

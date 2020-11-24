@@ -1,0 +1,64 @@
+Running: /home/jannis/Programs/ISE/14.7/ISE_DS/ISE/bin/lin64/unwrapped/fuse -intstyle ise -incremental -o /home/jannis/Code/fpga_bnn_accelerator/src/fpga_logic/TASTE-VHDL-XISE/accelerator_isim_beh.exe -prj /home/jannis/Code/fpga_bnn_accelerator/src/fpga_logic/TASTE-VHDL-XISE/accelerator_beh.prj work.accelerator 
+ISim P.20131013 (signature 0xfbc00daa)
+Number of CPUs detected in this system: 4
+Turning on mult-threading, number of parallel sub-compilation jobs: 8 
+Determining compilation order of HDL files
+Parsing VHDL file "/home/jannis/Code/fpga_bnn_accelerator/src/fpga_logic/TASTE-VHDL-XISE/upsample3_64.vhd" into library work
+Parsing VHDL file "/home/jannis/Code/fpga_bnn_accelerator/src/fpga_logic/TASTE-VHDL-XISE/upsample.vhd" into library work
+Parsing VHDL file "/home/jannis/Code/fpga_bnn_accelerator/src/fpga_logic/TASTE-VHDL-XISE/output_layer.vhd" into library work
+Parsing VHDL file "/home/jannis/Code/fpga_bnn_accelerator/src/fpga_logic/TASTE-VHDL-XISE/fully_connected.vhd" into library work
+Parsing VHDL file "/home/jannis/Code/fpga_bnn_accelerator/src/fpga_logic/TASTE-VHDL-XISE/accelerator.vhd" into library work
+Starting static elaboration
+WARNING:HDLCompiler:89 - "/home/jannis/Code/fpga_bnn_accelerator/src/fpga_logic/TASTE-VHDL-XISE/accelerator.vhd" Line 141: <subsample64to1> remains a black-box since it has no binding entity.
+WARNING:HDLCompiler:89 - "/home/jannis/Code/fpga_bnn_accelerator/src/fpga_logic/TASTE-VHDL-XISE/accelerator.vhd" Line 165: <fifo_regs> remains a black-box since it has no binding entity.
+WARNING:HDLCompiler:89 - "/home/jannis/Code/fpga_bnn_accelerator/src/fpga_logic/TASTE-VHDL-XISE/fully_connected.vhd" Line 88: <xnor_popcount> remains a black-box since it has no binding entity.
+WARNING:HDLCompiler:89 - "/home/jannis/Code/fpga_bnn_accelerator/src/fpga_logic/TASTE-VHDL-XISE/fully_connected.vhd" Line 95: <xnor_popcount> remains a black-box since it has no binding entity.
+WARNING:HDLCompiler:89 - "/home/jannis/Code/fpga_bnn_accelerator/src/fpga_logic/TASTE-VHDL-XISE/fully_connected.vhd" Line 102: <xnor_popcount> remains a black-box since it has no binding entity.
+WARNING:HDLCompiler:89 - "/home/jannis/Code/fpga_bnn_accelerator/src/fpga_logic/TASTE-VHDL-XISE/fully_connected.vhd" Line 109: <xnor_popcount> remains a black-box since it has no binding entity.
+WARNING:HDLCompiler:89 - "/home/jannis/Code/fpga_bnn_accelerator/src/fpga_logic/TASTE-VHDL-XISE/fully_connected.vhd" Line 116: <xnor_popcount> remains a black-box since it has no binding entity.
+WARNING:HDLCompiler:89 - "/home/jannis/Code/fpga_bnn_accelerator/src/fpga_logic/TASTE-VHDL-XISE/fully_connected.vhd" Line 123: <xnor_popcount> remains a black-box since it has no binding entity.
+WARNING:HDLCompiler:89 - "/home/jannis/Code/fpga_bnn_accelerator/src/fpga_logic/TASTE-VHDL-XISE/fully_connected.vhd" Line 130: <xnor_popcount> remains a black-box since it has no binding entity.
+WARNING:HDLCompiler:89 - "/home/jannis/Code/fpga_bnn_accelerator/src/fpga_logic/TASTE-VHDL-XISE/fully_connected.vhd" Line 137: <xnor_popcount> remains a black-box since it has no binding entity.
+WARNING:HDLCompiler:89 - "/home/jannis/Code/fpga_bnn_accelerator/src/fpga_logic/TASTE-VHDL-XISE/fully_connected.vhd" Line 144: <xnor_popcount> remains a black-box since it has no binding entity.
+WARNING:HDLCompiler:89 - "/home/jannis/Code/fpga_bnn_accelerator/src/fpga_logic/TASTE-VHDL-XISE/fully_connected.vhd" Line 151: <xnor_popcount> remains a black-box since it has no binding entity.
+WARNING:HDLCompiler:89 - "/home/jannis/Code/fpga_bnn_accelerator/src/fpga_logic/TASTE-VHDL-XISE/fully_connected.vhd" Line 158: <accumulate> remains a black-box since it has no binding entity.
+WARNING:HDLCompiler:89 - "/home/jannis/Code/fpga_bnn_accelerator/src/fpga_logic/TASTE-VHDL-XISE/output_layer.vhd" Line 75: <xnor_popcount> remains a black-box since it has no binding entity.
+WARNING:HDLCompiler:89 - "/home/jannis/Code/fpga_bnn_accelerator/src/fpga_logic/TASTE-VHDL-XISE/output_layer.vhd" Line 82: <xnor_popcount> remains a black-box since it has no binding entity.
+WARNING:HDLCompiler:89 - "/home/jannis/Code/fpga_bnn_accelerator/src/fpga_logic/TASTE-VHDL-XISE/output_layer.vhd" Line 89: <xnor_popcount> remains a black-box since it has no binding entity.
+WARNING:HDLCompiler:89 - "/home/jannis/Code/fpga_bnn_accelerator/src/fpga_logic/TASTE-VHDL-XISE/output_layer.vhd" Line 97: <accumulate> remains a black-box since it has no binding entity.
+Completed static elaboration
+Fuse Memory Usage: 97380 KB
+Fuse CPU Usage: 1230 ms
+WARNING:Simulator:648 - "/home/jannis/Code/fpga_bnn_accelerator/src/fpga_logic/TASTE-VHDL-XISE/accelerator.vhd" Line 141. Instance subsample64to1 is unbound
+WARNING:Simulator:648 - "/home/jannis/Code/fpga_bnn_accelerator/src/fpga_logic/TASTE-VHDL-XISE/accelerator.vhd" Line 165. Instance fifo_regs is unbound
+WARNING:Simulator:648 - "/home/jannis/Code/fpga_bnn_accelerator/src/fpga_logic/TASTE-VHDL-XISE/fully_connected.vhd" Line 88. Instance xnor_popcount is unbound
+WARNING:Simulator:648 - "/home/jannis/Code/fpga_bnn_accelerator/src/fpga_logic/TASTE-VHDL-XISE/fully_connected.vhd" Line 95. Instance xnor_popcount is unbound
+WARNING:Simulator:648 - "/home/jannis/Code/fpga_bnn_accelerator/src/fpga_logic/TASTE-VHDL-XISE/fully_connected.vhd" Line 102. Instance xnor_popcount is unbound
+WARNING:Simulator:648 - "/home/jannis/Code/fpga_bnn_accelerator/src/fpga_logic/TASTE-VHDL-XISE/fully_connected.vhd" Line 109. Instance xnor_popcount is unbound
+WARNING:Simulator:648 - "/home/jannis/Code/fpga_bnn_accelerator/src/fpga_logic/TASTE-VHDL-XISE/fully_connected.vhd" Line 116. Instance xnor_popcount is unbound
+WARNING:Simulator:648 - "/home/jannis/Code/fpga_bnn_accelerator/src/fpga_logic/TASTE-VHDL-XISE/fully_connected.vhd" Line 123. Instance xnor_popcount is unbound
+WARNING:Simulator:648 - "/home/jannis/Code/fpga_bnn_accelerator/src/fpga_logic/TASTE-VHDL-XISE/fully_connected.vhd" Line 130. Instance xnor_popcount is unbound
+WARNING:Simulator:648 - "/home/jannis/Code/fpga_bnn_accelerator/src/fpga_logic/TASTE-VHDL-XISE/fully_connected.vhd" Line 137. Instance xnor_popcount is unbound
+WARNING:Simulator:648 - "/home/jannis/Code/fpga_bnn_accelerator/src/fpga_logic/TASTE-VHDL-XISE/fully_connected.vhd" Line 144. Instance xnor_popcount is unbound
+WARNING:Simulator:648 - "/home/jannis/Code/fpga_bnn_accelerator/src/fpga_logic/TASTE-VHDL-XISE/fully_connected.vhd" Line 151. Instance xnor_popcount is unbound
+WARNING:Simulator:648 - "/home/jannis/Code/fpga_bnn_accelerator/src/fpga_logic/TASTE-VHDL-XISE/fully_connected.vhd" Line 158. Instance accumulate is unbound
+WARNING:Simulator:648 - "/home/jannis/Code/fpga_bnn_accelerator/src/fpga_logic/TASTE-VHDL-XISE/output_layer.vhd" Line 75. Instance xnor_popcount is unbound
+WARNING:Simulator:648 - "/home/jannis/Code/fpga_bnn_accelerator/src/fpga_logic/TASTE-VHDL-XISE/output_layer.vhd" Line 82. Instance xnor_popcount is unbound
+WARNING:Simulator:648 - "/home/jannis/Code/fpga_bnn_accelerator/src/fpga_logic/TASTE-VHDL-XISE/output_layer.vhd" Line 89. Instance xnor_popcount is unbound
+WARNING:Simulator:648 - "/home/jannis/Code/fpga_bnn_accelerator/src/fpga_logic/TASTE-VHDL-XISE/output_layer.vhd" Line 97. Instance accumulate is unbound
+Compiling package standard
+Compiling package std_logic_1164
+Compiling package std_logic_arith
+Compiling package std_logic_unsigned
+Compiling architecture behavioral of entity upsample1to64 [upsample1to64_default]
+Compiling architecture behavioral of entity upsample3_64 [upsample3_64_default]
+Compiling architecture behavioral of entity fully_connected [fully_connected_default]
+Compiling architecture behavioral of entity output_layer [output_layer_default]
+Compiling architecture arch of entity accelerator
+Time Resolution for simulation is 1ps.
+Waiting for 1 sub-compilation(s) to finish...
+Compiled 13 VHDL Units
+Built simulation executable /home/jannis/Code/fpga_bnn_accelerator/src/fpga_logic/TASTE-VHDL-XISE/accelerator_isim_beh.exe
+Fuse Memory Usage: 669708 KB
+Fuse CPU Usage: 1330 ms
+GCC CPU Usage: 2330 ms

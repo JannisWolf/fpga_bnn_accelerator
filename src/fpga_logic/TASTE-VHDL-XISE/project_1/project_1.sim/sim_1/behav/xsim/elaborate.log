@@ -1,0 +1,10 @@
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: /home/jannis/Programs/Vivado/Vivado/2018.2/bin/unwrapped/lnx64.o/xelab -wto eeae61228b084491aa7d8bbd60e23893 --incr --debug typical --relax --mt 8 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tb_acc_behav xil_defaultlib.tb_acc xil_defaultlib.glbl -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-122] subsample64to1 remains a black-box since it has no binding entity [/home/jannis/Code/fpga_bnn_accelerator/src/fpga_logic/TASTE-VHDL-XISE/accelerator.vhd:141]
+ERROR: [VRFC 10-718] formal port <wei> does not exist in entity <xnor_popcount>.  Please compare the definition of block <xnor_popcount> to its component declaration and its instantion to detect the mismatch. [/home/jannis/Code/fpga_bnn_accelerator/src/fpga_logic/TASTE-VHDL-XISE/fully_connected.vhd:61]
+ERROR: [VRFC 10-718] formal port <d_in> does not exist in entity <xnor_popcount>.  Please compare the definition of block <xnor_popcount> to its component declaration and its instantion to detect the mismatch. [/home/jannis/Code/fpga_bnn_accelerator/src/fpga_logic/TASTE-VHDL-XISE/fully_connected.vhd:62]
+ERROR: [VRFC 10-718] formal port <res> does not exist in entity <xnor_popcount>.  Please compare the definition of block <xnor_popcount> to its component declaration and its instantion to detect the mismatch. [/home/jannis/Code/fpga_bnn_accelerator/src/fpga_logic/TASTE-VHDL-XISE/fully_connected.vhd:63]
+ERROR: [XSIM 43-3322] Static elaboration of top level Verilog design unit(s) in library work failed.
