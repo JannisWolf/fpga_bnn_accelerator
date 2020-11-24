@@ -30,4 +30,29 @@ use IEEE.STD_LOGIC_1164.ALL;
 --use UNISIM.VComponents.all;
 
 entity xnor_popcount is
+   PORT(
+	    clk_xn : IN STD_LOGIC;
+	    wei : IN STD_LOGIC;
+		 d_in : IN STD_LOGIC_VECTOR(2 downto 0);
+		 res : OUT STD_LOGIC
+	);
 end xnor_popcount;
+
+architecture Behavioral of xnor_popcount is
+
+signal cou : std_logic_vector(2 downto 0) := "000";
+
+begin
+
+process(clk_xn)
+begin
+   if(clk_xn'event and clk_xn='1') then
+	   for i in 0 to 2 loop
+		   cou(i) <= wei xnor d_in(i);
+		end loop;
+	end if;
+
+end process;
+
+end Behavioral;
+
