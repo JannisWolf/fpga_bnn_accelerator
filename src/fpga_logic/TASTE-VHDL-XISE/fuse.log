@@ -1,0 +1,22 @@
+Running: /home/jannis/Programs/ISE/14.7/ISE_DS/ISE/bin/lin64/unwrapped/fuse -intstyle ise -incremental -o /home/jannis/Code/fpga_bnn_accelerator/src/fpga_logic/TASTE-VHDL-XISE/tb_xnor_isim_beh.exe -prj /home/jannis/Code/fpga_bnn_accelerator/src/fpga_logic/TASTE-VHDL-XISE/tb_xnor_beh.prj work.tb_xnor 
+ISim P.20131013 (signature 0xfbc00daa)
+Number of CPUs detected in this system: 4
+Turning on mult-threading, number of parallel sub-compilation jobs: 8 
+Determining compilation order of HDL files
+Parsing VHDL file "/home/jannis/Code/fpga_bnn_accelerator/src/fpga_logic/TASTE-VHDL-XISE/xnor_popcount.vhd" into library work
+Parsing VHDL file "/home/jannis/Code/fpga_bnn_accelerator/src/fpga_logic/TASTE-VHDL-XISE/tb_xnor.vhd" into library work
+Starting static elaboration
+Completed static elaboration
+Fuse Memory Usage: 95968 KB
+Fuse CPU Usage: 1180 ms
+Compiling package standard
+Compiling package std_logic_1164
+Compiling architecture behavioral of entity xnor_popcount [xnor_popcount_default]
+Compiling architecture behavior of entity tb_xnor
+Time Resolution for simulation is 1ps.
+Waiting for 1 sub-compilation(s) to finish...
+Compiled 5 VHDL Units
+Built simulation executable /home/jannis/Code/fpga_bnn_accelerator/src/fpga_logic/TASTE-VHDL-XISE/tb_xnor_isim_beh.exe
+Fuse Memory Usage: 661588 KB
+Fuse CPU Usage: 1220 ms
+GCC CPU Usage: 260 ms

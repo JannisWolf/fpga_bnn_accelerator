@@ -58,6 +58,7 @@ signal act10 : STD_LOGIC;
 
 COMPONENT xnor_popcount is
    PORT(
+	    clk_xn : IN STD_LOGIC;
 	    wei : IN STD_LOGIC;
 		 d_in : IN STD_LOGIC_VECTOR(2 downto 0);
 		 res : OUT STD_LOGIC
@@ -87,6 +88,7 @@ begin
 
 xnor_pop1 : xnor_popcount
 PORT MAP(
+       clk_xn => clk_fc,
 		 wei => weights,
 		 d_in => data_in,
 		 res => act1
@@ -94,6 +96,7 @@ PORT MAP(
 		
 xnor_pop2 : xnor_popcount
 PORT MAP(
+       clk_xn => clk_fc,
 		 wei => weights,
 		 d_in => data_in,
 		 res => act2
@@ -101,6 +104,7 @@ PORT MAP(
 		
 xnor_pop3 : xnor_popcount
 PORT MAP(
+       clk_xn => clk_fc,
 		 wei => weights,
 		 d_in => data_in,
 		 res => act3
@@ -108,6 +112,7 @@ PORT MAP(
 		
 xnor_pop4 : xnor_popcount
 PORT MAP(
+       clk_xn => clk_fc,
 		 wei => weights,
 		 d_in => data_in,
 		 res => act4
@@ -115,6 +120,7 @@ PORT MAP(
 		
 xnor_pop5 : xnor_popcount
 PORT MAP(
+       clk_xn => clk_fc,
 		 wei => weights,
 		 d_in => data_in,
 		 res => act5
@@ -122,6 +128,7 @@ PORT MAP(
 		
 xnor_pop6 : xnor_popcount
 PORT MAP(
+       clk_xn => clk_fc,
 		 wei => weights,
 		 d_in => data_in,
 		 res => act6
@@ -129,6 +136,7 @@ PORT MAP(
 		
 xnor_pop7 : xnor_popcount
 PORT MAP(
+       clk_xn => clk_fc,
 		 wei => weights,
 		 d_in => data_in,
 		 res => act7
@@ -136,6 +144,7 @@ PORT MAP(
 		
 xnor_pop8 : xnor_popcount
 PORT MAP(
+       clk_xn => clk_fc,
 		 wei => weights,
 		 d_in => data_in,
 		 res => act8
@@ -143,6 +152,7 @@ PORT MAP(
 		
 xnor_pop9 : xnor_popcount
 PORT MAP(
+       clk_xn => clk_fc,
 		 wei => weights,
 		 d_in => data_in,
 		 res => act9
@@ -150,6 +160,7 @@ PORT MAP(
 		
 xnor_pop10 : xnor_popcount
 PORT MAP(
+       clk_xn => clk_fc,
 		 wei => weights,
 		 d_in => data_in,
 		 res => act10

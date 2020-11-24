@@ -1,0 +1,2 @@
+vhdl work "xnor_popcount.vhd"
+vhdl work "tb_xnor.vhd"

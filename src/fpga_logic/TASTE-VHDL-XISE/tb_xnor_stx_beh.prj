@@ -1,0 +1,2 @@
+vhdl isim_temp "xnor_popcount.vhd"
+vhdl isim_temp "tb_xnor.vhd"

@@ -48,7 +48,7 @@ process(clk_xn)
 begin
    if(clk_xn'event and clk_xn='1') then
 	   for i in 0 to 2 loop
-		   cou(i) <= wei xnor d_in(i);
+		   cou(i) <= wei xor d_in(i);
 		end loop;
 	end if;
 
