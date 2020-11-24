@@ -205,22 +205,22 @@ input: fifo_regs
 		
 	  
 	 -- memory where the weights1 are stored
-	 weights1: memory
-	   PORT MAP (
-	     clka => clk,
-	     addra => counter1,
-	     --douta => outp(63 downto 56)
-		  douta => w1
-	   );
+--	 weights1: memory
+--	   PORT MAP (
+--	     clka => clk,
+--	     addra => counter1,
+--	     --douta => outp(63 downto 56)
+--		  douta => w1
+--	   );
 		
 		 -- memory where the weights2 are stored
-	 weights2: memory
-	   PORT MAP (
-	     clka => clk,
-	     addra => counter2,
-	     --douta => outp(63 downto 56)
-		  douta => w2
-	   );
+--	 weights2: memory
+--	   PORT MAP (
+--	     clka => clk,
+--	     addra => counter2,
+--	     --douta => outp(63 downto 56)
+--		  douta => w2
+--	   );
 
 
     -- Possible clock divider
