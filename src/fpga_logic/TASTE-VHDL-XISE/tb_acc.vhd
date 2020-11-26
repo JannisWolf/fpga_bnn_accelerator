@@ -102,6 +102,10 @@ BEGIN
 
       -- insert stimulus here 
 
+		start_accelerator <= '0';
+		data_in <= "0000000000000000000000000000000000000000000000000000000000000101";
+		
+
       wait;
    end process;
 

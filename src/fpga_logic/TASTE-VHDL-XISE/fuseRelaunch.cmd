@@ -1,1 +1,1 @@
--intstyle "ise" -incremental -o "/home/jannis/Code/fpga_bnn_accelerator/src/fpga_logic/TASTE-VHDL-XISE/accelerator_isim_beh.exe" -prj "/home/jannis/Code/fpga_bnn_accelerator/src/fpga_logic/TASTE-VHDL-XISE/accelerator_beh.prj" "work.accelerator" 
+-intstyle "ise" -incremental -o "/home/jannis/Code/fpga_bnn_accelerator/src/fpga_logic/TASTE-VHDL-XISE/tb_acc_isim_beh.exe" -prj "/home/jannis/Code/fpga_bnn_accelerator/src/fpga_logic/TASTE-VHDL-XISE/tb_acc_beh.prj" "work.tb_acc" 

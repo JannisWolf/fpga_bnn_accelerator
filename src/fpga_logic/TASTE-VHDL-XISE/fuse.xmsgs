@@ -8,9 +8,6 @@
 <msg type="warning" file="HDLCompiler" num="89" delta="unknown" >"/home/jannis/Code/fpga_bnn_accelerator/src/fpga_logic/TASTE-VHDL-XISE/accelerator.vhd" Line 141: &lt;<arg fmt="%s" index="1">subsample64to1</arg>&gt; remains a black-box since it has no binding entity.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="89" delta="unknown" >"/home/jannis/Code/fpga_bnn_accelerator/src/fpga_logic/TASTE-VHDL-XISE/accelerator.vhd" Line 165: &lt;<arg fmt="%s" index="1">fifo_regs</arg>&gt; remains a black-box since it has no binding entity.
-</msg>
-
 <msg type="warning" file="HDLCompiler" num="89" delta="unknown" >"/home/jannis/Code/fpga_bnn_accelerator/src/fpga_logic/TASTE-VHDL-XISE/fully_connected.vhd" Line 88: &lt;<arg fmt="%s" index="1">xnor_popcount</arg>&gt; remains a black-box since it has no binding entity.
 </msg>
 
@@ -57,9 +54,6 @@
 </msg>
 
 <msg type="warning" file="Simulator" num="648" delta="unknown" >&quot;<arg fmt="%s" index="1">/home/jannis/Code/fpga_bnn_accelerator/src/fpga_logic/TASTE-VHDL-XISE/accelerator.vhd</arg>&quot; Line <arg fmt="%d" index="2">141</arg>. Instance <arg fmt="%s" index="3">subsample64to1</arg> is unbound
-</msg>
-
-<msg type="warning" file="Simulator" num="648" delta="unknown" >&quot;<arg fmt="%s" index="1">/home/jannis/Code/fpga_bnn_accelerator/src/fpga_logic/TASTE-VHDL-XISE/accelerator.vhd</arg>&quot; Line <arg fmt="%d" index="2">165</arg>. Instance <arg fmt="%s" index="3">fifo_regs</arg> is unbound
 </msg>
 
 <msg type="warning" file="Simulator" num="648" delta="unknown" >&quot;<arg fmt="%s" index="1">/home/jannis/Code/fpga_bnn_accelerator/src/fpga_logic/TASTE-VHDL-XISE/fully_connected.vhd</arg>&quot; Line <arg fmt="%d" index="2">88</arg>. Instance <arg fmt="%s" index="3">xnor_popcount</arg> is unbound

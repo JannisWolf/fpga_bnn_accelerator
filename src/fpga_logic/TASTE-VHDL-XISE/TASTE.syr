@@ -5,14 +5,14 @@ Parameter TMPDIR set to xst/projnav.tmp
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.04 secs
+Total CPU time to Xst completion: 0.05 secs
  
 --> 
 Parameter xsthdpdir set to xst
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.04 secs
+Total CPU time to Xst completion: 0.05 secs
  
 --> 
 Reading design: TASTE.prj
@@ -111,37 +111,25 @@ Cores Search Directories           : {"ipcore_dir"  }
 *                          HDL Compilation                              *
 =========================================================================
 Compiling vhdl file "/home/jannis/Code/fpga_bnn_accelerator/src/fpga_logic/TASTE-VHDL-XISE/upsample.vhd" in Library work.
-Entity <upsample1to64> compiled.
-Entity <upsample1to64> (Architecture <Behavioral>) compiled.
+Architecture behavioral of Entity upsample1to64 is up to date.
 Compiling vhdl file "/home/jannis/Code/fpga_bnn_accelerator/src/fpga_logic/TASTE-VHDL-XISE/upsample3_64.vhd" in Library work.
-Entity <upsample3_64> compiled.
-Entity <upsample3_64> (Architecture <Behavioral>) compiled.
+Architecture behavioral of Entity upsample3_64 is up to date.
 Compiling vhdl file "/home/jannis/Code/fpga_bnn_accelerator/src/fpga_logic/TASTE-VHDL-XISE/fully_connected.vhd" in Library work.
 Entity <fully_connected> compiled.
-Entity <fully_connected> (Architecture <Behavioral>) compiled.
+Entity <fully_connected> (Architecture <behavioral>) compiled.
 Compiling vhdl file "/home/jannis/Code/fpga_bnn_accelerator/src/fpga_logic/TASTE-VHDL-XISE/output_layer.vhd" in Library work.
-Entity <output_layer> compiled.
-Entity <output_layer> (Architecture <Behavioral>) compiled.
+Architecture behavioral of Entity output_layer is up to date.
 Compiling vhdl file "/home/jannis/Code/fpga_bnn_accelerator/src/fpga_logic/TASTE-VHDL-XISE/ZestSC1_Host.vhd" in Library work.
-Entity <ZestSC1_Host> compiled.
-Entity <ZestSC1_Host> (Architecture <arch>) compiled.
+Architecture arch of Entity zestsc1_host is up to date.
 Compiling vhdl file "/home/jannis/Code/fpga_bnn_accelerator/src/fpga_logic/TASTE-VHDL-XISE/ZestSC1_SRAM.vhd" in Library work.
-Entity <ZestSC1_SRAM> compiled.
-Entity <ZestSC1_SRAM> (Architecture <arch>) compiled.
+Architecture arch of Entity zestsc1_sram is up to date.
 Compiling vhdl file "/home/jannis/Code/fpga_bnn_accelerator/src/fpga_logic/TASTE-VHDL-XISE/ZestSC1_Interfaces.vhd" in Library work.
-Entity <ZestSC1_Interfaces> compiled.
-Entity <ZestSC1_Interfaces> (Architecture <arch>) compiled.
+Architecture arch of Entity zestsc1_interfaces is up to date.
 Compiling vhdl file "/home/jannis/Code/fpga_bnn_accelerator/src/fpga_logic/TASTE-VHDL-XISE/accelerator.vhd" in Library work.
 Entity <accelerator> compiled.
 Entity <accelerator> (Architecture <arch>) compiled.
 Compiling vhdl file "/home/jannis/Code/fpga_bnn_accelerator/src/fpga_logic/TASTE-VHDL-XISE/Example1.vhd" in Library work.
-Entity <TASTE> compiled.
-Entity <TASTE> (Architecture <arch>) compiled.
-Compiling verilog file "ipcore_dir/memory.v" in library work
-Module <memory> compiled
-No errors in compilation
-Analysis of file <"TASTE.prj"> succeeded.
- 
+Architecture arch of Entity taste is up to date.
 
 =========================================================================
 *                     Design Hierarchy Analysis                         *
@@ -156,13 +144,13 @@ Analyzing hierarchy for entity <ZestSC1_Host> in library <work> (architecture <a
 
 Analyzing hierarchy for entity <ZestSC1_SRAM> in library <work> (architecture <arch>).
 
-Analyzing hierarchy for entity <upsample1to64> in library <work> (architecture <Behavioral>).
+Analyzing hierarchy for entity <upsample1to64> in library <work> (architecture <behavioral>).
 
-Analyzing hierarchy for entity <upsample3_64> in library <work> (architecture <Behavioral>).
+Analyzing hierarchy for entity <upsample3_64> in library <work> (architecture <behavioral>).
 
-Analyzing hierarchy for entity <fully_connected> in library <work> (architecture <Behavioral>).
+Analyzing hierarchy for entity <fully_connected> in library <work> (architecture <behavioral>).
 
-Analyzing hierarchy for entity <output_layer> in library <work> (architecture <Behavioral>).
+Analyzing hierarchy for entity <output_layer> in library <work> (architecture <behavioral>).
 
 
 =========================================================================
@@ -239,18 +227,15 @@ Entity <ZestSC1_SRAM> analyzed. Unit <ZestSC1_SRAM> generated.
 
 Analyzing Entity <accelerator> in library <work> (Architecture <arch>).
 WARNING:Xst:2211 - "/home/jannis/Code/fpga_bnn_accelerator/src/fpga_logic/TASTE-VHDL-XISE/accelerator.vhd" line 141: Instantiating black box module <subsample64to1>.
-WARNING:Xst:2211 - "/home/jannis/Code/fpga_bnn_accelerator/src/fpga_logic/TASTE-VHDL-XISE/accelerator.vhd" line 165: Instantiating black box module <fifo_regs>.
-WARNING:Xst:2211 - "/home/jannis/Code/fpga_bnn_accelerator/src/fpga_logic/TASTE-VHDL-XISE/accelerator.vhd" line 208: Instantiating black box module <memory>.
-WARNING:Xst:2211 - "/home/jannis/Code/fpga_bnn_accelerator/src/fpga_logic/TASTE-VHDL-XISE/accelerator.vhd" line 217: Instantiating black box module <memory>.
 Entity <accelerator> analyzed. Unit <accelerator> generated.
 
-Analyzing Entity <upsample1to64> in library <work> (Architecture <Behavioral>).
+Analyzing Entity <upsample1to64> in library <work> (Architecture <behavioral>).
 Entity <upsample1to64> analyzed. Unit <upsample1to64> generated.
 
-Analyzing Entity <upsample3_64> in library <work> (Architecture <Behavioral>).
+Analyzing Entity <upsample3_64> in library <work> (Architecture <behavioral>).
 Entity <upsample3_64> analyzed. Unit <upsample3_64> generated.
 
-Analyzing Entity <fully_connected> in library <work> (Architecture <Behavioral>).
+Analyzing Entity <fully_connected> in library <work> (Architecture <behavioral>).
 WARNING:Xst:2211 - "/home/jannis/Code/fpga_bnn_accelerator/src/fpga_logic/TASTE-VHDL-XISE/fully_connected.vhd" line 88: Instantiating black box module <xnor_popcount>.
 WARNING:Xst:2211 - "/home/jannis/Code/fpga_bnn_accelerator/src/fpga_logic/TASTE-VHDL-XISE/fully_connected.vhd" line 95: Instantiating black box module <xnor_popcount>.
 WARNING:Xst:2211 - "/home/jannis/Code/fpga_bnn_accelerator/src/fpga_logic/TASTE-VHDL-XISE/fully_connected.vhd" line 102: Instantiating black box module <xnor_popcount>.
@@ -264,7 +249,7 @@ WARNING:Xst:2211 - "/home/jannis/Code/fpga_bnn_accelerator/src/fpga_logic/TASTE-
 WARNING:Xst:2211 - "/home/jannis/Code/fpga_bnn_accelerator/src/fpga_logic/TASTE-VHDL-XISE/fully_connected.vhd" line 158: Instantiating black box module <accumulate>.
 Entity <fully_connected> analyzed. Unit <fully_connected> generated.
 
-Analyzing Entity <output_layer> in library <work> (Architecture <Behavioral>).
+Analyzing Entity <output_layer> in library <work> (Architecture <behavioral>).
 WARNING:Xst:2211 - "/home/jannis/Code/fpga_bnn_accelerator/src/fpga_logic/TASTE-VHDL-XISE/output_layer.vhd" line 75: Instantiating black box module <xnor_popcount>.
 WARNING:Xst:2211 - "/home/jannis/Code/fpga_bnn_accelerator/src/fpga_logic/TASTE-VHDL-XISE/output_layer.vhd" line 82: Instantiating black box module <xnor_popcount>.
 WARNING:Xst:2211 - "/home/jannis/Code/fpga_bnn_accelerator/src/fpga_logic/TASTE-VHDL-XISE/output_layer.vhd" line 89: Instantiating black box module <xnor_popcount>.
@@ -395,8 +380,14 @@ Unit <ZestSC1_Interfaces> synthesized.
 
 Synthesizing Unit <accelerator>.
     Related source file is "/home/jannis/Code/fpga_bnn_accelerator/src/fpga_logic/TASTE-VHDL-XISE/accelerator.vhd".
-WARNING:Xst:653 - Signal <counter2> is used but never assigned. This sourceless signal will be automatically connected to value 0000.
-WARNING:Xst:653 - Signal <counter1> is used but never assigned. This sourceless signal will be automatically connected to value 0000.
+WARNING:Xst:653 - Signal <w2> is used but never assigned. This sourceless signal will be automatically connected to value 0.
+WARNING:Xst:653 - Signal <w1> is used but never assigned. This sourceless signal will be automatically connected to value 0.
+WARNING:Xst:646 - Signal <sub2fifo_data> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:653 - Signal <fifo2up_buf> is used but never assigned. This sourceless signal will be automatically connected to value 0.
+WARNING:Xst:653 - Signal <fifo2fc> is used but never assigned. This sourceless signal will be automatically connected to value 000.
+WARNING:Xst:1780 - Signal <counter2> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <counter1> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:653 - Signal <calc_start> is used but never assigned. This sourceless signal will be automatically connected to value 0.
     Found finite state machine <FSM_0> for signal <state>.
     -----------------------------------------------------------------------
     | States             | 3                                              |
@@ -488,9 +479,8 @@ Optimizing FSM <Interface_accelerator/state/FSM> on signal <state[1:2]> with use
  signal_received       | 01
  work_done             | 10
 -----------------------------------
-Reading core <ipcore_dir/memory.ngc>.
-WARNING:Xst:1474 - Core <memory> was not loaded for <weights1> as one or more ports did not line up with component declaration.  Declared output port <douta> was not found in the core.  Please make sure that component declaration ports are consistent with the core ports including direction and bus-naming conventions.
-WARNING:Xst:1474 - Core <memory> was not loaded for <weights2> as one or more ports did not line up with component declaration.  Declared output port <douta> was not found in the core.  Please make sure that component declaration ports are consistent with the core ports including direction and bus-naming conventions.
+WARNING:Xst:1290 - Hierarchical block <up_buf> is unconnected in block <Interface_accelerator>.
+   It will be removed from the design.
 WARNING:Xst:1290 - Hierarchical block <up_res> is unconnected in block <Interface_accelerator>.
    It will be removed from the design.
 INFO:Xst:2261 - The FF/Latch <S_A_0> in Unit <INST_SRAM> is equivalent to the following 40 FFs/Latches, which will be removed : <S_A_1> <S_A_2> <S_A_3> <S_A_4> <S_A_5> <S_A_6> <S_A_7> <S_A_8> <S_A_9> <S_A_10> <S_A_11> <S_A_12> <S_A_13> <S_A_14> <S_A_15> <S_A_16> <S_A_17> <S_A_18> <S_A_19> <S_A_20> <S_A_21> <S_A_22> <Data0_0> <Data0_1> <Data0_2> <Data0_3> <Data0_4> <Data0_5> <Data0_6> <Data0_7> <Data0_8> <Data0_9> <Data0_10> <Data0_11> <Data0_12> <Data0_13> <Data0_14> <Data0_15> <Data0_16> <Data0_17> 
@@ -705,7 +695,7 @@ Design Statistics
 # IOs                              : 161
 
 Cell Usage :
-# BELS                             : 230
+# BELS                             : 228
 #      GND                         : 1
 #      INV                         : 19
 #      LUT1                        : 21
@@ -714,7 +704,7 @@ Cell Usage :
 #      LUT3                        : 27
 #      LUT3_D                      : 1
 #      LUT3_L                      : 2
-#      LUT4                        : 47
+#      LUT4                        : 45
 #      LUT4_D                      : 4
 #      LUT4_L                      : 3
 #      MUXCY                       : 38
@@ -742,11 +732,9 @@ Cell Usage :
 #      OBUFT                       : 73
 # DCMs                             : 3
 #      DCM                         : 3
-# Others                           : 20
+# Others                           : 17
 #      accumulate_1                : 1
 #      accumulate_2                : 1
-#      fifo_regs                   : 1
-#      memory                      : 2
 #      ROC                         : 1
 #      subsample64to1              : 1
 #      xnor_popcount_1             : 10
@@ -760,8 +748,8 @@ Selected Device : 3s1000ft256-5
 
  Number of Slices:                       94  out of   7680     1%  
  Number of Slice Flip Flops:            141  out of  15360     0%  
- Number of 4 input LUTs:                157  out of  15360     1%  
-    Number used as logic:               155
+ Number of 4 input LUTs:                155  out of  15360     1%  
+    Number used as logic:               153
     Number used as RAMs:                  2
  Number of IOs:                         161
  Number of bonded IOBs:                 150  out of    173    86%  
@@ -871,7 +859,7 @@ Delay:               6.114ns (Levels of Logic = 3)
 
 =========================================================================
 Timing constraint: Default OFFSET IN BEFORE for Clock 'USB_RegCLK'
-  Total number of paths / destination ports: 1443 / 139
+  Total number of paths / destination ports: 1436 / 139
 -------------------------------------------------------------------------
 Offset:              9.311ns (Levels of Logic = 6)
   Source:            USB_RegAddr<10> (PAD)
@@ -884,7 +872,7 @@ Offset:              9.311ns (Levels of Logic = 6)
     ----------------------------------------  ------------
      IBUF:I->O             1   0.715   0.976  USB_RegAddr_10_IBUF (USB_RegAddr_10_IBUF)
      LUT3:I0->O            1   0.479   0.976  accelerator_StartCalculationsInternal_cmp_eq00001117 (accelerator_StartCalculationsInternal_cmp_eq00001117)
-     LUT3:I0->O            1   0.479   0.704  accelerator_StartCalculationsInternal_cmp_eq00001164_SW0 (N157)
+     LUT3:I0->O            1   0.479   0.704  accelerator_StartCalculationsInternal_cmp_eq00001164_SW0 (N155)
      LUT4:I3->O            9   0.479   1.250  accelerator_StartCalculationsInternal_cmp_eq00001164 (DataOut_and0000)
      LUT4:I0->O            1   0.479   0.851  accelerator_data_in_1_and000021_SW1 (N137)
      LUT4:I1->O            8   0.479   0.921  accelerator_data_in_24_and00001 (accelerator_data_in_24_and0000)
@@ -907,7 +895,7 @@ Offset:              5.432ns (Levels of Logic = 4)
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
      IBUF:I->O             6   0.715   1.148  USB_StreamFX2Rdy_IBUF (USB_StreamFX2Rdy_IBUF)
-     LUT2_D:I0->LO         1   0.479   0.123  Interfaces/INST_ZestSC1_Host/StreamReadStrobe_SW0 (N173)
+     LUT2_D:I0->LO         1   0.479   0.123  Interfaces/INST_ZestSC1_Host/StreamReadStrobe_SW0 (N1711)
      LUT4:I3->O            2   0.479   0.804  Interfaces/INST_ZestSC1_Host/StreamReadStrobe (Interfaces/INST_ZestSC1_Host/StreamReadStrobe)
      LUT3:I2->O            1   0.479   0.681  Interfaces/INST_ZestSC1_Host/FX2FIFOEmpty_not00011 (Interfaces/INST_ZestSC1_Host/FX2FIFOEmpty_not0001)
      FDPE:CE                   0.524          Interfaces/INST_ZestSC1_Host/FX2FIFOEmpty
@@ -958,7 +946,7 @@ Offset:              9.172ns (Levels of Logic = 3)
 
 =========================================================================
 Timing constraint: Default path analysis
-  Total number of paths / destination ports: 115 / 99
+  Total number of paths / destination ports: 68 / 52
 -------------------------------------------------------------------------
 Delay:               9.386ns (Levels of Logic = 4)
   Source:            USB_StreamFX2Rdy (PAD)
@@ -980,14 +968,14 @@ Delay:               9.386ns (Levels of Logic = 4)
 
 
 Total REAL time to Xst completion: 7.00 secs
-Total CPU time to Xst completion: 6.87 secs
+Total CPU time to Xst completion: 7.28 secs
  
 --> 
 
 
-Total memory usage is 541192 kilobytes
+Total memory usage is 539888 kilobytes
 
 Number of errors   :    0 (   0 filtered)
-Number of warnings :  148 (   0 filtered)
+Number of warnings :  150 (   0 filtered)
 Number of infos    :   27 (   0 filtered)
 

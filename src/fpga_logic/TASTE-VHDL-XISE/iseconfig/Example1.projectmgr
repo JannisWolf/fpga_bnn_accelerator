@@ -81,20 +81,20 @@
    <ItemView engineview="BehavioralSim" guiview="Source" compilemode="AutoCompile" >
       <ClosedNodes>
          <ClosedNodesVersion>2</ClosedNodesVersion>
-         <ClosedNode>/TASTE - arch |home|jannis|Code|fpga_bnn_accelerator|src|fpga_logic|TASTE-VHDL-XISE|Example1.vhd/Interface_accelerator - accelerator - arch/fc1 - fully_connected - Behavioral</ClosedNode>
          <ClosedNode>/TASTE - arch |home|jannis|Code|fpga_bnn_accelerator|src|fpga_logic|TASTE-VHDL-XISE|Example1.vhd/Interface_accelerator - accelerator - arch/fc2 - output_layer - Behavioral</ClosedNode>
          <ClosedNode>/TASTE - arch |home|jannis|Code|fpga_bnn_accelerator|src|fpga_logic|TASTE-VHDL-XISE|Example1.vhd/Interfaces - ZestSC1_Interfaces - arch</ClosedNode>
          <ClosedNode>/fully_connected - Behavioral |home|jannis|Code|fpga_bnn_accelerator|src|fpga_logic|TASTE-VHDL-XISE|fully_connected.vhd</ClosedNode>
          <ClosedNode>/output_layer - Behavioral |home|jannis|Code|fpga_bnn_accelerator|src|fpga_logic|TASTE-VHDL-XISE|output_layer.vhd</ClosedNode>
+         <ClosedNode>/tb_acc - behavior |home|jannis|Code|fpga_bnn_accelerator|src|fpga_logic|TASTE-VHDL-XISE|tb_acc.vhd/uut - accelerator - arch/fc2 - output_layer - Behavioral</ClosedNode>
       </ClosedNodes>
       <SelectedItems>
-         <SelectedItem>xnor_pop3 - xnor_popcount</SelectedItem>
+         <SelectedItem>tb_acc - behavior (/home/jannis/Code/fpga_bnn_accelerator/src/fpga_logic/TASTE-VHDL-XISE/tb_acc.vhd)</SelectedItem>
       </SelectedItems>
-      <ScrollbarPosition orientation="vertical" >3</ScrollbarPosition>
+      <ScrollbarPosition orientation="vertical" >16</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
       <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000020200000001000000010000006400000222000000020000000000000000000000000200000064ffffffff000000810000000300000002000002220000000100000003000000000000000100000003</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
-      <CurrentItem>xnor_pop3 - xnor_popcount</CurrentItem>
+      <CurrentItem>tb_acc - behavior (/home/jannis/Code/fpga_bnn_accelerator/src/fpga_logic/TASTE-VHDL-XISE/tb_acc.vhd)</CurrentItem>
    </ItemView>
    <ItemView engineview="BehavioralSim" sourcetype="" guiview="Process" >
       <ClosedNodes>

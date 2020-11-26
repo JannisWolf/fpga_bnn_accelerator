@@ -162,21 +162,21 @@ begin
 		  full => data_out
 	   );
     -- buffer in fifo style where from cpu stored values are stored 
-input: fifo_regs
-	   PORT MAP (
-	     i_rst_sync => RST,
-        i_clk => CLK,
- 
-		  -- FIFO Write Interface
-		  i_wr_en   => '1',
-		  i_wr_data => sub2fifo_data,
-        o_full => fifo2up_buf,
- 
-        -- FIFO Read Interface
-        i_rd_en   => '1',
-        o_rd_data => fifo2fc,
-        o_empty => calc_start
-	  );
+--    input: fifo_regs
+--	   PORT MAP (
+--	     i_rst_sync => RST,
+--        i_clk => CLK,
+-- 
+--		  -- FIFO Write Interface
+--		  i_wr_en   => '1',
+--		  i_wr_data => sub2fifo_data,
+--        o_full => fifo2up_buf,
+-- 
+--        -- FIFO Read Interface
+--        i_rd_en   => '1',
+--        o_rd_data => fifo2fc,
+--        o_empty => calc_start
+--	  );
 	  
 	 -- fc1 layer basically the popcount(XNOR)
 	 fc1: fully_connected
