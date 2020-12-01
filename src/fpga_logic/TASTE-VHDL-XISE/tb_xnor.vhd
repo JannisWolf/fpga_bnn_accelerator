@@ -42,8 +42,8 @@ ARCHITECTURE behavior OF tb_xnor IS
     COMPONENT xnor_popcount
     PORT(
          clk_xn : IN  std_logic;
-         wei : IN  std_logic;
-         d_in : IN  std_logic_vector(2 downto 0);
+         wei : IN  std_logic_vector(9 downto 0);
+         d_in : IN  std_logic_vector(9 downto 0);
          res : OUT  std_logic
         );
     END COMPONENT;
@@ -51,8 +51,8 @@ ARCHITECTURE behavior OF tb_xnor IS
 
    --Inputs
    signal clk_xn : std_logic := '0';
-   signal wei : std_logic := '1';
-   signal d_in : std_logic_vector(2 downto 0) := (others => '0');
+   signal wei : std_logic_vector(9 downto 0) := (others => '0');
+   signal d_in : std_logic_vector(9 downto 0) := (others => '0');
 
  	--Outputs
    signal res : std_logic;
@@ -84,17 +84,37 @@ BEGIN
    stim_proc: process
    begin		
       -- hold reset state for 100 ns.
-      wait for 100 ns;	
+		wei <= "1111111111";
+      wait for 10 ns;	
 
       wait for clk_xn_period*10;
 
       -- insert stimulus here 
 
-		wait for 100 ns;	
-      wei <= '1';
-		wait for 100 ns;	
-		wei <= '0';
+		wait for 10 ns;	
+      wei <= "0000000000";
+		wait for 10 ns;	
+		wei <= "1000000000";
+		wait for 10 ns;	
+		wei <= "1100000000";
+		wait for 10 ns;	
+		wei <= "1110000000";
+		wait for 10 ns;	
+		wei <= "1111000000";
+		wait for 10 ns;	
+		wei <= "1111100000";
+		wait for 10 ns;	
+		wei <= "1111110000";
+		wait for 10 ns;	
+		wei <= "1111111000";
+		wait for 10 ns;	
+		wei <= "1111111100";
+		wait for 10 ns;	
+		wei <= "1111111110";
+		wait for 10 ns;	
+		wei <= "1111111111";
       wait;
+		
    end process;
 
 END;

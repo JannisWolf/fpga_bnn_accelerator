@@ -1,0 +1,17 @@
+INFO:sim:172 - Generating IP...
+Applying current project options...
+Finished applying current project options.
+ERROR:sim - min_area_algorithm: For the configured RAM size, the number of block
+ERROR:sim -    RAMs used exceeds the maximum number of 18KB block RAMs in the
+   chosen
+ERROR:sim -    architecture
+ERROR:sim - min_area_algorithm: For the configured RAM size, the number of block
+ERROR:sim -    RAMs used exceeds the maximum number of 18KB block RAMs in the
+   chosen
+ERROR:sim -    architecture
+ERROR:sim - min_area_algorithm: For the configured RAM size, the number of block
+ERROR:sim -    RAMs used exceeds the maximum number of 18KB block RAMs in the
+   chosen
+ERROR:sim -    architecture
+Cancelled executing Tcl generator.
+Wrote CGP file for project 'memory'.

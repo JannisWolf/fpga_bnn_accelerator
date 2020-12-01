@@ -81,11 +81,19 @@ architecture arch of accelerator is
 	 );
 	 END COMPONENT;
 	 
-	 COMPONENT memory
+	 COMPONENT memory10Bit
 	 PORT (
 	   clka : IN STD_LOGIC;
 	   addra : IN STD_LOGIC_VECTOR(3 DOWNTO 0);
-	   douta : OUT STD_LOGIC
+	   douta : OUT STD_LOGIC_VECTOR(9 DOWNTO 0)
+	 );
+	 END COMPONENT;
+	 
+	 COMPONENT memory3Bit
+	 PORT (
+	   clka : IN STD_LOGIC;
+	   addra : IN STD_LOGIC_VECTOR(3 DOWNTO 0);
+	   douta : OUT STD_LOGIC_VECTOR(2 DOWNTO 0)
 	 );
 	 END COMPONENT;
 	 

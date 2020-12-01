@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="/home/jannis/Code/fpga_bnn_accelerator/src/fpga_logic/TASTE-VHDL-XISE/tb_xnor_isim_beh.wdb" id="1" type="auto">
+         <top_modules>
+            <top_module name="std_logic_1164" />
+            <top_module name="tb_xnor" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <WVObjectSize size="6" />
+   <wvobject fp_name="/tb_xnor/clk_xn" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">clk_xn</obj_property>
+      <obj_property name="ObjectShortName">clk_xn</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_xnor/wei" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">wei[9:0]</obj_property>
+      <obj_property name="ObjectShortName">wei[9:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_xnor/d_in" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">d_in[9:0]</obj_property>
+      <obj_property name="ObjectShortName">d_in[9:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_xnor/res" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">res</obj_property>
+      <obj_property name="ObjectShortName">res</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_xnor/clk_xn_period" type="other" db_ref_id="1">
+      <obj_property name="ElementShortName">clk_xn_period</obj_property>
+      <obj_property name="ObjectShortName">clk_xn_period</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_xnor/uut/cou" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">cou[9:0]</obj_property>
+      <obj_property name="ObjectShortName">cou[9:0]</obj_property>
+   </wvobject>
+</wave_config>

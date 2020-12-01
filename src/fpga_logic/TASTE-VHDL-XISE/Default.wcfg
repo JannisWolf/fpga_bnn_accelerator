@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="/home/jannis/Code/fpga_bnn_accelerator/src/fpga_logic/TASTE-VHDL-XISE/tb_fully_connected_isim_beh.wdb" id="1" type="auto">
+         <top_modules>
+            <top_module name="numeric_std" />
+            <top_module name="std_logic_1164" />
+            <top_module name="tb_fully_connected" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <WVObjectSize size="21" />
+   <wvobject fp_name="/tb_fully_connected/data_in" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">data_in[9:0]</obj_property>
+      <obj_property name="ObjectShortName">data_in[9:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_fully_connected/calc_pos" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">calc_pos</obj_property>
+      <obj_property name="ObjectShortName">calc_pos</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_fully_connected/clk_fc" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">clk_fc</obj_property>
+      <obj_property name="ObjectShortName">clk_fc</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_fully_connected/activation" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">activation[9:0]</obj_property>
+      <obj_property name="ObjectShortName">activation[9:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_fully_connected/finish_calc" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">finish_calc</obj_property>
+      <obj_property name="ObjectShortName">finish_calc</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_fully_connected/clk_fc_period" type="other" db_ref_id="1">
+      <obj_property name="ElementShortName">clk_fc_period</obj_property>
+      <obj_property name="ObjectShortName">clk_fc_period</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_fully_connected/uut/weights/clka" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">clka</obj_property>
+      <obj_property name="ObjectShortName">clka</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_fully_connected/uut/weights/addra" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">addra[3:0]</obj_property>
+      <obj_property name="ObjectShortName">addra[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_fully_connected/uut/weights/douta" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">douta[9:0]</obj_property>
+      <obj_property name="ObjectShortName">douta[9:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_fully_connected/uut/xnor_pop1/clk_xn" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">clk_xn</obj_property>
+      <obj_property name="ObjectShortName">clk_xn</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_fully_connected/uut/xnor_pop1/wei" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">wei[9:0]</obj_property>
+      <obj_property name="ObjectShortName">wei[9:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_fully_connected/uut/xnor_pop1/d_in" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">d_in[9:0]</obj_property>
+      <obj_property name="ObjectShortName">d_in[9:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_fully_connected/uut/xnor_pop1/res" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">res</obj_property>
+      <obj_property name="ObjectShortName">res</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_fully_connected/uut/xnor_pop1/cou" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">cou[9:0]</obj_property>
+      <obj_property name="ObjectShortName">cou[9:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_fully_connected/uut/xnor_pop1/sig_pop" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">sig_pop[7:0]</obj_property>
+      <obj_property name="ObjectShortName">sig_pop[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_fully_connected/uut/xnor_pop1/sig_count" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">sig_count[3:0]</obj_property>
+      <obj_property name="ObjectShortName">sig_count[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_fully_connected/uut/xnor_pop1/sig_res" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">sig_res[7:0]</obj_property>
+      <obj_property name="ObjectShortName">sig_res[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_fully_connected/uut/fc1_activation/w1" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">w1</obj_property>
+      <obj_property name="ObjectShortName">w1</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_fully_connected/uut/fc1_activation/c" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">c[3:0]</obj_property>
+      <obj_property name="ObjectShortName">c[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_fully_connected/uut/fc1_activation/o" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">o[9:0]</obj_property>
+      <obj_property name="ObjectShortName">o[9:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_fully_connected/uut/counter" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">counter[3:0]</obj_property>
+      <obj_property name="ObjectShortName">counter[3:0]</obj_property>
+   </wvobject>
+</wave_config>

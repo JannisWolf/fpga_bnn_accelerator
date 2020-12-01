@@ -1,0 +1,4 @@
+vhdl isim_temp "xnor_popcount.vhd"
+vhdl isim_temp "memory10Bit.vhd"
+vhdl isim_temp "fully_connected.vhd"
+vhdl isim_temp "tb_fully_connected.vhd"

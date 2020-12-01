@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
-  <DateModified>2020-11-24T14:00:36</DateModified>
+  <DateModified>2020-11-29T20:30:41</DateModified>
   <ModuleName>TASTE</ModuleName>
   <SummaryTimeStamp>2020-11-18T01:01:02</SummaryTimeStamp>
   <SavedFilePath>/home/jannis/Code/fpga_bnn_accelerator/src/fpga_logic/TASTE-VHDL-XISE/iseconfig/TASTE.xreport</SavedFilePath>

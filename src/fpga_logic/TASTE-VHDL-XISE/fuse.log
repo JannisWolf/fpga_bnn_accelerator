@@ -1,22 +1,29 @@
-Running: /home/jannis/Programs/ISE/14.7/ISE_DS/ISE/bin/lin64/unwrapped/fuse -intstyle ise -incremental -o /home/jannis/Code/fpga_bnn_accelerator/src/fpga_logic/TASTE-VHDL-XISE/tb_xnor_isim_beh.exe -prj /home/jannis/Code/fpga_bnn_accelerator/src/fpga_logic/TASTE-VHDL-XISE/tb_xnor_beh.prj work.tb_xnor 
+Running: /home/jannis/Programs/ISE/14.7/ISE_DS/ISE/bin/lin64/unwrapped/fuse -relaunch -intstyle "ise" -incremental -o "/home/jannis/Code/fpga_bnn_accelerator/src/fpga_logic/TASTE-VHDL-XISE/tb_fully_connected_isim_beh.exe" -prj "/home/jannis/Code/fpga_bnn_accelerator/src/fpga_logic/TASTE-VHDL-XISE/tb_fully_connected_beh.prj" "work.tb_fully_connected" 
 ISim P.20131013 (signature 0xfbc00daa)
 Number of CPUs detected in this system: 4
 Turning on mult-threading, number of parallel sub-compilation jobs: 8 
 Determining compilation order of HDL files
 Parsing VHDL file "/home/jannis/Code/fpga_bnn_accelerator/src/fpga_logic/TASTE-VHDL-XISE/xnor_popcount.vhd" into library work
-Parsing VHDL file "/home/jannis/Code/fpga_bnn_accelerator/src/fpga_logic/TASTE-VHDL-XISE/tb_xnor.vhd" into library work
+Parsing VHDL file "/home/jannis/Code/fpga_bnn_accelerator/src/fpga_logic/TASTE-VHDL-XISE/memory10Bit.vhd" into library work
+Parsing VHDL file "/home/jannis/Code/fpga_bnn_accelerator/src/fpga_logic/TASTE-VHDL-XISE/accumulator.vhd" into library work
+Parsing VHDL file "/home/jannis/Code/fpga_bnn_accelerator/src/fpga_logic/TASTE-VHDL-XISE/fully_connected.vhd" into library work
+Parsing VHDL file "/home/jannis/Code/fpga_bnn_accelerator/src/fpga_logic/TASTE-VHDL-XISE/tb_fully_connected.vhd" into library work
 Starting static elaboration
 Completed static elaboration
-Fuse Memory Usage: 95968 KB
-Fuse CPU Usage: 1180 ms
+Fuse Memory Usage: 97576 KB
+Fuse CPU Usage: 1210 ms
 Compiling package standard
 Compiling package std_logic_1164
+Compiling package numeric_std
+Compiling architecture behavioral of entity memory10Bit [memory10bit_default]
 Compiling architecture behavioral of entity xnor_popcount [xnor_popcount_default]
-Compiling architecture behavior of entity tb_xnor
+Compiling architecture behavioral of entity accumulator [accumulator_default]
+Compiling architecture behavioral of entity fully_connected [fully_connected_default]
+Compiling architecture behavior of entity tb_fully_connected
 Time Resolution for simulation is 1ps.
 Waiting for 1 sub-compilation(s) to finish...
-Compiled 5 VHDL Units
-Built simulation executable /home/jannis/Code/fpga_bnn_accelerator/src/fpga_logic/TASTE-VHDL-XISE/tb_xnor_isim_beh.exe
-Fuse Memory Usage: 661588 KB
-Fuse CPU Usage: 1220 ms
-GCC CPU Usage: 260 ms
+Compiled 12 VHDL Units
+Built simulation executable /home/jannis/Code/fpga_bnn_accelerator/src/fpga_logic/TASTE-VHDL-XISE/tb_fully_connected_isim_beh.exe
+Fuse Memory Usage: 669236 KB
+Fuse CPU Usage: 1310 ms
+GCC CPU Usage: 150 ms

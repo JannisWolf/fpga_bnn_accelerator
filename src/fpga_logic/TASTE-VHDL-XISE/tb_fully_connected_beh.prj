@@ -1,0 +1,5 @@
+vhdl work "xnor_popcount.vhd"
+vhdl work "memory10Bit.vhd"
+vhdl work "accumulator.vhd"
+vhdl work "fully_connected.vhd"
+vhdl work "tb_fully_connected.vhd"
