@@ -46,7 +46,7 @@ ARCHITECTURE behavior OF tb_fully_connected IS
          calc_pos : IN  std_logic;
          activation : OUT  std_logic_vector(9 downto 0);
          clk_fc : IN  std_logic;
-         finish_calc : OUT  std_logic
+         finish_fc : OUT  std_logic
         );
     END COMPONENT;
     
@@ -59,7 +59,7 @@ ARCHITECTURE behavior OF tb_fully_connected IS
 
  	--Outputs
    signal activation : std_logic_vector(9 downto 0);
-   signal finish_calc : std_logic;
+   signal finish_fc : std_logic;
 
    -- Clock period definitions
    constant clk_fc_period : time := 10 ns;
@@ -73,7 +73,7 @@ BEGIN
           calc_pos => calc_pos,
           activation => activation,
           clk_fc => clk_fc,
-          finish_calc => finish_calc
+          finish_fc => finish_fc
         );
 
    -- Clock process definitions
@@ -84,16 +84,32 @@ BEGIN
 		clk_fc <= '1';
 		wait for clk_fc_period/2;
    end process;
- 
+
 
    -- Stimulus process
    stim_proc: process
    begin		
       -- hold reset state for 100 ns.
-      wait for 100 ns;	
+      --wait for 195 ns;	
 
-      wait for clk_fc_period*10;
-		data_in <= "1111111111";
+      --wait for clk_fc_period*10;
+		data_in <= "1110100011";
+--		wait for 100 ns;
+--		data_in <= "0101010101";
+--		wait for 100 ns;
+--		data_in <= "1010101010";
+--		wait for 100 ns;
+--		data_in <= "0000000001";
+--		wait for 100 ns;
+--		data_in <= "0001111100";
+--		wait for 100 ns;
+--		data_in <= "0111111111";
+--		wait for 100 ns;
+--		data_in <= "1100110011";
+--		wait for 100 ns;
+--		data_in <= "0000011111";
+--		wait for 100 ns;
+		
 		
 
       -- insert stimulus here 

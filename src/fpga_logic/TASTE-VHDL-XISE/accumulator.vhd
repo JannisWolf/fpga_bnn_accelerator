@@ -31,28 +31,35 @@ USE ieee.numeric_std.ALL;
 --use UNISIM.VComponents.all;
 
 entity accumulator is
+   GENERIC(
+	    size : integer := 3
+		 );
    PORT(
 	    w1 : IN STD_LOGIC;
---		 w2 : IN STD_LOGIC;
---		 w3 : IN STD_LOGIC;
---		 w4 : IN STD_LOGIC;
---		 w5 : IN STD_LOGIC;
---		 w6 : IN STD_LOGIC;
---		 w7 : IN STD_LOGIC;
---		 w8 : IN STD_LOGIC;
---		 w9 : IN STD_LOGIC;
---		 w10 : IN STD_LOGIC;
+		 clk: IN STD_LOGIC;
 		 c : IN STD_LOGIC_VECTOR(3 downto 0);
-		 o : OUT STD_LOGIC_VECTOR(9 downto 0)
+		 o : OUT STD_LOGIC_VECTOR(size-1 downto 0)
 	);
 end accumulator;
 
 architecture Behavioral of accumulator is
 
---signal : signed(3 downto 0) := (others => 1);
+signal tmp : STD_LOGIC_VECTOR(size-1 downto 0) := (others => '0');
 
 begin
+
 --    o <= w1 & w2 & w3 & w4 & w5 & w6 & w7 & w8 & w9 & w10;
-		o(to_integer(unsigned(c))) <= w1;
+accumulate : process(clk)
+begin
+		if(rising_edge(clk)) then
+			--o(to_integer(unsigned(c))) <= w1;
+			tmp(to_integer(unsigned(c))) <= w1;		
+		end if;
+		if(falling_edge(clk)) then
+			if(to_integer(unsigned(c)) = size-1) then
+			   o <= std_logic_vector(rotate_left(unsigned(tmp),2));
+			end if;
+		end if;
+end process accumulate;
 end Behavioral;
 

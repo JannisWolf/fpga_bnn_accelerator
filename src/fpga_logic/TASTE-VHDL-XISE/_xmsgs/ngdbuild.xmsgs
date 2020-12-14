@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- IMPORTANT: This is an internal file that has been generated
+     by the Xilinx ISE software.  Any direct editing or
+     changes made to this file may result in unpredictable
+     behavior or data corruption.  It is strongly advised that
+     users do not edit the contents of this file. -->
+<messages>
+<msg type="info" file="ConstraintSystem" num="178" delta="new" ><arg fmt="%s" index="1">TNM</arg> &apos;<arg fmt="%s" index="2">USB_StreamCLK</arg>&apos;, used in period specification &apos;<arg fmt="%s" index="3">TS_StreamCLK</arg>&apos;, was traced into <arg fmt="%s" index="4">DCM</arg> instance <arg fmt="%s" index="5">Interfaces/INST_ZestSC1_Host/StreamDCM</arg>. The following new TNM groups and period specifications were generated at the <arg fmt="%s" index="6">DCM</arg> output(s): 
+<arg fmt="%s" index="7">CLK0</arg>: <arg fmt="%s" index="8">&lt;TIMESPEC TS_Interfaces_INST_ZestSC1_Host_StreamCLKFB = PERIOD &quot;Interfaces_INST_ZestSC1_Host_StreamCLKFB&quot; TS_StreamCLK HIGH 50%&gt;</arg>
+</msg>
+
+<msg type="info" file="ConstraintSystem" num="178" delta="new" ><arg fmt="%s" index="1">TNM</arg> &apos;<arg fmt="%s" index="2">USB_RegCLK</arg>&apos;, used in period specification &apos;<arg fmt="%s" index="3">TS_RegCLK</arg>&apos;, was traced into <arg fmt="%s" index="4">DCM</arg> instance <arg fmt="%s" index="5">Interfaces/INST_ZestSC1_Host/RegDCM</arg>. The following new TNM groups and period specifications were generated at the <arg fmt="%s" index="6">DCM</arg> output(s): 
+<arg fmt="%s" index="7">CLK0</arg>: <arg fmt="%s" index="8">&lt;TIMESPEC TS_Interfaces_INST_ZestSC1_Host_RegCLKFB = PERIOD &quot;Interfaces_INST_ZestSC1_Host_RegCLKFB&quot; TS_RegCLK HIGH 50%&gt;</arg>
+</msg>
+
+<msg type="info" file="ConstraintSystem" num="178" delta="new" ><arg fmt="%s" index="1">TNM</arg> &apos;<arg fmt="%s" index="2">Interfaces_INST_ZestSC1_Host_RegCLKFB</arg>&apos;, used in period specification &apos;<arg fmt="%s" index="3">TS_Interfaces_INST_ZestSC1_Host_RegCLKFB</arg>&apos;, was traced into <arg fmt="%s" index="4">DCM</arg> instance <arg fmt="%s" index="5">Interfaces/INST_SRAM/DCM_INST</arg>. The following new TNM groups and period specifications were generated at the <arg fmt="%s" index="6">DCM</arg> output(s): 
+<arg fmt="%s" index="7">CLK0</arg>: <arg fmt="%s" index="8">&lt;TIMESPEC TS_Interfaces_INST_SRAM_SramClkOut = PERIOD &quot;Interfaces_INST_SRAM_SramClkOut&quot; TS_Interfaces_INST_ZestSC1_Host_RegCLKFB PHASE -1.953125 ns HIGH 50%&gt;</arg>
+</msg>
+
+<msg type="warning" file="ConstraintSystem" num="0" >The Offset constraint &lt;net &quot;USB_StreamFlags_n&lt;0&gt;&quot; OFFSET = IN 7 ns BEFORE USB_StreamCLK;&gt; [ZestSC1.ucf(61)], is specified without a duration.  This will result in a lack of hold time checks in timing reports.  If hold time checks are desired a duration value should be specified following the &apos;VALID&apos; keyword.
+</msg>
+
+<msg type="warning" file="ConstraintSystem" num="0" >The Offset constraint &lt;net &quot;USB_StreamFlags_n&lt;1&gt;&quot; OFFSET = IN 7 ns BEFORE USB_StreamCLK;&gt; [ZestSC1.ucf(63)], is specified without a duration.  This will result in a lack of hold time checks in timing reports.  If hold time checks are desired a duration value should be specified following the &apos;VALID&apos; keyword.
+</msg>
+
+<msg type="warning" file="ConstraintSystem" num="0" >The Offset constraint &lt;net &quot;USB_StreamData&lt;*&gt;&quot; OFFSET = in 4.0 ns before USB_StreamCLK;&gt; [ZestSC1.ucf(95)], is specified without a duration.  This will result in a lack of hold time checks in timing reports.  If hold time checks are desired a duration value should be specified following the &apos;VALID&apos; keyword.
+</msg>
+
+<msg type="warning" file="NgdBuild" num="470" delta="new" ><arg fmt="%s" index="1">bidirect</arg> pad net &apos;<arg fmt="%s" index="2">User_Signals&lt;4&gt;</arg>&apos; has no legal driver
+</msg>
+
+<msg type="warning" file="NgdBuild" num="470" delta="new" ><arg fmt="%s" index="1">bidirect</arg> pad net &apos;<arg fmt="%s" index="2">User_Signals&lt;5&gt;</arg>&apos; has no legal driver
+</msg>
+
+<msg type="warning" file="NgdBuild" num="470" delta="new" ><arg fmt="%s" index="1">bidirect</arg> pad net &apos;<arg fmt="%s" index="2">User_Signals&lt;6&gt;</arg>&apos; has no legal driver
+</msg>
+
+<msg type="warning" file="NgdBuild" num="470" delta="new" ><arg fmt="%s" index="1">bidirect</arg> pad net &apos;<arg fmt="%s" index="2">User_Signals&lt;7&gt;</arg>&apos; has no legal driver
+</msg>
+
+<msg type="warning" file="NgdBuild" num="470" delta="new" ><arg fmt="%s" index="1">bidirect</arg> pad net &apos;<arg fmt="%s" index="2">IO_CLK_N</arg>&apos; has no legal driver
+</msg>
+
+<msg type="warning" file="NgdBuild" num="470" delta="new" ><arg fmt="%s" index="1">bidirect</arg> pad net &apos;<arg fmt="%s" index="2">IO_CLK_P</arg>&apos; has no legal driver
+</msg>
+
+<msg type="warning" file="NgdBuild" num="470" delta="new" ><arg fmt="%s" index="1">bidirect</arg> pad net &apos;<arg fmt="%s" index="2">User_Signals&lt;0&gt;</arg>&apos; has no legal driver
+</msg>
+
+<msg type="warning" file="NgdBuild" num="470" delta="new" ><arg fmt="%s" index="1">bidirect</arg> pad net &apos;<arg fmt="%s" index="2">User_Signals&lt;1&gt;</arg>&apos; has no legal driver
+</msg>
+
+<msg type="warning" file="NgdBuild" num="470" delta="new" ><arg fmt="%s" index="1">bidirect</arg> pad net &apos;<arg fmt="%s" index="2">User_Signals&lt;2&gt;</arg>&apos; has no legal driver
+</msg>
+
+<msg type="warning" file="NgdBuild" num="470" delta="new" ><arg fmt="%s" index="1">bidirect</arg> pad net &apos;<arg fmt="%s" index="2">User_Signals&lt;3&gt;</arg>&apos; has no legal driver
+</msg>
+
+</messages>
+

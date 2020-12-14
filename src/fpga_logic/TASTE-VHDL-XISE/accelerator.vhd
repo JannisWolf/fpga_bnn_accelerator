@@ -1,8 +1,7 @@
 
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
-use IEEE.STD_LOGIC_ARITH.ALL;
-use IEEE.STD_LOGIC_UNSIGNED.ALL;
+use IEEE.NUMERIC_STD.ALL;
 
 --  Uncomment the following lines to use the declarations that are
 --  provided for instantiating Xilinx primitive components.
@@ -37,7 +36,7 @@ architecture arch of accelerator is
     );
     signal state : state_type := wait_for_start_signal;
 	 
-	 COMPONENT subsample64to1
+	 COMPONENT subsample64to3
 	 PORT (
 	 	  data_full : in  std_logic_vector(63 downto 0);
 		  data_sub : out  std_logic_vector(2 downto 0)
@@ -57,88 +56,97 @@ architecture arch of accelerator is
 		  full : out std_logic_vector(63 downto 0)
 	   );
 	 END COMPONENT;
+
 	 
-	 COMPONENT fifo_regs  
-	 --GENERIC (
-    --g_WIDTH : integer := 3;
-    --g_DEPTH : integer := 32
-    --);
+	 COMPONENT input_layer
+	 GENERIC(
+	   INPUT_SIZE : integer := 3;
+		WEIGHT_SIZE : integer := 3;
+		NEURON_NUM : integer := 3
+	 );
 	 PORT (
-	     i_rst_sync : in std_logic;
-        i_clk      : in std_logic;
- 
-		  -- FIFO Write Interface
-		  i_wr_en   : in  std_logic;
-		  i_wr_data : in  std_logic_vector(2 downto 0);
-		  --i_wr_data : in  std_logic_vector(g_WIDTH-1 downto 0);
-        o_full    : out std_logic;
- 
-        -- FIFO Read Interface
-        i_rd_en   : in  std_logic;
-		  o_rd_data : out std_logic_vector(2 downto 0);
-        --o_rd_data : out std_logic_vector(g_WIDTH-1 downto 0);
-        o_empty   : out std_logic
+	   clk_fc : IN STD_LOGIC;
+		data_in : IN STD_LOGIC_VECTOR(INPUT_SIZE-1 DOWNTO 0);
+		weights_in : IN STD_LOGIC_VECTOR(WEIGHT_SIZE-1 DOWNTO 0) := (others => '0');
+		calc_pos : IN STD_LOGIC;
+		activation : OUT STD_LOGIC_VECTOR(NEURON_NUM-1 downto 0);
+		finish_fc : OUT STD_LOGIC
 	 );
 	 END COMPONENT;
 	 
-	 COMPONENT memory10Bit
+	 
+	 COMPONENT fully_connected2
+	 GENERIC(
+	   INPUT_SIZE : integer := 3;
+		WEIGHT_SIZE : integer := 3;
+		NEURON_NUM : integer := 10
+	 );
 	 PORT (
-	   clka : IN STD_LOGIC;
-	   addra : IN STD_LOGIC_VECTOR(3 DOWNTO 0);
-	   douta : OUT STD_LOGIC_VECTOR(9 DOWNTO 0)
+	   clk_fc : IN STD_LOGIC;
+		data_in : IN STD_LOGIC_VECTOR(INPUT_SIZE-1 DOWNTO 0);
+		weights_in : IN STD_LOGIC_VECTOR(WEIGHT_SIZE-1 DOWNTO 0) := (others => '0');
+		calc_pos : IN STD_LOGIC;
+		activation : OUT STD_LOGIC_VECTOR(NEURON_NUM-1 downto 0);
+		finish_fc : OUT STD_LOGIC
 	 );
 	 END COMPONENT;
 	 
-	 COMPONENT memory3Bit
-	 PORT (
-	   clka : IN STD_LOGIC;
-	   addra : IN STD_LOGIC_VECTOR(3 DOWNTO 0);
-	   douta : OUT STD_LOGIC_VECTOR(2 DOWNTO 0)
-	 );
-	 END COMPONENT;
 	 
 	 COMPONENT fully_connected
+	 GENERIC(
+	   INPUT_SIZE : integer := 10;
+		WEIGHT_SIZE : integer := 10;
+		NEURON_NUM : integer := 10
+	 );
 	 PORT (
-	   weights : IN STD_LOGIC;
-		data_in : IN STD_LOGIC_VECTOR(2 DOWNTO 0);
-		--carry_in : IN STD_LOGIC;
-		--calc_start : IN STD_LOGIC;
-		--carry_out : OUT STD_LOGIC;
+	   clk_fc : IN STD_LOGIC;
+		data_in : IN STD_LOGIC_VECTOR(INPUT_SIZE-1 DOWNTO 0);
+		weights_in : IN STD_LOGIC_VECTOR(WEIGHT_SIZE-1 DOWNTO 0) := (others => '0');
 		calc_pos : IN STD_LOGIC;
-		activation : OUT STD_LOGIC_VECTOR(9 downto 0);
-		clk_fc : IN STD_LOGIC;
-		finish_calc : OUT STD_LOGIC
+		activation : OUT STD_LOGIC_VECTOR(NEURON_NUM-1 downto 0);
+		finish_fc : OUT STD_LOGIC
 	 );
 	 END COMPONENT;
 	 
+	 
 	 COMPONENT output_layer
+	 GENERIC(
+	   INPUT_SIZE : integer := 10;
+		WEIGHT_SIZE : integer := 10;
+		NEURON_NUM : integer := 3
+	 );
 	 PORT (
-	   weights : IN STD_LOGIC;
-		data_in : IN STD_LOGIC_VECTOR(9 DOWNTO 0);
-		--carry_in : IN STD_LOGIC;
-		--calc_start : IN STD_LOGIC;
-		--carry_out : OUT STD_LOGIC;
+	   clk_fc : IN STD_LOGIC;
+		data_in : IN STD_LOGIC_VECTOR(INPUT_SIZE-1 DOWNTO 0);
+		weights_in : IN STD_LOGIC_VECTOR(WEIGHT_SIZE-1 DOWNTO 0) := (others => '0');
 		calc_pos : IN STD_LOGIC;
-		activation : OUT STD_LOGIC_VECTOR(2 downto 0);
-		clk_fc : IN STD_LOGIC;
-		finish_calc : OUT STD_LOGIC
+		activation : OUT STD_LOGIC_VECTOR(NEURON_NUM-1 downto 0);
+		finish_fc : OUT STD_LOGIC
 	 );
 	 END COMPONENT;
-
+	 
 	 
 	 signal sub2fifo_data : std_logic_vector(2 downto 0);
 	 signal fifo2up_buf : std_logic;
 	 signal fifo2fc : std_logic_vector(2 downto 0);
 	 signal fc22up1_64_res : std_logic;
 	 signal calc_start : std_logic;
-	 signal counter1 : std_logic_vector(3 downto 0) := "0000";
-	 signal w1 : std_logic;
+	 signal counter1 : std_logic_vector(3 downto 0) := "1001";
+	 signal w1 : std_logic_vector(9 downto 0) := (others => '0');
 	 signal counter2 : std_logic_vector(3 downto 0) := "0000";
 	 signal w2 : std_logic;
 	 signal fc12fc2_act : std_logic_vector(9 downto 0);
 	 signal fc12fc2_fin : std_logic;
 	 signal fc22up3_64_act : std_logic_vector(2 downto 0);
 
+	 signal sub_input : std_logic_vector(2 downto 0);
+
+	 signal act_fc1 : std_logic_vector(2 downto 0);
+	 signal act_fc2 : std_logic_vector(9 downto 0);
+	 signal act_fc3 : std_logic_vector(9 downto 0);
+	 signal act_fc4 : std_logic_vector(2 downto 0);
+	 
+	 signal finished : std_logic;
 
 	 
 begin
@@ -146,94 +154,101 @@ begin
     CLK <= clock_accelerator;
     RST <= reset_accelerator;
 
-    sub: subsample64to1
+    sub: subsample64to3
 	   PORT MAP(
 		  data_full => data_in,
-		  data_sub => sub2fifo_data
+		  data_sub => sub_input
 	   );
 
-    up_buf: upsample1to64
-	   PORT MAP(
-		  sub => fifo2up_buf,
-		  full => buf_ful
-	   );
+-- for future implementations
+--    up_buf: upsample1to64
+--	   PORT MAP(
+--		  sub => fifo2up_buf,
+--		  full => buf_ful
+--	   );
 
     up_res: upsample1to64
 	   PORT MAP(
-        sub => fc22up1_64_res,
+        sub => finished,
 		  full => res_ready
 	   );
 		
 	 up_output: upsample3_64
 	   PORT MAP(
-        sub => fc22up3_64_act,
+        sub => act_fc4,
 		  full => data_out
 	   );
-    -- buffer in fifo style where from cpu stored values are stored 
-input: fifo_regs
-	   PORT MAP (
-	     i_rst_sync => RST,
-        i_clk => CLK,
- 
-		  -- FIFO Write Interface
-		  i_wr_en   => '1',
-		  i_wr_data => sub2fifo_data,
-        o_full => fifo2up_buf,
- 
-        -- FIFO Read Interface
-        i_rd_en   => '1',
-        o_rd_data => fifo2fc,
-        o_empty => calc_start
-	  );
-	  
-	 -- fc1 layer basically the popcount(XNOR)
-	 fc1: fully_connected
-	   PORT MAP(
-	     weights => w1,
-		  data_in => fifo2fc,
-		  --carry_in : IN STD_LOGIC;
-		  calc_pos => calc_start,
-		  --carry_out : OUT STD_LOGIC;
-		  activation => fc12fc2_act,
-		  clk_fc => CLK,
-		  finish_calc => fc12fc2_fin
-	   );
-		
-	 fc2: output_layer
-	   PORT MAP(
-	     weights => w2,
-		  data_in => fc12fc2_act,
-		  --carry_in : IN STD_LOGIC;
-		  calc_pos => fc12fc2_fin,
-		  --carry_out : OUT STD_LOGIC;
-		  activation => fc22up3_64_act,
-		  clk_fc => CLK,
-		  finish_calc => fc22up1_64_res
-	   );
-		
-	  
-	 -- memory where the weights1 are stored
-	 weights1: memory
-	   PORT MAP (
-	     clka => clk,
-	     addra => counter1,
-	     --douta => outp(63 downto 56)
-		  douta => w1
-	   );
-		
-		 -- memory where the weights2 are stored
-	 weights2: memory
-	   PORT MAP (
-	     clka => clk,
-	     addra => counter2,
-	     --douta => outp(63 downto 56)
-		  douta => w2
-	   );
 
+	  
+	 fc1: input_layer
+	   PORT MAP(
+	     weights_in => open, --not necessary at the moment
+		  data_in => sub_input,
+		  calc_pos => calc_start, --not necessary at the moment
+		  activation => act_fc1,
+		  clk_fc => CLK,
+		  finish_fc => open
+	   );
+	 
+	 fc2: fully_connected2
+	   PORT MAP(
+	     weights_in => open, --not necessary at the moment
+		  data_in => act_fc1,
+		  calc_pos => calc_start, --not necessary at the moment
+		  activation => act_fc2,
+		  clk_fc => CLK,
+		  finish_fc => open
+	   );
+	 
+	 fc3: fully_connected
+	   PORT MAP(
+	     weights_in => open, --not necessary at the moment
+		  data_in => act_fc2,
+		  calc_pos => calc_start, --not necessary at the moment
+		  activation => act_fc3,
+		  clk_fc => CLK,
+		  finish_fc => open
+	   );
+		
+	 fc4: output_layer
+	   PORT MAP(
+	     weights_in => open, --not necessary at the moment
+		  data_in => act_fc3,
+		  calc_pos => calc_start, --not necessary at the moment
+		  activation => act_fc4,
+		  clk_fc => CLK,
+		  finish_fc => finished
+	   );
 
     -- Possible clock divider
+	 
+	 pro1 : process(CLK)
+	 begin
+	 if(rising_edge(CLK)) then
+							  if(counter1(3 downto 0) = "1001") then
+									counter1 <= "0000";
+									--finish_fc <= '1';
+							  else
+									counter1 <= std_logic_vector(signed(counter1) + 1);
+									--finish_fc <= '0';
+							  end if;
+						 end if;
+	 end process pro1;
+	 
+	 
     process(CLK, RST)
     begin
+	 
+						 if(rising_edge(CLK)) then
+							  if(counter1(3 downto 0) = "1001") then
+									counter1 <= "0000";
+									--finish_fc <= '1';
+							  else
+									counter1 <= std_logic_vector(signed(counter1) + 1);
+									--finish_fc <= '0';
+							  end if;
+						 end if;
+	 
         if (RST='1') then
             finish_accelerator <= '1';
         elsif (CLK'event and CLK='1') then
@@ -250,6 +265,7 @@ input: fifo_regs
                     -----------------------------
                     -- Do your processing here --
                     -----------------------------
+
 
                     state <= work_done;
                 when work_done =>

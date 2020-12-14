@@ -1,0 +1,578 @@
+Release 14.7 Map P.20131013 (lin64)
+Xilinx Mapping Report File for Design 'TASTE'
+
+Design Information
+------------------
+Command Line   : map -intstyle ise -p xc3s1000-ft256-5 -cm area -ir off -pr b -c
+100 -o TASTE_map.ncd TASTE.ngd TASTE.pcf 
+Target Device  : xc3s1000
+Target Package : ft256
+Target Speed   : -5
+Mapper Version : spartan3 -- $Revision: 1.55 $
+Mapped Date    : Mon Dec 14 18:45:10 2020
+
+Design Summary
+--------------
+Number of errors:      0
+Number of warnings:   63
+Logic Utilization:
+  Number of Slice Flip Flops:           173 out of  15,360    1%
+  Number of 4 input LUTs:               249 out of  15,360    1%
+Logic Distribution:
+  Number of occupied Slices:            201 out of   7,680    2%
+    Number of Slices containing only related logic:     201 out of     201 100%
+    Number of Slices containing unrelated logic:          0 out of     201   0%
+      *See NOTES below for an explanation of the effects of unrelated logic.
+  Total Number of 4 input LUTs:         270 out of  15,360    1%
+    Number used as logic:               247
+    Number used as a route-thru:         21
+    Number used for Dual Port RAMs:       2
+      (Two LUTs used per Dual Port RAM)
+
+  The Slice Logic Distribution report is not meaningful if the design is
+  over-mapped for a non-slice resource or if Placement fails.
+
+  Number of bonded IOBs:                104 out of     173   60%
+    IOB Flip Flops:                       8
+  Number of BUFGMUXs:                     3 out of       8   37%
+  Number of DCMs:                         3 out of       4   75%
+
+Average Fanout of Non-Clock Nets:                2.96
+
+Peak Memory Usage:  530 MB
+Total REAL time to MAP completion:  5 secs 
+Total CPU time to MAP completion:   2 secs 
+
+NOTES:
+
+   Related logic is defined as being logic that shares connectivity - e.g. two
+   LUTs are "related" if they share common inputs.  When assembling slices,
+   Map gives priority to combine logic that is related.  Doing so results in
+   the best timing performance.
+
+   Unrelated logic shares no connectivity.  Map will only begin packing
+   unrelated logic into a slice once 99% of the slices are occupied through
+   related logic packing.
+
+   Note that once logic distribution reaches the 99% level through related
+   logic packing, this does not mean the device is completely utilized.
+   Unrelated logic packing will then begin, continuing until all usable LUTs
+   and FFs are occupied.  Depending on your timing budget, increased levels of
+   unrelated logic packing may adversely affect the overall timing performance
+   of your design.
+
+Table of Contents
+-----------------
+Section 1 - Errors
+Section 2 - Warnings
+Section 3 - Informational
+Section 4 - Removed Logic Summary
+Section 5 - Removed Logic
+Section 6 - IOB Properties
+Section 7 - RPMs
+Section 8 - Guide Report
+Section 9 - Area Group and Partition Summary
+Section 10 - Timing Report
+Section 11 - Configuration String Information
+Section 12 - Control Set Information
+Section 13 - Utilization by Hierarchy
+
+Section 1 - Errors
+------------------
+
+Section 2 - Warnings
+--------------------
+WARNING:MapLib:701 - Signal S_DA<8> connected to top level port S_DA<8> has been
+   removed.
+WARNING:MapLib:701 - Signal S_DA<7> connected to top level port S_DA<7> has been
+   removed.
+WARNING:MapLib:701 - Signal S_DA<6> connected to top level port S_DA<6> has been
+   removed.
+WARNING:MapLib:701 - Signal S_DA<5> connected to top level port S_DA<5> has been
+   removed.
+WARNING:MapLib:701 - Signal S_DA<4> connected to top level port S_DA<4> has been
+   removed.
+WARNING:MapLib:701 - Signal S_DA<3> connected to top level port S_DA<3> has been
+   removed.
+WARNING:MapLib:701 - Signal S_DA<2> connected to top level port S_DA<2> has been
+   removed.
+WARNING:MapLib:701 - Signal S_DA<1> connected to top level port S_DA<1> has been
+   removed.
+WARNING:MapLib:701 - Signal S_DA<0> connected to top level port S_DA<0> has been
+   removed.
+WARNING:MapLib:701 - Signal S_DB<8> connected to top level port S_DB<8> has been
+   removed.
+WARNING:MapLib:701 - Signal S_DB<7> connected to top level port S_DB<7> has been
+   removed.
+WARNING:MapLib:701 - Signal S_DB<6> connected to top level port S_DB<6> has been
+   removed.
+WARNING:MapLib:701 - Signal S_DB<5> connected to top level port S_DB<5> has been
+   removed.
+WARNING:MapLib:701 - Signal S_DB<4> connected to top level port S_DB<4> has been
+   removed.
+WARNING:MapLib:701 - Signal S_DB<3> connected to top level port S_DB<3> has been
+   removed.
+WARNING:MapLib:701 - Signal S_DB<2> connected to top level port S_DB<2> has been
+   removed.
+WARNING:MapLib:701 - Signal S_DB<1> connected to top level port S_DB<1> has been
+   removed.
+WARNING:MapLib:701 - Signal S_DB<0> connected to top level port S_DB<0> has been
+   removed.
+WARNING:MapLib:701 - Signal IO<40> connected to top level port IO<40> has been
+   removed.
+WARNING:MapLib:701 - Signal IO<39> connected to top level port IO<39> has been
+   removed.
+WARNING:MapLib:701 - Signal IO<38> connected to top level port IO<38> has been
+   removed.
+WARNING:MapLib:701 - Signal IO<37> connected to top level port IO<37> has been
+   removed.
+WARNING:MapLib:701 - Signal IO<36> connected to top level port IO<36> has been
+   removed.
+WARNING:MapLib:701 - Signal IO<35> connected to top level port IO<35> has been
+   removed.
+WARNING:MapLib:701 - Signal IO<34> connected to top level port IO<34> has been
+   removed.
+WARNING:MapLib:701 - Signal IO<33> connected to top level port IO<33> has been
+   removed.
+WARNING:MapLib:701 - Signal IO<32> connected to top level port IO<32> has been
+   removed.
+WARNING:MapLib:701 - Signal IO<31> connected to top level port IO<31> has been
+   removed.
+WARNING:MapLib:701 - Signal IO<30> connected to top level port IO<30> has been
+   removed.
+WARNING:MapLib:701 - Signal IO<29> connected to top level port IO<29> has been
+   removed.
+WARNING:MapLib:701 - Signal IO<28> connected to top level port IO<28> has been
+   removed.
+WARNING:MapLib:701 - Signal IO<27> connected to top level port IO<27> has been
+   removed.
+WARNING:MapLib:701 - Signal IO<26> connected to top level port IO<26> has been
+   removed.
+WARNING:MapLib:701 - Signal IO<25> connected to top level port IO<25> has been
+   removed.
+WARNING:MapLib:701 - Signal IO<24> connected to top level port IO<24> has been
+   removed.
+WARNING:MapLib:701 - Signal IO<23> connected to top level port IO<23> has been
+   removed.
+WARNING:MapLib:701 - Signal IO<22> connected to top level port IO<22> has been
+   removed.
+WARNING:MapLib:701 - Signal IO<21> connected to top level port IO<21> has been
+   removed.
+WARNING:MapLib:701 - Signal IO<20> connected to top level port IO<20> has been
+   removed.
+WARNING:MapLib:701 - Signal IO<19> connected to top level port IO<19> has been
+   removed.
+WARNING:MapLib:701 - Signal IO<18> connected to top level port IO<18> has been
+   removed.
+WARNING:MapLib:701 - Signal IO<17> connected to top level port IO<17> has been
+   removed.
+WARNING:MapLib:701 - Signal IO<16> connected to top level port IO<16> has been
+   removed.
+WARNING:MapLib:701 - Signal IO<15> connected to top level port IO<15> has been
+   removed.
+WARNING:MapLib:701 - Signal IO<14> connected to top level port IO<14> has been
+   removed.
+WARNING:MapLib:701 - Signal IO<13> connected to top level port IO<13> has been
+   removed.
+WARNING:MapLib:701 - Signal IO<12> connected to top level port IO<12> has been
+   removed.
+WARNING:MapLib:701 - Signal IO<11> connected to top level port IO<11> has been
+   removed.
+WARNING:MapLib:701 - Signal IO<10> connected to top level port IO<10> has been
+   removed.
+WARNING:MapLib:701 - Signal IO<9> connected to top level port IO<9> has been
+   removed.
+WARNING:MapLib:701 - Signal IO<8> connected to top level port IO<8> has been
+   removed.
+WARNING:MapLib:701 - Signal IO<7> connected to top level port IO<7> has been
+   removed.
+WARNING:MapLib:701 - Signal IO<6> connected to top level port IO<6> has been
+   removed.
+WARNING:MapLib:701 - Signal IO<5> connected to top level port IO<5> has been
+   removed.
+WARNING:MapLib:701 - Signal IO<4> connected to top level port IO<4> has been
+   removed.
+WARNING:MapLib:701 - Signal IO<3> connected to top level port IO<3> has been
+   removed.
+WARNING:MapLib:701 - Signal IO<2> connected to top level port IO<2> has been
+   removed.
+WARNING:MapLib:41 - All members of TNM group "S_DA_NAME" have been optimized out
+   of the design.
+WARNING:MapLib:41 - All members of TNM group "S_DB_NAME" have been optimized out
+   of the design.
+WARNING:MapLib:46 - The user-defined group "S_DA_GRP" has been discarded,
+   because all of its included elements were optimized out of the design.
+WARNING:MapLib:46 - The user-defined group "S_DB_GRP" has been discarded,
+   because all of its included elements were optimized out of the design.
+WARNING:MapLib:52 - The offset specification "TIMEGRP S_DA_GRP OFFSET=OUT 16000
+   pS AFTER USB_RegCLK" has been discarded because its pad group (S_DA_GRP) was
+   optimized away.
+WARNING:MapLib:52 - The offset specification "TIMEGRP S_DB_GRP OFFSET=OUT 16000
+   pS AFTER USB_RegCLK" has been discarded because its pad group (S_DB_GRP) was
+   optimized away.
+
+Section 3 - Informational
+-------------------------
+INFO:LIT:243 - Logical network User_Signals<4>_IBUF has no load.
+INFO:LIT:395 - The above info message is repeated 11 more times for the
+   following (max. 5 shown):
+   User_Signals<5>_IBUF,
+   User_Signals<6>_IBUF,
+   User_Signals<7>_IBUF,
+   IO_CLK_N_IBUF,
+   IO_CLK_P_IBUF
+   To see the details of these info messages, please use the -detail switch.
+INFO:MapLib:562 - No environment variables are currently set.
+
+Section 4 - Removed Logic Summary
+---------------------------------
+ 114 block(s) removed
+   4 block(s) optimized away
+  58 signal(s) removed
+
+Section 5 - Removed Logic
+-------------------------
+
+The trimmed logic reported below is either:
+   1. part of a cycle
+   2. part of disabled logic
+   3. a side-effect of other trimmed logic
+
+The signal "IO<10>" is unused and has been removed.
+ Unused block "IO_10_OBUFT" (TRI) removed.
+The signal "IO<11>" is unused and has been removed.
+ Unused block "IO_11_OBUFT" (TRI) removed.
+The signal "IO<12>" is unused and has been removed.
+ Unused block "IO_12_OBUFT" (TRI) removed.
+The signal "IO<13>" is unused and has been removed.
+ Unused block "IO_13_OBUFT" (TRI) removed.
+The signal "IO<14>" is unused and has been removed.
+ Unused block "IO_14_OBUFT" (TRI) removed.
+The signal "IO<15>" is unused and has been removed.
+ Unused block "IO_15_OBUFT" (TRI) removed.
+The signal "IO<16>" is unused and has been removed.
+ Unused block "IO_16_OBUFT" (TRI) removed.
+The signal "IO<17>" is unused and has been removed.
+ Unused block "IO_17_OBUFT" (TRI) removed.
+The signal "IO<18>" is unused and has been removed.
+ Unused block "IO_18_OBUFT" (TRI) removed.
+The signal "IO<19>" is unused and has been removed.
+ Unused block "IO_19_OBUFT" (TRI) removed.
+The signal "IO<20>" is unused and has been removed.
+ Unused block "IO_20_OBUFT" (TRI) removed.
+The signal "IO<21>" is unused and has been removed.
+ Unused block "IO_21_OBUFT" (TRI) removed.
+The signal "IO<22>" is unused and has been removed.
+ Unused block "IO_22_OBUFT" (TRI) removed.
+The signal "IO<23>" is unused and has been removed.
+ Unused block "IO_23_OBUFT" (TRI) removed.
+The signal "IO<24>" is unused and has been removed.
+ Unused block "IO_24_OBUFT" (TRI) removed.
+The signal "IO<25>" is unused and has been removed.
+ Unused block "IO_25_OBUFT" (TRI) removed.
+The signal "IO<26>" is unused and has been removed.
+ Unused block "IO_26_OBUFT" (TRI) removed.
+The signal "IO<27>" is unused and has been removed.
+ Unused block "IO_27_OBUFT" (TRI) removed.
+The signal "IO<28>" is unused and has been removed.
+ Unused block "IO_28_OBUFT" (TRI) removed.
+The signal "IO<29>" is unused and has been removed.
+ Unused block "IO_29_OBUFT" (TRI) removed.
+The signal "IO<2>" is unused and has been removed.
+ Unused block "IO_2_OBUFT" (TRI) removed.
+The signal "IO<30>" is unused and has been removed.
+ Unused block "IO_30_OBUFT" (TRI) removed.
+The signal "IO<31>" is unused and has been removed.
+ Unused block "IO_31_OBUFT" (TRI) removed.
+The signal "IO<32>" is unused and has been removed.
+ Unused block "IO_32_OBUFT" (TRI) removed.
+The signal "IO<33>" is unused and has been removed.
+ Unused block "IO_33_OBUFT" (TRI) removed.
+The signal "IO<34>" is unused and has been removed.
+ Unused block "IO_34_OBUFT" (TRI) removed.
+The signal "IO<35>" is unused and has been removed.
+ Unused block "IO_35_OBUFT" (TRI) removed.
+The signal "IO<36>" is unused and has been removed.
+ Unused block "IO_36_OBUFT" (TRI) removed.
+The signal "IO<37>" is unused and has been removed.
+ Unused block "IO_37_OBUFT" (TRI) removed.
+The signal "IO<38>" is unused and has been removed.
+ Unused block "IO_38_OBUFT" (TRI) removed.
+The signal "IO<39>" is unused and has been removed.
+ Unused block "IO_39_OBUFT" (TRI) removed.
+The signal "IO<3>" is unused and has been removed.
+ Unused block "IO_3_OBUFT" (TRI) removed.
+The signal "IO<40>" is unused and has been removed.
+ Unused block "IO_40_OBUFT" (TRI) removed.
+The signal "IO<4>" is unused and has been removed.
+ Unused block "IO_4_OBUFT" (TRI) removed.
+The signal "IO<5>" is unused and has been removed.
+ Unused block "IO_5_OBUFT" (TRI) removed.
+The signal "IO<6>" is unused and has been removed.
+ Unused block "IO_6_OBUFT" (TRI) removed.
+The signal "IO<7>" is unused and has been removed.
+ Unused block "IO_7_OBUFT" (TRI) removed.
+The signal "IO<8>" is unused and has been removed.
+ Unused block "IO_8_OBUFT" (TRI) removed.
+The signal "IO<9>" is unused and has been removed.
+ Unused block "IO_9_OBUFT" (TRI) removed.
+The signal "Interface_accelerator/state_FSM_ClkEn_FSM_inv" is unused and has
+been removed.
+The signal "S_DA<0>" is unused and has been removed.
+ Unused block "S_DA_0_OBUFT" (TRI) removed.
+The signal "S_DA<1>" is unused and has been removed.
+ Unused block "S_DA_1_OBUFT" (TRI) removed.
+The signal "S_DA<2>" is unused and has been removed.
+ Unused block "S_DA_2_OBUFT" (TRI) removed.
+The signal "S_DA<3>" is unused and has been removed.
+ Unused block "S_DA_3_OBUFT" (TRI) removed.
+The signal "S_DA<4>" is unused and has been removed.
+ Unused block "S_DA_4_OBUFT" (TRI) removed.
+The signal "S_DA<5>" is unused and has been removed.
+ Unused block "S_DA_5_OBUFT" (TRI) removed.
+The signal "S_DA<6>" is unused and has been removed.
+ Unused block "S_DA_6_OBUFT" (TRI) removed.
+The signal "S_DA<7>" is unused and has been removed.
+ Unused block "S_DA_7_OBUFT" (TRI) removed.
+The signal "S_DA<8>" is unused and has been removed.
+ Unused block "S_DA_8_OBUFT" (TRI) removed.
+The signal "S_DB<0>" is unused and has been removed.
+ Unused block "S_DB_0_OBUFT" (TRI) removed.
+The signal "S_DB<1>" is unused and has been removed.
+ Unused block "S_DB_1_OBUFT" (TRI) removed.
+The signal "S_DB<2>" is unused and has been removed.
+ Unused block "S_DB_2_OBUFT" (TRI) removed.
+The signal "S_DB<3>" is unused and has been removed.
+ Unused block "S_DB_3_OBUFT" (TRI) removed.
+The signal "S_DB<4>" is unused and has been removed.
+ Unused block "S_DB_4_OBUFT" (TRI) removed.
+The signal "S_DB<5>" is unused and has been removed.
+ Unused block "S_DB_5_OBUFT" (TRI) removed.
+The signal "S_DB<6>" is unused and has been removed.
+ Unused block "S_DB_6_OBUFT" (TRI) removed.
+The signal "S_DB<7>" is unused and has been removed.
+ Unused block "S_DB_7_OBUFT" (TRI) removed.
+The signal "S_DB<8>" is unused and has been removed.
+ Unused block "S_DB_8_OBUFT" (TRI) removed.
+Unused block "IO<10>" (PAD) removed.
+Unused block "IO<11>" (PAD) removed.
+Unused block "IO<12>" (PAD) removed.
+Unused block "IO<13>" (PAD) removed.
+Unused block "IO<14>" (PAD) removed.
+Unused block "IO<15>" (PAD) removed.
+Unused block "IO<16>" (PAD) removed.
+Unused block "IO<17>" (PAD) removed.
+Unused block "IO<18>" (PAD) removed.
+Unused block "IO<19>" (PAD) removed.
+Unused block "IO<20>" (PAD) removed.
+Unused block "IO<21>" (PAD) removed.
+Unused block "IO<22>" (PAD) removed.
+Unused block "IO<23>" (PAD) removed.
+Unused block "IO<24>" (PAD) removed.
+Unused block "IO<25>" (PAD) removed.
+Unused block "IO<26>" (PAD) removed.
+Unused block "IO<27>" (PAD) removed.
+Unused block "IO<28>" (PAD) removed.
+Unused block "IO<29>" (PAD) removed.
+Unused block "IO<2>" (PAD) removed.
+Unused block "IO<30>" (PAD) removed.
+Unused block "IO<31>" (PAD) removed.
+Unused block "IO<32>" (PAD) removed.
+Unused block "IO<33>" (PAD) removed.
+Unused block "IO<34>" (PAD) removed.
+Unused block "IO<35>" (PAD) removed.
+Unused block "IO<36>" (PAD) removed.
+Unused block "IO<37>" (PAD) removed.
+Unused block "IO<38>" (PAD) removed.
+Unused block "IO<39>" (PAD) removed.
+Unused block "IO<3>" (PAD) removed.
+Unused block "IO<40>" (PAD) removed.
+Unused block "IO<4>" (PAD) removed.
+Unused block "IO<5>" (PAD) removed.
+Unused block "IO<6>" (PAD) removed.
+Unused block "IO<7>" (PAD) removed.
+Unused block "IO<8>" (PAD) removed.
+Unused block "IO<9>" (PAD) removed.
+Unused block "S_DA<0>" (PAD) removed.
+Unused block "S_DA<1>" (PAD) removed.
+Unused block "S_DA<2>" (PAD) removed.
+Unused block "S_DA<3>" (PAD) removed.
+Unused block "S_DA<4>" (PAD) removed.
+Unused block "S_DA<5>" (PAD) removed.
+Unused block "S_DA<6>" (PAD) removed.
+Unused block "S_DA<7>" (PAD) removed.
+Unused block "S_DA<8>" (PAD) removed.
+Unused block "S_DB<0>" (PAD) removed.
+Unused block "S_DB<1>" (PAD) removed.
+Unused block "S_DB<2>" (PAD) removed.
+Unused block "S_DB<3>" (PAD) removed.
+Unused block "S_DB<4>" (PAD) removed.
+Unused block "S_DB<5>" (PAD) removed.
+Unused block "S_DB<6>" (PAD) removed.
+Unused block "S_DB<7>" (PAD) removed.
+Unused block "S_DB<8>" (PAD) removed.
+
+Optimized Block(s):
+TYPE 		BLOCK
+INV 		RST_inv1_INV_0
+GND 		XST_GND
+VCC 		XST_VCC
+
+To enable printing of redundant blocks removed and signals merged, set the
+detailed map report option and rerun map.
+
+Section 6 - IOB Properties
+--------------------------
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------+
+| IOB Name                           | Type             | Direction | IO Standard          | Diff  | Drive    | Slew | Reg (s)      | Resistor | IOB      |
+|                                    |                  |           |                      | Term  | Strength | Rate |              |          | Delay    |
++---------------------------------------------------------------------------------------------------------------------------------------------------------+
+| IO<0>                              | IOB              | OUTPUT    | LVCMOS33             |       | 12       | FAST |              |          |          |
+| IO<1>                              | IOB              | OUTPUT    | LVCMOS33             |       | 12       | FAST |              |          |          |
+| IO<41>                             | IOB              | OUTPUT    | LVCMOS33             |       | 12       | FAST |              |          |          |
+| IO<42>                             | IOB              | OUTPUT    | LVCMOS33             |       | 12       | FAST |              |          |          |
+| IO<43>                             | IOB              | OUTPUT    | LVCMOS33             |       | 12       | FAST |              |          |          |
+| IO<44>                             | IOB              | OUTPUT    | LVCMOS33             |       | 12       | FAST |              |          |          |
+| IO<45>                             | IOB              | OUTPUT    | LVCMOS33             |       | 12       | FAST |              |          |          |
+| IO<46>                             | IOB              | OUTPUT    | LVCMOS33             |       | 12       | FAST |              |          |          |
+| IO_CLK_N                           | IOB              | INPUT     | LVCMOS33             |       |          |      |              |          |          |
+| IO_CLK_P                           | IOB              | INPUT     | LVCMOS33             |       |          |      |              |          |          |
+| S_A<0>                             | IOB              | OUTPUT    | LVCMOS33             |       | 12       | FAST |              |          |          |
+| S_A<1>                             | IOB              | OUTPUT    | LVCMOS33             |       | 12       | FAST |              |          |          |
+| S_A<2>                             | IOB              | OUTPUT    | LVCMOS33             |       | 12       | FAST |              |          |          |
+| S_A<3>                             | IOB              | OUTPUT    | LVCMOS33             |       | 12       | FAST |              |          |          |
+| S_A<4>                             | IOB              | OUTPUT    | LVCMOS33             |       | 12       | FAST |              |          |          |
+| S_A<5>                             | IOB              | OUTPUT    | LVCMOS33             |       | 12       | FAST |              |          |          |
+| S_A<6>                             | IOB              | OUTPUT    | LVCMOS33             |       | 12       | FAST |              |          |          |
+| S_A<7>                             | IOB              | OUTPUT    | LVCMOS33             |       | 12       | FAST |              |          |          |
+| S_A<8>                             | IOB              | OUTPUT    | LVCMOS33             |       | 12       | FAST |              |          |          |
+| S_A<9>                             | IOB              | OUTPUT    | LVCMOS33             |       | 12       | FAST |              |          |          |
+| S_A<10>                            | IOB              | OUTPUT    | LVCMOS33             |       | 12       | FAST |              |          |          |
+| S_A<11>                            | IOB              | OUTPUT    | LVCMOS33             |       | 12       | FAST |              |          |          |
+| S_A<12>                            | IOB              | OUTPUT    | LVCMOS33             |       | 12       | FAST |              |          |          |
+| S_A<13>                            | IOB              | OUTPUT    | LVCMOS33             |       | 12       | FAST |              |          |          |
+| S_A<14>                            | IOB              | OUTPUT    | LVCMOS33             |       | 12       | FAST |              |          |          |
+| S_A<15>                            | IOB              | OUTPUT    | LVCMOS33             |       | 12       | FAST |              |          |          |
+| S_A<16>                            | IOB              | OUTPUT    | LVCMOS33             |       | 12       | FAST |              |          |          |
+| S_A<17>                            | IOB              | OUTPUT    | LVCMOS33             |       | 12       | FAST |              |          |          |
+| S_A<18>                            | IOB              | OUTPUT    | LVCMOS33             |       | 12       | FAST |              |          |          |
+| S_A<19>                            | IOB              | OUTPUT    | LVCMOS33             |       | 12       | FAST |              |          |          |
+| S_A<20>                            | IOB              | OUTPUT    | LVCMOS33             |       | 12       | FAST |              |          |          |
+| S_A<21>                            | IOB              | OUTPUT    | LVCMOS33             |       | 12       | FAST |              |          |          |
+| S_A<22>                            | IOB              | OUTPUT    | LVCMOS33             |       | 12       | FAST |              |          |          |
+| S_ADV_LD_N                         | IOB              | OUTPUT    | LVCMOS33             |       | 12       | FAST |              |          |          |
+| S_BWA_N                            | IOB              | OUTPUT    | LVCMOS33             |       | 12       | FAST |              |          |          |
+| S_BWB_N                            | IOB              | OUTPUT    | LVCMOS33             |       | 12       | FAST |              |          |          |
+| S_CLK                              | IOB              | OUTPUT    | LVCMOS33             |       | 12       | FAST | OUTDDR       |          |          |
+| S_OE_N                             | IOB              | OUTPUT    | LVCMOS33             |       | 12       | FAST |              |          |          |
+| S_WE_N                             | IOB              | OUTPUT    | LVCMOS33             |       | 12       | FAST |              |          |          |
+| USB_Interrupt                      | IOB              | OUTPUT    | LVCMOS33             |       | 12       | FAST |              |          |          |
+| USB_RegAddr<0>                     | IOB              | INPUT     | LVCMOS33             |       |          |      |              |          |          |
+| USB_RegAddr<1>                     | IOB              | INPUT     | LVCMOS33             |       |          |      |              |          |          |
+| USB_RegAddr<2>                     | IOB              | INPUT     | LVCMOS33             |       |          |      |              |          |          |
+| USB_RegAddr<3>                     | IOB              | INPUT     | LVCMOS33             |       |          |      |              |          |          |
+| USB_RegAddr<4>                     | IOB              | INPUT     | LVCMOS33             |       |          |      |              |          |          |
+| USB_RegAddr<5>                     | IOB              | INPUT     | LVCMOS33             |       |          |      |              |          |          |
+| USB_RegAddr<6>                     | IOB              | INPUT     | LVCMOS33             |       |          |      |              |          |          |
+| USB_RegAddr<7>                     | IOB              | INPUT     | LVCMOS33             |       |          |      |              |          |          |
+| USB_RegAddr<8>                     | IOB              | INPUT     | LVCMOS33             |       |          |      |              |          |          |
+| USB_RegAddr<9>                     | IOB              | INPUT     | LVCMOS33             |       |          |      |              |          |          |
+| USB_RegAddr<10>                    | IOB              | INPUT     | LVCMOS33             |       |          |      |              |          |          |
+| USB_RegAddr<11>                    | IOB              | INPUT     | LVCMOS33             |       |          |      |              |          |          |
+| USB_RegAddr<12>                    | IOB              | INPUT     | LVCMOS33             |       |          |      |              |          |          |
+| USB_RegAddr<13>                    | IOB              | INPUT     | LVCMOS33             |       |          |      |              |          |          |
+| USB_RegAddr<14>                    | IOB              | INPUT     | LVCMOS33             |       |          |      |              |          |          |
+| USB_RegAddr<15>                    | IOB              | INPUT     | LVCMOS33             |       |          |      |              |          |          |
+| USB_RegCLK                         | IOB              | INPUT     | LVCMOS33             |       |          |      |              |          |          |
+| USB_RegCS_n                        | IOB              | INPUT     | LVCMOS33             |       |          |      |              |          |          |
+| USB_RegData<0>                     | IOB              | BIDIR     | LVCMOS33             |       | 12       | FAST | INFF1        |          |          |
+|                                    |                  |           |                      |       |          |      | OFF1         |          |          |
+| USB_RegData<1>                     | IOB              | BIDIR     | LVCMOS33             |       | 12       | FAST | INFF1        |          |          |
+|                                    |                  |           |                      |       |          |      | OFF1         |          |          |
+| USB_RegData<2>                     | IOB              | BIDIR     | LVCMOS33             |       | 12       | FAST | INFF1        |          |          |
+|                                    |                  |           |                      |       |          |      | OFF1         |          |          |
+| USB_RegData<3>                     | IOB              | OUTPUT    | LVCMOS33             |       | 12       | FAST |              |          |          |
+| USB_RegData<4>                     | IOB              | OUTPUT    | LVCMOS33             |       | 12       | FAST |              |          |          |
+| USB_RegData<5>                     | IOB              | OUTPUT    | LVCMOS33             |       | 12       | FAST |              |          |          |
+| USB_RegData<6>                     | IOB              | OUTPUT    | LVCMOS33             |       | 12       | FAST |              |          |          |
+| USB_RegData<7>                     | IOB              | OUTPUT    | LVCMOS33             |       | 12       | FAST |              |          |          |
+| USB_RegOE_n                        | IOB              | INPUT     | LVCMOS33             |       |          |      |              |          |          |
+| USB_RegRD_n                        | IOB              | INPUT     | LVCMOS33             |       |          |      |              |          |          |
+| USB_RegWR_n                        | IOB              | INPUT     | LVCMOS33             |       |          |      |              |          |          |
+| USB_StreamCLK                      | IOB              | INPUT     | LVCMOS33             |       |          |      |              |          |          |
+| USB_StreamData<0>                  | IOB              | OUTPUT    | LVCMOS33             |       | 12       | FAST |              |          |          |
+| USB_StreamData<1>                  | IOB              | OUTPUT    | LVCMOS33             |       | 12       | FAST |              |          |          |
+| USB_StreamData<2>                  | IOB              | OUTPUT    | LVCMOS33             |       | 12       | FAST |              |          |          |
+| USB_StreamData<3>                  | IOB              | OUTPUT    | LVCMOS33             |       | 12       | FAST |              |          |          |
+| USB_StreamData<4>                  | IOB              | OUTPUT    | LVCMOS33             |       | 12       | FAST |              |          |          |
+| USB_StreamData<5>                  | IOB              | OUTPUT    | LVCMOS33             |       | 12       | FAST |              |          |          |
+| USB_StreamData<6>                  | IOB              | OUTPUT    | LVCMOS33             |       | 12       | FAST |              |          |          |
+| USB_StreamData<7>                  | IOB              | OUTPUT    | LVCMOS33             |       | 12       | FAST |              |          |          |
+| USB_StreamData<8>                  | IOB              | OUTPUT    | LVCMOS33             |       | 12       | FAST |              |          |          |
+| USB_StreamData<9>                  | IOB              | OUTPUT    | LVCMOS33             |       | 12       | FAST |              |          |          |
+| USB_StreamData<10>                 | IOB              | OUTPUT    | LVCMOS33             |       | 12       | FAST |              |          |          |
+| USB_StreamData<11>                 | IOB              | OUTPUT    | LVCMOS33             |       | 12       | FAST |              |          |          |
+| USB_StreamData<12>                 | IOB              | OUTPUT    | LVCMOS33             |       | 12       | FAST |              |          |          |
+| USB_StreamData<13>                 | IOB              | OUTPUT    | LVCMOS33             |       | 12       | FAST |              |          |          |
+| USB_StreamData<14>                 | IOB              | OUTPUT    | LVCMOS33             |       | 12       | FAST |              |          |          |
+| USB_StreamData<15>                 | IOB              | OUTPUT    | LVCMOS33             |       | 12       | FAST |              |          |          |
+| USB_StreamFIFOADDR<0>              | IOB              | OUTPUT    | LVCMOS33             |       | 12       | FAST |              |          |          |
+| USB_StreamFIFOADDR<1>              | IOB              | OUTPUT    | LVCMOS33             |       | 12       | FAST |              |          |          |
+| USB_StreamFX2Rdy                   | IOB              | INPUT     | LVCMOS33             |       |          |      |              |          |          |
+| USB_StreamFlags_n<0>               | IOB              | INPUT     | LVCMOS33             |       |          |      |              |          |          |
+| USB_StreamFlags_n<1>               | IOB              | INPUT     | LVCMOS33             |       |          |      |              |          |          |
+| USB_StreamFlags_n<2>               | IOB              | INPUT     | LVCMOS33             |       |          |      |              |          |          |
+| USB_StreamPKTEND_n                 | IOB              | OUTPUT    | LVCMOS33             |       | 12       | FAST |              |          |          |
+| USB_StreamSLOE_n                   | IOB              | OUTPUT    | LVCMOS33             |       | 6        | FAST |              |          |          |
+| USB_StreamSLRD_n                   | IOB              | OUTPUT    | LVCMOS33             |       | 6        | FAST |              |          |          |
+| USB_StreamSLWR_n                   | IOB              | OUTPUT    | LVCMOS33             |       | 6        | FAST |              |          |          |
+| User_Signals<0>                    | IOB              | INPUT     | LVCMOS33             |       |          |      |              |          |          |
+| User_Signals<1>                    | IOB              | INPUT     | LVCMOS33             |       |          |      |              |          |          |
+| User_Signals<2>                    | IOB              | INPUT     | LVCMOS33             |       |          |      |              |          |          |
+| User_Signals<3>                    | IOB              | INPUT     | LVCMOS33             |       |          |      |              |          |          |
+| User_Signals<4>                    | IOB              | INPUT     | LVCMOS33             |       |          |      |              |          |          |
+| User_Signals<5>                    | IOB              | INPUT     | LVCMOS33             |       |          |      |              |          |          |
+| User_Signals<6>                    | IOB              | INPUT     | LVCMOS33             |       |          |      |              |          |          |
+| User_Signals<7>                    | IOB              | INPUT     | LVCMOS33             |       |          |      |              |          |          |
++---------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+Section 7 - RPMs
+----------------
+
+Section 8 - Guide Report
+------------------------
+Guide not run on this design.
+
+Section 9 - Area Group and Partition Summary
+--------------------------------------------
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+Area Group Information
+----------------------
+
+  No area groups were found in this design.
+
+----------------------
+
+Section 10 - Timing Report
+--------------------------
+This design was not run using timing mode.
+
+Section 11 - Configuration String Details
+-----------------------------------------
+Use the "-detail" map option to print out Configuration Strings
+
+Section 12 - Control Set Information
+------------------------------------
+No control set information for this architecture.
+
+Section 13 - Utilization by Hierarchy
+-------------------------------------
+Use the "-detail" map option to print out the Utilization by Hierarchy section.

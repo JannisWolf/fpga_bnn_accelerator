@@ -30,17 +30,20 @@ use IEEE.NUMERIC_STD.ALL;
 --use UNISIM.VComponents.all;
 
 entity xnor_popcount is
+   GENERIC(
+	    size : integer := 10
+		 );
    PORT(
 	    clk_xn : IN STD_LOGIC;
-	    wei : IN STD_LOGIC_VECTOR(9 downto 0);
-		 d_in : IN STD_LOGIC_VECTOR(9 downto 0);
+	    wei : IN STD_LOGIC_VECTOR(size-1 downto 0);
+		 d_in : IN STD_LOGIC_VECTOR(size-1 downto 0);
 		 res : OUT STD_LOGIC
 	);
 end xnor_popcount;
 
 architecture Behavioral of xnor_popcount is
 
-signal cou : std_logic_vector(9 downto 0) := "0000000000";
+signal cou : std_logic_vector(size-1 downto 0) := (others => '0');
 --variable pop_count : unsigned(3 downto 0) := "0000"; 
 signal sig_pop : std_logic_vector(7 downto 0) := "00000000";
 signal sig_count : std_logic_vector(3 downto 0) := "0000";
@@ -56,34 +59,24 @@ end process op_xnor;
 
 
 op_popcount: process(clk_xn, wei)
-    variable count : signed(3 downto 0) := "0000";
-	 variable pop : signed(7 downto 0) := "00000000";
+    variable count : signed(3 downto 0) := (others => '0');
+	 variable pop : signed(7 downto 0) := (others => '0');
 	 
-	 constant num_bit : signed(7 downto 0) := "00001010";
+	 constant num_bit : signed(7 downto 0) := to_signed(size,8);
 begin
-   --if(clk_xn'event and clk_xn='1') then
---	   for i in 0 to 2 loop
---		   cou(i) <= wei xor d_in(i);
---		end loop;
-      --cou <= wei xnor d_in;
-	--end if;
-	count := "0000";
-	--pop_count <= std_logic_vector((cou(1) & "") + (cou(2) & ""));
+   if(rising_edge(clk_xn)) then
+		count := "0000";
 
-	for i in 0 to 9 loop
-	   --if (cou(i) = '1') then
-	   --    pop_count <= std_logic_vector(unsigned(pop_count) + 1);
-		--end if;
-		count := count + ("000" & cou(i)); 
-	end loop;
+		for i in 0 to size-1 loop
+			count := count + ("000" & cou(i)); 
+		end loop;
 
-   --if(cou(6) = '0') then
-	pop := "000" & count(3 downto 0) & '0'; 
-	sig_pop <= std_logic_vector(pop);
-	sig_count <= std_logic_vector(count);
-	sig_res <= pop - num_bit;
-	res <= std_logic(not sig_res(7));
-	--end if;
+		pop := "000" & count(3 downto 0) & '0'; 
+		sig_pop <= std_logic_vector(pop);
+		sig_count <= std_logic_vector(count);
+		sig_res <= pop - num_bit;
+		res <= std_logic(not sig_res(7));
+	end if;
 
 end process op_popcount;
 

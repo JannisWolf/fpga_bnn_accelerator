@@ -1,0 +1,343 @@
+//! **************************************************************************
+// Written by: Map P.20131013 on Mon Dec 14 18:45:14 2020
+//! **************************************************************************
+
+SCHEMATIC START;
+COMP "S_A<10>" LOCATE = SITE "A7" LEVEL 1;
+COMP "S_A<11>" LOCATE = SITE "A3" LEVEL 1;
+COMP "S_A<20>" LOCATE = SITE "B6" LEVEL 1;
+COMP "S_A<12>" LOCATE = SITE "D5" LEVEL 1;
+COMP "S_A<21>" LOCATE = SITE "E7" LEVEL 1;
+COMP "S_A<13>" LOCATE = SITE "B4" LEVEL 1;
+COMP "S_A<22>" LOCATE = SITE "D7" LEVEL 1;
+COMP "S_A<14>" LOCATE = SITE "A4" LEVEL 1;
+COMP "S_A<15>" LOCATE = SITE "C5" LEVEL 1;
+COMP "S_A<16>" LOCATE = SITE "B5" LEVEL 1;
+COMP "S_A<17>" LOCATE = SITE "E6" LEVEL 1;
+COMP "S_A<18>" LOCATE = SITE "D6" LEVEL 1;
+COMP "S_A<19>" LOCATE = SITE "C6" LEVEL 1;
+COMP "S_BWA_N" LOCATE = SITE "C8" LEVEL 1;
+COMP "S_BWB_N" LOCATE = SITE "D8" LEVEL 1;
+COMP "USB_Interrupt" LOCATE = SITE "N5" LEVEL 1;
+COMP "IO<0>" LOCATE = SITE "T12" LEVEL 1;
+COMP "IO<1>" LOCATE = SITE "K15" LEVEL 1;
+COMP "S_CLK" LOCATE = SITE "B7" LEVEL 1;
+COMP "User_Signals<0>" LOCATE = SITE "R1" LEVEL 1;
+COMP "User_Signals<1>" LOCATE = SITE "P1" LEVEL 1;
+COMP "User_Signals<2>" LOCATE = SITE "P2" LEVEL 1;
+COMP "User_Signals<3>" LOCATE = SITE "N3" LEVEL 1;
+COMP "User_Signals<4>" LOCATE = SITE "N2" LEVEL 1;
+COMP "User_Signals<5>" LOCATE = SITE "N1" LEVEL 1;
+COMP "User_Signals<6>" LOCATE = SITE "M4" LEVEL 1;
+COMP "User_Signals<7>" LOCATE = SITE "M3" LEVEL 1;
+COMP "USB_StreamCLK" LOCATE = SITE "T9" LEVEL 1;
+COMP "USB_StreamPKTEND_n" LOCATE = SITE "R11" LEVEL 1;
+COMP "IO<41>" LOCATE = SITE "D15" LEVEL 1;
+COMP "IO<42>" LOCATE = SITE "D14" LEVEL 1;
+COMP "IO<43>" LOCATE = SITE "C15" LEVEL 1;
+COMP "IO<44>" LOCATE = SITE "C16" LEVEL 1;
+COMP "IO<45>" LOCATE = SITE "B16" LEVEL 1;
+COMP "IO<46>" LOCATE = SITE "G16" LEVEL 1;
+COMP "USB_RegCLK" LOCATE = SITE "R9" LEVEL 1;
+COMP "S_ADV_LD_N" LOCATE = SITE "C7" LEVEL 1;
+COMP "USB_StreamFlags_n<0>" LOCATE = SITE "T8" LEVEL 1;
+COMP "USB_StreamFlags_n<1>" LOCATE = SITE "T4" LEVEL 1;
+COMP "USB_StreamFlags_n<2>" LOCATE = SITE "R4" LEVEL 1;
+COMP "USB_StreamData<10>" LOCATE = SITE "T13" LEVEL 1;
+COMP "USB_StreamData<11>" LOCATE = SITE "R13" LEVEL 1;
+COMP "USB_StreamData<12>" LOCATE = SITE "T10" LEVEL 1;
+COMP "USB_StreamData<13>" LOCATE = SITE "P13" LEVEL 1;
+COMP "USB_StreamData<14>" LOCATE = SITE "N12" LEVEL 1;
+COMP "USB_StreamData<15>" LOCATE = SITE "T14" LEVEL 1;
+COMP "S_A<0>" LOCATE = SITE "D3" LEVEL 1;
+COMP "S_A<1>" LOCATE = SITE "E3" LEVEL 1;
+COMP "S_A<2>" LOCATE = SITE "D2" LEVEL 1;
+COMP "S_A<3>" LOCATE = SITE "D1" LEVEL 1;
+COMP "S_A<4>" LOCATE = SITE "C3" LEVEL 1;
+COMP "S_A<5>" LOCATE = SITE "C2" LEVEL 1;
+COMP "S_A<6>" LOCATE = SITE "B1" LEVEL 1;
+COMP "S_A<7>" LOCATE = SITE "C1" LEVEL 1;
+COMP "S_A<8>" LOCATE = SITE "G2" LEVEL 1;
+COMP "S_A<9>" LOCATE = SITE "A5" LEVEL 1;
+COMP "S_OE_N" LOCATE = SITE "C9" LEVEL 1;
+COMP "S_WE_N" LOCATE = SITE "D9" LEVEL 1;
+COMP "USB_StreamData<0>" LOCATE = SITE "M6" LEVEL 1;
+COMP "USB_StreamData<1>" LOCATE = SITE "N6" LEVEL 1;
+COMP "USB_StreamData<2>" LOCATE = SITE "R7" LEVEL 1;
+COMP "USB_StreamData<3>" LOCATE = SITE "T7" LEVEL 1;
+COMP "USB_StreamData<4>" LOCATE = SITE "R10" LEVEL 1;
+COMP "USB_StreamData<5>" LOCATE = SITE "P10" LEVEL 1;
+COMP "USB_StreamData<6>" LOCATE = SITE "N11" LEVEL 1;
+COMP "USB_StreamData<7>" LOCATE = SITE "M11" LEVEL 1;
+COMP "USB_StreamData<8>" LOCATE = SITE "R12" LEVEL 1;
+COMP "USB_StreamData<9>" LOCATE = SITE "P12" LEVEL 1;
+COMP "USB_StreamFIFOADDR<0>" LOCATE = SITE "N10" LEVEL 1;
+COMP "USB_StreamFIFOADDR<1>" LOCATE = SITE "M10" LEVEL 1;
+COMP "USB_RegAddr<10>" LOCATE = SITE "F3" LEVEL 1;
+COMP "USB_StreamFX2Rdy" LOCATE = SITE "P9" LEVEL 1;
+COMP "USB_RegAddr<11>" LOCATE = SITE "F2" LEVEL 1;
+COMP "USB_RegAddr<12>" LOCATE = SITE "E4" LEVEL 1;
+COMP "USB_RegAddr<13>" LOCATE = SITE "F4" LEVEL 1;
+COMP "USB_RegAddr<14>" LOCATE = SITE "E2" LEVEL 1;
+COMP "USB_RegAddr<15>" LOCATE = SITE "E1" LEVEL 1;
+COMP "USB_StreamSLOE_n" LOCATE = SITE "N8" LEVEL 1;
+COMP "USB_StreamSLRD_n" LOCATE = SITE "P5" LEVEL 1;
+COMP "USB_StreamSLWR_n" LOCATE = SITE "R6" LEVEL 1;
+COMP "USB_RegAddr<0>" LOCATE = SITE "J2" LEVEL 1;
+COMP "USB_RegAddr<1>" LOCATE = SITE "J1" LEVEL 1;
+COMP "USB_RegAddr<2>" LOCATE = SITE "G1" LEVEL 1;
+COMP "USB_RegAddr<3>" LOCATE = SITE "H1" LEVEL 1;
+COMP "USB_RegAddr<4>" LOCATE = SITE "H4" LEVEL 1;
+COMP "USB_RegAddr<5>" LOCATE = SITE "H3" LEVEL 1;
+COMP "USB_RegAddr<6>" LOCATE = SITE "G4" LEVEL 1;
+COMP "USB_RegAddr<7>" LOCATE = SITE "G3" LEVEL 1;
+COMP "USB_RegAddr<8>" LOCATE = SITE "F5" LEVEL 1;
+COMP "USB_RegAddr<9>" LOCATE = SITE "G5" LEVEL 1;
+COMP "USB_RegData<0>" LOCATE = SITE "M2" LEVEL 1;
+COMP "USB_RegData<1>" LOCATE = SITE "M1" LEVEL 1;
+COMP "USB_RegData<2>" LOCATE = SITE "L5" LEVEL 1;
+COMP "USB_RegData<3>" LOCATE = SITE "L4" LEVEL 1;
+COMP "USB_RegData<4>" LOCATE = SITE "L3" LEVEL 1;
+COMP "USB_RegData<5>" LOCATE = SITE "L2" LEVEL 1;
+COMP "USB_RegData<6>" LOCATE = SITE "K5" LEVEL 1;
+COMP "USB_RegData<7>" LOCATE = SITE "K4" LEVEL 1;
+COMP "IO_CLK_N" LOCATE = SITE "B8" LEVEL 1;
+COMP "IO_CLK_P" LOCATE = SITE "A8" LEVEL 1;
+COMP "USB_RegCS_n" LOCATE = SITE "K3" LEVEL 1;
+COMP "USB_RegOE_n" LOCATE = SITE "J3" LEVEL 1;
+COMP "USB_RegRD_n" LOCATE = SITE "J4" LEVEL 1;
+COMP "USB_RegWR_n" LOCATE = SITE "K2" LEVEL 1;
+PIN Interfaces/INST_SRAM/DCM_INST_pins<2> = BEL
+        "Interfaces/INST_SRAM/DCM_INST" PINNAME CLKIN;
+TIMEGRP Interfaces_INST_ZestSC1_Host_RegCLKFB = BEL "accelerator_data_in_1"
+        BEL "accelerator_data_in_2" BEL "Dir" BEL
+        "accelerator_StartCalculationsInternal" BEL "accelerator_data_in_0"
+        BEL "accelerator_StartCalculationsInternalOld" BEL
+        "accelerator_StartCalculationsPulse" BEL "Count_0" BEL "Count_1" BEL
+        "Count_2" BEL "Count_3" BEL "Count_4" BEL "Count_5" BEL "Count_6" BEL
+        "Count_7" BEL "Count_8" BEL "Count_9" BEL "Count_10" BEL "Count_11"
+        BEL "Count_12" BEL "Count_13" BEL "Count_14" BEL "Count_15" BEL
+        "Count_16" BEL "Count_17" BEL "Count_18" BEL "Count_19" BEL "Count_20"
+        BEL "Count_21" BEL "LEDVal_7" BEL "LEDVal_6" BEL "LEDVal_5" BEL
+        "LEDVal_4" BEL "LEDVal_3" BEL "LEDVal_2" BEL "LEDVal_1" BEL "LEDVal_0"
+        BEL "Interfaces/INST_ZestSC1_Host/IntCounter_2" BEL
+        "Interfaces/INST_ZestSC1_Host/IntCounter_1" BEL
+        "Interfaces/INST_ZestSC1_Host/IntCounter_0" BEL
+        "Interfaces/INST_ZestSC1_Host/Mram_FIFOOut16.SLICEM_F" BEL
+        "Interfaces/INST_ZestSC1_Host/Mram_FIFOOut16.SLICEM_G" BEL
+        "Interfaces/INST_ZestSC1_Host/RegLastWR" BEL
+        "Interfaces/INST_ZestSC1_Host/RegLastRD" BEL
+        "Interfaces/INST_ZestSC1_Host/RegLastCS" BEL
+        "Interfaces/INST_ZestSC1_Host/RegOutput_2" BEL
+        "Interfaces/INST_ZestSC1_Host/RegOutput_1" BEL
+        "Interfaces/INST_ZestSC1_Host/RegOutput_0" BEL
+        "Interface_accelerator/fc4/weights/douta_3" BEL
+        "Interface_accelerator/fc4/weights/douta_4" BEL
+        "Interface_accelerator/fc4/weights/douta_6" BEL
+        "Interface_accelerator/fc4/weights/douta_7" BEL
+        "Interface_accelerator/fc4/weights/douta_9" BEL
+        "Interface_accelerator/fc3/weights/douta_0" BEL
+        "Interface_accelerator/fc3/weights/douta_1" BEL
+        "Interface_accelerator/fc3/weights/douta_3" BEL
+        "Interface_accelerator/fc3/weights/douta_5" BEL
+        "Interface_accelerator/fc3/weights/douta_6" BEL
+        "Interface_accelerator/fc3/weights/douta_7" BEL
+        "Interface_accelerator/fc3/weights/douta_8" BEL
+        "Interface_accelerator/fc3/weights/douta_9" BEL
+        "Interface_accelerator/fc2/weights/douta_0" BEL
+        "Interface_accelerator/fc2/weights/douta_1" BEL
+        "Interface_accelerator/fc2/weights/douta_2" BEL
+        "Interface_accelerator/fc4/counter_3" BEL
+        "Interface_accelerator/fc4/counter_2" BEL
+        "Interface_accelerator/fc4/counter_1" BEL
+        "Interface_accelerator/fc4/counter_0" BEL
+        "Interface_accelerator/fc3/counter_3" BEL
+        "Interface_accelerator/fc3/counter_2" BEL
+        "Interface_accelerator/fc3/counter_1" BEL
+        "Interface_accelerator/fc3/counter_0" BEL
+        "Interface_accelerator/fc2/counter_3" BEL
+        "Interface_accelerator/fc2/counter_2" BEL
+        "Interface_accelerator/fc2/counter_1" BEL
+        "Interface_accelerator/fc2/counter_0" BEL
+        "Interface_accelerator/fc1/counter_3" BEL
+        "Interface_accelerator/fc1/counter_2" BEL
+        "Interface_accelerator/fc1/counter_1" BEL
+        "Interface_accelerator/fc1/counter_0" BEL
+        "Interface_accelerator/fc4/finish_fc" BEL
+        "Interface_accelerator/fc4/fc1_activation/o_2" BEL
+        "Interface_accelerator/fc4/fc1_activation/o_1" BEL
+        "Interface_accelerator/fc4/fc1_activation/o_0" BEL
+        "Interface_accelerator/fc4/fc1_activation/tmp_2" BEL
+        "Interface_accelerator/fc4/fc1_activation/tmp_1" BEL
+        "Interface_accelerator/fc4/fc1_activation/tmp_0" BEL
+        "Interface_accelerator/fc4/xnor_pop1/res" BEL
+        "Interface_accelerator/fc4/xnor_pop1/sig_res_7" BEL
+        "Interface_accelerator/fc3/fc1_activation/o_9" BEL
+        "Interface_accelerator/fc3/fc1_activation/o_8" BEL
+        "Interface_accelerator/fc3/fc1_activation/o_7" BEL
+        "Interface_accelerator/fc3/fc1_activation/o_6" BEL
+        "Interface_accelerator/fc3/fc1_activation/o_5" BEL
+        "Interface_accelerator/fc3/fc1_activation/o_4" BEL
+        "Interface_accelerator/fc3/fc1_activation/o_3" BEL
+        "Interface_accelerator/fc3/fc1_activation/o_2" BEL
+        "Interface_accelerator/fc3/fc1_activation/o_1" BEL
+        "Interface_accelerator/fc3/fc1_activation/o_0" BEL
+        "Interface_accelerator/fc3/fc1_activation/tmp_9" BEL
+        "Interface_accelerator/fc3/fc1_activation/tmp_7" BEL
+        "Interface_accelerator/fc3/fc1_activation/tmp_6" BEL
+        "Interface_accelerator/fc3/fc1_activation/tmp_8" BEL
+        "Interface_accelerator/fc3/fc1_activation/tmp_4" BEL
+        "Interface_accelerator/fc3/fc1_activation/tmp_3" BEL
+        "Interface_accelerator/fc3/fc1_activation/tmp_5" BEL
+        "Interface_accelerator/fc3/fc1_activation/tmp_1" BEL
+        "Interface_accelerator/fc3/fc1_activation/tmp_0" BEL
+        "Interface_accelerator/fc3/fc1_activation/tmp_2" BEL
+        "Interface_accelerator/fc3/xnor_pop1/res" BEL
+        "Interface_accelerator/fc3/xnor_pop1/sig_res_7" BEL
+        "Interface_accelerator/fc2/xnor_pop1/res" BEL
+        "Interface_accelerator/fc2/xnor_pop1/sig_res_7" BEL
+        "Interface_accelerator/fc2/fc1_activation/o_9" BEL
+        "Interface_accelerator/fc2/fc1_activation/o_8" BEL
+        "Interface_accelerator/fc2/fc1_activation/o_7" BEL
+        "Interface_accelerator/fc2/fc1_activation/o_6" BEL
+        "Interface_accelerator/fc2/fc1_activation/o_5" BEL
+        "Interface_accelerator/fc2/fc1_activation/o_4" BEL
+        "Interface_accelerator/fc2/fc1_activation/o_3" BEL
+        "Interface_accelerator/fc2/fc1_activation/o_2" BEL
+        "Interface_accelerator/fc2/fc1_activation/o_1" BEL
+        "Interface_accelerator/fc2/fc1_activation/o_0" BEL
+        "Interface_accelerator/fc2/fc1_activation/tmp_9" BEL
+        "Interface_accelerator/fc2/fc1_activation/tmp_7" BEL
+        "Interface_accelerator/fc2/fc1_activation/tmp_6" BEL
+        "Interface_accelerator/fc2/fc1_activation/tmp_8" BEL
+        "Interface_accelerator/fc2/fc1_activation/tmp_4" BEL
+        "Interface_accelerator/fc2/fc1_activation/tmp_3" BEL
+        "Interface_accelerator/fc2/fc1_activation/tmp_5" BEL
+        "Interface_accelerator/fc2/fc1_activation/tmp_1" BEL
+        "Interface_accelerator/fc2/fc1_activation/tmp_0" BEL
+        "Interface_accelerator/fc2/fc1_activation/tmp_2" BEL
+        "Interface_accelerator/fc1/xnor_pop1/res" BEL
+        "Interface_accelerator/fc1/xnor_pop1/sig_res_7" BEL
+        "Interface_accelerator/fc1/fc1_activation/o_2" BEL
+        "Interface_accelerator/fc1/fc1_activation/o_1" BEL
+        "Interface_accelerator/fc1/fc1_activation/o_0" BEL
+        "Interface_accelerator/fc1/fc1_activation/tmp_2" BEL
+        "Interface_accelerator/fc1/fc1_activation/tmp_1" BEL
+        "Interface_accelerator/fc1/fc1_activation/tmp_0" BEL
+        "Interface_accelerator/state_FSM_FFd1" BEL
+        "Interface_accelerator/state_FSM_FFd2" BEL
+        "Interface_accelerator/finish_accelerator" BEL
+        "Interface_accelerator/fc4/weights/douta_0" BEL
+        "Interface_accelerator/fc4/weights/douta_2" BEL
+        "Interface_accelerator/fc4/weights/douta_5" BEL
+        "Interface_accelerator/fc4/weights/douta_8" BEL
+        "Interface_accelerator/fc3/weights/douta_2" BEL
+        "Interface_accelerator/fc3/weights/douta_4" BEL
+        "Interface_accelerator/fc1/weights/douta_1" BEL
+        "Interfaces/INST_ZestSC1_Host/RegCLK_BUFG.GCLKMUX" BEL
+        "Interfaces/INST_ZestSC1_Host/RegCLK_BUFG" PIN
+        "Interfaces/INST_SRAM/DCM_INST_pins<2>";
+TIMEGRP Interfaces_INST_ZestSC1_Host_StreamCLKFB = BEL
+        "Interfaces/INST_ZestSC1_Host/FIFOOutReadCount_3" BEL
+        "Interfaces/INST_ZestSC1_Host/FIFOOutReadCount_2" BEL
+        "Interfaces/INST_ZestSC1_Host/FIFOOutReadCount_1" BEL
+        "Interfaces/INST_ZestSC1_Host/FIFOOutReadCount_0" BEL
+        "Interfaces/INST_ZestSC1_Host/GrantPeriod_11" BEL
+        "Interfaces/INST_ZestSC1_Host/GrantPeriod_10" BEL
+        "Interfaces/INST_ZestSC1_Host/GrantPeriod_9" BEL
+        "Interfaces/INST_ZestSC1_Host/GrantPeriod_8" BEL
+        "Interfaces/INST_ZestSC1_Host/GrantPeriod_7" BEL
+        "Interfaces/INST_ZestSC1_Host/GrantPeriod_6" BEL
+        "Interfaces/INST_ZestSC1_Host/GrantPeriod_5" BEL
+        "Interfaces/INST_ZestSC1_Host/GrantPeriod_4" BEL
+        "Interfaces/INST_ZestSC1_Host/GrantPeriod_3" BEL
+        "Interfaces/INST_ZestSC1_Host/GrantPeriod_2" BEL
+        "Interfaces/INST_ZestSC1_Host/GrantPeriod_1" BEL
+        "Interfaces/INST_ZestSC1_Host/GrantPeriod_0" BEL
+        "Interfaces/INST_ZestSC1_Host/FIFOInWriteCount_3" BEL
+        "Interfaces/INST_ZestSC1_Host/FIFOInWriteCount_2" BEL
+        "Interfaces/INST_ZestSC1_Host/FIFOInWriteCount_1" BEL
+        "Interfaces/INST_ZestSC1_Host/FIFOInWriteCount_0" BEL
+        "Interfaces/INST_ZestSC1_Host/StreamDataOut_15" BEL
+        "Interfaces/INST_ZestSC1_Host/StreamRead" BEL
+        "Interfaces/INST_ZestSC1_Host/FX2FIFOEmpty" BEL
+        "Interfaces/INST_ZestSC1_Host/ReadCycle" BEL
+        "Interfaces/INST_ZestSC1_Host/Granted" BEL
+        "Interfaces/INST_ZestSC1_Host/FX2FIFOFull" BEL
+        "Interfaces/INST_ZestSC1_Host/WriteCycle" BEL
+        "Interfaces/INST_ZestSC1_Host/DataOutRegFull" BEL
+        "Interfaces/INST_ZestSC1_Host/StreamWrite" BEL
+        "Interfaces/INST_ZestSC1_Host/LastDir" BEL
+        "Interfaces/INST_ZestSC1_Host/StreamCLK_BUFG.GCLKMUX" BEL
+        "Interfaces/INST_ZestSC1_Host/StreamCLK_BUFG";
+PIN Interfaces/INST_SRAM/OFDDRCPE_CLK_SRAM/FDDRCPE1/FF0_pins<0> = BEL
+        "Interfaces/INST_SRAM/OFDDRCPE_CLK_SRAM/FDDRCPE1/FF0" PINNAME CK;
+PIN Interfaces/INST_SRAM/OFDDRCPE_CLK_SRAM/FDDRCPE1/FF1_pins<0> = BEL
+        "Interfaces/INST_SRAM/OFDDRCPE_CLK_SRAM/FDDRCPE1/FF1" PINNAME CK;
+TIMEGRP Interfaces_INST_SRAM_SramClkOut = PIN
+        "Interfaces/INST_SRAM/OFDDRCPE_CLK_SRAM/FDDRCPE1/FF0_pins<0>" PIN
+        "Interfaces/INST_SRAM/OFDDRCPE_CLK_SRAM/FDDRCPE1/FF1_pins<0>" BEL
+        "Interfaces/INST_SRAM/CLK0_BUFG_INST.GCLKMUX" BEL
+        "Interfaces/INST_SRAM/CLK0_BUFG_INST";
+TIMEGRP S_A_NAME = BEL "S_A<0>" BEL "S_A<10>" BEL "S_A<11>" BEL "S_A<12>" BEL
+        "S_A<13>" BEL "S_A<14>" BEL "S_A<15>" BEL "S_A<16>" BEL "S_A<17>" BEL
+        "S_A<18>" BEL "S_A<19>" BEL "S_A<1>" BEL "S_A<20>" BEL "S_A<21>" BEL
+        "S_A<22>" BEL "S_A<2>" BEL "S_A<3>" BEL "S_A<4>" BEL "S_A<5>" BEL
+        "S_A<6>" BEL "S_A<7>" BEL "S_A<8>" BEL "S_A<9>";
+PIN Interfaces/INST_ZestSC1_Host/RegDCM_pins<2> = BEL
+        "Interfaces/INST_ZestSC1_Host/RegDCM" PINNAME CLKIN;
+TIMEGRP USB_RegCLK = PIN "Interfaces/INST_ZestSC1_Host/RegDCM_pins<2>";
+PIN Interfaces/INST_ZestSC1_Host/StreamDCM_pins<2> = BEL
+        "Interfaces/INST_ZestSC1_Host/StreamDCM" PINNAME CLKIN;
+TIMEGRP USB_StreamCLK = PIN "Interfaces/INST_ZestSC1_Host/StreamDCM_pins<2>";
+TIMEGRP S_A_GRP = TIMEGRP "S_A_NAME";
+TS_StreamCLK = PERIOD TIMEGRP "USB_StreamCLK" 20.8 ns HIGH 50%;
+TS_RegCLK = PERIOD TIMEGRP "USB_RegCLK" 20 ns HIGH 50%;
+TS_Interfaces_INST_ZestSC1_Host_StreamCLKFB = PERIOD TIMEGRP
+        "Interfaces_INST_ZestSC1_Host_StreamCLKFB" TS_StreamCLK HIGH 50%;
+TS_Interfaces_INST_ZestSC1_Host_RegCLKFB = PERIOD TIMEGRP
+        "Interfaces_INST_ZestSC1_Host_RegCLKFB" TS_RegCLK HIGH 50%;
+TS_Interfaces_INST_SRAM_SramClkOut = PERIOD TIMEGRP
+        "Interfaces_INST_SRAM_SramClkOut"
+        TS_Interfaces_INST_ZestSC1_Host_RegCLKFB PHASE -1.953125 ns HIGH 50%;
+COMP "S_WE_N" OFFSET = OUT 16 ns AFTER COMP "USB_RegCLK";
+COMP "USB_StreamData<0>" OFFSET = IN 4 ns BEFORE COMP "USB_StreamCLK";
+COMP "USB_StreamData<0>" OFFSET = OUT 16 ns AFTER COMP "USB_StreamCLK";
+COMP "USB_StreamData<10>" OFFSET = IN 4 ns BEFORE COMP "USB_StreamCLK";
+COMP "USB_StreamData<10>" OFFSET = OUT 16 ns AFTER COMP "USB_StreamCLK";
+COMP "USB_StreamData<11>" OFFSET = IN 4 ns BEFORE COMP "USB_StreamCLK";
+COMP "USB_StreamData<11>" OFFSET = OUT 16 ns AFTER COMP "USB_StreamCLK";
+COMP "USB_StreamData<12>" OFFSET = IN 4 ns BEFORE COMP "USB_StreamCLK";
+COMP "USB_StreamData<12>" OFFSET = OUT 16 ns AFTER COMP "USB_StreamCLK";
+COMP "USB_StreamData<13>" OFFSET = IN 4 ns BEFORE COMP "USB_StreamCLK";
+COMP "USB_StreamData<13>" OFFSET = OUT 16 ns AFTER COMP "USB_StreamCLK";
+COMP "USB_StreamData<14>" OFFSET = IN 4 ns BEFORE COMP "USB_StreamCLK";
+COMP "USB_StreamData<14>" OFFSET = OUT 16 ns AFTER COMP "USB_StreamCLK";
+COMP "USB_StreamData<15>" OFFSET = IN 4 ns BEFORE COMP "USB_StreamCLK";
+COMP "USB_StreamData<15>" OFFSET = OUT 16 ns AFTER COMP "USB_StreamCLK";
+COMP "USB_StreamData<1>" OFFSET = IN 4 ns BEFORE COMP "USB_StreamCLK";
+COMP "USB_StreamData<1>" OFFSET = OUT 16 ns AFTER COMP "USB_StreamCLK";
+COMP "USB_StreamData<2>" OFFSET = IN 4 ns BEFORE COMP "USB_StreamCLK";
+COMP "USB_StreamData<2>" OFFSET = OUT 16 ns AFTER COMP "USB_StreamCLK";
+COMP "USB_StreamData<3>" OFFSET = IN 4 ns BEFORE COMP "USB_StreamCLK";
+COMP "USB_StreamData<3>" OFFSET = OUT 16 ns AFTER COMP "USB_StreamCLK";
+COMP "USB_StreamData<4>" OFFSET = IN 4 ns BEFORE COMP "USB_StreamCLK";
+COMP "USB_StreamData<4>" OFFSET = OUT 16 ns AFTER COMP "USB_StreamCLK";
+COMP "USB_StreamData<5>" OFFSET = IN 4 ns BEFORE COMP "USB_StreamCLK";
+COMP "USB_StreamData<5>" OFFSET = OUT 16 ns AFTER COMP "USB_StreamCLK";
+COMP "USB_StreamData<6>" OFFSET = IN 4 ns BEFORE COMP "USB_StreamCLK";
+COMP "USB_StreamData<6>" OFFSET = OUT 16 ns AFTER COMP "USB_StreamCLK";
+COMP "USB_StreamData<7>" OFFSET = IN 4 ns BEFORE COMP "USB_StreamCLK";
+COMP "USB_StreamData<7>" OFFSET = OUT 16 ns AFTER COMP "USB_StreamCLK";
+COMP "USB_StreamData<8>" OFFSET = IN 4 ns BEFORE COMP "USB_StreamCLK";
+COMP "USB_StreamData<8>" OFFSET = OUT 16 ns AFTER COMP "USB_StreamCLK";
+COMP "USB_StreamData<9>" OFFSET = IN 4 ns BEFORE COMP "USB_StreamCLK";
+COMP "USB_StreamData<9>" OFFSET = OUT 16 ns AFTER COMP "USB_StreamCLK";
+COMP "USB_StreamFlags_n<0>" OFFSET = IN 7 ns BEFORE COMP "USB_StreamCLK";
+COMP "USB_StreamFlags_n<1>" OFFSET = IN 7 ns BEFORE COMP "USB_StreamCLK";
+COMP "USB_StreamSLOE_n" OFFSET = OUT 8 ns AFTER COMP "USB_StreamCLK";
+COMP "USB_StreamSLRD_n" OFFSET = OUT 8 ns AFTER COMP "USB_StreamCLK";
+COMP "USB_StreamSLWR_n" OFFSET = OUT 8 ns AFTER COMP "USB_StreamCLK";
+TIMEGRP "S_A_GRP" OFFSET = OUT 16 ns AFTER COMP "USB_RegCLK";
+SCHEMATIC END;
+

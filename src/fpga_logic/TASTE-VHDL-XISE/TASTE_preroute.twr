@@ -1,0 +1,776 @@
+--------------------------------------------------------------------------------
+Release 14.7 Trace  (lin64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+/home/jannis/Programs/ise/14.7/ISE_DS/ISE/bin/lin64/unwrapped/trce -intstyle
+ise -e 3 -s 5 -n 3 -xml TASTE_preroute.twx TASTE_map.ncd -o TASTE_preroute.twr
+TASTE.pcf -ucf ZestSC1.ucf
+
+Design file:              TASTE_map.ncd
+Physical constraint file: TASTE.pcf
+Device,package,speed:     xc3s1000,ft256,-5 (PRODUCTION 1.39 2013-10-13)
+Report level:             error report
+
+Environment Variable      Effect 
+--------------------      ------ 
+NONE                      No environment variables were set
+--------------------------------------------------------------------------------
+
+WARNING:Timing:3175 - USB_RegCLK does not clock data to S_WE_N
+WARNING:Timing:3225 - Timing constraint COMP "S_WE_N" OFFSET = OUT 16 ns AFTER 
+   COMP "USB_RegCLK"; ignored during timing analysis
+WARNING:Timing:3175 - USB_StreamCLK does not clock data from USB_StreamData<0>
+WARNING:Timing:3225 - Timing constraint COMP "USB_StreamData<0>" OFFSET = IN 4 
+   ns BEFORE COMP "USB_StreamCLK"; ignored during timing analysis
+WARNING:Timing:3175 - USB_StreamCLK does not clock data from USB_StreamData<10>
+WARNING:Timing:3225 - Timing constraint COMP "USB_StreamData<10>" OFFSET = IN 4 
+   ns BEFORE COMP "USB_StreamCLK"; ignored during timing analysis
+WARNING:Timing:3175 - USB_StreamCLK does not clock data from USB_StreamData<11>
+WARNING:Timing:3225 - Timing constraint COMP "USB_StreamData<11>" OFFSET = IN 4 
+   ns BEFORE COMP "USB_StreamCLK"; ignored during timing analysis
+WARNING:Timing:3175 - USB_StreamCLK does not clock data from USB_StreamData<12>
+WARNING:Timing:3225 - Timing constraint COMP "USB_StreamData<12>" OFFSET = IN 4 
+   ns BEFORE COMP "USB_StreamCLK"; ignored during timing analysis
+WARNING:Timing:3175 - USB_StreamCLK does not clock data from USB_StreamData<13>
+WARNING:Timing:3225 - Timing constraint COMP "USB_StreamData<13>" OFFSET = IN 4 
+   ns BEFORE COMP "USB_StreamCLK"; ignored during timing analysis
+WARNING:Timing:3175 - USB_StreamCLK does not clock data from USB_StreamData<14>
+WARNING:Timing:3225 - Timing constraint COMP "USB_StreamData<14>" OFFSET = IN 4 
+   ns BEFORE COMP "USB_StreamCLK"; ignored during timing analysis
+WARNING:Timing:3175 - USB_StreamCLK does not clock data from USB_StreamData<15>
+WARNING:Timing:3225 - Timing constraint COMP "USB_StreamData<15>" OFFSET = IN 4 
+   ns BEFORE COMP "USB_StreamCLK"; ignored during timing analysis
+WARNING:Timing:3175 - USB_StreamCLK does not clock data from USB_StreamData<1>
+WARNING:Timing:3225 - Timing constraint COMP "USB_StreamData<1>" OFFSET = IN 4 
+   ns BEFORE COMP "USB_StreamCLK"; ignored during timing analysis
+WARNING:Timing:3175 - USB_StreamCLK does not clock data from USB_StreamData<2>
+WARNING:Timing:3225 - Timing constraint COMP "USB_StreamData<2>" OFFSET = IN 4 
+   ns BEFORE COMP "USB_StreamCLK"; ignored during timing analysis
+WARNING:Timing:3175 - USB_StreamCLK does not clock data from USB_StreamData<3>
+WARNING:Timing:3225 - Timing constraint COMP "USB_StreamData<3>" OFFSET = IN 4 
+   ns BEFORE COMP "USB_StreamCLK"; ignored during timing analysis
+WARNING:Timing:3175 - USB_StreamCLK does not clock data from USB_StreamData<4>
+WARNING:Timing:3225 - Timing constraint COMP "USB_StreamData<4>" OFFSET = IN 4 
+   ns BEFORE COMP "USB_StreamCLK"; ignored during timing analysis
+WARNING:Timing:3175 - USB_StreamCLK does not clock data from USB_StreamData<5>
+WARNING:Timing:3225 - Timing constraint COMP "USB_StreamData<5>" OFFSET = IN 4 
+   ns BEFORE COMP "USB_StreamCLK"; ignored during timing analysis
+WARNING:Timing:3175 - USB_StreamCLK does not clock data from USB_StreamData<6>
+WARNING:Timing:3225 - Timing constraint COMP "USB_StreamData<6>" OFFSET = IN 4 
+   ns BEFORE COMP "USB_StreamCLK"; ignored during timing analysis
+WARNING:Timing:3175 - USB_StreamCLK does not clock data from USB_StreamData<7>
+WARNING:Timing:3225 - Timing constraint COMP "USB_StreamData<7>" OFFSET = IN 4 
+   ns BEFORE COMP "USB_StreamCLK"; ignored during timing analysis
+WARNING:Timing:3175 - USB_StreamCLK does not clock data from USB_StreamData<8>
+WARNING:Timing:3225 - Timing constraint COMP "USB_StreamData<8>" OFFSET = IN 4 
+   ns BEFORE COMP "USB_StreamCLK"; ignored during timing analysis
+WARNING:Timing:3175 - USB_StreamCLK does not clock data from USB_StreamData<9>
+WARNING:Timing:3225 - Timing constraint COMP "USB_StreamData<9>" OFFSET = IN 4 
+   ns BEFORE COMP "USB_StreamCLK"; ignored during timing analysis
+WARNING:Timing:3224 - The clock USB_RegCLK associated with TIMEGRP "S_A_GRP" 
+   OFFSET = OUT 16 ns AFTER COMP "USB_RegCLK"; does not clock any registered 
+   output components.
+WARNING:Timing:3225 - Timing constraint TIMEGRP "S_A_GRP" OFFSET = OUT 16 ns 
+   AFTER COMP "USB_RegCLK"; ignored during timing analysis
+INFO:Timing:3412 - To improve timing, see the Timing Closure User Guide (UG612).
+INFO:Timing:2752 - To get complete path coverage, use the unconstrained paths 
+   option. All paths that are not constrained will be reported in the 
+   unconstrained paths section(s) of the report.
+INFO:Timing:3284 - This timing report was generated using estimated delay 
+   information.  For accurate numbers, please refer to the post Place and Route 
+   timing report.
+INFO:Timing:3339 - The clock-to-out numbers in this timing report are based on 
+   a 50 Ohm transmission line loading model.  For the details of this model, 
+   and for more information on accounting for different loading conditions, 
+   please see the device datasheet.
+INFO:Timing:3390 - This architecture does not support a default System Jitter 
+   value, please add SYSTEM_JITTER constraint to the UCF to modify the Clock 
+   Uncertainty calculation.
+INFO:Timing:3389 - This architecture does not support 'Discrete Jitter' and 
+   'Phase Error' calculations, these terms will be zero in the Clock 
+   Uncertainty calculation.  Please make appropriate modification to 
+   SYSTEM_JITTER to account for the unsupported Discrete Jitter and Phase 
+   Error.
+
+================================================================================
+Timing constraint: TS_StreamCLK = PERIOD TIMEGRP "USB_StreamCLK" 20.8 ns HIGH 
+50%;
+For more information, see Period Analysis in the Timing Closure User Guide (UG612).
+
+ 0 paths analyzed, 0 endpoints analyzed, 0 failing endpoints
+ 0 timing errors detected. (0 component switching limit errors)
+ Minimum period is   8.700ns.
+--------------------------------------------------------------------------------
+
+================================================================================
+Timing constraint: TS_RegCLK = PERIOD TIMEGRP "USB_RegCLK" 20 ns HIGH 50%;
+For more information, see Period Analysis in the Timing Closure User Guide (UG612).
+
+ 0 paths analyzed, 0 endpoints analyzed, 0 failing endpoints
+ 0 timing errors detected. (0 component switching limit errors)
+ Minimum period is   5.987ns.
+--------------------------------------------------------------------------------
+
+================================================================================
+Timing constraint: TS_Interfaces_INST_ZestSC1_Host_StreamCLKFB = PERIOD TIMEGRP 
+        "Interfaces_INST_ZestSC1_Host_StreamCLKFB" TS_StreamCLK HIGH 50%;
+For more information, see Period Analysis in the Timing Closure User Guide (UG612).
+
+ 541 paths analyzed, 116 endpoints analyzed, 0 failing endpoints
+ 0 timing errors detected. (0 setup errors, 0 hold errors, 0 component switching limit errors)
+ Minimum period is   4.145ns.
+--------------------------------------------------------------------------------
+
+================================================================================
+Timing constraint: TS_Interfaces_INST_ZestSC1_Host_RegCLKFB = PERIOD TIMEGRP    
+     "Interfaces_INST_ZestSC1_Host_RegCLKFB" TS_RegCLK HIGH 50%;
+For more information, see Period Analysis in the Timing Closure User Guide (UG612).
+
+ 1531 paths analyzed, 433 endpoints analyzed, 0 failing endpoints
+ 0 timing errors detected. (0 setup errors, 0 hold errors, 0 component switching limit errors)
+ Minimum period is   8.342ns.
+--------------------------------------------------------------------------------
+
+================================================================================
+Timing constraint: TS_Interfaces_INST_SRAM_SramClkOut = PERIOD TIMEGRP         
+"Interfaces_INST_SRAM_SramClkOut"         
+TS_Interfaces_INST_ZestSC1_Host_RegCLKFB PHASE -1.953125 ns HIGH 50%;
+For more information, see Period Analysis in the Timing Closure User Guide (UG612).
+
+ 0 paths analyzed, 0 endpoints analyzed, 0 failing endpoints
+ 0 timing errors detected. (0 component switching limit errors)
+ Minimum period is   1.316ns.
+--------------------------------------------------------------------------------
+
+================================================================================
+Timing constraint: COMP "S_WE_N" OFFSET = OUT 16 ns AFTER COMP "USB_RegCLK";
+For more information, see Offset Out Analysis in the Timing Closure User Guide (UG612).
+
+ 0 paths analyzed, 0 endpoints analyzed, 0 failing endpoints
+ 0 timing errors detected.
+--------------------------------------------------------------------------------
+
+================================================================================
+Timing constraint: COMP "USB_StreamData<0>" OFFSET = IN 4 ns BEFORE COMP 
+"USB_StreamCLK";
+For more information, see Offset In Analysis in the Timing Closure User Guide (UG612).
+
+ 0 paths analyzed, 0 endpoints analyzed, 0 failing endpoints
+ 0 timing errors detected.
+--------------------------------------------------------------------------------
+
+================================================================================
+Timing constraint: COMP "USB_StreamData<0>" OFFSET = OUT 16 ns AFTER COMP 
+"USB_StreamCLK";
+For more information, see Offset Out Analysis in the Timing Closure User Guide (UG612).
+
+ 3 paths analyzed, 1 endpoint analyzed, 0 failing endpoints
+ 0 timing errors detected.
+ Minimum allowable offset is   3.199ns.
+--------------------------------------------------------------------------------
+
+================================================================================
+Timing constraint: COMP "USB_StreamData<10>" OFFSET = IN 4 ns BEFORE COMP 
+"USB_StreamCLK";
+For more information, see Offset In Analysis in the Timing Closure User Guide (UG612).
+
+ 0 paths analyzed, 0 endpoints analyzed, 0 failing endpoints
+ 0 timing errors detected.
+--------------------------------------------------------------------------------
+
+================================================================================
+Timing constraint: COMP "USB_StreamData<10>" OFFSET = OUT 16 ns AFTER COMP 
+"USB_StreamCLK";
+For more information, see Offset Out Analysis in the Timing Closure User Guide (UG612).
+
+ 3 paths analyzed, 1 endpoint analyzed, 0 failing endpoints
+ 0 timing errors detected.
+ Minimum allowable offset is   3.199ns.
+--------------------------------------------------------------------------------
+
+================================================================================
+Timing constraint: COMP "USB_StreamData<11>" OFFSET = IN 4 ns BEFORE COMP 
+"USB_StreamCLK";
+For more information, see Offset In Analysis in the Timing Closure User Guide (UG612).
+
+ 0 paths analyzed, 0 endpoints analyzed, 0 failing endpoints
+ 0 timing errors detected.
+--------------------------------------------------------------------------------
+
+================================================================================
+Timing constraint: COMP "USB_StreamData<11>" OFFSET = OUT 16 ns AFTER COMP 
+"USB_StreamCLK";
+For more information, see Offset Out Analysis in the Timing Closure User Guide (UG612).
+
+ 3 paths analyzed, 1 endpoint analyzed, 0 failing endpoints
+ 0 timing errors detected.
+ Minimum allowable offset is   3.199ns.
+--------------------------------------------------------------------------------
+
+================================================================================
+Timing constraint: COMP "USB_StreamData<12>" OFFSET = IN 4 ns BEFORE COMP 
+"USB_StreamCLK";
+For more information, see Offset In Analysis in the Timing Closure User Guide (UG612).
+
+ 0 paths analyzed, 0 endpoints analyzed, 0 failing endpoints
+ 0 timing errors detected.
+--------------------------------------------------------------------------------
+
+================================================================================
+Timing constraint: COMP "USB_StreamData<12>" OFFSET = OUT 16 ns AFTER COMP 
+"USB_StreamCLK";
+For more information, see Offset Out Analysis in the Timing Closure User Guide (UG612).
+
+ 3 paths analyzed, 1 endpoint analyzed, 0 failing endpoints
+ 0 timing errors detected.
+ Minimum allowable offset is   3.199ns.
+--------------------------------------------------------------------------------
+
+================================================================================
+Timing constraint: COMP "USB_StreamData<13>" OFFSET = IN 4 ns BEFORE COMP 
+"USB_StreamCLK";
+For more information, see Offset In Analysis in the Timing Closure User Guide (UG612).
+
+ 0 paths analyzed, 0 endpoints analyzed, 0 failing endpoints
+ 0 timing errors detected.
+--------------------------------------------------------------------------------
+
+================================================================================
+Timing constraint: COMP "USB_StreamData<13>" OFFSET = OUT 16 ns AFTER COMP 
+"USB_StreamCLK";
+For more information, see Offset Out Analysis in the Timing Closure User Guide (UG612).
+
+ 3 paths analyzed, 1 endpoint analyzed, 0 failing endpoints
+ 0 timing errors detected.
+ Minimum allowable offset is   3.199ns.
+--------------------------------------------------------------------------------
+
+================================================================================
+Timing constraint: COMP "USB_StreamData<14>" OFFSET = IN 4 ns BEFORE COMP 
+"USB_StreamCLK";
+For more information, see Offset In Analysis in the Timing Closure User Guide (UG612).
+
+ 0 paths analyzed, 0 endpoints analyzed, 0 failing endpoints
+ 0 timing errors detected.
+--------------------------------------------------------------------------------
+
+================================================================================
+Timing constraint: COMP "USB_StreamData<14>" OFFSET = OUT 16 ns AFTER COMP 
+"USB_StreamCLK";
+For more information, see Offset Out Analysis in the Timing Closure User Guide (UG612).
+
+ 3 paths analyzed, 1 endpoint analyzed, 0 failing endpoints
+ 0 timing errors detected.
+ Minimum allowable offset is   3.199ns.
+--------------------------------------------------------------------------------
+
+================================================================================
+Timing constraint: COMP "USB_StreamData<15>" OFFSET = IN 4 ns BEFORE COMP 
+"USB_StreamCLK";
+For more information, see Offset In Analysis in the Timing Closure User Guide (UG612).
+
+ 0 paths analyzed, 0 endpoints analyzed, 0 failing endpoints
+ 0 timing errors detected.
+--------------------------------------------------------------------------------
+
+================================================================================
+Timing constraint: COMP "USB_StreamData<15>" OFFSET = OUT 16 ns AFTER COMP 
+"USB_StreamCLK";
+For more information, see Offset Out Analysis in the Timing Closure User Guide (UG612).
+
+ 3 paths analyzed, 1 endpoint analyzed, 0 failing endpoints
+ 0 timing errors detected.
+ Minimum allowable offset is   3.199ns.
+--------------------------------------------------------------------------------
+
+================================================================================
+Timing constraint: COMP "USB_StreamData<1>" OFFSET = IN 4 ns BEFORE COMP 
+"USB_StreamCLK";
+For more information, see Offset In Analysis in the Timing Closure User Guide (UG612).
+
+ 0 paths analyzed, 0 endpoints analyzed, 0 failing endpoints
+ 0 timing errors detected.
+--------------------------------------------------------------------------------
+
+================================================================================
+Timing constraint: COMP "USB_StreamData<1>" OFFSET = OUT 16 ns AFTER COMP 
+"USB_StreamCLK";
+For more information, see Offset Out Analysis in the Timing Closure User Guide (UG612).
+
+ 3 paths analyzed, 1 endpoint analyzed, 0 failing endpoints
+ 0 timing errors detected.
+ Minimum allowable offset is   3.199ns.
+--------------------------------------------------------------------------------
+
+================================================================================
+Timing constraint: COMP "USB_StreamData<2>" OFFSET = IN 4 ns BEFORE COMP 
+"USB_StreamCLK";
+For more information, see Offset In Analysis in the Timing Closure User Guide (UG612).
+
+ 0 paths analyzed, 0 endpoints analyzed, 0 failing endpoints
+ 0 timing errors detected.
+--------------------------------------------------------------------------------
+
+================================================================================
+Timing constraint: COMP "USB_StreamData<2>" OFFSET = OUT 16 ns AFTER COMP 
+"USB_StreamCLK";
+For more information, see Offset Out Analysis in the Timing Closure User Guide (UG612).
+
+ 3 paths analyzed, 1 endpoint analyzed, 0 failing endpoints
+ 0 timing errors detected.
+ Minimum allowable offset is   3.199ns.
+--------------------------------------------------------------------------------
+
+================================================================================
+Timing constraint: COMP "USB_StreamData<3>" OFFSET = IN 4 ns BEFORE COMP 
+"USB_StreamCLK";
+For more information, see Offset In Analysis in the Timing Closure User Guide (UG612).
+
+ 0 paths analyzed, 0 endpoints analyzed, 0 failing endpoints
+ 0 timing errors detected.
+--------------------------------------------------------------------------------
+
+================================================================================
+Timing constraint: COMP "USB_StreamData<3>" OFFSET = OUT 16 ns AFTER COMP 
+"USB_StreamCLK";
+For more information, see Offset Out Analysis in the Timing Closure User Guide (UG612).
+
+ 3 paths analyzed, 1 endpoint analyzed, 0 failing endpoints
+ 0 timing errors detected.
+ Minimum allowable offset is   3.199ns.
+--------------------------------------------------------------------------------
+
+================================================================================
+Timing constraint: COMP "USB_StreamData<4>" OFFSET = IN 4 ns BEFORE COMP 
+"USB_StreamCLK";
+For more information, see Offset In Analysis in the Timing Closure User Guide (UG612).
+
+ 0 paths analyzed, 0 endpoints analyzed, 0 failing endpoints
+ 0 timing errors detected.
+--------------------------------------------------------------------------------
+
+================================================================================
+Timing constraint: COMP "USB_StreamData<4>" OFFSET = OUT 16 ns AFTER COMP 
+"USB_StreamCLK";
+For more information, see Offset Out Analysis in the Timing Closure User Guide (UG612).
+
+ 3 paths analyzed, 1 endpoint analyzed, 0 failing endpoints
+ 0 timing errors detected.
+ Minimum allowable offset is   3.199ns.
+--------------------------------------------------------------------------------
+
+================================================================================
+Timing constraint: COMP "USB_StreamData<5>" OFFSET = IN 4 ns BEFORE COMP 
+"USB_StreamCLK";
+For more information, see Offset In Analysis in the Timing Closure User Guide (UG612).
+
+ 0 paths analyzed, 0 endpoints analyzed, 0 failing endpoints
+ 0 timing errors detected.
+--------------------------------------------------------------------------------
+
+================================================================================
+Timing constraint: COMP "USB_StreamData<5>" OFFSET = OUT 16 ns AFTER COMP 
+"USB_StreamCLK";
+For more information, see Offset Out Analysis in the Timing Closure User Guide (UG612).
+
+ 3 paths analyzed, 1 endpoint analyzed, 0 failing endpoints
+ 0 timing errors detected.
+ Minimum allowable offset is   3.199ns.
+--------------------------------------------------------------------------------
+
+================================================================================
+Timing constraint: COMP "USB_StreamData<6>" OFFSET = IN 4 ns BEFORE COMP 
+"USB_StreamCLK";
+For more information, see Offset In Analysis in the Timing Closure User Guide (UG612).
+
+ 0 paths analyzed, 0 endpoints analyzed, 0 failing endpoints
+ 0 timing errors detected.
+--------------------------------------------------------------------------------
+
+================================================================================
+Timing constraint: COMP "USB_StreamData<6>" OFFSET = OUT 16 ns AFTER COMP 
+"USB_StreamCLK";
+For more information, see Offset Out Analysis in the Timing Closure User Guide (UG612).
+
+ 3 paths analyzed, 1 endpoint analyzed, 0 failing endpoints
+ 0 timing errors detected.
+ Minimum allowable offset is   3.199ns.
+--------------------------------------------------------------------------------
+
+================================================================================
+Timing constraint: COMP "USB_StreamData<7>" OFFSET = IN 4 ns BEFORE COMP 
+"USB_StreamCLK";
+For more information, see Offset In Analysis in the Timing Closure User Guide (UG612).
+
+ 0 paths analyzed, 0 endpoints analyzed, 0 failing endpoints
+ 0 timing errors detected.
+--------------------------------------------------------------------------------
+
+================================================================================
+Timing constraint: COMP "USB_StreamData<7>" OFFSET = OUT 16 ns AFTER COMP 
+"USB_StreamCLK";
+For more information, see Offset Out Analysis in the Timing Closure User Guide (UG612).
+
+ 3 paths analyzed, 1 endpoint analyzed, 0 failing endpoints
+ 0 timing errors detected.
+ Minimum allowable offset is   3.199ns.
+--------------------------------------------------------------------------------
+
+================================================================================
+Timing constraint: COMP "USB_StreamData<8>" OFFSET = IN 4 ns BEFORE COMP 
+"USB_StreamCLK";
+For more information, see Offset In Analysis in the Timing Closure User Guide (UG612).
+
+ 0 paths analyzed, 0 endpoints analyzed, 0 failing endpoints
+ 0 timing errors detected.
+--------------------------------------------------------------------------------
+
+================================================================================
+Timing constraint: COMP "USB_StreamData<8>" OFFSET = OUT 16 ns AFTER COMP 
+"USB_StreamCLK";
+For more information, see Offset Out Analysis in the Timing Closure User Guide (UG612).
+
+ 3 paths analyzed, 1 endpoint analyzed, 0 failing endpoints
+ 0 timing errors detected.
+ Minimum allowable offset is   3.199ns.
+--------------------------------------------------------------------------------
+
+================================================================================
+Timing constraint: COMP "USB_StreamData<9>" OFFSET = IN 4 ns BEFORE COMP 
+"USB_StreamCLK";
+For more information, see Offset In Analysis in the Timing Closure User Guide (UG612).
+
+ 0 paths analyzed, 0 endpoints analyzed, 0 failing endpoints
+ 0 timing errors detected.
+--------------------------------------------------------------------------------
+
+================================================================================
+Timing constraint: COMP "USB_StreamData<9>" OFFSET = OUT 16 ns AFTER COMP 
+"USB_StreamCLK";
+For more information, see Offset Out Analysis in the Timing Closure User Guide (UG612).
+
+ 3 paths analyzed, 1 endpoint analyzed, 0 failing endpoints
+ 0 timing errors detected.
+ Minimum allowable offset is   3.199ns.
+--------------------------------------------------------------------------------
+
+================================================================================
+Timing constraint: COMP "USB_StreamFlags_n<0>" OFFSET = IN 7 ns BEFORE COMP 
+"USB_StreamCLK";
+For more information, see Offset In Analysis in the Timing Closure User Guide (UG612).
+
+ 2 paths analyzed, 2 endpoints analyzed, 0 failing endpoints
+ 0 timing errors detected. (0 setup errors, 0 hold errors)
+ Minimum allowable offset is   3.028ns.
+--------------------------------------------------------------------------------
+
+================================================================================
+Timing constraint: COMP "USB_StreamFlags_n<1>" OFFSET = IN 7 ns BEFORE COMP 
+"USB_StreamCLK";
+For more information, see Offset In Analysis in the Timing Closure User Guide (UG612).
+
+ 2 paths analyzed, 2 endpoints analyzed, 0 failing endpoints
+ 0 timing errors detected. (0 setup errors, 0 hold errors)
+ Minimum allowable offset is   3.028ns.
+--------------------------------------------------------------------------------
+
+================================================================================
+Timing constraint: COMP "USB_StreamSLOE_n" OFFSET = OUT 8 ns AFTER COMP 
+"USB_StreamCLK";
+For more information, see Offset Out Analysis in the Timing Closure User Guide (UG612).
+
+ 2 paths analyzed, 1 endpoint analyzed, 0 failing endpoints
+ 0 timing errors detected.
+ Minimum allowable offset is   3.447ns.
+--------------------------------------------------------------------------------
+
+================================================================================
+Timing constraint: COMP "USB_StreamSLRD_n" OFFSET = OUT 8 ns AFTER COMP 
+"USB_StreamCLK";
+For more information, see Offset Out Analysis in the Timing Closure User Guide (UG612).
+
+ 4 paths analyzed, 1 endpoint analyzed, 0 failing endpoints
+ 0 timing errors detected.
+ Minimum allowable offset is   4.026ns.
+--------------------------------------------------------------------------------
+
+================================================================================
+Timing constraint: COMP "USB_StreamSLWR_n" OFFSET = OUT 8 ns AFTER COMP 
+"USB_StreamCLK";
+For more information, see Offset Out Analysis in the Timing Closure User Guide (UG612).
+
+ 1 path analyzed, 1 endpoint analyzed, 0 failing endpoints
+ 0 timing errors detected.
+ Minimum allowable offset is   2.868ns.
+--------------------------------------------------------------------------------
+
+================================================================================
+Timing constraint: TIMEGRP "S_A_GRP" OFFSET = OUT 16 ns AFTER COMP 
+"USB_RegCLK";
+For more information, see Offset Out Analysis in the Timing Closure User Guide (UG612).
+
+ 0 paths analyzed, 0 endpoints analyzed, 0 failing endpoints
+ 0 timing errors detected.
+--------------------------------------------------------------------------------
+
+
+Derived Constraint Report
+Derived Constraints for TS_StreamCLK
++-------------------------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+
+|                               |   Period    |       Actual Period       |      Timing Errors        |      Paths Analyzed       |
+|           Constraint          | Requirement |-------------+-------------|-------------+-------------|-------------+-------------|
+|                               |             |   Direct    | Derivative  |   Direct    | Derivative  |   Direct    | Derivative  |
++-------------------------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+
+|TS_StreamCLK                   |     20.800ns|      8.700ns|      4.145ns|            0|            0|            0|          541|
+| TS_Interfaces_INST_ZestSC1_Hos|     20.800ns|      4.145ns|          N/A|            0|            0|          541|            0|
+| t_StreamCLKFB                 |             |             |             |             |             |             |             |
++-------------------------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+
+
+Derived Constraints for TS_RegCLK
++-------------------------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+
+|                               |   Period    |       Actual Period       |      Timing Errors        |      Paths Analyzed       |
+|           Constraint          | Requirement |-------------+-------------|-------------+-------------|-------------+-------------|
+|                               |             |   Direct    | Derivative  |   Direct    | Derivative  |   Direct    | Derivative  |
++-------------------------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+
+|TS_RegCLK                      |     20.000ns|      5.987ns|      8.342ns|            0|            0|            0|         1531|
+| TS_Interfaces_INST_ZestSC1_Hos|     20.000ns|      8.342ns|      1.316ns|            0|            0|         1531|            0|
+| t_RegCLKFB                    |             |             |             |             |             |             |             |
+|  TS_Interfaces_INST_SRAM_SramC|     20.000ns|      1.316ns|          N/A|            0|            0|            0|            0|
+|  lkOut                        |             |             |             |             |             |             |             |
++-------------------------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+
+
+All constraints were met.
+
+
+Data Sheet report:
+-----------------
+All values displayed in nanoseconds (ns)
+
+Setup/Hold to clock USB_StreamCLK
+--------------------+------------+------------+--------------------------------------+--------+
+                    |Max Setup to|Max Hold to |                                      | Clock  |
+Source              | clk (edge) | clk (edge) |Internal Clock(s)                     | Phase  |
+--------------------+------------+------------+--------------------------------------+--------+
+USB_StreamFlags_n<0>|    3.028(R)|   -1.095(R)|Interfaces/INST_ZestSC1_Host/StreamCLK|   0.000|
+USB_StreamFlags_n<1>|    3.028(R)|   -1.095(R)|Interfaces/INST_ZestSC1_Host/StreamCLK|   0.000|
+--------------------+------------+------------+--------------------------------------+--------+
+
+Clock USB_StreamCLK to Pad
+------------------+------------+--------------------------------------+--------+
+                  | clk (edge) |                                      | Clock  |
+Destination       |   to PAD   |Internal Clock(s)                     | Phase  |
+------------------+------------+--------------------------------------+--------+
+USB_StreamData<0> |    3.199(R)|Interfaces/INST_ZestSC1_Host/StreamCLK|   0.000|
+USB_StreamData<1> |    3.199(R)|Interfaces/INST_ZestSC1_Host/StreamCLK|   0.000|
+USB_StreamData<2> |    3.199(R)|Interfaces/INST_ZestSC1_Host/StreamCLK|   0.000|
+USB_StreamData<3> |    3.199(R)|Interfaces/INST_ZestSC1_Host/StreamCLK|   0.000|
+USB_StreamData<4> |    3.199(R)|Interfaces/INST_ZestSC1_Host/StreamCLK|   0.000|
+USB_StreamData<5> |    3.199(R)|Interfaces/INST_ZestSC1_Host/StreamCLK|   0.000|
+USB_StreamData<6> |    3.199(R)|Interfaces/INST_ZestSC1_Host/StreamCLK|   0.000|
+USB_StreamData<7> |    3.199(R)|Interfaces/INST_ZestSC1_Host/StreamCLK|   0.000|
+USB_StreamData<8> |    3.199(R)|Interfaces/INST_ZestSC1_Host/StreamCLK|   0.000|
+USB_StreamData<9> |    3.199(R)|Interfaces/INST_ZestSC1_Host/StreamCLK|   0.000|
+USB_StreamData<10>|    3.199(R)|Interfaces/INST_ZestSC1_Host/StreamCLK|   0.000|
+USB_StreamData<11>|    3.199(R)|Interfaces/INST_ZestSC1_Host/StreamCLK|   0.000|
+USB_StreamData<12>|    3.199(R)|Interfaces/INST_ZestSC1_Host/StreamCLK|   0.000|
+USB_StreamData<13>|    3.199(R)|Interfaces/INST_ZestSC1_Host/StreamCLK|   0.000|
+USB_StreamData<14>|    3.199(R)|Interfaces/INST_ZestSC1_Host/StreamCLK|   0.000|
+USB_StreamData<15>|    3.199(R)|Interfaces/INST_ZestSC1_Host/StreamCLK|   0.000|
+USB_StreamSLOE_n  |    3.447(R)|Interfaces/INST_ZestSC1_Host/StreamCLK|   0.000|
+USB_StreamSLRD_n  |    4.026(R)|Interfaces/INST_ZestSC1_Host/StreamCLK|   0.000|
+USB_StreamSLWR_n  |    2.868(R)|Interfaces/INST_ZestSC1_Host/StreamCLK|   0.000|
+------------------+------------+--------------------------------------+--------+
+
+Clock to Setup on destination clock USB_RegCLK
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+USB_RegCLK     |    4.750|    4.171|    1.829|         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock USB_StreamCLK
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+USB_StreamCLK  |    4.145|         |         |         |
+---------------+---------+---------+---------+---------+
+
+COMP "USB_StreamData<0>" OFFSET = OUT 16 ns AFTER COMP "USB_StreamCLK";
+Bus Skew: 0.000 ns; 
+-----------------------------------------------+-------------+--------------+
+PAD                                            | Delay (ns)  |Edge Skew (ns)|
+-----------------------------------------------+-------------+--------------+
+USB_StreamData<0>                              |        3.199|         0.000|
+-----------------------------------------------+-------------+--------------+
+
+COMP "USB_StreamData<10>" OFFSET = OUT 16 ns AFTER COMP "USB_StreamCLK";
+Bus Skew: 0.000 ns; 
+-----------------------------------------------+-------------+--------------+
+PAD                                            | Delay (ns)  |Edge Skew (ns)|
+-----------------------------------------------+-------------+--------------+
+USB_StreamData<10>                             |        3.199|         0.000|
+-----------------------------------------------+-------------+--------------+
+
+COMP "USB_StreamData<11>" OFFSET = OUT 16 ns AFTER COMP "USB_StreamCLK";
+Bus Skew: 0.000 ns; 
+-----------------------------------------------+-------------+--------------+
+PAD                                            | Delay (ns)  |Edge Skew (ns)|
+-----------------------------------------------+-------------+--------------+
+USB_StreamData<11>                             |        3.199|         0.000|
+-----------------------------------------------+-------------+--------------+
+
+COMP "USB_StreamData<12>" OFFSET = OUT 16 ns AFTER COMP "USB_StreamCLK";
+Bus Skew: 0.000 ns; 
+-----------------------------------------------+-------------+--------------+
+PAD                                            | Delay (ns)  |Edge Skew (ns)|
+-----------------------------------------------+-------------+--------------+
+USB_StreamData<12>                             |        3.199|         0.000|
+-----------------------------------------------+-------------+--------------+
+
+COMP "USB_StreamData<13>" OFFSET = OUT 16 ns AFTER COMP "USB_StreamCLK";
+Bus Skew: 0.000 ns; 
+-----------------------------------------------+-------------+--------------+
+PAD                                            | Delay (ns)  |Edge Skew (ns)|
+-----------------------------------------------+-------------+--------------+
+USB_StreamData<13>                             |        3.199|         0.000|
+-----------------------------------------------+-------------+--------------+
+
+COMP "USB_StreamData<14>" OFFSET = OUT 16 ns AFTER COMP "USB_StreamCLK";
+Bus Skew: 0.000 ns; 
+-----------------------------------------------+-------------+--------------+
+PAD                                            | Delay (ns)  |Edge Skew (ns)|
+-----------------------------------------------+-------------+--------------+
+USB_StreamData<14>                             |        3.199|         0.000|
+-----------------------------------------------+-------------+--------------+
+
+COMP "USB_StreamData<15>" OFFSET = OUT 16 ns AFTER COMP "USB_StreamCLK";
+Bus Skew: 0.000 ns; 
+-----------------------------------------------+-------------+--------------+
+PAD                                            | Delay (ns)  |Edge Skew (ns)|
+-----------------------------------------------+-------------+--------------+
+USB_StreamData<15>                             |        3.199|         0.000|
+-----------------------------------------------+-------------+--------------+
+
+COMP "USB_StreamData<1>" OFFSET = OUT 16 ns AFTER COMP "USB_StreamCLK";
+Bus Skew: 0.000 ns; 
+-----------------------------------------------+-------------+--------------+
+PAD                                            | Delay (ns)  |Edge Skew (ns)|
+-----------------------------------------------+-------------+--------------+
+USB_StreamData<1>                              |        3.199|         0.000|
+-----------------------------------------------+-------------+--------------+
+
+COMP "USB_StreamData<2>" OFFSET = OUT 16 ns AFTER COMP "USB_StreamCLK";
+Bus Skew: 0.000 ns; 
+-----------------------------------------------+-------------+--------------+
+PAD                                            | Delay (ns)  |Edge Skew (ns)|
+-----------------------------------------------+-------------+--------------+
+USB_StreamData<2>                              |        3.199|         0.000|
+-----------------------------------------------+-------------+--------------+
+
+COMP "USB_StreamData<3>" OFFSET = OUT 16 ns AFTER COMP "USB_StreamCLK";
+Bus Skew: 0.000 ns; 
+-----------------------------------------------+-------------+--------------+
+PAD                                            | Delay (ns)  |Edge Skew (ns)|
+-----------------------------------------------+-------------+--------------+
+USB_StreamData<3>                              |        3.199|         0.000|
+-----------------------------------------------+-------------+--------------+
+
+COMP "USB_StreamData<4>" OFFSET = OUT 16 ns AFTER COMP "USB_StreamCLK";
+Bus Skew: 0.000 ns; 
+-----------------------------------------------+-------------+--------------+
+PAD                                            | Delay (ns)  |Edge Skew (ns)|
+-----------------------------------------------+-------------+--------------+
+USB_StreamData<4>                              |        3.199|         0.000|
+-----------------------------------------------+-------------+--------------+
+
+COMP "USB_StreamData<5>" OFFSET = OUT 16 ns AFTER COMP "USB_StreamCLK";
+Bus Skew: 0.000 ns; 
+-----------------------------------------------+-------------+--------------+
+PAD                                            | Delay (ns)  |Edge Skew (ns)|
+-----------------------------------------------+-------------+--------------+
+USB_StreamData<5>                              |        3.199|         0.000|
+-----------------------------------------------+-------------+--------------+
+
+COMP "USB_StreamData<6>" OFFSET = OUT 16 ns AFTER COMP "USB_StreamCLK";
+Bus Skew: 0.000 ns; 
+-----------------------------------------------+-------------+--------------+
+PAD                                            | Delay (ns)  |Edge Skew (ns)|
+-----------------------------------------------+-------------+--------------+
+USB_StreamData<6>                              |        3.199|         0.000|
+-----------------------------------------------+-------------+--------------+
+
+COMP "USB_StreamData<7>" OFFSET = OUT 16 ns AFTER COMP "USB_StreamCLK";
+Bus Skew: 0.000 ns; 
+-----------------------------------------------+-------------+--------------+
+PAD                                            | Delay (ns)  |Edge Skew (ns)|
+-----------------------------------------------+-------------+--------------+
+USB_StreamData<7>                              |        3.199|         0.000|
+-----------------------------------------------+-------------+--------------+
+
+COMP "USB_StreamData<8>" OFFSET = OUT 16 ns AFTER COMP "USB_StreamCLK";
+Bus Skew: 0.000 ns; 
+-----------------------------------------------+-------------+--------------+
+PAD                                            | Delay (ns)  |Edge Skew (ns)|
+-----------------------------------------------+-------------+--------------+
+USB_StreamData<8>                              |        3.199|         0.000|
+-----------------------------------------------+-------------+--------------+
+
+COMP "USB_StreamData<9>" OFFSET = OUT 16 ns AFTER COMP "USB_StreamCLK";
+Bus Skew: 0.000 ns; 
+-----------------------------------------------+-------------+--------------+
+PAD                                            | Delay (ns)  |Edge Skew (ns)|
+-----------------------------------------------+-------------+--------------+
+USB_StreamData<9>                              |        3.199|         0.000|
+-----------------------------------------------+-------------+--------------+
+
+COMP "USB_StreamSLOE_n" OFFSET = OUT 8 ns AFTER COMP "USB_StreamCLK";
+Bus Skew: 0.000 ns; 
+-----------------------------------------------+-------------+--------------+
+PAD                                            | Delay (ns)  |Edge Skew (ns)|
+-----------------------------------------------+-------------+--------------+
+USB_StreamSLOE_n                               |        3.447|         0.000|
+-----------------------------------------------+-------------+--------------+
+
+COMP "USB_StreamSLRD_n" OFFSET = OUT 8 ns AFTER COMP "USB_StreamCLK";
+Bus Skew: 0.000 ns; 
+-----------------------------------------------+-------------+--------------+
+PAD                                            | Delay (ns)  |Edge Skew (ns)|
+-----------------------------------------------+-------------+--------------+
+USB_StreamSLRD_n                               |        4.026|         0.000|
+-----------------------------------------------+-------------+--------------+
+
+COMP "USB_StreamSLWR_n" OFFSET = OUT 8 ns AFTER COMP "USB_StreamCLK";
+Bus Skew: 0.000 ns; 
+-----------------------------------------------+-------------+--------------+
+PAD                                            | Delay (ns)  |Edge Skew (ns)|
+-----------------------------------------------+-------------+--------------+
+USB_StreamSLWR_n                               |        2.868|         0.000|
+-----------------------------------------------+-------------+--------------+
+
+
+Timing summary:
+---------------
+
+Timing errors: 0  Score: 0  (Setup/Max: 0, Hold: 0)
+
+Constraints cover 2131 paths, 0 nets, and 1145 connections
+
+Design statistics:
+   Minimum period:   8.700ns   (Maximum frequency: 114.943MHz)
+   Minimum input required time before clock:   3.028ns
+   Minimum output required time after clock:   4.026ns
+
+
+Analysis completed Mon Dec 14 18:45:21 2020 
+--------------------------------------------------------------------------------
+
+Trace Settings:
+-------------------------
+Trace Settings 
+
+Peak Memory Usage: 329 MB
+
+
+

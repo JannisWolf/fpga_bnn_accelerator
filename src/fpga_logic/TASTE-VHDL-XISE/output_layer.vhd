@@ -2,9 +2,9 @@
 -- Company: 
 -- Engineer: 
 -- 
--- Create Date:    11:18:18 11/12/2020 
+-- Create Date:    08:38:48 11/12/2020 
 -- Design Name: 
--- Module Name:    output_layer - Behavioral 
+-- Module Name:    fully_connected - Behavioral 
 -- Project Name: 
 -- Target Devices: 
 -- Tool versions: 
@@ -22,7 +22,7 @@ use IEEE.STD_LOGIC_1164.ALL;
 
 -- Uncomment the following library declaration if using
 -- arithmetic functions with Signed or Unsigned values
---use IEEE.NUMERIC_STD.ALL;
+use IEEE.NUMERIC_STD.ALL;
 
 -- Uncomment the following library declaration if instantiating
 -- any Xilinx primitives in this code.
@@ -30,79 +30,103 @@ use IEEE.STD_LOGIC_1164.ALL;
 --use UNISIM.VComponents.all;
 
 entity output_layer is
+	 GENERIC(
+	   INPUT_SIZE : integer := 10;
+		WEIGHT_SIZE : integer := 10;
+		NEURON_NUM : integer := 3
+	 );
 	 PORT (
-	   weights : IN STD_LOGIC;
-		data_in : IN STD_LOGIC_VECTOR(9 DOWNTO 0);
-		--carry_in : IN STD_LOGIC;
-		--calc_start : IN STD_LOGIC;
-		--carry_out : OUT STD_LOGIC;
+	   clk_fc : IN STD_LOGIC;
+		data_in : IN STD_LOGIC_VECTOR(INPUT_SIZE-1 DOWNTO 0);
+		weights_in : IN STD_LOGIC_VECTOR(WEIGHT_SIZE-1 DOWNTO 0) := (others => '0');
 		calc_pos : IN STD_LOGIC;
-		activation : OUT STD_LOGIC_VECTOR(2 downto 0);
-		clk_fc : IN STD_LOGIC;
-		finish_calc : OUT STD_LOGIC
+		activation : OUT STD_LOGIC_VECTOR(NEURON_NUM-1 downto 0) := (others => '0');
+		finish_fc : OUT STD_LOGIC
 	 );
 end output_layer;
 
 architecture Behavioral of output_layer is
 
-signal act1 : STD_LOGIC;
-signal act2 : STD_LOGIC;
-signal act3 : STD_LOGIC;
+signal counter : STD_LOGIC_VECTOR(3 downto 0) := "0010";
+signal curr_weight : STD_LOGIC_VECTOR(9 downto 0);
 
+signal act1 : STD_LOGIC;
+
+COMPONENT memory10Bit_output_layer
+PORT (
+clka : IN STD_LOGIC;
+addra : IN STD_LOGIC_VECTOR(3 DOWNTO 0);
+douta : OUT STD_LOGIC_VECTOR(9 DOWNTO 0)
+);
+END COMPONENT;
 
 COMPONENT xnor_popcount is
-   PORT(
-	    wei : IN STD_LOGIC;
-		 d_in : IN STD_LOGIC_VECTOR(9 downto 0);
+   GENERIC(
+	    size : integer := 10
+		 );
+	PORT(
+	    clk_xn : IN STD_LOGIC;
+	    wei : IN STD_LOGIC_VECTOR(size-1 downto 0);
+		 d_in : IN STD_LOGIC_VECTOR(size-1 downto 0);
 		 res : OUT STD_LOGIC
 	);
 END COMPONENT;
 
-COMPONENT accumulate is
+COMPONENT accumulator is
+   GENERIC(
+	    size : integer := 3
+		 );
    PORT(
 	    w1 : IN STD_LOGIC;
-		 w2 : IN STD_LOGIC;
-		 w3 : IN STD_LOGIC;
-		 o : OUT STD_LOGIC_VECTOR(2 downto 0)
+		 clk : IN STD_LOGIC;
+		 c : IN STD_LOGIC_VECTOR(3 downto 0);
+		 o : OUT STD_LOGIC_VECTOR(size-1 downto 0)
+		 --o : OUT STD_LOGIC_VECTOR(9 downto 0)
+
 	);
 END COMPONENT;
 
-
-
 begin
-   -- TODO: write generic code with for generate
+
+weights : memory10Bit_output_layer
+PORT MAP(
+    clka => clk_fc,
+	 addra => counter,
+	 douta => curr_weight
+);
 
 xnor_pop1 : xnor_popcount
 PORT MAP(
-		 wei => weights,
+       clk_xn => clk_fc,
+		 wei => curr_weight,
+		 --wei => weights_in,
 		 d_in => data_in,
 		 res => act1
 	   );
 		
-xnor_pop2 : xnor_popcount
+fc1_activation : accumulator
 PORT MAP(
-		 wei => weights,
-		 d_in => data_in,
-		 res => act2
-	   );
-		
-xnor_pop3 : xnor_popcount
-PORT MAP(
-		 wei => weights,
-		 d_in => data_in,
-		 res => act3
-	   );
-		
-		
-fc1_activation : accumulate
-PORT MAP(
+       clk => clk_fc,
        w1 => act1,
-		 w2 => act2,
-       w3 => act3,
+		 c => counter,
 		 o => activation
 );
 
+
+process(clk_fc)
+--variable co : STD_LOGIC_VECTOR(3 downto 0);
+
+begin
+	 if(rising_edge(clk_fc)) then
+		  if(counter(3 downto 0) = "0010") then
+	         counter <= "0000";
+				finish_fc <= '1';
+		  else
+		      counter <= std_logic_vector(signed(counter) + 1);
+				finish_fc <= '0';
+		  end if;
+    end if;
+end process;
+
 end Behavioral;
-
-
 

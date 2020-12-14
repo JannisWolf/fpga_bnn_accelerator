@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- IMPORTANT: This is an internal file that has been generated
+     by the Xilinx ISE software.  Any direct editing or
+     changes made to this file may result in unpredictable
+     behavior or data corruption.  It is strongly advised that
+     users do not edit the contents of this file. -->
+<messages>
+<msg type="warning" file="ConstraintSystem" num="0" >The Offset constraint &lt;COMP &quot;USB_StreamData&lt;0&gt;&quot; OFFSET = IN 4 ns BEFORE COMP &quot;USB_StreamCLK&quot;;&gt; [TASTE.pcf(304)], is specified without a duration.  This will result in a lack of hold time checks in timing reports.  If hold time checks are desired a duration value should be specified following the &apos;VALID&apos; keyword.
+</msg>
+
+<msg type="warning" file="ConstraintSystem" num="0" >The Offset constraint &lt;COMP &quot;USB_StreamData&lt;10&gt;&quot; OFFSET = IN 4 ns BEFORE COMP &quot;USB_StreamCLK&quot;;&gt; [TASTE.pcf(306)], is specified without a duration.  This will result in a lack of hold time checks in timing reports.  If hold time checks are desired a duration value should be specified following the &apos;VALID&apos; keyword.
+</msg>
+
+<msg type="warning" file="ConstraintSystem" num="0" >The Offset constraint &lt;COMP &quot;USB_StreamData&lt;11&gt;&quot; OFFSET = IN 4 ns BEFORE COMP &quot;USB_StreamCLK&quot;;&gt; [TASTE.pcf(308)], is specified without a duration.  This will result in a lack of hold time checks in timing reports.  If hold time checks are desired a duration value should be specified following the &apos;VALID&apos; keyword.
+</msg>
+
+<msg type="warning" file="ConstraintSystem" num="0" >The Offset constraint &lt;COMP &quot;USB_StreamData&lt;12&gt;&quot; OFFSET = IN 4 ns BEFORE COMP &quot;USB_StreamCLK&quot;;&gt; [TASTE.pcf(310)], is specified without a duration.  This will result in a lack of hold time checks in timing reports.  If hold time checks are desired a duration value should be specified following the &apos;VALID&apos; keyword.
+</msg>
+
+<msg type="warning" file="ConstraintSystem" num="0" >The Offset constraint &lt;COMP &quot;USB_StreamData&lt;13&gt;&quot; OFFSET = IN 4 ns BEFORE COMP &quot;USB_StreamCLK&quot;;&gt; [TASTE.pcf(312)], is specified without a duration.  This will result in a lack of hold time checks in timing reports.  If hold time checks are desired a duration value should be specified following the &apos;VALID&apos; keyword.
+</msg>
+
+<msg type="warning" file="ConstraintSystem" num="0" >The Offset constraint &lt;COMP &quot;USB_StreamData&lt;14&gt;&quot; OFFSET = IN 4 ns BEFORE COMP &quot;USB_StreamCLK&quot;;&gt; [TASTE.pcf(314)], is specified without a duration.  This will result in a lack of hold time checks in timing reports.  If hold time checks are desired a duration value should be specified following the &apos;VALID&apos; keyword.
+</msg>
+
+<msg type="warning" file="ConstraintSystem" num="0" >The Offset constraint &lt;COMP &quot;USB_StreamData&lt;15&gt;&quot; OFFSET = IN 4 ns BEFORE COMP &quot;USB_StreamCLK&quot;;&gt; [TASTE.pcf(316)], is specified without a duration.  This will result in a lack of hold time checks in timing reports.  If hold time checks are desired a duration value should be specified following the &apos;VALID&apos; keyword.
+</msg>
+
+<msg type="warning" file="ConstraintSystem" num="0" >The Offset constraint &lt;COMP &quot;USB_StreamData&lt;1&gt;&quot; OFFSET = IN 4 ns BEFORE COMP &quot;USB_StreamCLK&quot;;&gt; [TASTE.pcf(318)], is specified without a duration.  This will result in a lack of hold time checks in timing reports.  If hold time checks are desired a duration value should be specified following the &apos;VALID&apos; keyword.
+</msg>
+
+<msg type="warning" file="ConstraintSystem" num="0" >The Offset constraint &lt;COMP &quot;USB_StreamData&lt;2&gt;&quot; OFFSET = IN 4 ns BEFORE COMP &quot;USB_StreamCLK&quot;;&gt; [TASTE.pcf(320)], is specified without a duration.  This will result in a lack of hold time checks in timing reports.  If hold time checks are desired a duration value should be specified following the &apos;VALID&apos; keyword.
+</msg>
+
+<msg type="warning" file="ConstraintSystem" num="0" >The Offset constraint &lt;COMP &quot;USB_StreamData&lt;3&gt;&quot; OFFSET = IN 4 ns BEFORE COMP &quot;USB_StreamCLK&quot;;&gt; [TASTE.pcf(322)], is specified without a duration.  This will result in a lack of hold time checks in timing reports.  If hold time checks are desired a duration value should be specified following the &apos;VALID&apos; keyword.
+</msg>
+
+<msg type="warning" file="ConstraintSystem" num="0" >The Offset constraint &lt;COMP &quot;USB_StreamData&lt;4&gt;&quot; OFFSET = IN 4 ns BEFORE COMP &quot;USB_StreamCLK&quot;;&gt; [TASTE.pcf(324)], is specified without a duration.  This will result in a lack of hold time checks in timing reports.  If hold time checks are desired a duration value should be specified following the &apos;VALID&apos; keyword.
+</msg>
+
+<msg type="warning" file="ConstraintSystem" num="0" >The Offset constraint &lt;COMP &quot;USB_StreamData&lt;5&gt;&quot; OFFSET = IN 4 ns BEFORE COMP &quot;USB_StreamCLK&quot;;&gt; [TASTE.pcf(326)], is specified without a duration.  This will result in a lack of hold time checks in timing reports.  If hold time checks are desired a duration value should be specified following the &apos;VALID&apos; keyword.
+</msg>
+
+<msg type="warning" file="ConstraintSystem" num="0" >The Offset constraint &lt;COMP &quot;USB_StreamData&lt;6&gt;&quot; OFFSET = IN 4 ns BEFORE COMP &quot;USB_StreamCLK&quot;;&gt; [TASTE.pcf(328)], is specified without a duration.  This will result in a lack of hold time checks in timing reports.  If hold time checks are desired a duration value should be specified following the &apos;VALID&apos; keyword.
+</msg>
+
+<msg type="warning" file="ConstraintSystem" num="0" >The Offset constraint &lt;COMP &quot;USB_StreamData&lt;7&gt;&quot; OFFSET = IN 4 ns BEFORE COMP &quot;USB_StreamCLK&quot;;&gt; [TASTE.pcf(330)], is specified without a duration.  This will result in a lack of hold time checks in timing reports.  If hold time checks are desired a duration value should be specified following the &apos;VALID&apos; keyword.
+</msg>
+
+<msg type="warning" file="ConstraintSystem" num="0" >The Offset constraint &lt;COMP &quot;USB_StreamData&lt;8&gt;&quot; OFFSET = IN 4 ns BEFORE COMP &quot;USB_StreamCLK&quot;;&gt; [TASTE.pcf(332)], is specified without a duration.  This will result in a lack of hold time checks in timing reports.  If hold time checks are desired a duration value should be specified following the &apos;VALID&apos; keyword.
+</msg>
+
+<msg type="warning" file="ConstraintSystem" num="0" >The Offset constraint &lt;COMP &quot;USB_StreamData&lt;9&gt;&quot; OFFSET = IN 4 ns BEFORE COMP &quot;USB_StreamCLK&quot;;&gt; [TASTE.pcf(334)], is specified without a duration.  This will result in a lack of hold time checks in timing reports.  If hold time checks are desired a duration value should be specified following the &apos;VALID&apos; keyword.
+</msg>
+
+<msg type="warning" file="ConstraintSystem" num="0" >The Offset constraint &lt;COMP &quot;USB_StreamFlags_n&lt;0&gt;&quot; OFFSET = IN 7 ns BEFORE COMP &quot;USB_StreamCLK&quot;;&gt; [TASTE.pcf(336)], is specified without a duration.  This will result in a lack of hold time checks in timing reports.  If hold time checks are desired a duration value should be specified following the &apos;VALID&apos; keyword.
+</msg>
+
+<msg type="warning" file="ConstraintSystem" num="0" >The Offset constraint &lt;COMP &quot;USB_StreamFlags_n&lt;1&gt;&quot; OFFSET = IN 7 ns BEFORE COMP &quot;USB_StreamCLK&quot;;&gt; [TASTE.pcf(337)], is specified without a duration.  This will result in a lack of hold time checks in timing reports.  If hold time checks are desired a duration value should be specified following the &apos;VALID&apos; keyword.
+</msg>
+
+<msg type="warning" file="Timing" num="3175" delta="new" ><arg fmt="%s" index="1">USB_RegCLK</arg> does not clock data <arg fmt="%s" index="2">to</arg> <arg fmt="%s" index="3">S_WE_N</arg></msg>
+
+<msg type="warning" file="Timing" num="3225" delta="new" >Timing constraint <arg fmt="%s" index="1">COMP &quot;S_WE_N&quot; OFFSET = OUT 16 ns AFTER COMP &quot;USB_RegCLK&quot;;</arg> ignored during timing analysis</msg>
+
+<msg type="warning" file="Timing" num="3175" delta="new" ><arg fmt="%s" index="1">USB_StreamCLK</arg> does not clock data <arg fmt="%s" index="2">from</arg> <arg fmt="%s" index="3">USB_StreamData&lt;0&gt;</arg></msg>
+
+<msg type="warning" file="Timing" num="3225" delta="new" >Timing constraint <arg fmt="%s" index="1">COMP &quot;USB_StreamData&lt;0&gt;&quot; OFFSET = IN 4 ns BEFORE COMP &quot;USB_StreamCLK&quot;;</arg> ignored during timing analysis</msg>
+
+<msg type="warning" file="Timing" num="3175" delta="new" ><arg fmt="%s" index="1">USB_StreamCLK</arg> does not clock data <arg fmt="%s" index="2">from</arg> <arg fmt="%s" index="3">USB_StreamData&lt;10&gt;</arg></msg>
+
+<msg type="warning" file="Timing" num="3225" delta="new" >Timing constraint <arg fmt="%s" index="1">COMP &quot;USB_StreamData&lt;10&gt;&quot; OFFSET = IN 4 ns BEFORE COMP &quot;USB_StreamCLK&quot;;</arg> ignored during timing analysis</msg>
+
+<msg type="warning" file="Timing" num="3175" delta="new" ><arg fmt="%s" index="1">USB_StreamCLK</arg> does not clock data <arg fmt="%s" index="2">from</arg> <arg fmt="%s" index="3">USB_StreamData&lt;11&gt;</arg></msg>
+
+<msg type="warning" file="Timing" num="3225" delta="new" >Timing constraint <arg fmt="%s" index="1">COMP &quot;USB_StreamData&lt;11&gt;&quot; OFFSET = IN 4 ns BEFORE COMP &quot;USB_StreamCLK&quot;;</arg> ignored during timing analysis</msg>
+
+<msg type="warning" file="Timing" num="3175" delta="new" ><arg fmt="%s" index="1">USB_StreamCLK</arg> does not clock data <arg fmt="%s" index="2">from</arg> <arg fmt="%s" index="3">USB_StreamData&lt;12&gt;</arg></msg>
+
+<msg type="warning" file="Timing" num="3225" delta="new" >Timing constraint <arg fmt="%s" index="1">COMP &quot;USB_StreamData&lt;12&gt;&quot; OFFSET = IN 4 ns BEFORE COMP &quot;USB_StreamCLK&quot;;</arg> ignored during timing analysis</msg>
+
+<msg type="warning" file="Timing" num="3175" delta="new" ><arg fmt="%s" index="1">USB_StreamCLK</arg> does not clock data <arg fmt="%s" index="2">from</arg> <arg fmt="%s" index="3">USB_StreamData&lt;13&gt;</arg></msg>
+
+<msg type="warning" file="Timing" num="3225" delta="new" >Timing constraint <arg fmt="%s" index="1">COMP &quot;USB_StreamData&lt;13&gt;&quot; OFFSET = IN 4 ns BEFORE COMP &quot;USB_StreamCLK&quot;;</arg> ignored during timing analysis</msg>
+
+<msg type="warning" file="Timing" num="3175" delta="new" ><arg fmt="%s" index="1">USB_StreamCLK</arg> does not clock data <arg fmt="%s" index="2">from</arg> <arg fmt="%s" index="3">USB_StreamData&lt;14&gt;</arg></msg>
+
+<msg type="warning" file="Timing" num="3225" delta="new" >Timing constraint <arg fmt="%s" index="1">COMP &quot;USB_StreamData&lt;14&gt;&quot; OFFSET = IN 4 ns BEFORE COMP &quot;USB_StreamCLK&quot;;</arg> ignored during timing analysis</msg>
+
+<msg type="warning" file="Timing" num="3175" delta="new" ><arg fmt="%s" index="1">USB_StreamCLK</arg> does not clock data <arg fmt="%s" index="2">from</arg> <arg fmt="%s" index="3">USB_StreamData&lt;15&gt;</arg></msg>
+
+<msg type="warning" file="Timing" num="3225" delta="new" >Timing constraint <arg fmt="%s" index="1">COMP &quot;USB_StreamData&lt;15&gt;&quot; OFFSET = IN 4 ns BEFORE COMP &quot;USB_StreamCLK&quot;;</arg> ignored during timing analysis</msg>
+
+<msg type="warning" file="Timing" num="3175" delta="new" ><arg fmt="%s" index="1">USB_StreamCLK</arg> does not clock data <arg fmt="%s" index="2">from</arg> <arg fmt="%s" index="3">USB_StreamData&lt;1&gt;</arg></msg>
+
+<msg type="warning" file="Timing" num="3225" delta="new" >Timing constraint <arg fmt="%s" index="1">COMP &quot;USB_StreamData&lt;1&gt;&quot; OFFSET = IN 4 ns BEFORE COMP &quot;USB_StreamCLK&quot;;</arg> ignored during timing analysis</msg>
+
+<msg type="warning" file="Timing" num="3175" delta="new" ><arg fmt="%s" index="1">USB_StreamCLK</arg> does not clock data <arg fmt="%s" index="2">from</arg> <arg fmt="%s" index="3">USB_StreamData&lt;2&gt;</arg></msg>
+
+<msg type="warning" file="Timing" num="3225" delta="new" >Timing constraint <arg fmt="%s" index="1">COMP &quot;USB_StreamData&lt;2&gt;&quot; OFFSET = IN 4 ns BEFORE COMP &quot;USB_StreamCLK&quot;;</arg> ignored during timing analysis</msg>
+
+<msg type="warning" file="Timing" num="3175" delta="new" ><arg fmt="%s" index="1">USB_StreamCLK</arg> does not clock data <arg fmt="%s" index="2">from</arg> <arg fmt="%s" index="3">USB_StreamData&lt;3&gt;</arg></msg>
+
+<msg type="warning" file="Timing" num="3225" delta="new" >Timing constraint <arg fmt="%s" index="1">COMP &quot;USB_StreamData&lt;3&gt;&quot; OFFSET = IN 4 ns BEFORE COMP &quot;USB_StreamCLK&quot;;</arg> ignored during timing analysis</msg>
+
+<msg type="warning" file="Timing" num="3175" delta="new" ><arg fmt="%s" index="1">USB_StreamCLK</arg> does not clock data <arg fmt="%s" index="2">from</arg> <arg fmt="%s" index="3">USB_StreamData&lt;4&gt;</arg></msg>
+
+<msg type="warning" file="Timing" num="3225" delta="new" >Timing constraint <arg fmt="%s" index="1">COMP &quot;USB_StreamData&lt;4&gt;&quot; OFFSET = IN 4 ns BEFORE COMP &quot;USB_StreamCLK&quot;;</arg> ignored during timing analysis</msg>
+
+<msg type="warning" file="Timing" num="3175" delta="new" ><arg fmt="%s" index="1">USB_StreamCLK</arg> does not clock data <arg fmt="%s" index="2">from</arg> <arg fmt="%s" index="3">USB_StreamData&lt;5&gt;</arg></msg>
+
+<msg type="warning" file="Timing" num="3225" delta="new" >Timing constraint <arg fmt="%s" index="1">COMP &quot;USB_StreamData&lt;5&gt;&quot; OFFSET = IN 4 ns BEFORE COMP &quot;USB_StreamCLK&quot;;</arg> ignored during timing analysis</msg>
+
+<msg type="warning" file="Timing" num="3175" delta="new" ><arg fmt="%s" index="1">USB_StreamCLK</arg> does not clock data <arg fmt="%s" index="2">from</arg> <arg fmt="%s" index="3">USB_StreamData&lt;6&gt;</arg></msg>
+
+<msg type="warning" file="Timing" num="3225" delta="new" >Timing constraint <arg fmt="%s" index="1">COMP &quot;USB_StreamData&lt;6&gt;&quot; OFFSET = IN 4 ns BEFORE COMP &quot;USB_StreamCLK&quot;;</arg> ignored during timing analysis</msg>
+
+<msg type="warning" file="Timing" num="3175" delta="new" ><arg fmt="%s" index="1">USB_StreamCLK</arg> does not clock data <arg fmt="%s" index="2">from</arg> <arg fmt="%s" index="3">USB_StreamData&lt;7&gt;</arg></msg>
+
+<msg type="warning" file="Timing" num="3225" delta="new" >Timing constraint <arg fmt="%s" index="1">COMP &quot;USB_StreamData&lt;7&gt;&quot; OFFSET = IN 4 ns BEFORE COMP &quot;USB_StreamCLK&quot;;</arg> ignored during timing analysis</msg>
+
+<msg type="warning" file="Timing" num="3175" delta="new" ><arg fmt="%s" index="1">USB_StreamCLK</arg> does not clock data <arg fmt="%s" index="2">from</arg> <arg fmt="%s" index="3">USB_StreamData&lt;8&gt;</arg></msg>
+
+<msg type="warning" file="Timing" num="3225" delta="new" >Timing constraint <arg fmt="%s" index="1">COMP &quot;USB_StreamData&lt;8&gt;&quot; OFFSET = IN 4 ns BEFORE COMP &quot;USB_StreamCLK&quot;;</arg> ignored during timing analysis</msg>
+
+<msg type="warning" file="Timing" num="3175" delta="new" ><arg fmt="%s" index="1">USB_StreamCLK</arg> does not clock data <arg fmt="%s" index="2">from</arg> <arg fmt="%s" index="3">USB_StreamData&lt;9&gt;</arg></msg>
+
+<msg type="warning" file="Timing" num="3225" delta="new" >Timing constraint <arg fmt="%s" index="1">COMP &quot;USB_StreamData&lt;9&gt;&quot; OFFSET = IN 4 ns BEFORE COMP &quot;USB_StreamCLK&quot;;</arg> ignored during timing analysis</msg>
+
+<msg type="warning" file="Timing" num="3224" delta="new" >The clock <arg fmt="%s" index="1">USB_RegCLK</arg> associated with <arg fmt="%s" index="2">TIMEGRP &quot;S_A_GRP&quot; OFFSET = OUT 16 ns AFTER COMP &quot;USB_RegCLK&quot;;</arg> does not clock any registered <arg fmt="%s" index="3">output</arg> components.</msg>
+
+<msg type="warning" file="Timing" num="3225" delta="new" >Timing constraint <arg fmt="%s" index="1">TIMEGRP &quot;S_A_GRP&quot; OFFSET = OUT 16 ns AFTER COMP &quot;USB_RegCLK&quot;;</arg> ignored during timing analysis</msg>
+
+<msg type="info" file="Timing" num="3412" delta="new" >To improve timing, see the Timing Closure User Guide (UG612).</msg>
+
+<msg type="info" file="Timing" num="2752" delta="new" >To get complete path coverage, use the unconstrained paths option. All paths that are not constrained will be reported in the unconstrained paths section(s) of the report.</msg>
+
+<msg type="info" file="Timing" num="3284" delta="new" >This timing report was generated using estimated delay information.  For accurate numbers, please refer to the post Place and Route timing report.</msg>
+
+<msg type="info" file="Timing" num="3339" delta="new" >The clock-to-out numbers in this timing report are based on a 50 Ohm transmission line loading model.  For the details of this model, and for more information on accounting for different loading conditions, please see the device datasheet.</msg>
+
+<msg type="info" file="Timing" num="3390" delta="new" >This architecture does not support a default System Jitter value, please add SYSTEM_JITTER constraint to the UCF to modify the Clock Uncertainty calculation.</msg>
+
+<msg type="info" file="Timing" num="3389" delta="new" >This architecture does not support &apos;Discrete Jitter&apos; and &apos;Phase Error&apos; calculations, these terms will be zero in the Clock Uncertainty calculation.  Please make appropriate modification to SYSTEM_JITTER to account for the unsupported Discrete Jitter and Phase Error.</msg>
+
+</messages>
+

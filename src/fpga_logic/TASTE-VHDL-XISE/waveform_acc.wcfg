@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="/home/jannis/fpga_bnn_accelerator/src/fpga_logic/TASTE-VHDL-XISE/tb_accelerator_isim_beh.wdb" id="1" type="auto">
+         <top_modules>
+            <top_module name="numeric_std" />
+            <top_module name="std_logic_1164" />
+            <top_module name="tb_accelerator" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <WVObjectSize size="32" />
+   <wvobject fp_name="/tb_accelerator/data_in" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">data_in[63:0]</obj_property>
+      <obj_property name="ObjectShortName">data_in[63:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_accelerator/start_accelerator" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">start_accelerator</obj_property>
+      <obj_property name="ObjectShortName">start_accelerator</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_accelerator/clock_accelerator" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">clock_accelerator</obj_property>
+      <obj_property name="ObjectShortName">clock_accelerator</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_accelerator/reset_accelerator" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">reset_accelerator</obj_property>
+      <obj_property name="ObjectShortName">reset_accelerator</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_accelerator/data_out" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">data_out[63:0]</obj_property>
+      <obj_property name="ObjectShortName">data_out[63:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_accelerator/buf_ful" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">buf_ful[63:0]</obj_property>
+      <obj_property name="ObjectShortName">buf_ful[63:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_accelerator/res_ready" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">res_ready[63:0]</obj_property>
+      <obj_property name="ObjectShortName">res_ready[63:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_accelerator/finish_accelerator" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">finish_accelerator</obj_property>
+      <obj_property name="ObjectShortName">finish_accelerator</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_accelerator/clock_accelerator_period" type="other" db_ref_id="1">
+      <obj_property name="ElementShortName">clock_accelerator_period</obj_property>
+      <obj_property name="ObjectShortName">clock_accelerator_period</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_accelerator/uut/sub/data_full" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">data_full[63:0]</obj_property>
+      <obj_property name="ObjectShortName">data_full[63:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_accelerator/uut/sub/data_sub" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">data_sub[9:0]</obj_property>
+      <obj_property name="ObjectShortName">data_sub[9:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_accelerator/uut/up_buf/sub" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">sub</obj_property>
+      <obj_property name="ObjectShortName">sub</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_accelerator/uut/up_buf/full" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">full[63:0]</obj_property>
+      <obj_property name="ObjectShortName">full[63:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_accelerator/uut/up_res/sub" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">sub</obj_property>
+      <obj_property name="ObjectShortName">sub</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_accelerator/uut/up_res/full" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">full[63:0]</obj_property>
+      <obj_property name="ObjectShortName">full[63:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_accelerator/uut/up_output/sub" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">sub[2:0]</obj_property>
+      <obj_property name="ObjectShortName">sub[2:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_accelerator/uut/up_output/full" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">full[63:0]</obj_property>
+      <obj_property name="ObjectShortName">full[63:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_accelerator/uut/fc1/clk_fc" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">clk_fc</obj_property>
+      <obj_property name="ObjectShortName">clk_fc</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_accelerator/uut/fc1/data_in" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">data_in[9:0]</obj_property>
+      <obj_property name="ObjectShortName">data_in[9:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_accelerator/uut/fc1/weights_in" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">weights_in[9:0]</obj_property>
+      <obj_property name="ObjectShortName">weights_in[9:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_accelerator/uut/fc1/calc_pos" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">calc_pos</obj_property>
+      <obj_property name="ObjectShortName">calc_pos</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_accelerator/uut/fc1/activation" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">activation[9:0]</obj_property>
+      <obj_property name="ObjectShortName">activation[9:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_accelerator/uut/fc1/finish_fc" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">finish_fc</obj_property>
+      <obj_property name="ObjectShortName">finish_fc</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_accelerator/uut/fc1/counter" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">counter[3:0]</obj_property>
+      <obj_property name="ObjectShortName">counter[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_accelerator/uut/fc1/curr_weight" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">curr_weight[9:0]</obj_property>
+      <obj_property name="ObjectShortName">curr_weight[9:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_accelerator/uut/fc1/act1" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">act1</obj_property>
+      <obj_property name="ObjectShortName">act1</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_accelerator/uut/fc1/input_size" type="other" db_ref_id="1">
+      <obj_property name="ElementShortName">input_size</obj_property>
+      <obj_property name="ObjectShortName">input_size</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_accelerator/uut/fc1/weight_size" type="other" db_ref_id="1">
+      <obj_property name="ElementShortName">weight_size</obj_property>
+      <obj_property name="ObjectShortName">weight_size</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_accelerator/uut/fc1/neuron_num" type="other" db_ref_id="1">
+      <obj_property name="ElementShortName">neuron_num</obj_property>
+      <obj_property name="ObjectShortName">neuron_num</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_accelerator/uut/weights1/clka" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">clka</obj_property>
+      <obj_property name="ObjectShortName">clka</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_accelerator/uut/weights1/addra" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">addra[3:0]</obj_property>
+      <obj_property name="ObjectShortName">addra[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_accelerator/uut/weights1/douta" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">douta[9:0]</obj_property>
+      <obj_property name="ObjectShortName">douta[9:0]</obj_property>
+   </wvobject>
+</wave_config>

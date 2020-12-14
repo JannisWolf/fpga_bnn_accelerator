@@ -42,26 +42,28 @@ architecture Behavioral of memory10Bit is
 begin
 	 process(clka)
 	 begin
-		 if(addra = "0000") then
-		  	  douta <= "0000000001";
-		 elsif (addra = "0001") then
-			  douta <= "0000000011";
-		 elsif (addra = "0010") then
-			  douta <= "0000000111";
-		 elsif (addra = "0011") then
-			  douta <= "0000001111";
-		 elsif (addra = "0100") then
-			  douta <= "0000011111";
-		 elsif (addra = "0101") then
-			  douta <= "0000111111";
-		 elsif (addra = "0110") then
-			  douta <= "0001111111";
-		 elsif (addra = "0111") then
-			  douta <= "0011111111";
-		 elsif (addra = "1000") then
-			  douta <= "0111111111";
-		 elsif (addra = "1001") then
-			  douta <= "1111111111";
+	    if(rising_edge(clka)) then
+			 if(addra = "0000") then
+				  douta <= "0000111101";
+			 elsif (addra = "0001") then
+				  douta <= "0011011111";
+			 elsif (addra = "0010") then
+				  douta <= "1010011110";
+			 elsif (addra = "0011") then
+				  douta <= "0101000101";
+			 elsif (addra = "0100") then
+				  douta <= "0001101111";
+			 elsif (addra = "0101") then
+				  douta <= "1010101011";
+			 elsif (addra = "0110") then
+				  douta <= "1111110011";
+			 elsif (addra = "0111") then
+				  douta <= "0011101011";
+			 elsif (addra = "1000") then
+				  douta <= "1011100001";
+			 elsif (addra = "1001") then
+				  douta <= "0010110111";
+			 end if;
 		 end if;
 	 end process;
 end Behavioral;

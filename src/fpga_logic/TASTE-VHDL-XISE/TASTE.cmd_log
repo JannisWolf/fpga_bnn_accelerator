@@ -1,1 +1,6 @@
 xst -intstyle ise -ifn "/home/jannis/Code/fpga_bnn_accelerator/src/fpga_logic/TASTE-VHDL-XISE/TASTE.xst" -ofn "/home/jannis/Code/fpga_bnn_accelerator/src/fpga_logic/TASTE-VHDL-XISE/TASTE.syr" 
+xst -intstyle ise -ifn "/home/jannis/fpga_bnn_accelerator/src/fpga_logic/TASTE-VHDL-XISE/TASTE.xst" -ofn "/home/jannis/fpga_bnn_accelerator/src/fpga_logic/TASTE-VHDL-XISE/TASTE.syr" 
+xst -intstyle ise -ifn "/home/jannis/fpga_bnn_accelerator/src/fpga_logic/TASTE-VHDL-XISE/TASTE.xst" -ofn "/home/jannis/fpga_bnn_accelerator/src/fpga_logic/TASTE-VHDL-XISE/TASTE.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -aul -nt timestamp -uc ZestSC1.ucf -p xc3s1000-ft256-5 TASTE.ngc TASTE.ngd  
+map -intstyle ise -p xc3s1000-ft256-5 -cm area -ir off -pr b -c 100 -o TASTE_map.ncd TASTE.ngd TASTE.pcf 
+trce -intstyle ise -e 3 -s 5 -n 3 -xml TASTE_preroute.twx TASTE_map.ncd -o TASTE_preroute.twr TASTE.pcf -ucf ZestSC1.ucf 

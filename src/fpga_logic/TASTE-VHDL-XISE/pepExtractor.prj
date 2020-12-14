@@ -1,1 +1,4 @@
-work	"GEN.vhd"
+work	"accumulator.vhd"
+work	"fully_connected2.vhd"
+work	"memory3Bit.vhd"
+work	"xnor_popcount.vhd"

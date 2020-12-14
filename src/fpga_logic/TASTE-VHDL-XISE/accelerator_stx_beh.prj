@@ -1,0 +1,7 @@
+vhdl isim_temp "xnor_popcount.vhd"
+vhdl isim_temp "memory10Bit.vhd"
+vhdl isim_temp "accumulator.vhd"
+vhdl isim_temp "upsample3_64.vhd"
+vhdl isim_temp "upsample.vhd"
+vhdl isim_temp "fully_connected.vhd"
+vhdl isim_temp "accelerator.vhd"

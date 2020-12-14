@@ -11,18 +11,19 @@
          <ClosedNode>/TASTE - arch |home|taste|iris_fc|src|fpga_logic|TASTE-VHDL-XISE|Example1.vhd/Interface_accelerator - accelerator - arch/fc2 - output_layer - Behavioral</ClosedNode>
       </ClosedNodes>
       <SelectedItems>
-         <SelectedItem>accumulator - Behavioral (/home/jannis/Code/fpga_bnn_accelerator/src/fpga_logic/TASTE-VHDL-XISE/accumulator.vhd)</SelectedItem>
+         <SelectedItem>TASTE - arch (/home/jannis/fpga_bnn_accelerator/src/fpga_logic/TASTE-VHDL-XISE/Example1.vhd)</SelectedItem>
       </SelectedItems>
-      <ScrollbarPosition orientation="vertical" >14</ScrollbarPosition>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
-      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000020200000001000000010000006400000237000000020000000000000000000000000200000064ffffffff000000810000000300000002000002370000000100000003000000000000000100000003</ViewHeaderState>
+      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000202000000010000000100000064000002a0000000020000000000000000000000000200000064ffffffff000000810000000300000002000002a00000000100000003000000000000000100000003</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >true</UserChangedColumnWidths>
-      <CurrentItem>accumulator - Behavioral (/home/jannis/Code/fpga_bnn_accelerator/src/fpga_logic/TASTE-VHDL-XISE/accumulator.vhd)</CurrentItem>
+      <CurrentItem>TASTE - arch (/home/jannis/fpga_bnn_accelerator/src/fpga_logic/TASTE-VHDL-XISE/Example1.vhd)</CurrentItem>
    </ItemView>
    <ItemView engineview="SynthesisOnly" sourcetype="DESUT_VHDL_ARCHITECTURE" guiview="Process" >
       <ClosedNodes>
          <ClosedNodesVersion>1</ClosedNodesVersion>
          <ClosedNode>Configure Target Device</ClosedNode>
+         <ClosedNode>Design Utilities</ClosedNode>
          <ClosedNode>Implement Design</ClosedNode>
          <ClosedNode>Synthesize - XST</ClosedNode>
          <ClosedNode>User Constraints</ClosedNode>
@@ -32,7 +33,7 @@
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
-      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000000000000000000247000000010000000100000000000000000000000064ffffffff000000810000000000000001000002470000000100000000</ViewHeaderState>
+      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000000000000000000f4000000010000000100000000000000000000000064ffffffff000000810000000000000001000000f40000000100000000</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
       <CurrentItem></CurrentItem>
    </ItemView>
@@ -40,14 +41,12 @@
       <ClosedNodes>
          <ClosedNodesVersion>1</ClosedNodesVersion>
       </ClosedNodes>
-      <SelectedItems>
-         <SelectedItem>num_ones_for.vhd</SelectedItem>
-      </SelectedItems>
+      <SelectedItems/>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
-      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000000000000010000000000000000000000000000000000000391000000040101000100000000000000000000000064ffffffff000000810000000000000004000000b60000000100000000000000d10000000100000000000000840000000100000000000001860000000100000000</ViewHeaderState>
+      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000000000000000100000000000000000000000000000000000002a0000000040101000100000000000000000000000064ffffffff000000810000000000000004000000b60000000100000000000000d10000000100000000000000840000000100000000000000950000000100000000</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
-      <CurrentItem>num_ones_for.vhd</CurrentItem>
+      <CurrentItem>accelerator.vhd</CurrentItem>
    </ItemView>
    <ItemView guiview="Library" >
       <ClosedNodes>
@@ -57,7 +56,7 @@
       <SelectedItems/>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
-      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000000000000010000000000000000000000000000000000000148000000010001000100000000000000000000000064ffffffff000000810000000000000001000001480000000100000000</ViewHeaderState>
+      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000000000000010000000000000000000000000000000000000128000000010001000100000000000000000000000064ffffffff000000810000000000000001000001280000000100000000</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
       <CurrentItem>work</CurrentItem>
    </ItemView>
@@ -75,25 +74,36 @@
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
       <CurrentItem>Design Utilities</CurrentItem>
    </ItemView>
-   <SourceProcessView>000000ff00000000000000020000014b0000012001000000060100000002</SourceProcessView>
+   <SourceProcessView>000000ff0000000000000002000001aa0000007a01000000060100000002</SourceProcessView>
    <CurrentView>Behavioral Simulation</CurrentView>
    <ItemView engineview="BehavioralSim" guiview="Source" compilemode="AutoCompile" >
       <ClosedNodes>
          <ClosedNodesVersion>2</ClosedNodesVersion>
          <ClosedNode>/TASTE - arch |home|jannis|Code|fpga_bnn_accelerator|src|fpga_logic|TASTE-VHDL-XISE|Example1.vhd/Interface_accelerator - accelerator - arch/fc2 - output_layer - Behavioral</ClosedNode>
          <ClosedNode>/TASTE - arch |home|jannis|Code|fpga_bnn_accelerator|src|fpga_logic|TASTE-VHDL-XISE|Example1.vhd/Interfaces - ZestSC1_Interfaces - arch</ClosedNode>
+         <ClosedNode>/TASTE - arch |home|jannis|fpga_bnn_accelerator|src|fpga_logic|TASTE-VHDL-XISE|Example1.vhd/Interface_accelerator - accelerator - arch/fc1 - fully_connected - Behavioral</ClosedNode>
+         <ClosedNode>/TASTE - arch |home|jannis|fpga_bnn_accelerator|src|fpga_logic|TASTE-VHDL-XISE|Example1.vhd/Interfaces - ZestSC1_Interfaces - arch</ClosedNode>
          <ClosedNode>/fully_connected - Behavioral |home|jannis|Code|fpga_bnn_accelerator|src|fpga_logic|TASTE-VHDL-XISE|fully_connected.vhd</ClosedNode>
+         <ClosedNode>/fully_connected2 - Behavioral |home|jannis|fpga_bnn_accelerator|src|fpga_logic|TASTE-VHDL-XISE|fully_connected2.vhd</ClosedNode>
          <ClosedNode>/output_layer - Behavioral |home|jannis|Code|fpga_bnn_accelerator|src|fpga_logic|TASTE-VHDL-XISE|output_layer.vhd</ClosedNode>
+         <ClosedNode>/output_layer - Behavioral |home|jannis|fpga_bnn_accelerator|src|fpga_logic|TASTE-VHDL-XISE|output_layer.vhd</ClosedNode>
+         <ClosedNode>/tb_GEN - behavior |home|jannis|fpga_bnn_accelerator|src|fpga_logic|TASTE-VHDL-XISE|tb_GEN.vhd</ClosedNode>
          <ClosedNode>/tb_acc - behavior |home|jannis|Code|fpga_bnn_accelerator|src|fpga_logic|TASTE-VHDL-XISE|tb_acc.vhd/uut - accelerator - arch/fc2 - output_layer - Behavioral</ClosedNode>
+         <ClosedNode>/tb_accelerator - behavior |home|jannis|fpga_bnn_accelerator|src|fpga_logic|TASTE-VHDL-XISE|tb_accelerator.vhd</ClosedNode>
+         <ClosedNode>/tb_accumulator - behavior |home|jannis|fpga_bnn_accelerator|src|fpga_logic|TASTE-VHDL-XISE|tb_accumulator.vhd</ClosedNode>
+         <ClosedNode>/tb_fully_connected - behavior |home|jannis|fpga_bnn_accelerator|src|fpga_logic|TASTE-VHDL-XISE|tb_fully_connected.vhd</ClosedNode>
+         <ClosedNode>/tb_memory10Bit - behavior |home|jannis|fpga_bnn_accelerator|src|fpga_logic|TASTE-VHDL-XISE|tb_memory10Bit.vhd</ClosedNode>
+         <ClosedNode>/tb_ones - behavior |home|jannis|fpga_bnn_accelerator|src|fpga_logic|TASTE-VHDL-XISE|tb_num_ones_for.vhd</ClosedNode>
+         <ClosedNode>/tb_xnor - behavior |home|jannis|fpga_bnn_accelerator|src|fpga_logic|TASTE-VHDL-XISE|tb_xnor.vhd</ClosedNode>
       </ClosedNodes>
       <SelectedItems>
-         <SelectedItem>tb_fully_connected - behavior (/home/jannis/Code/fpga_bnn_accelerator/src/fpga_logic/TASTE-VHDL-XISE/tb_fully_connected.vhd)</SelectedItem>
+         <SelectedItem>fc2 - fully_connected2 - Behavioral (/home/jannis/fpga_bnn_accelerator/src/fpga_logic/TASTE-VHDL-XISE/fully_connected2.vhd)</SelectedItem>
       </SelectedItems>
-      <ScrollbarPosition orientation="vertical" >23</ScrollbarPosition>
+      <ScrollbarPosition orientation="vertical" >4</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
-      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000020200000001000000010000006400000237000000020000000000000000000000000200000064ffffffff000000810000000300000002000002370000000100000003000000000000000100000003</ViewHeaderState>
+      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000202000000010000000100000064000002a0000000020000000000000000000000000200000064ffffffff000000810000000300000002000002a00000000100000003000000000000000100000003</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >true</UserChangedColumnWidths>
-      <CurrentItem>tb_fully_connected - behavior (/home/jannis/Code/fpga_bnn_accelerator/src/fpga_logic/TASTE-VHDL-XISE/tb_fully_connected.vhd)</CurrentItem>
+      <CurrentItem>fc2 - fully_connected2 - Behavioral (/home/jannis/fpga_bnn_accelerator/src/fpga_logic/TASTE-VHDL-XISE/fully_connected2.vhd)</CurrentItem>
    </ItemView>
    <ItemView engineview="BehavioralSim" sourcetype="" guiview="Process" >
       <ClosedNodes>
@@ -105,7 +115,7 @@
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
-      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000000000000000000247000000010000000100000000000000000000000064ffffffff000000810000000000000001000002470000000100000000</ViewHeaderState>
+      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000000000000000000f4000000010000000100000000000000000000000064ffffffff000000810000000000000001000000f40000000100000000</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
       <CurrentItem/>
    </ItemView>
@@ -118,35 +128,8 @@
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
-      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000000000000000000247000000010000000100000000000000000000000064ffffffff000000810000000000000001000002470000000100000000</ViewHeaderState>
+      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000000000000000000f4000000010000000100000000000000000000000064ffffffff000000810000000000000001000000f40000000100000000</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
       <CurrentItem>Simulate Behavioral Model</CurrentItem>
-   </ItemView>
-   <ItemView engineview="BehavioralSim" sourcetype="DESUT_XCO" guiview="Process" >
-      <ClosedNodes>
-         <ClosedNodesVersion>1</ClosedNodesVersion>
-      </ClosedNodes>
-      <SelectedItems>
-         <SelectedItem/>
-      </SelectedItems>
-      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
-      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
-      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000000000000000000f6000000010000000100000000000000000000000064ffffffff000000810000000000000001000000f60000000100000000</ViewHeaderState>
-      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
-      <CurrentItem/>
-   </ItemView>
-   <ItemView engineview="SynthesisOnly" sourcetype="DESUT_XCO" guiview="Process" >
-      <ClosedNodes>
-         <ClosedNodesVersion>1</ClosedNodesVersion>
-         <ClosedNode>CORE Generator</ClosedNode>
-      </ClosedNodes>
-      <SelectedItems>
-         <SelectedItem></SelectedItem>
-      </SelectedItems>
-      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
-      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
-      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000000000000000000247000000010000000100000000000000000000000064ffffffff000000810000000000000001000002470000000100000000</ViewHeaderState>
-      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
-      <CurrentItem></CurrentItem>
    </ItemView>
 </Project>

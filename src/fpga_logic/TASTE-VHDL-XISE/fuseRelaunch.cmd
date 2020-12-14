@@ -1,1 +1,1 @@
--intstyle "ise" -incremental -o "/home/jannis/Code/fpga_bnn_accelerator/src/fpga_logic/TASTE-VHDL-XISE/tb_fully_connected_isim_beh.exe" -prj "/home/jannis/Code/fpga_bnn_accelerator/src/fpga_logic/TASTE-VHDL-XISE/tb_fully_connected_beh.prj" "work.tb_fully_connected" 
+-intstyle "ise" -incremental -o "/home/jannis/fpga_bnn_accelerator/src/fpga_logic/TASTE-VHDL-XISE/tb_fully_connected_isim_beh.exe" -prj "/home/jannis/fpga_bnn_accelerator/src/fpga_logic/TASTE-VHDL-XISE/tb_fully_connected_beh.prj" "work.tb_fully_connected" 

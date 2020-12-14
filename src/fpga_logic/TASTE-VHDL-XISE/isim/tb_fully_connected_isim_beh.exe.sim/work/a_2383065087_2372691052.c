@@ -21,7 +21,7 @@
 #include <malloc.h>
 #define alloca _alloca
 #endif
-static const char *ng0 = "/home/jannis/Code/fpga_bnn_accelerator/src/fpga_logic/TASTE-VHDL-XISE/tb_fully_connected.vhd";
+static const char *ng0 = "/home/jannis/fpga_bnn_accelerator/src/fpga_logic/TASTE-VHDL-XISE/tb_fully_connected.vhd";
 
 
 
@@ -36,7 +36,7 @@ static void work_a_2383065087_2372691052_p_0(char *t0)
     int64 t7;
     int64 t8;
 
-LAB0:    t1 = (t0 + 2944U);
+LAB0:    t1 = (t0 + 3104U);
     t2 = *((char **)t1);
     if (t2 == 0)
         goto LAB2;
@@ -44,7 +44,7 @@ LAB0:    t1 = (t0 + 2944U);
 LAB3:    goto *t2;
 
 LAB2:    xsi_set_current_line(82, ng0);
-    t2 = (t0 + 3576);
+    t2 = (t0 + 3736);
     t3 = (t2 + 56U);
     t4 = *((char **)t3);
     t5 = (t4 + 56U);
@@ -52,18 +52,18 @@ LAB2:    xsi_set_current_line(82, ng0);
     *((unsigned char *)t6) = (unsigned char)2;
     xsi_driver_first_trans_fast(t2);
     xsi_set_current_line(83, ng0);
-    t2 = (t0 + 1968U);
+    t2 = (t0 + 2128U);
     t3 = *((char **)t2);
     t7 = *((int64 *)t3);
     t8 = (t7 / 2);
-    t2 = (t0 + 2752);
+    t2 = (t0 + 2912);
     xsi_process_wait(t2, t8);
 
 LAB6:    *((char **)t1) = &&LAB7;
 
 LAB1:    return;
 LAB4:    xsi_set_current_line(84, ng0);
-    t2 = (t0 + 3576);
+    t2 = (t0 + 3736);
     t3 = (t2 + 56U);
     t4 = *((char **)t3);
     t5 = (t4 + 56U);
@@ -71,11 +71,11 @@ LAB4:    xsi_set_current_line(84, ng0);
     *((unsigned char *)t6) = (unsigned char)3;
     xsi_driver_first_trans_fast(t2);
     xsi_set_current_line(85, ng0);
-    t2 = (t0 + 1968U);
+    t2 = (t0 + 2128U);
     t3 = *((char **)t2);
     t7 = *((int64 *)t3);
     t8 = (t7 / 2);
-    t2 = (t0 + 2752);
+    t2 = (t0 + 2912);
     xsi_process_wait(t2, t8);
 
 LAB10:    *((char **)t1) = &&LAB11;
@@ -97,68 +97,38 @@ static void work_a_2383065087_2372691052_p_1(char *t0)
 {
     char *t1;
     char *t2;
-    int64 t3;
     char *t4;
-    int64 t5;
+    char *t5;
     char *t6;
     char *t7;
     char *t8;
-    char *t9;
-    char *t10;
 
-LAB0:    t1 = (t0 + 3192U);
+LAB0:    t1 = (t0 + 3352U);
     t2 = *((char **)t1);
     if (t2 == 0)
         goto LAB2;
 
 LAB3:    goto *t2;
 
-LAB2:    xsi_set_current_line(93, ng0);
-    t3 = (100 * 1000LL);
-    t2 = (t0 + 3000);
-    xsi_process_wait(t2, t3);
+LAB2:    xsi_set_current_line(96, ng0);
+    t2 = (t0 + 6458);
+    t4 = (t0 + 3800);
+    t5 = (t4 + 56U);
+    t6 = *((char **)t5);
+    t7 = (t6 + 56U);
+    t8 = *((char **)t7);
+    memcpy(t8, t2, 10U);
+    xsi_driver_first_trans_fast(t4);
+    xsi_set_current_line(117, ng0);
 
 LAB6:    *((char **)t1) = &&LAB7;
 
 LAB1:    return;
-LAB4:    xsi_set_current_line(95, ng0);
-    t2 = (t0 + 1968U);
-    t4 = *((char **)t2);
-    t3 = *((int64 *)t4);
-    t5 = (t3 * 10);
-    t2 = (t0 + 3000);
-    xsi_process_wait(t2, t5);
-
-LAB10:    *((char **)t1) = &&LAB11;
-    goto LAB1;
+LAB4:    goto LAB2;
 
 LAB5:    goto LAB4;
 
 LAB7:    goto LAB5;
-
-LAB8:    xsi_set_current_line(96, ng0);
-    t2 = (t0 + 6192);
-    t6 = (t0 + 3640);
-    t7 = (t6 + 56U);
-    t8 = *((char **)t7);
-    t9 = (t8 + 56U);
-    t10 = *((char **)t9);
-    memcpy(t10, t2, 10U);
-    xsi_driver_first_trans_fast(t6);
-    xsi_set_current_line(101, ng0);
-
-LAB14:    *((char **)t1) = &&LAB15;
-    goto LAB1;
-
-LAB9:    goto LAB8;
-
-LAB11:    goto LAB9;
-
-LAB12:    goto LAB2;
-
-LAB13:    goto LAB12;
-
-LAB15:    goto LAB13;
 
 }
 
