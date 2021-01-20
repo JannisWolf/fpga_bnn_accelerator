@@ -31,15 +31,101 @@
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_STX" xil_pn:name="TASTE.stx"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_REPORT" xil_pn:name="TASTE.syr"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST" xil_pn:name="TASTE.xst"/>
+    <file xil_pn:fileType="FILE_HTML" xil_pn:name="TASTE_envsettings.html"/>
     <file xil_pn:fileType="FILE_NCD" xil_pn:name="TASTE_guide.ncd" xil_pn:origination="imported"/>
     <file xil_pn:fileType="FILE_HTML" xil_pn:name="TASTE_summary.html"/>
     <file xil_pn:fileType="FILE_XRPT" xil_pn:name="TASTE_xst.xrpt"/>
     <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/xst.xmsgs"/>
+    <file xil_pn:fileType="FILE_LOG" xil_pn:name="fuse.log"/>
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="isim"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_CMD" xil_pn:name="isim.cmd"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_LOG" xil_pn:name="isim.log"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="tb_fifo_buffer_beh.prj"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="tb_fifo_buffer_isim_beh.exe"/>
+    <file xil_pn:fileType="FILE_ISIM_MISC" xil_pn:name="tb_fifo_buffer_isim_beh.wdb"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="tb_fifo_buffer_stx_beh.prj"/>
     <file xil_pn:fileType="FILE_FITTER_REPORT" xil_pn:name="webtalk_pn.xml"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_INI" xil_pn:name="xilinxsim.ini"/>
     <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="xst"/>
   </files>
 
   <transforms xmlns="http://www.xilinx.com/XMLSchema">
+    <transform xil_pn:end_ts="1610476254" xil_pn:name="TRAN_copyInitialToAbstractSimulation" xil_pn:start_ts="1610476254">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1611142127" xil_pn:in_ck="6771726272667139394" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1611142127">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="Example1.vhd"/>
+      <outfile xil_pn:name="ZestSC1_Host.vhd"/>
+      <outfile xil_pn:name="ZestSC1_Interfaces.vhd"/>
+      <outfile xil_pn:name="ZestSC1_SRAM.vhd"/>
+      <outfile xil_pn:name="accelerator.vhd"/>
+      <outfile xil_pn:name="fifo_buffer.vhd"/>
+      <outfile xil_pn:name="fully_connected.vhd"/>
+      <outfile xil_pn:name="output_layer.vhd"/>
+      <outfile xil_pn:name="subsample.vhd"/>
+      <outfile xil_pn:name="tb_fifo.vhd"/>
+      <outfile xil_pn:name="tb_fifo_buffer.vhd"/>
+      <outfile xil_pn:name="upsample.vhd"/>
+      <outfile xil_pn:name="upsample3_64.vhd"/>
+      <outfile xil_pn:name="xnor_popcount.vhd"/>
+    </transform>
+    <transform xil_pn:end_ts="1610476902" xil_pn:name="TRAN_xawsToSimhdl" xil_pn:prop_ck="4206675347750939218" xil_pn:start_ts="1610476902">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1610476902" xil_pn:name="TRAN_schematicsToHdlSim" xil_pn:prop_ck="-1696324885850649078" xil_pn:start_ts="1610476902">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1610476254" xil_pn:in_ck="-2674334883656940480" xil_pn:name="TRAN_regenerateCoresSim" xil_pn:prop_ck="3792745943568323983" xil_pn:start_ts="1610476254">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="ipcore_dir/memory.ngc"/>
+      <outfile xil_pn:name="ipcore_dir/memory.v"/>
+    </transform>
+    <transform xil_pn:end_ts="1611142127" xil_pn:in_ck="-4635311531919095410" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1611142127">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="Example1.vhd"/>
+      <outfile xil_pn:name="ZestSC1_Host.vhd"/>
+      <outfile xil_pn:name="ZestSC1_Interfaces.vhd"/>
+      <outfile xil_pn:name="ZestSC1_SRAM.vhd"/>
+      <outfile xil_pn:name="accelerator.vhd"/>
+      <outfile xil_pn:name="fifo_buffer.vhd"/>
+      <outfile xil_pn:name="fully_connected.vhd"/>
+      <outfile xil_pn:name="ipcore_dir/memory.v"/>
+      <outfile xil_pn:name="output_layer.vhd"/>
+      <outfile xil_pn:name="subsample.vhd"/>
+      <outfile xil_pn:name="tb_fifo.vhd"/>
+      <outfile xil_pn:name="tb_fifo_buffer.vhd"/>
+      <outfile xil_pn:name="upsample.vhd"/>
+      <outfile xil_pn:name="upsample3_64.vhd"/>
+      <outfile xil_pn:name="xnor_popcount.vhd"/>
+    </transform>
+    <transform xil_pn:end_ts="1611142135" xil_pn:in_ck="-4635311531919095410" xil_pn:name="TRAN_ISimulateBehavioralModelRunFuse" xil_pn:prop_ck="2455762224689851031" xil_pn:start_ts="1611142127">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="OutputChanged"/>
+      <outfile xil_pn:name="fuse.log"/>
+      <outfile xil_pn:name="isim"/>
+      <outfile xil_pn:name="isim.log"/>
+      <outfile xil_pn:name="tb_fifo_buffer_beh.prj"/>
+      <outfile xil_pn:name="tb_fifo_buffer_isim_beh.exe"/>
+      <outfile xil_pn:name="xilinxsim.ini"/>
+    </transform>
+    <transform xil_pn:end_ts="1611142135" xil_pn:in_ck="8909391529434670401" xil_pn:name="TRAN_ISimulateBehavioralModel" xil_pn:prop_ck="-8035664667991079142" xil_pn:start_ts="1611142135">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="OutputChanged"/>
+      <outfile xil_pn:name="isim.cmd"/>
+      <outfile xil_pn:name="isim.log"/>
+      <outfile xil_pn:name="tb_fifo_buffer_isim_beh.wdb"/>
+    </transform>
     <transform xil_pn:end_ts="1605657728" xil_pn:name="TRAN_schematicsToHdl" xil_pn:prop_ck="-1880371926197347865" xil_pn:start_ts="1605657728">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
@@ -66,7 +152,7 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1605657738" xil_pn:in_ck="-7703407927336283914" xil_pn:name="TRANEXT_xstsynthesize_spartan3" xil_pn:prop_ck="-606073843095827709" xil_pn:start_ts="1605657728">
+    <transform xil_pn:end_ts="1611142218" xil_pn:in_ck="911071510057617379" xil_pn:name="TRANEXT_xstsynthesize_spartan3" xil_pn:prop_ck="-606073843095827709" xil_pn:start_ts="1611142195">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="WarningsGenerated"/>
       <status xil_pn:value="ReadyToRun"/>

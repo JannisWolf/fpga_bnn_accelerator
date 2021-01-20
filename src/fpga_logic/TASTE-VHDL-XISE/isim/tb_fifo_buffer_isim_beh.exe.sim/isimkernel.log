@@ -1,0 +1,35 @@
+Command line:
+   tb_fifo_buffer_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  47761
+
+Wed Jan 20 11:29:09 2021
+
+
+ Elaboration Time: 0.08 sec
+
+ Current Memory Usage: 184.34 Meg
+
+ Total Signals          : 26
+ Total Nets             : 285
+ Total Signal Drivers   : 14
+ Total Blocks           : 4
+ Total Primitive Blocks : 3
+ Total Processes        : 11
+ Total Traceable Variables  : 18
+ Total Scalar Nets and Variables : 773
+Total Line Count : 38
+
+** Failure:ASSERT FAILURE - MODULE_REGISTER_FIFO: FIFO IS EMPTY AND BEING READ 
+User(VHDL) Code Called Simulation Stop
+In process fifo_buffer.vhd:p_ASSERT 
+ 
+
+
+ Total Simulation Time: 0.15 sec
+
+ Current Memory Usage: 259.842 Meg
+
+Wed Jan 20 11:29:45 2021
+

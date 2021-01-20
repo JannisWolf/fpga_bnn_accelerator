@@ -4,15 +4,15 @@ Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 Parameter TMPDIR set to xst/projnav.tmp
 
 
-Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.04 secs
+Total REAL time to Xst completion: 3.00 secs
+Total CPU time to Xst completion: 0.09 secs
  
 --> 
 Parameter xsthdpdir set to xst
 
 
-Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.04 secs
+Total REAL time to Xst completion: 3.00 secs
+Total CPU time to Xst completion: 0.09 secs
  
 --> 
 Reading design: TASTE.prj
@@ -110,33 +110,42 @@ Cores Search Directories           : {"ipcore_dir"  }
 =========================================================================
 *                          HDL Compilation                              *
 =========================================================================
-Compiling vhdl file "/home/jannis/Code/fpga_bnn_accelerator/src/fpga_logic/TASTE-VHDL-XISE/upsample.vhd" in Library work.
-Entity <upsample1to64> compiled.
-Entity <upsample1to64> (Architecture <Behavioral>) compiled.
-Compiling vhdl file "/home/jannis/Code/fpga_bnn_accelerator/src/fpga_logic/TASTE-VHDL-XISE/upsample3_64.vhd" in Library work.
-Entity <upsample3_64> compiled.
-Entity <upsample3_64> (Architecture <Behavioral>) compiled.
-Compiling vhdl file "/home/jannis/Code/fpga_bnn_accelerator/src/fpga_logic/TASTE-VHDL-XISE/fully_connected.vhd" in Library work.
-Entity <fully_connected> compiled.
-Entity <fully_connected> (Architecture <Behavioral>) compiled.
-Compiling vhdl file "/home/jannis/Code/fpga_bnn_accelerator/src/fpga_logic/TASTE-VHDL-XISE/output_layer.vhd" in Library work.
-Entity <output_layer> compiled.
-Entity <output_layer> (Architecture <Behavioral>) compiled.
-Compiling vhdl file "/home/jannis/Code/fpga_bnn_accelerator/src/fpga_logic/TASTE-VHDL-XISE/ZestSC1_Host.vhd" in Library work.
-Entity <ZestSC1_Host> compiled.
-Entity <ZestSC1_Host> (Architecture <arch>) compiled.
-Compiling vhdl file "/home/jannis/Code/fpga_bnn_accelerator/src/fpga_logic/TASTE-VHDL-XISE/ZestSC1_SRAM.vhd" in Library work.
-Entity <ZestSC1_SRAM> compiled.
-Entity <ZestSC1_SRAM> (Architecture <arch>) compiled.
-Compiling vhdl file "/home/jannis/Code/fpga_bnn_accelerator/src/fpga_logic/TASTE-VHDL-XISE/ZestSC1_Interfaces.vhd" in Library work.
-Entity <ZestSC1_Interfaces> compiled.
-Entity <ZestSC1_Interfaces> (Architecture <arch>) compiled.
-Compiling vhdl file "/home/jannis/Code/fpga_bnn_accelerator/src/fpga_logic/TASTE-VHDL-XISE/accelerator.vhd" in Library work.
-Entity <accelerator> compiled.
-Entity <accelerator> (Architecture <arch>) compiled.
-Compiling vhdl file "/home/jannis/Code/fpga_bnn_accelerator/src/fpga_logic/TASTE-VHDL-XISE/Example1.vhd" in Library work.
-Entity <TASTE> compiled.
-Entity <TASTE> (Architecture <arch>) compiled.
+WARNING:HDLParsers:3607 - Unit work/TASTE is now defined in a different file.  It was defined in "/home/jannis/Code/fpga_bnn_accelerator/src/fpga_logic/TASTE-VHDL-XISE/Example1.vhd", and is now defined in "/home/jannis/fpga_bnn_accelerator/src/fpga_logic/TASTE-VHDL-XISE/Example1.vhd".
+WARNING:HDLParsers:3607 - Unit work/TASTE/arch is now defined in a different file.  It was defined in "/home/jannis/Code/fpga_bnn_accelerator/src/fpga_logic/TASTE-VHDL-XISE/Example1.vhd", and is now defined in "/home/jannis/fpga_bnn_accelerator/src/fpga_logic/TASTE-VHDL-XISE/Example1.vhd".
+WARNING:HDLParsers:3607 - Unit work/accelerator is now defined in a different file.  It was defined in "/home/jannis/Code/fpga_bnn_accelerator/src/fpga_logic/TASTE-VHDL-XISE/accelerator.vhd", and is now defined in "/home/jannis/fpga_bnn_accelerator/src/fpga_logic/TASTE-VHDL-XISE/accelerator.vhd".
+WARNING:HDLParsers:3607 - Unit work/accelerator/arch is now defined in a different file.  It was defined in "/home/jannis/Code/fpga_bnn_accelerator/src/fpga_logic/TASTE-VHDL-XISE/accelerator.vhd", and is now defined in "/home/jannis/fpga_bnn_accelerator/src/fpga_logic/TASTE-VHDL-XISE/accelerator.vhd".
+WARNING:HDLParsers:3607 - Unit work/ZestSC1_Interfaces is now defined in a different file.  It was defined in "/home/jannis/Code/fpga_bnn_accelerator/src/fpga_logic/TASTE-VHDL-XISE/ZestSC1_Interfaces.vhd", and is now defined in "/home/jannis/fpga_bnn_accelerator/src/fpga_logic/TASTE-VHDL-XISE/ZestSC1_Interfaces.vhd".
+WARNING:HDLParsers:3607 - Unit work/ZestSC1_Interfaces/arch is now defined in a different file.  It was defined in "/home/jannis/Code/fpga_bnn_accelerator/src/fpga_logic/TASTE-VHDL-XISE/ZestSC1_Interfaces.vhd", and is now defined in "/home/jannis/fpga_bnn_accelerator/src/fpga_logic/TASTE-VHDL-XISE/ZestSC1_Interfaces.vhd".
+WARNING:HDLParsers:3607 - Unit work/fully_connected is now defined in a different file.  It was defined in "/home/jannis/Code/fpga_bnn_accelerator/src/fpga_logic/TASTE-VHDL-XISE/fully_connected.vhd", and is now defined in "/home/jannis/fpga_bnn_accelerator/src/fpga_logic/TASTE-VHDL-XISE/fully_connected.vhd".
+WARNING:HDLParsers:3607 - Unit work/fully_connected/Behavioral is now defined in a different file.  It was defined in "/home/jannis/Code/fpga_bnn_accelerator/src/fpga_logic/TASTE-VHDL-XISE/fully_connected.vhd", and is now defined in "/home/jannis/fpga_bnn_accelerator/src/fpga_logic/TASTE-VHDL-XISE/fully_connected.vhd".
+WARNING:HDLParsers:3607 - Unit work/output_layer is now defined in a different file.  It was defined in "/home/jannis/Code/fpga_bnn_accelerator/src/fpga_logic/TASTE-VHDL-XISE/output_layer.vhd", and is now defined in "/home/jannis/fpga_bnn_accelerator/src/fpga_logic/TASTE-VHDL-XISE/output_layer.vhd".
+WARNING:HDLParsers:3607 - Unit work/output_layer/Behavioral is now defined in a different file.  It was defined in "/home/jannis/Code/fpga_bnn_accelerator/src/fpga_logic/TASTE-VHDL-XISE/output_layer.vhd", and is now defined in "/home/jannis/fpga_bnn_accelerator/src/fpga_logic/TASTE-VHDL-XISE/output_layer.vhd".
+WARNING:HDLParsers:3607 - Unit work/upsample1to64 is now defined in a different file.  It was defined in "/home/jannis/Code/fpga_bnn_accelerator/src/fpga_logic/TASTE-VHDL-XISE/upsample.vhd", and is now defined in "/home/jannis/fpga_bnn_accelerator/src/fpga_logic/TASTE-VHDL-XISE/upsample.vhd".
+WARNING:HDLParsers:3607 - Unit work/upsample1to64/Behavioral is now defined in a different file.  It was defined in "/home/jannis/Code/fpga_bnn_accelerator/src/fpga_logic/TASTE-VHDL-XISE/upsample.vhd", and is now defined in "/home/jannis/fpga_bnn_accelerator/src/fpga_logic/TASTE-VHDL-XISE/upsample.vhd".
+WARNING:HDLParsers:3607 - Unit work/upsample3_64 is now defined in a different file.  It was defined in "/home/jannis/Code/fpga_bnn_accelerator/src/fpga_logic/TASTE-VHDL-XISE/upsample3_64.vhd", and is now defined in "/home/jannis/fpga_bnn_accelerator/src/fpga_logic/TASTE-VHDL-XISE/upsample3_64.vhd".
+WARNING:HDLParsers:3607 - Unit work/upsample3_64/Behavioral is now defined in a different file.  It was defined in "/home/jannis/Code/fpga_bnn_accelerator/src/fpga_logic/TASTE-VHDL-XISE/upsample3_64.vhd", and is now defined in "/home/jannis/fpga_bnn_accelerator/src/fpga_logic/TASTE-VHDL-XISE/upsample3_64.vhd".
+WARNING:HDLParsers:3607 - Unit work/ZestSC1_Host is now defined in a different file.  It was defined in "/home/jannis/Code/fpga_bnn_accelerator/src/fpga_logic/TASTE-VHDL-XISE/ZestSC1_Host.vhd", and is now defined in "/home/jannis/fpga_bnn_accelerator/src/fpga_logic/TASTE-VHDL-XISE/ZestSC1_Host.vhd".
+WARNING:HDLParsers:3607 - Unit work/ZestSC1_Host/arch is now defined in a different file.  It was defined in "/home/jannis/Code/fpga_bnn_accelerator/src/fpga_logic/TASTE-VHDL-XISE/ZestSC1_Host.vhd", and is now defined in "/home/jannis/fpga_bnn_accelerator/src/fpga_logic/TASTE-VHDL-XISE/ZestSC1_Host.vhd".
+WARNING:HDLParsers:3607 - Unit work/ZestSC1_SRAM is now defined in a different file.  It was defined in "/home/jannis/Code/fpga_bnn_accelerator/src/fpga_logic/TASTE-VHDL-XISE/ZestSC1_SRAM.vhd", and is now defined in "/home/jannis/fpga_bnn_accelerator/src/fpga_logic/TASTE-VHDL-XISE/ZestSC1_SRAM.vhd".
+WARNING:HDLParsers:3607 - Unit work/ZestSC1_SRAM/arch is now defined in a different file.  It was defined in "/home/jannis/Code/fpga_bnn_accelerator/src/fpga_logic/TASTE-VHDL-XISE/ZestSC1_SRAM.vhd", and is now defined in "/home/jannis/fpga_bnn_accelerator/src/fpga_logic/TASTE-VHDL-XISE/ZestSC1_SRAM.vhd".
+Compiling vhdl file "/home/jannis/fpga_bnn_accelerator/src/fpga_logic/TASTE-VHDL-XISE/upsample.vhd" in Library work.
+Architecture behavioral of Entity upsample1to64 is up to date.
+Compiling vhdl file "/home/jannis/fpga_bnn_accelerator/src/fpga_logic/TASTE-VHDL-XISE/upsample3_64.vhd" in Library work.
+Architecture behavioral of Entity upsample3_64 is up to date.
+Compiling vhdl file "/home/jannis/fpga_bnn_accelerator/src/fpga_logic/TASTE-VHDL-XISE/fully_connected.vhd" in Library work.
+Architecture behavioral of Entity fully_connected is up to date.
+Compiling vhdl file "/home/jannis/fpga_bnn_accelerator/src/fpga_logic/TASTE-VHDL-XISE/output_layer.vhd" in Library work.
+Architecture behavioral of Entity output_layer is up to date.
+Compiling vhdl file "/home/jannis/fpga_bnn_accelerator/src/fpga_logic/TASTE-VHDL-XISE/ZestSC1_Host.vhd" in Library work.
+Architecture arch of Entity zestsc1_host is up to date.
+Compiling vhdl file "/home/jannis/fpga_bnn_accelerator/src/fpga_logic/TASTE-VHDL-XISE/ZestSC1_SRAM.vhd" in Library work.
+Architecture arch of Entity zestsc1_sram is up to date.
+Compiling vhdl file "/home/jannis/fpga_bnn_accelerator/src/fpga_logic/TASTE-VHDL-XISE/ZestSC1_Interfaces.vhd" in Library work.
+Architecture arch of Entity zestsc1_interfaces is up to date.
+Compiling vhdl file "/home/jannis/fpga_bnn_accelerator/src/fpga_logic/TASTE-VHDL-XISE/accelerator.vhd" in Library work.
+Architecture arch of Entity accelerator is up to date.
+Compiling vhdl file "/home/jannis/fpga_bnn_accelerator/src/fpga_logic/TASTE-VHDL-XISE/Example1.vhd" in Library work.
+Architecture arch of Entity taste is up to date.
 Compiling verilog file "ipcore_dir/memory.v" in library work
 Module <memory> compiled
 No errors in compilation
@@ -156,24 +165,24 @@ Analyzing hierarchy for entity <ZestSC1_Host> in library <work> (architecture <a
 
 Analyzing hierarchy for entity <ZestSC1_SRAM> in library <work> (architecture <arch>).
 
-Analyzing hierarchy for entity <upsample1to64> in library <work> (architecture <Behavioral>).
+Analyzing hierarchy for entity <upsample1to64> in library <work> (architecture <behavioral>).
 
-Analyzing hierarchy for entity <upsample3_64> in library <work> (architecture <Behavioral>).
+Analyzing hierarchy for entity <upsample3_64> in library <work> (architecture <behavioral>).
 
-Analyzing hierarchy for entity <fully_connected> in library <work> (architecture <Behavioral>).
+Analyzing hierarchy for entity <fully_connected> in library <work> (architecture <behavioral>).
 
-Analyzing hierarchy for entity <output_layer> in library <work> (architecture <Behavioral>).
+Analyzing hierarchy for entity <output_layer> in library <work> (architecture <behavioral>).
 
 
 =========================================================================
 *                            HDL Analysis                               *
 =========================================================================
 Analyzing Entity <TASTE> in library <work> (Architecture <arch>).
-WARNING:Xst:753 - "/home/jannis/Code/fpga_bnn_accelerator/src/fpga_logic/TASTE-VHDL-XISE/Example1.vhd" line 298: Unconnected output port 'User_StreamDataIn' of component 'ZestSC1_Interfaces'.
-WARNING:Xst:753 - "/home/jannis/Code/fpga_bnn_accelerator/src/fpga_logic/TASTE-VHDL-XISE/Example1.vhd" line 298: Unconnected output port 'User_StreamDataInWE' of component 'ZestSC1_Interfaces'.
-WARNING:Xst:753 - "/home/jannis/Code/fpga_bnn_accelerator/src/fpga_logic/TASTE-VHDL-XISE/Example1.vhd" line 298: Unconnected output port 'User_StreamDataOutBusy' of component 'ZestSC1_Interfaces'.
-WARNING:Xst:753 - "/home/jannis/Code/fpga_bnn_accelerator/src/fpga_logic/TASTE-VHDL-XISE/Example1.vhd" line 298: Unconnected output port 'User_SRAM_DR_VALID' of component 'ZestSC1_Interfaces'.
-WARNING:Xst:753 - "/home/jannis/Code/fpga_bnn_accelerator/src/fpga_logic/TASTE-VHDL-XISE/Example1.vhd" line 298: Unconnected output port 'User_SRAM_DR' of component 'ZestSC1_Interfaces'.
+WARNING:Xst:753 - "/home/jannis/fpga_bnn_accelerator/src/fpga_logic/TASTE-VHDL-XISE/Example1.vhd" line 298: Unconnected output port 'User_StreamDataIn' of component 'ZestSC1_Interfaces'.
+WARNING:Xst:753 - "/home/jannis/fpga_bnn_accelerator/src/fpga_logic/TASTE-VHDL-XISE/Example1.vhd" line 298: Unconnected output port 'User_StreamDataInWE' of component 'ZestSC1_Interfaces'.
+WARNING:Xst:753 - "/home/jannis/fpga_bnn_accelerator/src/fpga_logic/TASTE-VHDL-XISE/Example1.vhd" line 298: Unconnected output port 'User_StreamDataOutBusy' of component 'ZestSC1_Interfaces'.
+WARNING:Xst:753 - "/home/jannis/fpga_bnn_accelerator/src/fpga_logic/TASTE-VHDL-XISE/Example1.vhd" line 298: Unconnected output port 'User_SRAM_DR_VALID' of component 'ZestSC1_Interfaces'.
+WARNING:Xst:753 - "/home/jannis/fpga_bnn_accelerator/src/fpga_logic/TASTE-VHDL-XISE/Example1.vhd" line 298: Unconnected output port 'User_SRAM_DR' of component 'ZestSC1_Interfaces'.
 Entity <TASTE> analyzed. Unit <TASTE> generated.
 
 Analyzing Entity <ZestSC1_Interfaces> in library <work> (Architecture <arch>).
@@ -209,17 +218,17 @@ Analyzing Entity <ZestSC1_Host> in library <work> (Architecture <arch>).
 Entity <ZestSC1_Host> analyzed. Unit <ZestSC1_Host> generated.
 
 Analyzing Entity <ZestSC1_SRAM> in library <work> (Architecture <arch>).
-WARNING:Xst:753 - "/home/jannis/Code/fpga_bnn_accelerator/src/fpga_logic/TASTE-VHDL-XISE/ZestSC1_SRAM.vhd" line 226: Unconnected output port 'CLK90' of component 'DCM'.
-WARNING:Xst:753 - "/home/jannis/Code/fpga_bnn_accelerator/src/fpga_logic/TASTE-VHDL-XISE/ZestSC1_SRAM.vhd" line 226: Unconnected output port 'CLK180' of component 'DCM'.
-WARNING:Xst:753 - "/home/jannis/Code/fpga_bnn_accelerator/src/fpga_logic/TASTE-VHDL-XISE/ZestSC1_SRAM.vhd" line 226: Unconnected output port 'CLK270' of component 'DCM'.
-WARNING:Xst:753 - "/home/jannis/Code/fpga_bnn_accelerator/src/fpga_logic/TASTE-VHDL-XISE/ZestSC1_SRAM.vhd" line 226: Unconnected output port 'CLKDV' of component 'DCM'.
-WARNING:Xst:753 - "/home/jannis/Code/fpga_bnn_accelerator/src/fpga_logic/TASTE-VHDL-XISE/ZestSC1_SRAM.vhd" line 226: Unconnected output port 'CLK2X' of component 'DCM'.
-WARNING:Xst:753 - "/home/jannis/Code/fpga_bnn_accelerator/src/fpga_logic/TASTE-VHDL-XISE/ZestSC1_SRAM.vhd" line 226: Unconnected output port 'CLK2X180' of component 'DCM'.
-WARNING:Xst:753 - "/home/jannis/Code/fpga_bnn_accelerator/src/fpga_logic/TASTE-VHDL-XISE/ZestSC1_SRAM.vhd" line 226: Unconnected output port 'CLKFX' of component 'DCM'.
-WARNING:Xst:753 - "/home/jannis/Code/fpga_bnn_accelerator/src/fpga_logic/TASTE-VHDL-XISE/ZestSC1_SRAM.vhd" line 226: Unconnected output port 'CLKFX180' of component 'DCM'.
-WARNING:Xst:753 - "/home/jannis/Code/fpga_bnn_accelerator/src/fpga_logic/TASTE-VHDL-XISE/ZestSC1_SRAM.vhd" line 226: Unconnected output port 'STATUS' of component 'DCM'.
-WARNING:Xst:753 - "/home/jannis/Code/fpga_bnn_accelerator/src/fpga_logic/TASTE-VHDL-XISE/ZestSC1_SRAM.vhd" line 226: Unconnected output port 'PSDONE' of component 'DCM'.
-WARNING:Xst:2211 - "/home/jannis/Code/fpga_bnn_accelerator/src/fpga_logic/TASTE-VHDL-XISE/ZestSC1_SRAM.vhd" line 226: Instantiating black box module <DCM>.
+WARNING:Xst:753 - "/home/jannis/fpga_bnn_accelerator/src/fpga_logic/TASTE-VHDL-XISE/ZestSC1_SRAM.vhd" line 226: Unconnected output port 'CLK90' of component 'DCM'.
+WARNING:Xst:753 - "/home/jannis/fpga_bnn_accelerator/src/fpga_logic/TASTE-VHDL-XISE/ZestSC1_SRAM.vhd" line 226: Unconnected output port 'CLK180' of component 'DCM'.
+WARNING:Xst:753 - "/home/jannis/fpga_bnn_accelerator/src/fpga_logic/TASTE-VHDL-XISE/ZestSC1_SRAM.vhd" line 226: Unconnected output port 'CLK270' of component 'DCM'.
+WARNING:Xst:753 - "/home/jannis/fpga_bnn_accelerator/src/fpga_logic/TASTE-VHDL-XISE/ZestSC1_SRAM.vhd" line 226: Unconnected output port 'CLKDV' of component 'DCM'.
+WARNING:Xst:753 - "/home/jannis/fpga_bnn_accelerator/src/fpga_logic/TASTE-VHDL-XISE/ZestSC1_SRAM.vhd" line 226: Unconnected output port 'CLK2X' of component 'DCM'.
+WARNING:Xst:753 - "/home/jannis/fpga_bnn_accelerator/src/fpga_logic/TASTE-VHDL-XISE/ZestSC1_SRAM.vhd" line 226: Unconnected output port 'CLK2X180' of component 'DCM'.
+WARNING:Xst:753 - "/home/jannis/fpga_bnn_accelerator/src/fpga_logic/TASTE-VHDL-XISE/ZestSC1_SRAM.vhd" line 226: Unconnected output port 'CLKFX' of component 'DCM'.
+WARNING:Xst:753 - "/home/jannis/fpga_bnn_accelerator/src/fpga_logic/TASTE-VHDL-XISE/ZestSC1_SRAM.vhd" line 226: Unconnected output port 'CLKFX180' of component 'DCM'.
+WARNING:Xst:753 - "/home/jannis/fpga_bnn_accelerator/src/fpga_logic/TASTE-VHDL-XISE/ZestSC1_SRAM.vhd" line 226: Unconnected output port 'STATUS' of component 'DCM'.
+WARNING:Xst:753 - "/home/jannis/fpga_bnn_accelerator/src/fpga_logic/TASTE-VHDL-XISE/ZestSC1_SRAM.vhd" line 226: Unconnected output port 'PSDONE' of component 'DCM'.
+WARNING:Xst:2211 - "/home/jannis/fpga_bnn_accelerator/src/fpga_logic/TASTE-VHDL-XISE/ZestSC1_SRAM.vhd" line 226: Instantiating black box module <DCM>.
     Set user-defined property "CLKDV_DIVIDE =  2.0000000000000000" for instance <DCM_INST> in unit <ZestSC1_SRAM>.
     Set user-defined property "CLKFX_DIVIDE =  1" for instance <DCM_INST> in unit <ZestSC1_SRAM>.
     Set user-defined property "CLKFX_MULTIPLY =  4" for instance <DCM_INST> in unit <ZestSC1_SRAM>.
@@ -233,42 +242,42 @@ WARNING:Xst:2211 - "/home/jannis/Code/fpga_bnn_accelerator/src/fpga_logic/TASTE-
     Set user-defined property "DUTY_CYCLE_CORRECTION =  TRUE" for instance <DCM_INST> in unit <ZestSC1_SRAM>.
     Set user-defined property "PHASE_SHIFT =  -25" for instance <DCM_INST> in unit <ZestSC1_SRAM>.
     Set user-defined property "STARTUP_WAIT =  FALSE" for instance <DCM_INST> in unit <ZestSC1_SRAM>.
-WARNING:Xst:2211 - "/home/jannis/Code/fpga_bnn_accelerator/src/fpga_logic/TASTE-VHDL-XISE/ZestSC1_SRAM.vhd" line 253: Instantiating black box module <BUFG>.
-WARNING:Xst:2211 - "/home/jannis/Code/fpga_bnn_accelerator/src/fpga_logic/TASTE-VHDL-XISE/ZestSC1_SRAM.vhd" line 264: Instantiating black box module <OFDDRCPE>.
+WARNING:Xst:2211 - "/home/jannis/fpga_bnn_accelerator/src/fpga_logic/TASTE-VHDL-XISE/ZestSC1_SRAM.vhd" line 253: Instantiating black box module <BUFG>.
+WARNING:Xst:2211 - "/home/jannis/fpga_bnn_accelerator/src/fpga_logic/TASTE-VHDL-XISE/ZestSC1_SRAM.vhd" line 264: Instantiating black box module <OFDDRCPE>.
 Entity <ZestSC1_SRAM> analyzed. Unit <ZestSC1_SRAM> generated.
 
 Analyzing Entity <accelerator> in library <work> (Architecture <arch>).
-WARNING:Xst:2211 - "/home/jannis/Code/fpga_bnn_accelerator/src/fpga_logic/TASTE-VHDL-XISE/accelerator.vhd" line 141: Instantiating black box module <subsample64to1>.
-WARNING:Xst:2211 - "/home/jannis/Code/fpga_bnn_accelerator/src/fpga_logic/TASTE-VHDL-XISE/accelerator.vhd" line 165: Instantiating black box module <fifo_regs>.
-WARNING:Xst:2211 - "/home/jannis/Code/fpga_bnn_accelerator/src/fpga_logic/TASTE-VHDL-XISE/accelerator.vhd" line 208: Instantiating black box module <memory>.
-WARNING:Xst:2211 - "/home/jannis/Code/fpga_bnn_accelerator/src/fpga_logic/TASTE-VHDL-XISE/accelerator.vhd" line 217: Instantiating black box module <memory>.
+WARNING:Xst:2211 - "/home/jannis/fpga_bnn_accelerator/src/fpga_logic/TASTE-VHDL-XISE/accelerator.vhd" line 141: Instantiating black box module <subsample64to1>.
+WARNING:Xst:2211 - "/home/jannis/fpga_bnn_accelerator/src/fpga_logic/TASTE-VHDL-XISE/accelerator.vhd" line 165: Instantiating black box module <fifo_regs>.
+WARNING:Xst:2211 - "/home/jannis/fpga_bnn_accelerator/src/fpga_logic/TASTE-VHDL-XISE/accelerator.vhd" line 208: Instantiating black box module <memory>.
+WARNING:Xst:2211 - "/home/jannis/fpga_bnn_accelerator/src/fpga_logic/TASTE-VHDL-XISE/accelerator.vhd" line 217: Instantiating black box module <memory>.
 Entity <accelerator> analyzed. Unit <accelerator> generated.
 
-Analyzing Entity <upsample1to64> in library <work> (Architecture <Behavioral>).
+Analyzing Entity <upsample1to64> in library <work> (Architecture <behavioral>).
 Entity <upsample1to64> analyzed. Unit <upsample1to64> generated.
 
-Analyzing Entity <upsample3_64> in library <work> (Architecture <Behavioral>).
+Analyzing Entity <upsample3_64> in library <work> (Architecture <behavioral>).
 Entity <upsample3_64> analyzed. Unit <upsample3_64> generated.
 
-Analyzing Entity <fully_connected> in library <work> (Architecture <Behavioral>).
-WARNING:Xst:2211 - "/home/jannis/Code/fpga_bnn_accelerator/src/fpga_logic/TASTE-VHDL-XISE/fully_connected.vhd" line 88: Instantiating black box module <xnor_popcount>.
-WARNING:Xst:2211 - "/home/jannis/Code/fpga_bnn_accelerator/src/fpga_logic/TASTE-VHDL-XISE/fully_connected.vhd" line 95: Instantiating black box module <xnor_popcount>.
-WARNING:Xst:2211 - "/home/jannis/Code/fpga_bnn_accelerator/src/fpga_logic/TASTE-VHDL-XISE/fully_connected.vhd" line 102: Instantiating black box module <xnor_popcount>.
-WARNING:Xst:2211 - "/home/jannis/Code/fpga_bnn_accelerator/src/fpga_logic/TASTE-VHDL-XISE/fully_connected.vhd" line 109: Instantiating black box module <xnor_popcount>.
-WARNING:Xst:2211 - "/home/jannis/Code/fpga_bnn_accelerator/src/fpga_logic/TASTE-VHDL-XISE/fully_connected.vhd" line 116: Instantiating black box module <xnor_popcount>.
-WARNING:Xst:2211 - "/home/jannis/Code/fpga_bnn_accelerator/src/fpga_logic/TASTE-VHDL-XISE/fully_connected.vhd" line 123: Instantiating black box module <xnor_popcount>.
-WARNING:Xst:2211 - "/home/jannis/Code/fpga_bnn_accelerator/src/fpga_logic/TASTE-VHDL-XISE/fully_connected.vhd" line 130: Instantiating black box module <xnor_popcount>.
-WARNING:Xst:2211 - "/home/jannis/Code/fpga_bnn_accelerator/src/fpga_logic/TASTE-VHDL-XISE/fully_connected.vhd" line 137: Instantiating black box module <xnor_popcount>.
-WARNING:Xst:2211 - "/home/jannis/Code/fpga_bnn_accelerator/src/fpga_logic/TASTE-VHDL-XISE/fully_connected.vhd" line 144: Instantiating black box module <xnor_popcount>.
-WARNING:Xst:2211 - "/home/jannis/Code/fpga_bnn_accelerator/src/fpga_logic/TASTE-VHDL-XISE/fully_connected.vhd" line 151: Instantiating black box module <xnor_popcount>.
-WARNING:Xst:2211 - "/home/jannis/Code/fpga_bnn_accelerator/src/fpga_logic/TASTE-VHDL-XISE/fully_connected.vhd" line 158: Instantiating black box module <accumulate>.
+Analyzing Entity <fully_connected> in library <work> (Architecture <behavioral>).
+WARNING:Xst:2211 - "/home/jannis/fpga_bnn_accelerator/src/fpga_logic/TASTE-VHDL-XISE/fully_connected.vhd" line 88: Instantiating black box module <xnor_popcount>.
+WARNING:Xst:2211 - "/home/jannis/fpga_bnn_accelerator/src/fpga_logic/TASTE-VHDL-XISE/fully_connected.vhd" line 95: Instantiating black box module <xnor_popcount>.
+WARNING:Xst:2211 - "/home/jannis/fpga_bnn_accelerator/src/fpga_logic/TASTE-VHDL-XISE/fully_connected.vhd" line 102: Instantiating black box module <xnor_popcount>.
+WARNING:Xst:2211 - "/home/jannis/fpga_bnn_accelerator/src/fpga_logic/TASTE-VHDL-XISE/fully_connected.vhd" line 109: Instantiating black box module <xnor_popcount>.
+WARNING:Xst:2211 - "/home/jannis/fpga_bnn_accelerator/src/fpga_logic/TASTE-VHDL-XISE/fully_connected.vhd" line 116: Instantiating black box module <xnor_popcount>.
+WARNING:Xst:2211 - "/home/jannis/fpga_bnn_accelerator/src/fpga_logic/TASTE-VHDL-XISE/fully_connected.vhd" line 123: Instantiating black box module <xnor_popcount>.
+WARNING:Xst:2211 - "/home/jannis/fpga_bnn_accelerator/src/fpga_logic/TASTE-VHDL-XISE/fully_connected.vhd" line 130: Instantiating black box module <xnor_popcount>.
+WARNING:Xst:2211 - "/home/jannis/fpga_bnn_accelerator/src/fpga_logic/TASTE-VHDL-XISE/fully_connected.vhd" line 137: Instantiating black box module <xnor_popcount>.
+WARNING:Xst:2211 - "/home/jannis/fpga_bnn_accelerator/src/fpga_logic/TASTE-VHDL-XISE/fully_connected.vhd" line 144: Instantiating black box module <xnor_popcount>.
+WARNING:Xst:2211 - "/home/jannis/fpga_bnn_accelerator/src/fpga_logic/TASTE-VHDL-XISE/fully_connected.vhd" line 151: Instantiating black box module <xnor_popcount>.
+WARNING:Xst:2211 - "/home/jannis/fpga_bnn_accelerator/src/fpga_logic/TASTE-VHDL-XISE/fully_connected.vhd" line 158: Instantiating black box module <accumulate>.
 Entity <fully_connected> analyzed. Unit <fully_connected> generated.
 
-Analyzing Entity <output_layer> in library <work> (Architecture <Behavioral>).
-WARNING:Xst:2211 - "/home/jannis/Code/fpga_bnn_accelerator/src/fpga_logic/TASTE-VHDL-XISE/output_layer.vhd" line 75: Instantiating black box module <xnor_popcount>.
-WARNING:Xst:2211 - "/home/jannis/Code/fpga_bnn_accelerator/src/fpga_logic/TASTE-VHDL-XISE/output_layer.vhd" line 82: Instantiating black box module <xnor_popcount>.
-WARNING:Xst:2211 - "/home/jannis/Code/fpga_bnn_accelerator/src/fpga_logic/TASTE-VHDL-XISE/output_layer.vhd" line 89: Instantiating black box module <xnor_popcount>.
-WARNING:Xst:2211 - "/home/jannis/Code/fpga_bnn_accelerator/src/fpga_logic/TASTE-VHDL-XISE/output_layer.vhd" line 97: Instantiating black box module <accumulate>.
+Analyzing Entity <output_layer> in library <work> (Architecture <behavioral>).
+WARNING:Xst:2211 - "/home/jannis/fpga_bnn_accelerator/src/fpga_logic/TASTE-VHDL-XISE/output_layer.vhd" line 75: Instantiating black box module <xnor_popcount>.
+WARNING:Xst:2211 - "/home/jannis/fpga_bnn_accelerator/src/fpga_logic/TASTE-VHDL-XISE/output_layer.vhd" line 82: Instantiating black box module <xnor_popcount>.
+WARNING:Xst:2211 - "/home/jannis/fpga_bnn_accelerator/src/fpga_logic/TASTE-VHDL-XISE/output_layer.vhd" line 89: Instantiating black box module <xnor_popcount>.
+WARNING:Xst:2211 - "/home/jannis/fpga_bnn_accelerator/src/fpga_logic/TASTE-VHDL-XISE/output_layer.vhd" line 97: Instantiating black box module <accumulate>.
 Entity <output_layer> analyzed. Unit <output_layer> generated.
 
 
@@ -285,17 +294,17 @@ INFO:Xst:2679 - Register <RegFIFOOutWriteCountG> in unit <ZestSC1_Host> has a co
 INFO:Xst:2679 - Register <RegFIFOInReadCountG> in unit <ZestSC1_Host> has a constant value of 0000 during circuit operation. The register is replaced by logic.
 
 Synthesizing Unit <upsample1to64>.
-    Related source file is "/home/jannis/Code/fpga_bnn_accelerator/src/fpga_logic/TASTE-VHDL-XISE/upsample.vhd".
+    Related source file is "/home/jannis/fpga_bnn_accelerator/src/fpga_logic/TASTE-VHDL-XISE/upsample.vhd".
 Unit <upsample1to64> synthesized.
 
 
 Synthesizing Unit <upsample3_64>.
-    Related source file is "/home/jannis/Code/fpga_bnn_accelerator/src/fpga_logic/TASTE-VHDL-XISE/upsample3_64.vhd".
+    Related source file is "/home/jannis/fpga_bnn_accelerator/src/fpga_logic/TASTE-VHDL-XISE/upsample3_64.vhd".
 Unit <upsample3_64> synthesized.
 
 
 Synthesizing Unit <ZestSC1_Host>.
-    Related source file is "/home/jannis/Code/fpga_bnn_accelerator/src/fpga_logic/TASTE-VHDL-XISE/ZestSC1_Host.vhd".
+    Related source file is "/home/jannis/fpga_bnn_accelerator/src/fpga_logic/TASTE-VHDL-XISE/ZestSC1_Host.vhd".
 WARNING:Xst:647 - Input <USB_StreamFlags_n<2>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 WARNING:Xst:646 - Signal <RegLastOE> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
 WARNING:Xst:646 - Signal <FIFOOutDataCount<2:0>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
@@ -349,7 +358,7 @@ Unit <ZestSC1_Host> synthesized.
 
 
 Synthesizing Unit <ZestSC1_SRAM>.
-    Related source file is "/home/jannis/Code/fpga_bnn_accelerator/src/fpga_logic/TASTE-VHDL-XISE/ZestSC1_SRAM.vhd".
+    Related source file is "/home/jannis/fpga_bnn_accelerator/src/fpga_logic/TASTE-VHDL-XISE/ZestSC1_SRAM.vhd".
 WARNING:Xst:646 - Signal <dcm_locked> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
     Register <S_WE_N> equivalent to <OutputEnable0_n> has been removed
     Found 9-bit tristate buffer for signal <S_DA>.
@@ -373,7 +382,7 @@ Unit <ZestSC1_SRAM> synthesized.
 
 
 Synthesizing Unit <fully_connected>.
-    Related source file is "/home/jannis/Code/fpga_bnn_accelerator/src/fpga_logic/TASTE-VHDL-XISE/fully_connected.vhd".
+    Related source file is "/home/jannis/fpga_bnn_accelerator/src/fpga_logic/TASTE-VHDL-XISE/fully_connected.vhd".
 WARNING:Xst:647 - Input <clk_fc> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 WARNING:Xst:647 - Input <calc_pos> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 WARNING:Xst:1305 - Output <finish_calc> is never assigned. Tied to value 0.
@@ -381,7 +390,7 @@ Unit <fully_connected> synthesized.
 
 
 Synthesizing Unit <output_layer>.
-    Related source file is "/home/jannis/Code/fpga_bnn_accelerator/src/fpga_logic/TASTE-VHDL-XISE/output_layer.vhd".
+    Related source file is "/home/jannis/fpga_bnn_accelerator/src/fpga_logic/TASTE-VHDL-XISE/output_layer.vhd".
 WARNING:Xst:647 - Input <clk_fc> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 WARNING:Xst:647 - Input <calc_pos> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 WARNING:Xst:1305 - Output <finish_calc> is never assigned. Tied to value 0.
@@ -389,12 +398,12 @@ Unit <output_layer> synthesized.
 
 
 Synthesizing Unit <ZestSC1_Interfaces>.
-    Related source file is "/home/jannis/Code/fpga_bnn_accelerator/src/fpga_logic/TASTE-VHDL-XISE/ZestSC1_Interfaces.vhd".
+    Related source file is "/home/jannis/fpga_bnn_accelerator/src/fpga_logic/TASTE-VHDL-XISE/ZestSC1_Interfaces.vhd".
 Unit <ZestSC1_Interfaces> synthesized.
 
 
 Synthesizing Unit <accelerator>.
-    Related source file is "/home/jannis/Code/fpga_bnn_accelerator/src/fpga_logic/TASTE-VHDL-XISE/accelerator.vhd".
+    Related source file is "/home/jannis/fpga_bnn_accelerator/src/fpga_logic/TASTE-VHDL-XISE/accelerator.vhd".
 WARNING:Xst:653 - Signal <counter2> is used but never assigned. This sourceless signal will be automatically connected to value 0000.
 WARNING:Xst:653 - Signal <counter1> is used but never assigned. This sourceless signal will be automatically connected to value 0000.
     Found finite state machine <FSM_0> for signal <state>.
@@ -417,7 +426,7 @@ Unit <accelerator> synthesized.
 
 
 Synthesizing Unit <TASTE>.
-    Related source file is "/home/jannis/Code/fpga_bnn_accelerator/src/fpga_logic/TASTE-VHDL-XISE/Example1.vhd".
+    Related source file is "/home/jannis/fpga_bnn_accelerator/src/fpga_logic/TASTE-VHDL-XISE/Example1.vhd".
 WARNING:Xst:2565 - Inout <User_Signals<4>> is never assigned.
 WARNING:Xst:2565 - Inout <User_Signals<5>> is never assigned.
 WARNING:Xst:2565 - Inout <User_Signals<6>> is never assigned.
@@ -979,15 +988,15 @@ Delay:               9.386ns (Levels of Logic = 4)
 =========================================================================
 
 
-Total REAL time to Xst completion: 7.00 secs
-Total CPU time to Xst completion: 6.87 secs
+Total REAL time to Xst completion: 13.00 secs
+Total CPU time to Xst completion: 7.71 secs
  
 --> 
 
 
-Total memory usage is 541192 kilobytes
+Total memory usage is 525616 kilobytes
 
 Number of errors   :    0 (   0 filtered)
-Number of warnings :  148 (   0 filtered)
+Number of warnings :  166 (   0 filtered)
 Number of infos    :   27 (   0 filtered)
 

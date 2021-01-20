@@ -5,47 +5,47 @@
     The structure and the elements are likely to change over the next few releases.
     This means code written to parse this file will need to be revisited each subsequent release.-->
 
-  <application stringID="Xst" timeStamp="Wed Nov 18 01:02:10 2020">
+  <application stringID="Xst" timeStamp="Wed Jan 20 11:30:07 2021">
     <section stringID="User_Env">
       <table stringID="User_EnvVar">
         <column stringID="variable"/>
         <column stringID="value"/>
         <row stringID="row" value="0">
-          <item stringID="variable" value="LD_LIBRARY_PATH"/>
-          <item stringID="value" value="/home/jannis/Programs/ISE/14.7/ISE_DS/ISE//lib/lin64:/home/jannis/Programs/ISE/14.7/ISE_DS/ISE/lib/lin64:/home/jannis/Programs/ISE/14.7/ISE_DS/EDK/lib/lin64:/home/jannis/Programs/ISE/14.7/ISE_DS/common/lib/lin64"/>
+          <item stringID="variable" value="XILINX_DSP"/>
+          <item stringID="value" value="/home/jannis/Programs/ise/14.7/ISE_DS/ISE"/>
         </row>
         <row stringID="row" value="1">
-          <item stringID="variable" value="XILINX_DSP"/>
-          <item stringID="value" value="/home/jannis/Programs/ISE/14.7/ISE_DS/ISE"/>
+          <item stringID="variable" value="XILINX_EDK"/>
+          <item stringID="value" value="/home/jannis/Programs/ise/14.7/ISE_DS/EDK"/>
         </row>
         <row stringID="row" value="2">
           <item stringID="variable" value="XILINX_PLANAHEAD"/>
-          <item stringID="value" value="/home/jannis/Programs/ISE/14.7/ISE_DS/PlanAhead"/>
+          <item stringID="value" value="/home/jannis/Programs/ise/14.7/ISE_DS/PlanAhead"/>
         </row>
         <row stringID="row" value="3">
-          <item stringID="variable" value="XILINX"/>
-          <item stringID="value" value="/home/jannis/Programs/ISE/14.7/ISE_DS/ISE/"/>
+          <item stringID="variable" value="LD_LIBRARY_PATH"/>
+          <item stringID="value" value="/home/jannis/Programs/ise/14.7/ISE_DS/ISE//lib/lin64:/home/jannis/Programs/ise/14.7/ISE_DS/ISE/lib/lin64:/home/jannis/Programs/ise/14.7/ISE_DS/EDK/lib/lin64:/home/jannis/Programs/ise/14.7/ISE_DS/common/lib/lin64"/>
         </row>
         <row stringID="row" value="4">
-          <item stringID="variable" value="XILINX_EDK"/>
-          <item stringID="value" value="/home/jannis/Programs/ISE/14.7/ISE_DS/EDK"/>
+          <item stringID="variable" value="XILINX"/>
+          <item stringID="value" value="/home/jannis/Programs/ise/14.7/ISE_DS/ISE/"/>
         </row>
         <row stringID="row" value="5">
           <item stringID="variable" value="PATH"/>
-          <item stringID="value" value="/home/jannis/Programs/ISE/14.7/ISE_DS/ISE//bin/lin64:/home/jannis/Programs/ISE/14.7/ISE_DS/ISE/bin/lin64:/home/jannis/Programs/ISE/14.7/ISE_DS/ISE/sysgen/util:/home/jannis/Programs/ISE/14.7/ISE_DS/ISE/../../../DocNav:/home/jannis/Programs/ISE/14.7/ISE_DS/PlanAhead/bin:/home/jannis/Programs/ISE/14.7/ISE_DS/EDK/bin/lin64:/home/jannis/Programs/ISE/14.7/ISE_DS/EDK/gnu/microblaze/lin/bin:/home/jannis/Programs/ISE/14.7/ISE_DS/EDK/gnu/powerpc-eabi/lin/bin:/home/jannis/Programs/ISE/14.7/ISE_DS/EDK/gnu/arm/lin/bin:/home/jannis/Programs/ISE/14.7/ISE_DS/EDK/gnu/microblaze/linux_toolchain/lin64_be/bin:/home/jannis/Programs/ISE/14.7/ISE_DS/EDK/gnu/microblaze/linux_toolchain/lin64_le/bin:/home/jannis/Programs/ISE/14.7/ISE_DS/common/bin/lin64:/home/jannis/.nvm/versions/node/v11.12.0/bin:/home/jannis/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/jannis/Programs/android-studio/bin:/var/lib/flatpak/exports/bin"/>
+          <item stringID="value" value="/home/jannis/Programs/ise/14.7/ISE_DS/ISE//bin/lin64:/home/jannis/Programs/ise/14.7/ISE_DS/ISE/bin/lin64:/home/jannis/Programs/ise/14.7/ISE_DS/ISE/sysgen/util:/home/jannis/Programs/ise/14.7/ISE_DS/ISE/../../../DocNav:/home/jannis/Programs/ise/14.7/ISE_DS/PlanAhead/bin:/home/jannis/Programs/ise/14.7/ISE_DS/EDK/bin/lin64:/home/jannis/Programs/ise/14.7/ISE_DS/EDK/gnu/microblaze/lin/bin:/home/jannis/Programs/ise/14.7/ISE_DS/EDK/gnu/powerpc-eabi/lin/bin:/home/jannis/Programs/ise/14.7/ISE_DS/EDK/gnu/arm/lin/bin:/home/jannis/Programs/ise/14.7/ISE_DS/EDK/gnu/microblaze/linux_toolchain/lin64_be/bin:/home/jannis/Programs/ise/14.7/ISE_DS/EDK/gnu/microblaze/linux_toolchain/lin64_le/bin:/home/jannis/Programs/ise/14.7/ISE_DS/common/bin/lin64:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin"/>
         </row>
       </table>
       <item stringID="User_EnvOs" value="OS Information">
         <item stringID="User_EnvOsname" value="Ubuntu"/>
-        <item stringID="User_EnvOsrelease" value="Ubuntu 18.04.5 LTS"/>
+        <item stringID="User_EnvOsrelease" value="Ubuntu 20.04.1 LTS"/>
       </item>
-      <item stringID="User_EnvHost" value="Zenbook007"/>
+      <item stringID="User_EnvHost" value="taste"/>
       <table stringID="User_EnvCpu">
         <column stringID="arch"/>
         <column stringID="speed"/>
         <row stringID="row" value="0">
-          <item stringID="arch" value="Intel(R) Core(TM) i7-3517U CPU @ 1.90GHz"/>
-          <item stringID="speed" value="1258.583 MHz"/>
+          <item stringID="arch" value="Intel(R) Xeon(R) CPU @ 2.20GHz"/>
+          <item stringID="speed" value="2200.000 MHz"/>
         </row>
       </table>
     </section>
@@ -233,7 +233,7 @@
     </section>
     <section stringID="XST_ERRORS_STATISTICS">
       <item dataType="int" filtered="0" stringID="XST_NUMBER_OF_ERRORS" value="0"/>
-      <item dataType="int" filtered="0" stringID="XST_NUMBER_OF_WARNINGS" value="148"/>
+      <item dataType="int" filtered="0" stringID="XST_NUMBER_OF_WARNINGS" value="166"/>
       <item dataType="int" filtered="0" stringID="XST_NUMBER_OF_INFOS" value="27"/>
     </section>
   </application>

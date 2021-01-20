@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
-  <DateModified>2020-11-18T01:01:46</DateModified>
+  <DateModified>2021-01-12T18:14:33</DateModified>
   <ModuleName>TASTE</ModuleName>
   <SummaryTimeStamp>2020-11-18T01:01:02</SummaryTimeStamp>
-  <SavedFilePath>/home/jannis/Code/fpga_bnn_accelerator/src/fpga_logic/TASTE-VHDL-XISE/iseconfig/TASTE.xreport</SavedFilePath>
-  <ImplementationReportsDirectory>/home/jannis/Code/fpga_bnn_accelerator/src/fpga_logic/TASTE-VHDL-XISE/</ImplementationReportsDirectory>
+  <SavedFilePath>/home/jannis/fpga_bnn_accelerator/src/fpga_logic/TASTE-VHDL-XISE/iseconfig/TASTE.xreport</SavedFilePath>
+  <ImplementationReportsDirectory>/home/jannis/fpga_bnn_accelerator/src/fpga_logic/TASTE-VHDL-XISE/</ImplementationReportsDirectory>
   <DateInitialized>2016-10-12T18:13:47</DateInitialized>
   <EnableMessageFiltering>false</EnableMessageFiltering>
  </header>

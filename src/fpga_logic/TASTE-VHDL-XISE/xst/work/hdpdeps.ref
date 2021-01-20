@@ -1,70 +1,79 @@
-V3 45
+V3 54
 FL /home/jannis/Code/fpga_bnn_accelerator/src/fpga_logic/TASTE-VHDL-XISE/accelerator.vhd 2020/11/18.00:59:47 P.20131013
-EN work/accelerator 1605657745 \
-      FL /home/jannis/Code/fpga_bnn_accelerator/src/fpga_logic/TASTE-VHDL-XISE/accelerator.vhd \
-      PB ieee/std_logic_1164 1381692176 PB ieee/std_logic_arith 1381692177 \
-      PB ieee/STD_LOGIC_UNSIGNED 1381692179
-AR work/accelerator/arch 1605657746 \
-      FL /home/jannis/Code/fpga_bnn_accelerator/src/fpga_logic/TASTE-VHDL-XISE/accelerator.vhd \
-      EN work/accelerator 1605657745 CP subsample64to1 CP upsample1to64 \
-      CP upsample3_64 CP fifo_regs CP fully_connected CP output_layer CP memory
 FL /home/jannis/Code/fpga_bnn_accelerator/src/fpga_logic/TASTE-VHDL-XISE/Example1.vhd 2020/11/17.12:30:30 P.20131013
-EN work/TASTE 1605657747 \
-      FL /home/jannis/Code/fpga_bnn_accelerator/src/fpga_logic/TASTE-VHDL-XISE/Example1.vhd \
-      PB ieee/std_logic_1164 1381692176 PB ieee/std_logic_arith 1381692177 \
-      PB ieee/STD_LOGIC_UNSIGNED 1381692179
-AR work/TASTE/arch 1605657748 \
-      FL /home/jannis/Code/fpga_bnn_accelerator/src/fpga_logic/TASTE-VHDL-XISE/Example1.vhd \
-      EN work/TASTE 1605657747 CP ZestSC1_Interfaces CP accelerator
 FL /home/jannis/Code/fpga_bnn_accelerator/src/fpga_logic/TASTE-VHDL-XISE/fully_connected.vhd 2020/11/17.12:30:30 P.20131013
-EN work/fully_connected 1605657735 \
-      FL /home/jannis/Code/fpga_bnn_accelerator/src/fpga_logic/TASTE-VHDL-XISE/fully_connected.vhd \
-      PB ieee/std_logic_1164 1381692176
-AR work/fully_connected/Behavioral 1605657736 \
-      FL /home/jannis/Code/fpga_bnn_accelerator/src/fpga_logic/TASTE-VHDL-XISE/fully_connected.vhd \
-      EN work/fully_connected 1605657735 CP xnor_popcount CP accumulate
 FL /home/jannis/Code/fpga_bnn_accelerator/src/fpga_logic/TASTE-VHDL-XISE/output_layer.vhd 2020/11/17.12:30:30 P.20131013
-EN work/output_layer 1605657737 \
-      FL /home/jannis/Code/fpga_bnn_accelerator/src/fpga_logic/TASTE-VHDL-XISE/output_layer.vhd \
-      PB ieee/std_logic_1164 1381692176
-AR work/output_layer/Behavioral 1605657738 \
-      FL /home/jannis/Code/fpga_bnn_accelerator/src/fpga_logic/TASTE-VHDL-XISE/output_layer.vhd \
-      EN work/output_layer 1605657737 CP xnor_popcount CP accumulate
 FL /home/jannis/Code/fpga_bnn_accelerator/src/fpga_logic/TASTE-VHDL-XISE/upsample.vhd 2020/11/17.12:30:30 P.20131013
-EN work/upsample1to64 1605657731 \
-      FL /home/jannis/Code/fpga_bnn_accelerator/src/fpga_logic/TASTE-VHDL-XISE/upsample.vhd \
-      PB ieee/std_logic_1164 1381692176
-AR work/upsample1to64/Behavioral 1605657732 \
-      FL /home/jannis/Code/fpga_bnn_accelerator/src/fpga_logic/TASTE-VHDL-XISE/upsample.vhd \
-      EN work/upsample1to64 1605657731
 FL /home/jannis/Code/fpga_bnn_accelerator/src/fpga_logic/TASTE-VHDL-XISE/upsample3_64.vhd 2020/11/17.12:30:30 P.20131013
-EN work/upsample3_64 1605657733 \
-      FL /home/jannis/Code/fpga_bnn_accelerator/src/fpga_logic/TASTE-VHDL-XISE/upsample3_64.vhd \
-      PB ieee/std_logic_1164 1381692176
-AR work/upsample3_64/Behavioral 1605657734 \
-      FL /home/jannis/Code/fpga_bnn_accelerator/src/fpga_logic/TASTE-VHDL-XISE/upsample3_64.vhd \
-      EN work/upsample3_64 1605657733
 FL /home/jannis/Code/fpga_bnn_accelerator/src/fpga_logic/TASTE-VHDL-XISE/ZestSC1_Host.vhd 2020/11/17.12:30:30 P.20131013
-EN work/ZestSC1_Host 1605657739 \
-      FL /home/jannis/Code/fpga_bnn_accelerator/src/fpga_logic/TASTE-VHDL-XISE/ZestSC1_Host.vhd \
-      PB ieee/std_logic_1164 1381692176 PB ieee/std_logic_arith 1381692177 \
-      PB ieee/STD_LOGIC_UNSIGNED 1381692179 LB UNISIM PH unisim/VCOMPONENTS 1381692182
-AR work/ZestSC1_Host/arch 1605657740 \
-      FL /home/jannis/Code/fpga_bnn_accelerator/src/fpga_logic/TASTE-VHDL-XISE/ZestSC1_Host.vhd \
-      EN work/ZestSC1_Host 1605657739 CP ROC CP DCM CP BUFG
 FL /home/jannis/Code/fpga_bnn_accelerator/src/fpga_logic/TASTE-VHDL-XISE/ZestSC1_Interfaces.vhd 2020/11/17.12:30:30 P.20131013
-EN work/ZestSC1_Interfaces 1605657743 \
-      FL /home/jannis/Code/fpga_bnn_accelerator/src/fpga_logic/TASTE-VHDL-XISE/ZestSC1_Interfaces.vhd \
+FL /home/jannis/Code/fpga_bnn_accelerator/src/fpga_logic/TASTE-VHDL-XISE/ZestSC1_SRAM.vhd 2020/11/17.12:30:30 P.20131013
+FL /home/jannis/fpga_bnn_accelerator/src/fpga_logic/TASTE-VHDL-XISE/accelerator.vhd 2021/01/12.18:14:07 P.20131013
+EN work/accelerator 1611142223 \
+      FL /home/jannis/fpga_bnn_accelerator/src/fpga_logic/TASTE-VHDL-XISE/accelerator.vhd \
       PB ieee/std_logic_1164 1381692176 PB ieee/std_logic_arith 1381692177 \
       PB ieee/STD_LOGIC_UNSIGNED 1381692179
-AR work/ZestSC1_Interfaces/arch 1605657744 \
-      FL /home/jannis/Code/fpga_bnn_accelerator/src/fpga_logic/TASTE-VHDL-XISE/ZestSC1_Interfaces.vhd \
-      EN work/ZestSC1_Interfaces 1605657743 CP ZestSC1_Host CP ZestSC1_SRAM
-FL /home/jannis/Code/fpga_bnn_accelerator/src/fpga_logic/TASTE-VHDL-XISE/ZestSC1_SRAM.vhd 2020/11/17.12:30:30 P.20131013
-EN work/ZestSC1_SRAM 1605657741 \
-      FL /home/jannis/Code/fpga_bnn_accelerator/src/fpga_logic/TASTE-VHDL-XISE/ZestSC1_SRAM.vhd \
+AR work/accelerator/arch 1611142224 \
+      FL /home/jannis/fpga_bnn_accelerator/src/fpga_logic/TASTE-VHDL-XISE/accelerator.vhd \
+      EN work/accelerator 1611142223 CP subsample64to1 CP upsample1to64 \
+      CP upsample3_64 CP fifo_regs CP fully_connected CP output_layer CP memory
+FL /home/jannis/fpga_bnn_accelerator/src/fpga_logic/TASTE-VHDL-XISE/Example1.vhd 2020/12/07.16:21:06 P.20131013
+EN work/TASTE 1611142225 \
+      FL /home/jannis/fpga_bnn_accelerator/src/fpga_logic/TASTE-VHDL-XISE/Example1.vhd \
+      PB ieee/std_logic_1164 1381692176 PB ieee/std_logic_arith 1381692177 \
+      PB ieee/STD_LOGIC_UNSIGNED 1381692179
+AR work/TASTE/arch 1611142226 \
+      FL /home/jannis/fpga_bnn_accelerator/src/fpga_logic/TASTE-VHDL-XISE/Example1.vhd \
+      EN work/TASTE 1611142225 CP ZestSC1_Interfaces CP accelerator
+FL /home/jannis/fpga_bnn_accelerator/src/fpga_logic/TASTE-VHDL-XISE/fully_connected.vhd 2021/01/12.18:14:07 P.20131013
+EN work/fully_connected 1611142213 \
+      FL /home/jannis/fpga_bnn_accelerator/src/fpga_logic/TASTE-VHDL-XISE/fully_connected.vhd \
+      PB ieee/std_logic_1164 1381692176
+AR work/fully_connected/Behavioral 1611142214 \
+      FL /home/jannis/fpga_bnn_accelerator/src/fpga_logic/TASTE-VHDL-XISE/fully_connected.vhd \
+      EN work/fully_connected 1611142213 CP xnor_popcount CP accumulate
+FL /home/jannis/fpga_bnn_accelerator/src/fpga_logic/TASTE-VHDL-XISE/output_layer.vhd 2021/01/12.18:14:07 P.20131013
+EN work/output_layer 1611142215 \
+      FL /home/jannis/fpga_bnn_accelerator/src/fpga_logic/TASTE-VHDL-XISE/output_layer.vhd \
+      PB ieee/std_logic_1164 1381692176
+AR work/output_layer/Behavioral 1611142216 \
+      FL /home/jannis/fpga_bnn_accelerator/src/fpga_logic/TASTE-VHDL-XISE/output_layer.vhd \
+      EN work/output_layer 1611142215 CP xnor_popcount CP accumulate
+FL /home/jannis/fpga_bnn_accelerator/src/fpga_logic/TASTE-VHDL-XISE/upsample.vhd 2020/12/07.16:21:06 P.20131013
+EN work/upsample1to64 1611142209 \
+      FL /home/jannis/fpga_bnn_accelerator/src/fpga_logic/TASTE-VHDL-XISE/upsample.vhd \
+      PB ieee/std_logic_1164 1381692176
+AR work/upsample1to64/Behavioral 1611142210 \
+      FL /home/jannis/fpga_bnn_accelerator/src/fpga_logic/TASTE-VHDL-XISE/upsample.vhd \
+      EN work/upsample1to64 1611142209
+FL /home/jannis/fpga_bnn_accelerator/src/fpga_logic/TASTE-VHDL-XISE/upsample3_64.vhd 2020/12/07.16:21:06 P.20131013
+EN work/upsample3_64 1611142211 \
+      FL /home/jannis/fpga_bnn_accelerator/src/fpga_logic/TASTE-VHDL-XISE/upsample3_64.vhd \
+      PB ieee/std_logic_1164 1381692176
+AR work/upsample3_64/Behavioral 1611142212 \
+      FL /home/jannis/fpga_bnn_accelerator/src/fpga_logic/TASTE-VHDL-XISE/upsample3_64.vhd \
+      EN work/upsample3_64 1611142211
+FL /home/jannis/fpga_bnn_accelerator/src/fpga_logic/TASTE-VHDL-XISE/ZestSC1_Host.vhd 2020/12/07.16:21:06 P.20131013
+EN work/ZestSC1_Host 1611142217 \
+      FL /home/jannis/fpga_bnn_accelerator/src/fpga_logic/TASTE-VHDL-XISE/ZestSC1_Host.vhd \
       PB ieee/std_logic_1164 1381692176 PB ieee/std_logic_arith 1381692177 \
       PB ieee/STD_LOGIC_UNSIGNED 1381692179 LB UNISIM PH unisim/VCOMPONENTS 1381692182
-AR work/ZestSC1_SRAM/arch 1605657742 \
-      FL /home/jannis/Code/fpga_bnn_accelerator/src/fpga_logic/TASTE-VHDL-XISE/ZestSC1_SRAM.vhd \
-      EN work/ZestSC1_SRAM 1605657741 CP DCM CP BUFG CP OFDDRCPE
+AR work/ZestSC1_Host/arch 1611142218 \
+      FL /home/jannis/fpga_bnn_accelerator/src/fpga_logic/TASTE-VHDL-XISE/ZestSC1_Host.vhd \
+      EN work/ZestSC1_Host 1611142217 CP ROC CP DCM CP BUFG
+FL /home/jannis/fpga_bnn_accelerator/src/fpga_logic/TASTE-VHDL-XISE/ZestSC1_Interfaces.vhd 2020/12/07.16:21:06 P.20131013
+EN work/ZestSC1_Interfaces 1611142221 \
+      FL /home/jannis/fpga_bnn_accelerator/src/fpga_logic/TASTE-VHDL-XISE/ZestSC1_Interfaces.vhd \
+      PB ieee/std_logic_1164 1381692176 PB ieee/std_logic_arith 1381692177 \
+      PB ieee/STD_LOGIC_UNSIGNED 1381692179
+AR work/ZestSC1_Interfaces/arch 1611142222 \
+      FL /home/jannis/fpga_bnn_accelerator/src/fpga_logic/TASTE-VHDL-XISE/ZestSC1_Interfaces.vhd \
+      EN work/ZestSC1_Interfaces 1611142221 CP ZestSC1_Host CP ZestSC1_SRAM
+FL /home/jannis/fpga_bnn_accelerator/src/fpga_logic/TASTE-VHDL-XISE/ZestSC1_SRAM.vhd 2020/12/07.16:21:06 P.20131013
+EN work/ZestSC1_SRAM 1611142219 \
+      FL /home/jannis/fpga_bnn_accelerator/src/fpga_logic/TASTE-VHDL-XISE/ZestSC1_SRAM.vhd \
+      PB ieee/std_logic_1164 1381692176 PB ieee/std_logic_arith 1381692177 \
+      PB ieee/STD_LOGIC_UNSIGNED 1381692179 LB UNISIM PH unisim/VCOMPONENTS 1381692182
+AR work/ZestSC1_SRAM/arch 1611142220 \
+      FL /home/jannis/fpga_bnn_accelerator/src/fpga_logic/TASTE-VHDL-XISE/ZestSC1_SRAM.vhd \
+      EN work/ZestSC1_SRAM 1611142219 CP DCM CP BUFG CP OFDDRCPE

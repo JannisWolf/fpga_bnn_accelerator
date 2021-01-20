@@ -1,0 +1,2 @@
+vhdl isim_temp "fifo_buffer.vhd"
+vhdl isim_temp "tb_fifo_buffer.vhd"
