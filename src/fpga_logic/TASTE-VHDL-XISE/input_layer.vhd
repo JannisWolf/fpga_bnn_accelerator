@@ -53,7 +53,7 @@ signal curr_weight : STD_LOGIC_VECTOR(WEIGHT_SIZE-1 downto 0);
 signal act1 : STD_LOGIC;
 
 
-COMPONENT memory3Bit_input_layer
+COMPONENT memory_bram
 PORT (
 clka : IN STD_LOGIC;
 addra : IN STD_LOGIC_VECTOR(3 DOWNTO 0);
@@ -89,7 +89,7 @@ END COMPONENT;
 
 begin
 
-weights : memory3Bit_input_layer
+weights : memory_bram
 PORT MAP(
     clka => clk_fc,
 	 addra => counter,

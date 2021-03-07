@@ -36,6 +36,27 @@ architecture arch of accelerator is
     );
     signal state : state_type := wait_for_start_signal;
 	 
+	 COMPONENT fifo_buffer
+	 generic (
+             g_WIDTH    : natural := 8;
+             g_DEPTH    : integer := 32;
+             g_AF_LEVEL : integer := 28;
+ 	     g_AE_LEVEL : integer := 4    );
+         port (   
+             i_rst_sync : in std_logic;
+             i_clk      : in std_logic;
+         -- FIFO Write Interface
+             i_wr_en   : in  std_logic;
+             i_wr_data : in  std_logic_vector(g_WIDTH-1 downto 0);
+             o_af      : out std_logic;
+             o_full    : out std_logic;
+         -- FIFO Read Interface
+             i_rd_en 	 : in  std_logic;
+             o_rd_data : out std_logic_vector(g_WIDTH-1 downto 0);
+             o_ae      : out std_logic;
+             o_empty   : out std_logic    );
+	 END COMPONENT;
+	 
 	 COMPONENT subsample64to3
 	 PORT (
 	 	  data_full : in  std_logic_vector(63 downto 0);
@@ -157,7 +178,8 @@ begin
     sub: subsample64to3
 	   PORT MAP(
 		  data_full => data_in,
-		  data_sub => sub_input
+		  --data_sub => sub_input
+		  data_sub => open
 	   );
 
 -- for future implementations
@@ -178,6 +200,27 @@ begin
         sub => act_fc4,
 		  full => data_out
 	   );
+
+	 feature_buffer: fifo_buffer
+	   generic map(
+             g_WIDTH    => 3,
+             g_DEPTH    => 32,
+             g_AF_LEVEL => 28,
+ 	          g_AE_LEVEL => 4  )
+      port map (   
+             i_rst_sync => '0',
+             i_clk      => CLK,
+         -- FIFO Write Interface
+             i_wr_en   => '0',
+             i_wr_data => "000",
+             o_af      => open,
+             o_full    => open,
+         -- FIFO Read Interface
+             i_rd_en   => '0',
+             o_rd_data => sub_input,
+             o_ae      => open,
+             o_empty   => open
+	 );
 
 	  
 	 fc1: input_layer

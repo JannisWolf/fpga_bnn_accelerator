@@ -5,5 +5,29 @@
      behavior or data corruption.  It is strongly advised that
      users do not edit the contents of this file. -->
 <messages>
+<msg type="error" file="HDLCompiler" num="806" delta="unknown" >"/home/jannis/fpga_bnn_accelerator/src/fpga_logic/TASTE-VHDL-XISE/accelerator.vhd" Line 204: Syntax error near &quot;<arg fmt="%s" index="1">(</arg>&quot;.
+</msg>
+
+<msg type="error" file="HDLCompiler" num="806" delta="unknown" >"/home/jannis/fpga_bnn_accelerator/src/fpga_logic/TASTE-VHDL-XISE/accelerator.vhd" Line 210: Syntax error near &quot;<arg fmt="%s" index="1">;</arg>&quot;.
+</msg>
+
+<msg type="error" file="HDLCompiler" num="806" delta="unknown" >"/home/jannis/fpga_bnn_accelerator/src/fpga_logic/TASTE-VHDL-XISE/accelerator.vhd" Line 232: Syntax error near &quot;<arg fmt="%s" index="1">open</arg>&quot;.
+</msg>
+
+<msg type="error" file="HDLCompiler" num="806" delta="unknown" >"/home/jannis/fpga_bnn_accelerator/src/fpga_logic/TASTE-VHDL-XISE/accelerator.vhd" Line 242: Syntax error near &quot;<arg fmt="%s" index="1">open</arg>&quot;.
+</msg>
+
+<msg type="error" file="HDLCompiler" num="806" delta="unknown" >"/home/jannis/fpga_bnn_accelerator/src/fpga_logic/TASTE-VHDL-XISE/accelerator.vhd" Line 252: Syntax error near &quot;<arg fmt="%s" index="1">open</arg>&quot;.
+</msg>
+
+<msg type="error" file="HDLCompiler" num="720" delta="unknown" >"/home/jannis/fpga_bnn_accelerator/src/fpga_logic/TASTE-VHDL-XISE/accelerator.vhd" Line 232: Positional association cannot follow named association
+</msg>
+
+<msg type="error" file="HDLCompiler" num="806" delta="unknown" >"/home/jannis/fpga_bnn_accelerator/src/fpga_logic/TASTE-VHDL-XISE/accelerator.vhd" Line 263: Syntax error near &quot;<arg fmt="%s" index="1">;</arg>&quot;.
+</msg>
+
+<msg type="error" file="HDLCompiler" num="854" delta="unknown" >"/home/jannis/fpga_bnn_accelerator/src/fpga_logic/TASTE-VHDL-XISE/accelerator.vhd" Line 26: Unit &lt;<arg fmt="%s" index="1">arch</arg>&gt; ignored due to previous errors.
+</msg>
+
 </messages>
 

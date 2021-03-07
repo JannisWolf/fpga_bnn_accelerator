@@ -4,15 +4,15 @@ Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 Parameter TMPDIR set to xst/projnav.tmp
 
 
-Total REAL time to Xst completion: 3.00 secs
-Total CPU time to Xst completion: 0.11 secs
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.05 secs
  
 --> 
 Parameter xsthdpdir set to xst
 
 
-Total REAL time to Xst completion: 3.00 secs
-Total CPU time to Xst completion: 0.12 secs
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.05 secs
  
 --> 
 Reading design: TASTE.prj
@@ -111,42 +111,33 @@ Cores Search Directories           : {"ipcore_dir"  }
 *                          HDL Compilation                              *
 =========================================================================
 Compiling vhdl file "/home/jannis/fpga_bnn_accelerator/src/fpga_logic/TASTE-VHDL-XISE/memory10Bit_output_layer.vhd" in Library work.
-Entity <memory10Bit_output_layer> compiled.
-Entity <memory10Bit_output_layer> (Architecture <Behavioral>) compiled.
+Architecture behavioral of Entity memory10bit_output_layer is up to date.
 Compiling vhdl file "/home/jannis/fpga_bnn_accelerator/src/fpga_logic/TASTE-VHDL-XISE/xnor_popcount.vhd" in Library work.
-Entity <xnor_popcount> compiled.
-Entity <xnor_popcount> (Architecture <behavioral>) compiled.
+Architecture behavioral of Entity xnor_popcount is up to date.
 Compiling vhdl file "/home/jannis/fpga_bnn_accelerator/src/fpga_logic/TASTE-VHDL-XISE/accumulator.vhd" in Library work.
-Entity <accumulator> compiled.
-Entity <accumulator> (Architecture <behavioral>) compiled.
+Architecture behavioral of Entity accumulator is up to date.
 Compiling vhdl file "/home/jannis/fpga_bnn_accelerator/src/fpga_logic/TASTE-VHDL-XISE/memory10Bit.vhd" in Library work.
-Entity <memory10bit> compiled.
-Entity <memory10bit> (Architecture <behavioral>) compiled.
+Architecture behavioral of Entity memory10bit is up to date.
 Compiling vhdl file "/home/jannis/fpga_bnn_accelerator/src/fpga_logic/TASTE-VHDL-XISE/memory3Bit.vhd" in Library work.
-Entity <memory3Bit> compiled.
-Entity <memory3Bit> (Architecture <Behavioral>) compiled.
-Compiling vhdl file "/home/jannis/fpga_bnn_accelerator/src/fpga_logic/TASTE-VHDL-XISE/memory3Bit_input_layer.vhd" in Library work.
-Entity <memory3Bit_input_layer> compiled.
-Entity <memory3Bit_input_layer> (Architecture <Behavioral>) compiled.
+Architecture behavioral of Entity memory3bit is up to date.
+Compiling vhdl file "/home/jannis/fpga_bnn_accelerator/src/fpga_logic/TASTE-VHDL-XISE/memory_bram.vhd" in Library work.
+Architecture behavioral of Entity memory_bram is up to date.
 Compiling vhdl file "/home/jannis/fpga_bnn_accelerator/src/fpga_logic/TASTE-VHDL-XISE/subsample64to3.vhd" in Library work.
-Entity <subsample64to3> compiled.
-Entity <subsample64to3> (Architecture <Behavioral>) compiled.
+Architecture behavioral of Entity subsample64to3 is up to date.
 Compiling vhdl file "/home/jannis/fpga_bnn_accelerator/src/fpga_logic/TASTE-VHDL-XISE/upsample.vhd" in Library work.
 Architecture behavioral of Entity upsample1to64 is up to date.
 Compiling vhdl file "/home/jannis/fpga_bnn_accelerator/src/fpga_logic/TASTE-VHDL-XISE/upsample3_64.vhd" in Library work.
 Architecture behavioral of Entity upsample3_64 is up to date.
+Compiling vhdl file "/home/jannis/fpga_bnn_accelerator/src/fpga_logic/TASTE-VHDL-XISE/fifo_buffer.vhd" in Library work.
+Architecture rtl of Entity fifo_buffer is up to date.
 Compiling vhdl file "/home/jannis/fpga_bnn_accelerator/src/fpga_logic/TASTE-VHDL-XISE/input_layer.vhd" in Library work.
-Entity <input_layer> compiled.
-Entity <input_layer> (Architecture <Behavioral>) compiled.
+Architecture behavioral of Entity input_layer is up to date.
 Compiling vhdl file "/home/jannis/fpga_bnn_accelerator/src/fpga_logic/TASTE-VHDL-XISE/fully_connected2.vhd" in Library work.
-Entity <fully_connected2> compiled.
-Entity <fully_connected2> (Architecture <Behavioral>) compiled.
+Architecture behavioral of Entity fully_connected2 is up to date.
 Compiling vhdl file "/home/jannis/fpga_bnn_accelerator/src/fpga_logic/TASTE-VHDL-XISE/fully_connected.vhd" in Library work.
-Entity <fully_connected> compiled.
-Entity <fully_connected> (Architecture <behavioral>) compiled.
+Architecture behavioral of Entity fully_connected is up to date.
 Compiling vhdl file "/home/jannis/fpga_bnn_accelerator/src/fpga_logic/TASTE-VHDL-XISE/output_layer.vhd" in Library work.
-Entity <output_layer> compiled.
-Entity <output_layer> (Architecture <behavioral>) compiled.
+Architecture behavioral of Entity output_layer is up to date.
 Compiling vhdl file "/home/jannis/fpga_bnn_accelerator/src/fpga_logic/TASTE-VHDL-XISE/ZestSC1_Host.vhd" in Library work.
 Architecture arch of Entity zestsc1_host is up to date.
 Compiling vhdl file "/home/jannis/fpga_bnn_accelerator/src/fpga_logic/TASTE-VHDL-XISE/ZestSC1_SRAM.vhd" in Library work.
@@ -172,18 +163,24 @@ Analyzing hierarchy for entity <ZestSC1_Host> in library <work> (architecture <a
 
 Analyzing hierarchy for entity <ZestSC1_SRAM> in library <work> (architecture <arch>).
 
-Analyzing hierarchy for entity <subsample64to3> in library <work> (architecture <Behavioral>).
+Analyzing hierarchy for entity <subsample64to3> in library <work> (architecture <behavioral>).
 
 Analyzing hierarchy for entity <upsample1to64> in library <work> (architecture <behavioral>).
 
 Analyzing hierarchy for entity <upsample3_64> in library <work> (architecture <behavioral>).
 
-Analyzing hierarchy for entity <input_layer> in library <work> (architecture <Behavioral>) with generics.
+Analyzing hierarchy for entity <fifo_buffer> in library <work> (architecture <rtl>) with generics.
+	g_AE_LEVEL = 4
+	g_AF_LEVEL = 28
+	g_DEPTH = 32
+	g_WIDTH = 3
+
+Analyzing hierarchy for entity <input_layer> in library <work> (architecture <behavioral>) with generics.
 	INPUT_SIZE = 3
 	NEURON_NUM = 3
 	WEIGHT_SIZE = 3
 
-Analyzing hierarchy for entity <fully_connected2> in library <work> (architecture <Behavioral>) with generics.
+Analyzing hierarchy for entity <fully_connected2> in library <work> (architecture <behavioral>) with generics.
 	INPUT_SIZE = 3
 	NEURON_NUM = 10
 	WEIGHT_SIZE = 3
@@ -198,7 +195,7 @@ Analyzing hierarchy for entity <output_layer> in library <work> (architecture <b
 	NEURON_NUM = 3
 	WEIGHT_SIZE = 10
 
-Analyzing hierarchy for entity <memory3Bit_input_layer> in library <work> (architecture <Behavioral>).
+Analyzing hierarchy for entity <memory_bram> in library <work> (architecture <behavioral>).
 
 Analyzing hierarchy for entity <xnor_popcount> in library <work> (architecture <behavioral>) with generics.
 	size = 3
@@ -206,7 +203,7 @@ Analyzing hierarchy for entity <xnor_popcount> in library <work> (architecture <
 Analyzing hierarchy for entity <accumulator> in library <work> (architecture <behavioral>) with generics.
 	size = 3
 
-Analyzing hierarchy for entity <memory3Bit> in library <work> (architecture <Behavioral>).
+Analyzing hierarchy for entity <memory3Bit> in library <work> (architecture <behavioral>).
 
 Analyzing hierarchy for entity <accumulator> in library <work> (architecture <behavioral>) with generics.
 	size = 10
@@ -216,7 +213,7 @@ Analyzing hierarchy for entity <memory10Bit> in library <work> (architecture <be
 Analyzing hierarchy for entity <xnor_popcount> in library <work> (architecture <behavioral>) with generics.
 	size = 10
 
-Analyzing hierarchy for entity <memory10Bit_output_layer> in library <work> (architecture <Behavioral>).
+Analyzing hierarchy for entity <memory10Bit_output_layer> in library <work> (architecture <behavioral>).
 
 
 =========================================================================
@@ -292,16 +289,21 @@ WARNING:Xst:2211 - "/home/jannis/fpga_bnn_accelerator/src/fpga_logic/TASTE-VHDL-
 Entity <ZestSC1_SRAM> analyzed. Unit <ZestSC1_SRAM> generated.
 
 Analyzing Entity <accelerator> in library <work> (Architecture <arch>).
-WARNING:Xst:752 - "/home/jannis/fpga_bnn_accelerator/src/fpga_logic/TASTE-VHDL-XISE/accelerator.vhd" line 183: Unconnected input port 'weights_in' of component 'input_layer' is tied to default value.
-WARNING:Xst:753 - "/home/jannis/fpga_bnn_accelerator/src/fpga_logic/TASTE-VHDL-XISE/accelerator.vhd" line 183: Unconnected output port 'finish_fc' of component 'input_layer'.
-WARNING:Xst:752 - "/home/jannis/fpga_bnn_accelerator/src/fpga_logic/TASTE-VHDL-XISE/accelerator.vhd" line 193: Unconnected input port 'weights_in' of component 'fully_connected2' is tied to default value.
-WARNING:Xst:753 - "/home/jannis/fpga_bnn_accelerator/src/fpga_logic/TASTE-VHDL-XISE/accelerator.vhd" line 193: Unconnected output port 'finish_fc' of component 'fully_connected2'.
-WARNING:Xst:752 - "/home/jannis/fpga_bnn_accelerator/src/fpga_logic/TASTE-VHDL-XISE/accelerator.vhd" line 203: Unconnected input port 'weights_in' of component 'fully_connected' is tied to default value.
-WARNING:Xst:753 - "/home/jannis/fpga_bnn_accelerator/src/fpga_logic/TASTE-VHDL-XISE/accelerator.vhd" line 203: Unconnected output port 'finish_fc' of component 'fully_connected'.
-WARNING:Xst:752 - "/home/jannis/fpga_bnn_accelerator/src/fpga_logic/TASTE-VHDL-XISE/accelerator.vhd" line 213: Unconnected input port 'weights_in' of component 'output_layer' is tied to default value.
+WARNING:Xst:753 - "/home/jannis/fpga_bnn_accelerator/src/fpga_logic/TASTE-VHDL-XISE/accelerator.vhd" line 178: Unconnected output port 'data_sub' of component 'subsample64to3'.
+WARNING:Xst:753 - "/home/jannis/fpga_bnn_accelerator/src/fpga_logic/TASTE-VHDL-XISE/accelerator.vhd" line 204: Unconnected output port 'o_af' of component 'fifo_buffer'.
+WARNING:Xst:753 - "/home/jannis/fpga_bnn_accelerator/src/fpga_logic/TASTE-VHDL-XISE/accelerator.vhd" line 204: Unconnected output port 'o_full' of component 'fifo_buffer'.
+WARNING:Xst:753 - "/home/jannis/fpga_bnn_accelerator/src/fpga_logic/TASTE-VHDL-XISE/accelerator.vhd" line 204: Unconnected output port 'o_ae' of component 'fifo_buffer'.
+WARNING:Xst:753 - "/home/jannis/fpga_bnn_accelerator/src/fpga_logic/TASTE-VHDL-XISE/accelerator.vhd" line 204: Unconnected output port 'o_empty' of component 'fifo_buffer'.
+WARNING:Xst:752 - "/home/jannis/fpga_bnn_accelerator/src/fpga_logic/TASTE-VHDL-XISE/accelerator.vhd" line 226: Unconnected input port 'weights_in' of component 'input_layer' is tied to default value.
+WARNING:Xst:753 - "/home/jannis/fpga_bnn_accelerator/src/fpga_logic/TASTE-VHDL-XISE/accelerator.vhd" line 226: Unconnected output port 'finish_fc' of component 'input_layer'.
+WARNING:Xst:752 - "/home/jannis/fpga_bnn_accelerator/src/fpga_logic/TASTE-VHDL-XISE/accelerator.vhd" line 236: Unconnected input port 'weights_in' of component 'fully_connected2' is tied to default value.
+WARNING:Xst:753 - "/home/jannis/fpga_bnn_accelerator/src/fpga_logic/TASTE-VHDL-XISE/accelerator.vhd" line 236: Unconnected output port 'finish_fc' of component 'fully_connected2'.
+WARNING:Xst:752 - "/home/jannis/fpga_bnn_accelerator/src/fpga_logic/TASTE-VHDL-XISE/accelerator.vhd" line 246: Unconnected input port 'weights_in' of component 'fully_connected' is tied to default value.
+WARNING:Xst:753 - "/home/jannis/fpga_bnn_accelerator/src/fpga_logic/TASTE-VHDL-XISE/accelerator.vhd" line 246: Unconnected output port 'finish_fc' of component 'fully_connected'.
+WARNING:Xst:752 - "/home/jannis/fpga_bnn_accelerator/src/fpga_logic/TASTE-VHDL-XISE/accelerator.vhd" line 256: Unconnected input port 'weights_in' of component 'output_layer' is tied to default value.
 Entity <accelerator> analyzed. Unit <accelerator> generated.
 
-Analyzing Entity <subsample64to3> in library <work> (Architecture <Behavioral>).
+Analyzing Entity <subsample64to3> in library <work> (Architecture <behavioral>).
 Entity <subsample64to3> analyzed. Unit <subsample64to3> generated.
 
 Analyzing Entity <upsample1to64> in library <work> (Architecture <behavioral>).
@@ -310,14 +312,21 @@ Entity <upsample1to64> analyzed. Unit <upsample1to64> generated.
 Analyzing Entity <upsample3_64> in library <work> (Architecture <behavioral>).
 Entity <upsample3_64> analyzed. Unit <upsample3_64> generated.
 
-Analyzing generic Entity <input_layer> in library <work> (Architecture <Behavioral>).
+Analyzing generic Entity <fifo_buffer> in library <work> (Architecture <rtl>).
+	g_AE_LEVEL = 4
+	g_AF_LEVEL = 28
+	g_DEPTH = 32
+	g_WIDTH = 3
+Entity <fifo_buffer> analyzed. Unit <fifo_buffer> generated.
+
+Analyzing generic Entity <input_layer> in library <work> (Architecture <behavioral>).
 	INPUT_SIZE = 3
 	NEURON_NUM = 3
 	WEIGHT_SIZE = 3
 Entity <input_layer> analyzed. Unit <input_layer> generated.
 
-Analyzing Entity <memory3Bit_input_layer> in library <work> (Architecture <Behavioral>).
-Entity <memory3Bit_input_layer> analyzed. Unit <memory3Bit_input_layer> generated.
+Analyzing Entity <memory_bram> in library <work> (Architecture <behavioral>).
+Entity <memory_bram> analyzed. Unit <memory_bram> generated.
 
 Analyzing generic Entity <xnor_popcount.1> in library <work> (Architecture <behavioral>).
 	size = 3
@@ -330,13 +339,13 @@ Analyzing generic Entity <accumulator.1> in library <work> (Architecture <behavi
 WARNING:Xst:790 - "/home/jannis/fpga_bnn_accelerator/src/fpga_logic/TASTE-VHDL-XISE/accumulator.vhd" line 56: Index value(s) does not match array range, simulation mismatch.
 Entity <accumulator.1> analyzed. Unit <accumulator.1> generated.
 
-Analyzing generic Entity <fully_connected2> in library <work> (Architecture <Behavioral>).
+Analyzing generic Entity <fully_connected2> in library <work> (Architecture <behavioral>).
 	INPUT_SIZE = 3
 	NEURON_NUM = 10
 	WEIGHT_SIZE = 3
 Entity <fully_connected2> analyzed. Unit <fully_connected2> generated.
 
-Analyzing Entity <memory3Bit> in library <work> (Architecture <Behavioral>).
+Analyzing Entity <memory3Bit> in library <work> (Architecture <behavioral>).
 Entity <memory3Bit> analyzed. Unit <memory3Bit> generated.
 
 Analyzing generic Entity <accumulator.2> in library <work> (Architecture <behavioral>).
@@ -365,7 +374,7 @@ Analyzing generic Entity <output_layer> in library <work> (Architecture <behavio
 	WEIGHT_SIZE = 10
 Entity <output_layer> analyzed. Unit <output_layer> generated.
 
-Analyzing Entity <memory10Bit_output_layer> in library <work> (Architecture <Behavioral>).
+Analyzing Entity <memory10Bit_output_layer> in library <work> (Architecture <behavioral>).
 Entity <memory10Bit_output_layer> analyzed. Unit <memory10Bit_output_layer> generated.
 
 
@@ -397,12 +406,29 @@ Synthesizing Unit <upsample3_64>.
 Unit <upsample3_64> synthesized.
 
 
-Synthesizing Unit <memory3Bit_input_layer>.
-    Related source file is "/home/jannis/fpga_bnn_accelerator/src/fpga_logic/TASTE-VHDL-XISE/memory3Bit_input_layer.vhd".
+Synthesizing Unit <fifo_buffer>.
+    Related source file is "/home/jannis/fpga_bnn_accelerator/src/fpga_logic/TASTE-VHDL-XISE/fifo_buffer.vhd".
+    Found 32x3-bit dual-port RAM <Mram_r_FIFO_DATA> for signal <r_FIFO_DATA>.
+    Register <r_WR_INDEX> equivalent to <r_RD_INDEX> has been removed
+    Found 7-bit comparator less for signal <o_ae$cmp_lt0000> created at line 96.
+    Found 7-bit comparator greater for signal <o_af$cmp_gt0000> created at line 95.
+    Found 7-bit register for signal <r_FIFO_COUNT>.
+    Found 6-bit adder for signal <r_FIFO_COUNT$add0000> created at line 57.
+    Found 5-bit register for signal <r_RD_INDEX>.
+    Summary:
+	inferred   1 RAM(s).
+	inferred  12 D-type flip-flop(s).
+	inferred   1 Adder/Subtractor(s).
+	inferred   2 Comparator(s).
+Unit <fifo_buffer> synthesized.
+
+
+Synthesizing Unit <memory_bram>.
+    Related source file is "/home/jannis/fpga_bnn_accelerator/src/fpga_logic/TASTE-VHDL-XISE/memory_bram.vhd".
     Found 3-bit register for signal <douta>.
     Summary:
 	inferred   3 D-type flip-flop(s).
-Unit <memory3Bit_input_layer> synthesized.
+Unit <memory_bram> synthesized.
 
 
 Synthesizing Unit <xnor_popcount_1>.
@@ -647,7 +673,7 @@ WARNING:Xst:653 - Signal <calc_start> is used but never assigned. This sourceles
     -----------------------------------------------------------------------
     Found 1-bit register for signal <finish_accelerator>.
     Found 4-bit register for signal <counter1>.
-    Found 4-bit adder for signal <counter1$addsub0000> created at line 232.
+    Found 4-bit adder for signal <counter1$addsub0000> created at line 275.
     Summary:
 	inferred   1 Finite State Machine(s).
 	inferred   5 D-type flip-flop(s).
@@ -687,8 +713,9 @@ Unit <TASTE> synthesized.
 HDL Synthesis Report
 
 Macro Statistics
-# RAMs                                                 : 2
+# RAMs                                                 : 3
  16x16-bit dual-port RAM                               : 2
+ 32x3-bit dual-port RAM                                : 1
 # Adders/Subtractors                                   : 29
  16-bit subtractor                                     : 1
  4-bit adder                                           : 24
@@ -698,7 +725,7 @@ Macro Statistics
  22-bit up counter                                     : 1
  3-bit up counter                                      : 1
  4-bit up counter                                      : 6
-# Registers                                            : 146
+# Registers                                            : 148
  1-bit register                                        : 122
  10-bit register                                       : 4
  16-bit register                                       : 2
@@ -706,7 +733,12 @@ Macro Statistics
  23-bit register                                       : 1
  3-bit register                                        : 4
  4-bit register                                        : 3
+ 5-bit register                                        : 1
+ 7-bit register                                        : 1
  8-bit register                                        : 6
+# Comparators                                          : 2
+ 7-bit comparator greater                              : 1
+ 7-bit comparator less                                 : 1
 # Tristates                                            : 43
  1-bit tristate buffer                                 : 39
  16-bit tristate buffer                                : 1
@@ -732,9 +764,12 @@ Optimizing FSM <Interface_accelerator/state/FSM> on signal <state[1:2]> with use
  signal_received       | 01
  work_done             | 10
 -----------------------------------
+WARNING:Xst:1290 - Hierarchical block <sub> is unconnected in block <Interface_accelerator>.
+   It will be removed from the design.
 INFO:Xst:2261 - The FF/Latch <S_A_0> in Unit <INST_SRAM> is equivalent to the following 40 FFs/Latches, which will be removed : <S_A_1> <S_A_2> <S_A_3> <S_A_4> <S_A_5> <S_A_6> <S_A_7> <S_A_8> <S_A_9> <S_A_10> <S_A_11> <S_A_12> <S_A_13> <S_A_14> <S_A_15> <S_A_16> <S_A_17> <S_A_18> <S_A_19> <S_A_20> <S_A_21> <S_A_22> <Data0_0> <Data0_1> <Data0_2> <Data0_3> <Data0_4> <Data0_5> <Data0_6> <Data0_7> <Data0_8> <Data0_9> <Data0_10> <Data0_11> <Data0_12> <Data0_13> <Data0_14> <Data0_15> <Data0_16> <Data0_17> 
 INFO:Xst:2261 - The FF/Latch <Data1_0> in Unit <INST_SRAM> is equivalent to the following 17 FFs/Latches, which will be removed : <Data1_1> <Data1_2> <Data1_3> <Data1_4> <Data1_5> <Data1_6> <Data1_7> <Data1_8> <Data1_9> <Data1_10> <Data1_11> <Data1_12> <Data1_13> <Data1_14> <Data1_15> <Data1_16> <Data1_17> 
 INFO:Xst:2261 - The FF/Latch <S_DataOut_0> in Unit <INST_SRAM> is equivalent to the following 17 FFs/Latches, which will be removed : <S_DataOut_1> <S_DataOut_2> <S_DataOut_3> <S_DataOut_4> <S_DataOut_5> <S_DataOut_6> <S_DataOut_7> <S_DataOut_8> <S_DataOut_9> <S_DataOut_10> <S_DataOut_11> <S_DataOut_12> <S_DataOut_13> <S_DataOut_14> <S_DataOut_15> <S_DataOut_16> <S_DataOut_17> 
+INFO:Xst:2261 - The FF/Latch <r_RD_INDEX_0> in Unit <feature_buffer> is equivalent to the following 4 FFs/Latches, which will be removed : <r_RD_INDEX_1> <r_RD_INDEX_2> <r_RD_INDEX_3> <r_RD_INDEX_4> 
 WARNING:Xst:1710 - FF/Latch <RegOutput_3> (without init value) has a constant value of 0 in block <INST_ZestSC1_Host>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1710 - FF/Latch <RegOutput_4> (without init value) has a constant value of 0 in block <INST_ZestSC1_Host>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1710 - FF/Latch <RegOutput_5> (without init value) has a constant value of 0 in block <INST_ZestSC1_Host>. This FF/Latch will be trimmed during the optimization process.
@@ -742,6 +777,7 @@ WARNING:Xst:1710 - FF/Latch <RegOutput_6> (without init value) has a constant va
 WARNING:Xst:1710 - FF/Latch <RegOutput_7> (without init value) has a constant value of 0 in block <INST_ZestSC1_Host>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1710 - FF/Latch <S_A_0> (without init value) has a constant value of 0 in block <INST_SRAM>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1710 - FF/Latch <OutputEnable0_n> (without init value) has a constant value of 1 in block <INST_SRAM>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <r_RD_INDEX_0> has a constant value of 0 in block <feature_buffer>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1710 - FF/Latch <douta_0> (without init value) has a constant value of 0 in block <weights>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1710 - FF/Latch <douta_2> (without init value) has a constant value of 0 in block <weights>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1710 - FF/Latch <douta_1> (without init value) has a constant value of 0 in block <weights>. This FF/Latch will be trimmed during the optimization process.
@@ -816,6 +852,25 @@ INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram_FIFOIn> will be implemented on LUTs 
     |     doB            | connected to signal <User_StreamDataIn> |          |
     -----------------------------------------------------------------------
 Unit <ZestSC1_Host> synthesized (advanced).
+
+Synthesizing (advanced) Unit <fifo_buffer>.
+INFO:Xst:3231 - The small RAM <Mram_r_FIFO_DATA> will be implemented on LUTs in order to maximize performance and save block RAM resources. If you want to force its implementation on block, use option/constraint ram_style.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 32-word x 3-bit                     |          |
+    |     clkA           | connected to signal <i_clk>         | rise     |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <r_RD_INDEX>    |          |
+    |     diA            | connected to signal <GND>           |          |
+    -----------------------------------------------------------------------
+    | Port B                                                              |
+    |     aspect ratio   | 32-word x 3-bit                     |          |
+    |     addrB          | connected to signal <r_RD_INDEX>    |          |
+    |     doB            | connected to signal <o_rd_data>     |          |
+    -----------------------------------------------------------------------
+Unit <fifo_buffer> synthesized (advanced).
 WARNING:Xst:2677 - Node <sig_res_0> of sequential type is unconnected in block <xnor_popcount_1>.
 WARNING:Xst:2677 - Node <sig_res_1> of sequential type is unconnected in block <xnor_popcount_1>.
 WARNING:Xst:2677 - Node <sig_res_2> of sequential type is unconnected in block <xnor_popcount_1>.
@@ -836,8 +891,9 @@ Advanced HDL Synthesis Report
 
 Macro Statistics
 # FSMs                                                 : 1
-# RAMs                                                 : 2
+# RAMs                                                 : 3
  16x16-bit dual-port distributed RAM                   : 2
+ 32x3-bit dual-port distributed RAM                    : 1
 # Adders/Subtractors                                   : 18
  16-bit subtractor                                     : 1
  4-bit adder                                           : 3
@@ -848,8 +904,11 @@ Macro Statistics
  22-bit up counter                                     : 1
  3-bit up counter                                      : 1
  4-bit up counter                                      : 6
-# Registers                                            : 252
- Flip-Flops                                            : 252
+# Registers                                            : 264
+ Flip-Flops                                            : 264
+# Comparators                                          : 2
+ 7-bit comparator greater                              : 1
+ 7-bit comparator less                                 : 1
 # Xors                                                 : 17
  1-bit xor2                                            : 13
  10-bit xor2                                           : 2
@@ -860,8 +919,20 @@ Macro Statistics
 =========================================================================
 *                         Low Level Synthesis                           *
 =========================================================================
-WARNING:Xst:1710 - FF/Latch <douta_0> (without init value) has a constant value of 0 in block <memory3Bit_input_layer>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <douta_2> (without init value) has a constant value of 0 in block <memory3Bit_input_layer>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <r_RD_INDEX_0> has a constant value of 0 in block <fifo_buffer>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <r_RD_INDEX_1> has a constant value of 0 in block <fifo_buffer>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <r_RD_INDEX_2> has a constant value of 0 in block <fifo_buffer>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <r_RD_INDEX_3> has a constant value of 0 in block <fifo_buffer>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <r_RD_INDEX_4> has a constant value of 0 in block <fifo_buffer>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <r_FIFO_COUNT_0> has a constant value of 0 in block <fifo_buffer>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <r_FIFO_COUNT_1> has a constant value of 0 in block <fifo_buffer>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <r_FIFO_COUNT_2> has a constant value of 0 in block <fifo_buffer>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <r_FIFO_COUNT_3> has a constant value of 0 in block <fifo_buffer>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <r_FIFO_COUNT_4> has a constant value of 0 in block <fifo_buffer>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <r_FIFO_COUNT_5> has a constant value of 0 in block <fifo_buffer>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <r_FIFO_COUNT_6> has a constant value of 0 in block <fifo_buffer>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <douta_0> (without init value) has a constant value of 0 in block <memory_bram>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <douta_2> (without init value) has a constant value of 0 in block <memory_bram>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1710 - FF/Latch <douta_1> (without init value) has a constant value of 0 in block <memory10Bit_output_layer>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1710 - FF/Latch <ReadDataValid0> (without init value) has a constant value of 0 in block <ZestSC1_SRAM>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <OutputEnable0_n> (without init value) has a constant value of 1 in block <ZestSC1_SRAM>. This FF/Latch will be trimmed during the optimization process.
@@ -877,6 +948,9 @@ WARNING:Xst:2677 - Node <RegFIFOInWriteCountG_3> of sequential type is unconnect
 WARNING:Xst:2677 - Node <fc1/finish_fc> of sequential type is unconnected in block <accelerator>.
 WARNING:Xst:2677 - Node <fc2/finish_fc> of sequential type is unconnected in block <accelerator>.
 WARNING:Xst:2677 - Node <fc3/finish_fc> of sequential type is unconnected in block <accelerator>.
+WARNING:Xst:2677 - Node <feature_buffer/Mram_r_FIFO_DATA2> of sequential type is unconnected in block <accelerator>.
+WARNING:Xst:2677 - Node <feature_buffer/Mram_r_FIFO_DATA4> of sequential type is unconnected in block <accelerator>.
+WARNING:Xst:2677 - Node <feature_buffer/Mram_r_FIFO_DATA6> of sequential type is unconnected in block <accelerator>.
 WARNING:Xst:2677 - Node <Interfaces/INST_ZestSC1_Host/Mram_FIFOIn16> of sequential type is unconnected in block <TASTE>.
 WARNING:Xst:2677 - Node <Interfaces/INST_ZestSC1_Host/Mram_FIFOIn15> of sequential type is unconnected in block <TASTE>.
 WARNING:Xst:2677 - Node <Interfaces/INST_ZestSC1_Host/Mram_FIFOIn13> of sequential type is unconnected in block <TASTE>.
@@ -949,7 +1023,9 @@ WARNING:Xst:1710 - FF/Latch <Interfaces/INST_ZestSC1_Host/RegOutput_3> (without 
 WARNING:Xst:2677 - Node <accelerator_data_in_22> of sequential type is unconnected in block <TASTE>.
 WARNING:Xst:2677 - Node <accelerator_data_in_17> of sequential type is unconnected in block <TASTE>.
 WARNING:Xst:2677 - Node <accelerator_data_in_18> of sequential type is unconnected in block <TASTE>.
+WARNING:Xst:2677 - Node <accelerator_data_in_1> of sequential type is unconnected in block <TASTE>.
 WARNING:Xst:2677 - Node <accelerator_data_in_23> of sequential type is unconnected in block <TASTE>.
+WARNING:Xst:2677 - Node <accelerator_data_in_2> of sequential type is unconnected in block <TASTE>.
 WARNING:Xst:2677 - Node <accelerator_data_in_19> of sequential type is unconnected in block <TASTE>.
 WARNING:Xst:2677 - Node <accelerator_data_in_24> of sequential type is unconnected in block <TASTE>.
 WARNING:Xst:2677 - Node <accelerator_data_in_3> of sequential type is unconnected in block <TASTE>.
@@ -1007,6 +1083,7 @@ WARNING:Xst:2677 - Node <accelerator_data_in_21> of sequential type is unconnect
 WARNING:Xst:2677 - Node <accelerator_data_in_15> of sequential type is unconnected in block <TASTE>.
 WARNING:Xst:2677 - Node <accelerator_data_in_20> of sequential type is unconnected in block <TASTE>.
 WARNING:Xst:2677 - Node <accelerator_data_in_16> of sequential type is unconnected in block <TASTE>.
+WARNING:Xst:2677 - Node <accelerator_data_in_0> of sequential type is unconnected in block <TASTE>.
 INFO:Xst:2399 - RAMs <Interfaces/INST_ZestSC1_Host/Mram_FIFOOut16>, <Interfaces/INST_ZestSC1_Host/Mram_FIFOOut14> are equivalent, second RAM is removed
 INFO:Xst:2399 - RAMs <Interfaces/INST_ZestSC1_Host/Mram_FIFOOut16>, <Interfaces/INST_ZestSC1_Host/Mram_FIFOOut13> are equivalent, second RAM is removed
 INFO:Xst:2399 - RAMs <Interfaces/INST_ZestSC1_Host/Mram_FIFOOut16>, <Interfaces/INST_ZestSC1_Host/Mram_FIFOOut15> are equivalent, second RAM is removed
@@ -1022,8 +1099,11 @@ INFO:Xst:2399 - RAMs <Interfaces/INST_ZestSC1_Host/Mram_FIFOOut16>, <Interfaces/
 INFO:Xst:2399 - RAMs <Interfaces/INST_ZestSC1_Host/Mram_FIFOOut16>, <Interfaces/INST_ZestSC1_Host/Mram_FIFOOut2> are equivalent, second RAM is removed
 INFO:Xst:2399 - RAMs <Interfaces/INST_ZestSC1_Host/Mram_FIFOOut16>, <Interfaces/INST_ZestSC1_Host/Mram_FIFOOut4> are equivalent, second RAM is removed
 INFO:Xst:2399 - RAMs <Interfaces/INST_ZestSC1_Host/Mram_FIFOOut16>, <Interfaces/INST_ZestSC1_Host/Mram_FIFOOut1> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <Interface_accelerator/feature_buffer/Mram_r_FIFO_DATA5>, <Interface_accelerator/feature_buffer/Mram_r_FIFO_DATA3> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <Interface_accelerator/feature_buffer/Mram_r_FIFO_DATA5>, <Interface_accelerator/feature_buffer/Mram_r_FIFO_DATA1> are equivalent, second RAM is removed
 
 Mapping all equations...
+WARNING:Xst:2677 - Node <Interface_accelerator/fc1/weights/douta_1> of sequential type is unconnected in block <TASTE>.
 Building and optimizing final netlist ...
 INFO:Xst:2261 - The FF/Latch <Interfaces/INST_ZestSC1_Host/StreamDataOut_15> in Unit <TASTE> is equivalent to the following 15 FFs/Latches, which will be removed : <Interfaces/INST_ZestSC1_Host/StreamDataOut_14> <Interfaces/INST_ZestSC1_Host/StreamDataOut_13> <Interfaces/INST_ZestSC1_Host/StreamDataOut_12> <Interfaces/INST_ZestSC1_Host/StreamDataOut_11> <Interfaces/INST_ZestSC1_Host/StreamDataOut_10> <Interfaces/INST_ZestSC1_Host/StreamDataOut_9> <Interfaces/INST_ZestSC1_Host/StreamDataOut_8> <Interfaces/INST_ZestSC1_Host/StreamDataOut_7> <Interfaces/INST_ZestSC1_Host/StreamDataOut_6> <Interfaces/INST_ZestSC1_Host/StreamDataOut_5> <Interfaces/INST_ZestSC1_Host/StreamDataOut_4> <Interfaces/INST_ZestSC1_Host/StreamDataOut_3> <Interfaces/INST_ZestSC1_Host/StreamDataOut_2> <Interfaces/INST_ZestSC1_Host/StreamDataOut_1> <Interfaces/INST_ZestSC1_Host/StreamDataOut_0> 
 Found area constraint ratio of 100 (+ 5) on block TASTE, actual ratio is 2.
@@ -1034,8 +1114,8 @@ Final Macro Processing ...
 Final Register Report
 
 Macro Statistics
-# Registers                                            : 179
- Flip-Flops                                            : 179
+# Registers                                            : 175
+ Flip-Flops                                            : 175
 
 =========================================================================
 
@@ -1064,43 +1144,42 @@ Design Statistics
 # IOs                              : 161
 
 Cell Usage :
-# BELS                             : 378
+# BELS                             : 374
 #      GND                         : 1
 #      INV                         : 23
 #      LUT1                        : 21
 #      LUT2                        : 47
 #      LUT2_D                      : 3
-#      LUT3                        : 54
+#      LUT3                        : 53
 #      LUT3_D                      : 1
 #      LUT3_L                      : 4
-#      LUT4                        : 122
+#      LUT4                        : 119
 #      LUT4_D                      : 6
 #      LUT4_L                      : 10
 #      MUXCY                       : 38
 #      MUXF5                       : 13
 #      VCC                         : 1
 #      XORCY                       : 34
-# FlipFlops/Latches                : 180
+# FlipFlops/Latches                : 176
 #      FD                          : 23
 #      FDC                         : 24
 #      FDCE                        : 37
-#      FDE                         : 34
+#      FDE                         : 31
 #      FDE_1                       : 26
 #      FDP                         : 1
 #      FDPE                        : 3
 #      FDR                         : 24
-#      FDS                         : 7
+#      FDS                         : 6
 #      OFDDRCPE                    : 1
-# RAMS                             : 1
-#      RAM16X1D                    : 1
+# RAMS                             : 2
+#      RAM16X1D                    : 2
 # Clock Buffers                    : 3
 #      BUFG                        : 3
 # IO Buffers                       : 149
 #      IBUF                        : 23
 #      IBUFG                       : 2
-#      IOBUF                       : 3
 #      OBUF                        : 43
-#      OBUFT                       : 78
+#      OBUFT                       : 81
 # DCMs                             : 3
 #      DCM                         : 3
 # Others                           : 1
@@ -1112,11 +1191,11 @@ Device utilization summary:
 
 Selected Device : 3s1000ft256-5 
 
- Number of Slices:                      154  out of   7680     2%  
- Number of Slice Flip Flops:            180  out of  15360     1%  
- Number of 4 input LUTs:                293  out of  15360     1%  
-    Number used as logic:               291
-    Number used as RAMs:                  2
+ Number of Slices:                      153  out of   7680     1%  
+ Number of Slice Flip Flops:            176  out of  15360     1%  
+ Number of 4 input LUTs:                291  out of  15360     1%  
+    Number used as logic:               287
+    Number used as RAMs:                  4
  Number of IOs:                         161
  Number of bonded IOBs:                 150  out of    173    86%  
  Number of GCLKs:                         3  out of      8    37%  
@@ -1143,7 +1222,7 @@ Clock Information:
 -----------------------------------+----------------------------------------------------------------------------+-------+
 Clock Signal                       | Clock buffer(FF name)                                                      | Load  |
 -----------------------------------+----------------------------------------------------------------------------+-------+
-USB_RegCLK                         | Interfaces/INST_ZestSC1_Host/RegDCM:CLK0                                   | 150   |
+USB_RegCLK                         | Interfaces/INST_ZestSC1_Host/RegDCM:CLK0                                   | 147   |
 USB_StreamCLK                      | Interfaces/INST_ZestSC1_Host/StreamDCM:CLK0                                | 30    |
 USB_RegCLK                         | Interfaces/INST_ZestSC1_Host/RegDCM:CLK0+Interfaces/INST_SRAM/DCM_INST:CLK0| 2     |
 -----------------------------------+----------------------------------------------------------------------------+-------+
@@ -1162,7 +1241,7 @@ Timing Summary:
 Speed Grade: -5
 
    Minimum period: 15.258ns (Maximum Frequency: 65.541MHz)
-   Minimum input arrival time before clock: 9.249ns
+   Minimum input arrival time before clock: 8.509ns
    Maximum output required time after clock: 8.965ns
    Maximum combinational path delay: 9.179ns
 
@@ -1173,7 +1252,7 @@ All values displayed in nanoseconds (ns)
 =========================================================================
 Timing constraint: Default period analysis for Clock 'USB_RegCLK'
   Clock period: 15.258ns (frequency: 65.541MHz)
-  Total number of paths / destination ports: 1531 / 234
+  Total number of paths / destination ports: 1514 / 229
 -------------------------------------------------------------------------
 Delay:               7.629ns (Levels of Logic = 6)
   Source:            Interface_accelerator/fc2/fc1_activation/o_3 (FF)
@@ -1186,11 +1265,11 @@ Delay:               7.629ns (Levels of Logic = 6)
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
      FDE_1:C->Q            5   0.626   0.842  Interface_accelerator/fc2/fc1_activation/o_3 (Interface_accelerator/fc2/fc1_activation/o_3)
-     LUT4:I2->O            1   0.479   0.740  Interface_accelerator/fc3/xnor_pop1/Madd_pop_addsub0002_Madd_xor<0>11_SW1 (N202)
+     LUT4:I2->O            1   0.479   0.740  Interface_accelerator/fc3/xnor_pop1/Madd_pop_addsub0002_Madd_xor<0>11_SW1 (N197)
      LUT4:I2->O            2   0.479   0.768  Interface_accelerator/fc3/xnor_pop1/Madd_pop_addsub0004_Madd_xor<0>11 (Interface_accelerator/fc3/xnor_pop1/pop_addsub0004<0>)
-     LUT4:I3->O            1   0.479   0.740  Interface_accelerator/fc3/xnor_pop1/Msub_sig_res_sub0000_cy<2>141_SW0 (N204)
+     LUT4:I3->O            1   0.479   0.740  Interface_accelerator/fc3/xnor_pop1/Msub_sig_res_sub0000_cy<2>141_SW0 (N199)
      LUT4:I2->O            1   0.479   0.704  Interface_accelerator/fc3/xnor_pop1/Msub_sig_res_sub0000_cy<2>141 (Interface_accelerator/N20)
-     LUT4_L:I3->LO         1   0.479   0.159  Interface_accelerator/fc3/xnor_pop1/Msub_sig_res_sub0000_cy<2>11_SW0 (N212)
+     LUT4_L:I3->LO         1   0.479   0.159  Interface_accelerator/fc3/xnor_pop1/Msub_sig_res_sub0000_cy<2>11_SW0 (N207)
      LUT3:I2->O            1   0.479   0.000  Interface_accelerator/fc3/xnor_pop1/Msub_sig_res_sub0000_xor<7>161 (Interface_accelerator/fc3/xnor_pop1/sig_res_sub0000<7>)
      FD:D                      0.176          Interface_accelerator/fc3/xnor_pop1/sig_res_7
     ----------------------------------------
@@ -1216,7 +1295,7 @@ Delay:               8.961ns (Levels of Logic = 5)
      LUT4:I0->O            5   0.479   0.842  Interfaces/INST_ZestSC1_Host/StreamDataAvailable_and00001 (Interfaces/INST_ZestSC1_Host/StreamDataAvailable_and0000)
      LUT3:I2->O            4   0.479   0.838  Interfaces/INST_ZestSC1_Host/WriteCycle_mux000111 (N121)
      LUT4:I2->O            4   0.479   1.074  Interfaces/INST_ZestSC1_Host/LastDir_or00011 (Interfaces/INST_ZestSC1_Host/LastDir_mux0000)
-     LUT3:I0->O            2   0.479   0.768  Interfaces/INST_ZestSC1_Host/StreamWrite_not0001_SW0 (N55)
+     LUT3:I0->O            2   0.479   0.768  Interfaces/INST_ZestSC1_Host/StreamWrite_not0001_SW0 (N53)
      LUT4:I3->O            2   0.479   0.745  Interfaces/INST_ZestSC1_Host/StreamWrite_not0001 (Interfaces/INST_ZestSC1_Host/StreamWrite_not0001)
      FDCE:CE                   0.524          Interfaces/INST_ZestSC1_Host/StreamWrite
     ----------------------------------------
@@ -1225,27 +1304,28 @@ Delay:               8.961ns (Levels of Logic = 5)
 
 =========================================================================
 Timing constraint: Default OFFSET IN BEFORE for Clock 'USB_RegCLK'
-  Total number of paths / destination ports: 157 / 17
+  Total number of paths / destination ports: 98 / 11
 -------------------------------------------------------------------------
-Offset:              9.249ns (Levels of Logic = 6)
+Offset:              8.509ns (Levels of Logic = 7)
   Source:            USB_RegAddr<10> (PAD)
-  Destination:       accelerator_data_in_1 (FF)
+  Destination:       Interfaces/INST_ZestSC1_Host/RegOutput_2 (FF)
   Destination Clock: USB_RegCLK rising
 
-  Data Path: USB_RegAddr<10> to accelerator_data_in_1
+  Data Path: USB_RegAddr<10> to Interfaces/INST_ZestSC1_Host/RegOutput_2
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
      IBUF:I->O             1   0.715   0.976  USB_RegAddr_10_IBUF (USB_RegAddr_10_IBUF)
      LUT3:I0->O            1   0.479   0.976  accelerator_StartCalculationsInternal_cmp_eq00001117 (accelerator_StartCalculationsInternal_cmp_eq00001117)
-     LUT3:I0->O            1   0.479   0.851  accelerator_StartCalculationsInternal_cmp_eq00001164_SW0 (N222)
-     LUT4:I1->O            3   0.479   1.066  accelerator_StartCalculationsInternal_cmp_eq00001164 (DataOut_and0000)
-     LUT3:I0->O            1   0.479   0.976  accelerator_StartCalculationsInternal_cmp_eq000012 (N9)
-     LUT4:I0->O            3   0.479   0.771  accelerator_data_in_1_and0000 (accelerator_data_in_1_and0000)
-     FDE:CE                    0.524          accelerator_data_in_1
+     LUT3:I0->O            1   0.479   0.851  accelerator_StartCalculationsInternal_cmp_eq00001164_SW0 (N217)
+     LUT4:I1->O            2   0.479   1.040  accelerator_StartCalculationsInternal_cmp_eq00001164 (DataOut_and0000)
+     LUT4:I0->O            1   0.479   0.000  DataOut<0>21 (DataOut<0>2)
+     MUXF5:I0->O           3   0.314   1.066  DataOut<0>2_f5 (N21)
+     LUT3:I0->O            1   0.479   0.000  DataOut<2>1 (DataOut<2>)
+     FD:D                      0.176          Interfaces/INST_ZestSC1_Host/RegOutput_2
     ----------------------------------------
-    Total                      9.249ns (3.634ns logic, 5.615ns route)
-                                       (39.3% logic, 60.7% route)
+    Total                      8.509ns (3.600ns logic, 4.909ns route)
+                                       (42.3% logic, 57.7% route)
 
 =========================================================================
 Timing constraint: Default OFFSET IN BEFORE for Clock 'USB_StreamCLK'
@@ -1333,15 +1413,15 @@ Delay:               9.179ns (Levels of Logic = 4)
 =========================================================================
 
 
-Total REAL time to Xst completion: 19.00 secs
-Total CPU time to Xst completion: 10.34 secs
+Total REAL time to Xst completion: 10.00 secs
+Total CPU time to Xst completion: 9.09 secs
  
 --> 
 
 
-Total memory usage is 532068 kilobytes
+Total memory usage is 533080 kilobytes
 
 Number of errors   :    0 (   0 filtered)
-Number of warnings :  268 (   0 filtered)
-Number of infos    :   27 (   0 filtered)
+Number of warnings :  294 (   0 filtered)
+Number of infos    :   31 (   0 filtered)
 
